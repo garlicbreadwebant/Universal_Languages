@@ -79,6 +79,17 @@ assert.equal(filterEntries(data.lumena.entries, 'water', 'modal').length, 0);
 assert(markdown('| Word | Meaning |\n|---|---|\n| aku | water |', 'lumena').includes('<td>aku</td><td>water</td>'));
 assert(markdown('1. First\n2. Second', 'narela').includes('<ol><li>First</li><li>Second</li></ol>'));
 const index = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+const site = {window: {}};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'site-data.js'), 'utf8'), site);
+for (const [name, source] of Object.entries(site.window.SITE_DOCUMENTS)) {
+  assert.equal(source, fs.readFileSync(path.join(__dirname, `${name}.md`), 'utf8').replace(/\r\n/g, '\n'));
+  assert(markdown(source, 'narela').includes('<h1>'));
+}
+for (const page of ['privacy', 'cookies', 'terms', 'updates']) {
+  assert.deepEqual(parseRoute(`#narela/${page}`, data), {language: 'narela', page});
+  assert(index.includes(`data-site-page="${page}"`));
+}
+assert(fs.readFileSync(path.join(root, 'LICENSE'), 'utf8').startsWith('MIT License'));
 for (const match of index.matchAll(/(?:src|href)="([^"]+)"/g)) {
   if (/^(#|https?:\/\/)/.test(match[1])) continue;
   assert(fs.existsSync(path.resolve(__dirname, match[1])), `Local asset/link exists: ${match[1]}`);

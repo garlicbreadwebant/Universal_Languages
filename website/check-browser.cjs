@@ -85,8 +85,8 @@ async function run() {
       let text = '**sali** — hello. <img src=x onerror="window.xss=true">';
       if (JSON.parse(options.body).text?.format?.name === 'language_reading') {
         const input = JSON.parse(JSON.parse(options.body).input[0].content);
-        const target = input.language || input.sourceLanguage;
-        text = mockMode === 'badstudio' ? 'invalid JSON' : JSON.stringify({...(input.form ? {text: target === 'Lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.'} : {}), translation: 'I learn. I read a book.', notes: 'Practice text.'});
+        const target = input.targetLanguage || input.language || input.sourceLanguage;
+        text = mockMode === 'badstudio' ? 'invalid JSON' : JSON.stringify({...((input.form || input.targetLanguage) ? {text: target === 'Lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.'} : {}), translation: 'I learn. I read a book.', notes: 'Practice text.'});
       }
       const delta = provider === 'openai' ? {type:'response.output_text.delta',delta:text} : provider === 'claude' ? {type:'content_block_delta',delta:{type:'text_delta',text}} : {candidates:[{content:{parts:[{text}]}}]};
       const end = provider === 'openai' ? {type:'response.completed'} : provider === 'claude' ? {type:'message_stop'} : {candidates:[{finishReason:'STOP'}]};
@@ -151,7 +151,7 @@ async function run() {
     await until("!document.getElementById('speech-audio').hidden");
     assert.equal(await evaluate('mockCalls.at(-1).body.input'), await evaluate("document.getElementById('speech-text').value"));
     await value('speech-text', 'Edited text');
-    assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), true);
+    assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), false);
     assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), '');
     await click('studio-example');
     assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), false);
@@ -173,10 +173,23 @@ async function run() {
       assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), 'I learn. I read a book.');
     }
     const input = id === 'lumena' ? 'mi lena Lumena.' : 'Mi lena Narela.';
-    await value('speech-text', input); await click('studio-ai-translate');
+    await value('speech-text', input); await click('studio-translation-toggle');
     await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
     assert.equal(await evaluate("document.getElementById('speech-text').value"), input);
-    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
+    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), false);
+    const calls = await evaluate('mockCalls.length');
+    await click('studio-translation-toggle'); await click('studio-translation-toggle');
+    assert.equal(await evaluate('mockCalls.length'), calls);
+    assert.equal(await evaluate("document.querySelectorAll('#studio-ai-translate').length"), 0);
+    await evaluate("document.querySelector('.english-translation').open = true");
+    await value('studio-english', 'I learn and read a book.');
+    await click('studio-from-english');
+    await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
+    assert.equal(await evaluate('JSON.parse(mockCalls.at(-1).body.input[0].content).sourceLanguage'), 'English');
+    assert.equal(await evaluate('JSON.parse(mockCalls.at(-1).body.input[0].content).targetLanguage'), id === 'lumena' ? 'Lumena' : 'Narela');
+    assert.equal(await evaluate("document.getElementById('speech-text').value"), id === 'lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.');
+    await value('speech-text', input); await click('studio-translation-toggle');
+    await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
     await evaluate("mockMode = 'badstudio'"); await click('studio-paragraph');
     await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('complete')");
     assert.equal(await evaluate("document.getElementById('speech-text').value"), input);
@@ -215,6 +228,33 @@ async function run() {
   await value('chat-input', 'No key now'); await evaluate("document.getElementById('chat-form').requestSubmit()");
   assert.equal(await evaluate("document.getElementById('ai-settings').open"), true);
   await click('ai-close-settings');
+  const pageTitles = {overview: 'Overview', dictionary: 'Dictionary', flashcards: 'Flashcards', speech: 'Read aloud', chat: 'Chat companion', privacy: 'Privacy policy', cookies: 'Cookies policy', terms: 'Terms of use', updates: 'Website changelog'};
+  for (const width of [320, 390, 768, 1024, 1440]) {
+    await command('Emulation.setDeviceMetricsOverride', {width, height: 900, deviceScaleFactor: 1, mobile: width < 801});
+    for (const [page, title] of Object.entries(pageTitles)) {
+      await evaluate(`location.hash = '#narela/${page}'`);
+      await until(`document.title.startsWith(${JSON.stringify(title)})`);
+      assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), true, `${width}px ${page} has no page overflow`);
+      const smallTargets = await evaluate(`Array.from(document.querySelectorAll('button, select, .footer-links a')).filter(el => el.getClientRects().length && !el.closest('dialog:not([open])')).filter(el => {const r = el.getBoundingClientRect(); return r.height < 43.5 || r.width < 43.5;}).map(el => el.id || el.textContent.trim())`);
+      assert.deepEqual(smallTargets, [], `${width}px ${page} touch controls are at least 44px`);
+      if (page === 'speech' && width <= 390) await command('Page.captureScreenshot', {format: 'png', captureBeyondViewport: true}).then(result => fs.writeFileSync(path.join(root, `learner-speech-${width}.png`), Buffer.from(result.data, 'base64')));
+      if (page === 'dictionary' && width === 390) await command('Page.captureScreenshot', {format: 'png', captureBeyondViewport: false}).then(result => fs.writeFileSync(path.join(root, 'learner-dictionary-mobile.png'), Buffer.from(result.data, 'base64')));
+    }
+    if (width < 801) {
+      assert.equal(await evaluate("getComputedStyle(document.getElementById('navigation')).display"), 'none');
+      await click('navigation-toggle');
+      assert.equal(await evaluate("document.getElementById('navigation-toggle').getAttribute('aria-expanded')"), 'true');
+      await evaluate("document.querySelector('#navigation [data-page=flashcards]').click()");
+      await until("!!document.getElementById('flashcard-reveal')");
+      assert.equal(await evaluate("document.getElementById('navigation-toggle').getAttribute('aria-expanded')"), 'false');
+    }
+    for (const page of ['privacy', 'cookies', 'terms', 'updates']) {
+      await evaluate(`document.querySelector('[data-site-page="${page}"]').click()`);
+      await until(`document.title.startsWith(${JSON.stringify(pageTitles[page])})`);
+      assert.equal(await evaluate('location.hash'), `#narela/${page}`);
+    }
+  }
+  await navigate('#narela/chat');
   await configure('openai'); await evaluate("dispatchEvent(new PageTransitionEvent('pagehide'))");
   await value('chat-input', 'After pagehide'); await evaluate("document.getElementById('chat-form').requestSubmit()");
   assert.equal(await evaluate("document.getElementById('ai-settings').open"), true);

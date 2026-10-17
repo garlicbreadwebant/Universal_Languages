@@ -4,7 +4,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const out = path.join(root, '.site-build');
 fs.mkdirSync(out, {recursive: true});
-for (const name of ['index.html', 'styles.css', 'ai.css', 'app.js', 'data.js', 'ai-client.js', 'ai-ui.js', 'favicon.svg']) {
+for (const name of ['index.html', 'styles.css', 'ai.css', 'responsive.css', 'app.js', 'data.js', 'site-data.js', 'ai-client.js', 'ai-ui.js', 'favicon.svg', 'privacy.md', 'cookies.md', 'terms.md', 'changelog.md']) {
   fs.copyFileSync(path.join(__dirname, name), path.join(out, name));
 }
 for (const name of ['Lumena', 'Narela']) {
@@ -16,6 +16,7 @@ for (const name of ['Lumena', 'Narela']) {
 }
 fs.copyFileSync(path.join(root, 'README.md'), path.join(out, 'README.md'));
 fs.copyFileSync(path.join(root, 'CONTRIBUTING.md'), path.join(out, 'CONTRIBUTING.md'));
+fs.copyFileSync(path.join(root, 'LICENSE'), path.join(out, 'LICENSE'));
 fs.writeFileSync(path.join(out, '.nojekyll'), '');
 // Source files live one level below the repository root; the deployed site does not.
 for (const file of ['app.js', 'index.html']) {

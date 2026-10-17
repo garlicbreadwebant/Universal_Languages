@@ -74,7 +74,7 @@ async function run() {
   }
   assert.throws(() => api.speechRequest('claude', 'hello', data.lumena), /no speech adapter/);
   for (const lang of Object.values(data)) {
-    for (const kind of ['paragraph', 'essay', 'translate']) {
+    for (const kind of ['paragraph', 'essay', 'translate', 'fromEnglish']) {
       const input = lang.example;
       const output = {translation: 'I learn.\n\nWe read.', notes: 'Limited vocabulary.'};
       if (kind !== 'translate') output.text = `${lang.greeting}.\n\n${lang.example}`;
@@ -87,7 +87,11 @@ async function run() {
         assert.equal(body.text.format.strict, true); assert.equal(body.text.format.schema.additionalProperties, false);
         assert(body.instructions.includes(lang.documents.grammar)); assert(body.instructions.includes(lang.entries.at(-1).word));
         assert(!options.body.includes(key));
-        if (kind === 'translate') assert.equal(JSON.parse(body.input[0].content).text, input);
+        if (kind === 'fromEnglish') {
+          assert.equal(JSON.parse(body.input[0].content).sourceLanguage, 'English');
+          assert.equal(JSON.parse(body.input[0].content).targetLanguage, lang.name);
+          assert.equal(JSON.parse(body.input[0].content).text, input);
+        } else if (kind === 'translate') assert.equal(JSON.parse(body.input[0].content).text, input);
         else assert.equal(JSON.parse(body.input[0].content).form, kind);
         const raw = JSON.stringify(output);
         return {ok: true, body: events([{type: 'response.output_text.delta', delta: raw.slice(0, 12)}, {type: 'response.output_text.delta', delta: raw.slice(12)}, {type: 'response.completed'}])};

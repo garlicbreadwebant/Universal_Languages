@@ -6,6 +6,8 @@ Explore two constructed language prototypes. Learn your first words, search the 
 
 ## Pick a language
 
+Licensed under the [MIT License](LICENSE). Website changes are recorded in the [website changelog](website/changelog.md).
+
 - [Narela](Narela/README.md): original starter language, organized into reference guides and bidirectional dictionaries.
 - [Lumena](Lumena/README.md): international auxiliary language prototype, with a separate specification, lessons, dictionary, and validation tools.
 - [Review and design evidence](Lumena/DESIGN.md): assessment of Narela, research sources, tradeoffs, and learner testing plan.

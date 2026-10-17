@@ -1,7 +1,7 @@
 /* Plain JavaScript; all language content is rendered as escaped text. */
 (function (global) {
   'use strict';
-  const pages = {overview: 'Overview', dictionary: 'Dictionary', flashcards: 'Flashcards', chat: 'Chat companion', speech: 'Read aloud', pronunciation: 'Pronunciation', grammar: 'Grammar', lessons: 'First lessons', design: 'Design notes', changelog: 'Changelog'};
+  const pages = {overview: 'Overview', dictionary: 'Dictionary', flashcards: 'Flashcards', chat: 'Chat companion', speech: 'Read aloud', pronunciation: 'Pronunciation', grammar: 'Grammar', lessons: 'First lessons', design: 'Design notes', changelog: 'Changelog', privacy: 'Privacy policy', cookies: 'Cookies policy', terms: 'Terms of use', updates: 'Website changelog'};
   const documentFiles = {overview: 'README.md', pronunciation: 'PRONUNCIATION.md', grammar: 'GRAMMAR.md', lessons: 'LESSONS.md', design: 'DESIGN.md', changelog: 'CHANGELOG.md'};
   const escape = value => String(value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
   const normalize = value => String(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -21,6 +21,8 @@
     const cross = decoded.match(/^\.\.\/(Lumena|Narela)\/([^#]+)$/);
     const owner = cross ? cross[1].toLowerCase() : language;
     const file = cross ? cross[2] : decoded;
+    const sitePage = { 'privacy.md': 'privacy', 'cookies.md': 'cookies', 'terms.md': 'terms', 'changelog.md': 'updates' }[file];
+    if (sitePage) return `#${owner}/${sitePage}`;
     const page = Object.keys(documentFiles).find(key => documentFiles[key] === file);
     if (page) return `#${owner}/${page}`;
     if (/Dictionary\.md$/.test(file)) return `#${owner}/dictionary`;
@@ -206,7 +208,13 @@
       if (link.dataset.page === state.page) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
     });
-    if (state.page === 'overview') main.innerHTML = overview(lang);
+    document.querySelectorAll('[data-site-page]').forEach(link => { link.href = route(link.dataset.sitePage); });
+    if (['privacy', 'cookies', 'terms', 'updates'].includes(state.page)) {
+      const name = state.page === 'updates' ? 'changelog' : state.page;
+      const source = global.SITE_DOCUMENTS?.[name];
+      main.innerHTML = source ? '<article class="document policy-document">' + markdown(source, state.language) + '</article>' : '<h1>Page could not load</h1><p>Reload to load the site documents.</p>';
+      const title = main.querySelector('h1'); if (title) { title.id = 'page-title'; title.tabIndex = -1; }
+    } else if (state.page === 'overview') main.innerHTML = overview(lang);
     else if (state.page === 'dictionary') {
       main.innerHTML = dictionary(lang);
       const search = document.getElementById('search');
@@ -234,5 +242,15 @@
     if (next.language !== state.language) { category = ''; query = ''; }
     state = next; pageNumber = 1; render(true);
   });
+  const menuToggle = document.getElementById('navigation-toggle');
+  function closeMenu() { menuToggle?.setAttribute('aria-expanded', 'false'); document.getElementById('navigation')?.classList?.remove('navigation-open'); }
+  menuToggle?.addEventListener('click', () => {
+    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+    menuToggle.setAttribute('aria-expanded', String(open));
+    document.getElementById('navigation').classList.toggle('navigation-open', open);
+  });
+  document.querySelectorAll('#navigation a').forEach(link => link.addEventListener('click', closeMenu));
+  global.addEventListener('hashchange', closeMenu);
+  global.document.addEventListener?.('keydown', event => { if (event.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') { closeMenu(); menuToggle.focus(); } });
   render();
 })(typeof window !== 'undefined' ? window : globalThis);

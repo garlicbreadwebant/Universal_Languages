@@ -15,7 +15,9 @@
   <title>Language Library · Lumena & Narela</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="ai.css">
+  <link rel="stylesheet" href="responsive.css">
   <script src="data.js" defer></script>
+  <script src="site-data.js" defer></script>
   <script src="ai-client.js" defer></script>
   <script src="ai-ui.js" defer></script>
   <script src="app.js" defer></script>
@@ -26,6 +28,7 @@
     <aside class="sidebar" aria-label="Language library navigation">
       <a class="brand" href="#lumena/overview" aria-label="Language Library home"><span class="brand-icon" aria-hidden="true">a<span>↗</span></span><span>Language<br>Library<span class="brand-caption">WORDS BRING US CLOSER</span></span></a>
       <p class="nav-label">YOUR EXPLORATION</p>
+      <button id="navigation-toggle" class="navigation-toggle" type="button" aria-expanded="false" aria-controls="navigation">Explore the library <span aria-hidden="true">☰</span></button>
       <nav id="navigation" aria-label="Reference pages">
         <a data-page="overview" href="#lumena/overview"><span aria-hidden="true">◉</span> Overview</a>
         <a data-page="dictionary" href="#lumena/dictionary"><span aria-hidden="true">Aa</span> Dictionary</a>
@@ -43,7 +46,7 @@
     <div class="workspace">
       <header class="topbar"><span class="breadcrumb">THE LANGUAGE COLLECTION <span aria-hidden="true">/</span> <strong id="current-language">Lumena</strong></span><div class="language-switch" role="group" aria-label="Choose language"><button type="button" data-language="lumena" aria-pressed="true">Lumena</button><button type="button" data-language="narela" aria-pressed="false">Narela</button></div></header>
       <main id="main" tabindex="-1"><noscript><h1>Explore the languages</h1><p>Enable JavaScript for the interactive library, or read the <a href="../Lumena/README.md">Lumena guides</a> and <a href="../Narela/README.md">Narela guides</a>.</p></noscript></main>
-      <footer><span>Made for curious minds. Built for connection.</span><a href="https://github.com/garlicbreadwebant/Universal_Languages">Contribute on GitHub ↗</a><span>Language prototypes · Edition 0.1</span></footer>
+      <footer><div class="footer-intro"><span>Made for curious minds. Built for connection.</span><span>Language prototypes · Edition 0.1</span></div><nav class="footer-links" aria-label="Project and policies"><a data-site-page="privacy" href="#lumena/privacy">Privacy policy</a><a data-site-page="cookies" href="#lumena/cookies">Cookies policy</a><a data-site-page="terms" href="#lumena/terms">Terms of use</a><a data-site-page="updates" href="#lumena/updates">Website changelog</a><a href="../LICENSE">MIT License</a><a href="https://github.com/garlicbreadwebant/Universal_Languages">Contribute on GitHub ↗</a></nav></footer>
     </div>
   </div>
   <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
