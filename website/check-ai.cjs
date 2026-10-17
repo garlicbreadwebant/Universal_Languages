@@ -73,6 +73,35 @@ async function run() {
     }
   }
   assert.throws(() => api.speechRequest('claude', 'hello', data.lumena), /no speech adapter/);
+  for (const lang of Object.values(data)) {
+    for (const kind of ['paragraph', 'essay', 'translate']) {
+      const input = lang.example;
+      const output = {translation: 'I learn.\n\nWe read.', notes: 'Limited vocabulary.'};
+      if (kind !== 'translate') output.text = `${lang.greeting}.\n\n${lang.example}`;
+      const controller = new AbortController();
+      const result = await api.studioTask({kind, lang, key, model: 'gpt-4.1-mini', topic: 'Friendship', text: input, signal: controller.signal, fetcher: async (url, options) => {
+        assert.equal(url, 'https://api.openai.com/v1/responses');
+        assert.equal(options.headers.Authorization, `Bearer ${key}`); assert.equal(options.signal, controller.signal);
+        const body = JSON.parse(options.body);
+        assert.equal(body.store, false); assert.equal(body.text.format.type, 'json_schema');
+        assert.equal(body.text.format.strict, true); assert.equal(body.text.format.schema.additionalProperties, false);
+        assert(body.instructions.includes(lang.documents.grammar)); assert(body.instructions.includes(lang.entries.at(-1).word));
+        assert(!options.body.includes(key));
+        if (kind === 'translate') assert.equal(JSON.parse(body.input[0].content).text, input);
+        else assert.equal(JSON.parse(body.input[0].content).form, kind);
+        const raw = JSON.stringify(output);
+        return {ok: true, body: events([{type: 'response.output_text.delta', delta: raw.slice(0, 12)}, {type: 'response.output_text.delta', delta: raw.slice(12)}, {type: 'response.completed'}])};
+      }});
+      assert.equal(result.text, kind === 'translate' ? input : output.text);
+      assert.equal(result.translation, output.translation); assert.equal(result.notes, output.notes);
+    }
+  }
+  const studio = {kind: 'paragraph', lang: data.lumena, key, model: 'gpt-4.1-mini'};
+  for (const output of ['not JSON', JSON.stringify({text: 'x'.repeat(3001), translation: 'Hello.', notes: ''}), JSON.stringify({text: 'sali', translation: '', notes: ''})]) {
+    await assert.rejects(api.studioTask({...studio, fetcher: async () => ({ok: true, body: events([{type: 'response.output_text.delta', delta: output}, {type: 'response.completed'}])})}), /invalid|complete/);
+  }
+  await assert.rejects(api.studioTask({...studio, kind: 'translate', text: ''}), /characters to translate/);
+  await assert.rejects(api.studioTask({...studio, fetcher: async () => ({ok: true, body: events([{type: 'response.incomplete'}])})}), /incomplete/);
   assert.throws(() => api.speechRequest('openai', 'x'.repeat(3001), data.lumena), /3,000/);
   const pcm = new Uint8Array([0, 0, 1, 0]);
   const wav = api.pcmWav(pcm);

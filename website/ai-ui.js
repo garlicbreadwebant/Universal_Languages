@@ -9,6 +9,12 @@
   const settings = {provider: 'openai', models: Object.fromEntries(Object.entries(api.providers).map(([id, p]) => [id, p.model])), speech: 'browser', voices: {openai: 'coral', gemini: 'Kore'}, speechModels: {openai: api.providers.openai.speechModel, gemini: api.providers.gemini.speechModel}, rate: 1, maxTokens: 2048, instructions: ''};
   let conversations = [], activeId = null, sequence = 0, mounted = null, chatJob = null, speechJob = null, audioURL = null, audioLanguage = null;
   let historyQuery = '', lastFocus = null, speechSequence = 0;
+  let studioJob = null;
+  function stopStudio() {
+    const job = studioJob;
+    if (!job) return;
+    studioJob = null; job.controller.abort(); job.cancelUI();
+  }
   const languageId = () => Object.hasOwn(global.LANGUAGE_DATA, location.hash.slice(1).split('/')[0]) ? location.hash.slice(1).split('/')[0] : 'lumena';
   const language = () => global.LANGUAGE_DATA[languageId()];
   const current = () => conversations.find(c => c.id === activeId && c.language === languageId());
@@ -43,10 +49,11 @@
     $('ai-speech-model').value = settings.speechModels[provider];
     $('ai-voice').innerHTML = api.providers[provider].voices.map(voice => `<option${voice === settings.voices[provider] ? ' selected' : ''}>${voice}</option>`).join('');
   }
-  function openSettings() {
+  function openSettings(providerOverride) {
     lastFocus = document.activeElement;
-    $('ai-provider').value = settings.provider;
-    $('ai-model').value = settings.models[settings.provider];
+    const provider = Object.hasOwn(api.providers, providerOverride) ? providerOverride : settings.provider;
+    $('ai-provider').value = provider;
+    $('ai-model').value = settings.models[provider];
     $('ai-length').value = String(settings.maxTokens);
     $('ai-instructions').value = settings.instructions;
     $('ai-speech-provider').value = settings.speech;
@@ -64,7 +71,7 @@
   $('ai-speech-provider').addEventListener('change', refreshSpeechSettings);
   $('ai-forget-key').addEventListener('click', () => {
     const provider = $('ai-provider').value;
-    delete keys[provider]; stopChat(); stopSpeech(); refreshKeyState();
+    delete keys[provider]; stopChat(); stopSpeech(); stopStudio(); refreshKeyState();
     $('ai-settings-status').textContent = 'Key removed from this page.';
   });
   $('ai-settings-form').addEventListener('submit', event => {
@@ -75,19 +82,23 @@
       if (speech !== 'browser') api.modelId($('ai-speech-model').value.trim());
       const key = $('ai-key').value.trim();
       if (key && /\s/.test(key)) throw new Error('API keys cannot contain spaces or line breaks.');
-      stopChat(); stopSpeech();
+      stopChat(); stopSpeech(); stopStudio();
       if (key) keys[provider] = key;
       settings.provider = provider; settings.models[provider] = $('ai-model').value.trim();
       settings.maxTokens = Number($('ai-length').value); settings.instructions = $('ai-instructions').value;
       settings.speech = speech; settings.rate = Number($('ai-rate').value);
       if (speech !== 'browser') { settings.voices[speech] = $('ai-voice').value; settings.speechModels[speech] = $('ai-speech-model').value.trim(); }
       $('ai-settings').close();
+      if ($('studio-connection')) $('studio-connection').textContent = `OpenAI / ${settings.models.openai}. Uses your OpenAI key independently of chat and speech provider choices.`;
       if (mounted && document.contains(mounted) && location.hash.endsWith('/chat')) mountChat(mounted, language());
       announce('AI settings applied for this page session.');
     } catch (error) { $('ai-settings-status').textContent = error.message; }
   });
   function forgetAll() {
-    stopChat(); stopSpeech(); keys = Object.create(null); conversations = []; activeId = null;
+    stopChat(); stopSpeech(); stopStudio(); keys = Object.create(null); conversations = []; activeId = null;
+    for (const id of ['speech-text', 'studio-topic']) if ($(id)) $(id).value = '';
+    for (const id of ['studio-translation', 'studio-ai-notes', 'studio-ai-status']) if ($(id)) $(id).textContent = '';
+    if ($('studio-translation-toggle')) { $('studio-translation-toggle').hidden = true; $('studio-translation-toggle').setAttribute('aria-expanded', 'false'); }
     settings.instructions = ''; historyQuery = '';
     $('ai-key').value = ''; $('ai-instructions').value = '';
     refreshKeyState();
@@ -286,8 +297,9 @@
     renderHistory(); renderMessages(); setBusy();
   }
   function mountSpeech(main, lang) {
+    stopStudio();
     mounted = null;
-    main.innerHTML = `<header class="page-header"><p class="eyebrow">GIVE THE WORDS A VOICE</p><h1 id="page-title" tabindex="-1">Read ${esc(lang.name)} aloud</h1><p>Listen to a word, sentence, or passage. OpenAI and Gemini receive the pronunciation guide with each speech request. Generated pronunciation is approximate.</p></header><section class="speech-studio"><div class="speech-studio-heading"><h2>A little listening practice</h2><button type="button" class="button secondary" id="studio-settings">Voice & API settings</button></div><form id="speech-form"><div class="field"><label for="speech-text">Text to read (up to 3,000 characters)</label><textarea id="speech-text" rows="7" maxlength="3000"></textarea></div><div class="speech-example-translation"><button type="button" class="button secondary" id="studio-translation-toggle" aria-expanded="false" aria-controls="studio-translation">Show English translation</button><p id="studio-translation" lang="en" hidden></p></div><div class="actions"><button class="button" type="submit">Read aloud</button><button class="button secondary" type="button" id="studio-example">Use example sentence</button></div></form><p class="ai-fineprint">Synthetic speech, never a native-speaker recording. Compare with the <a href="#${languageId()}/pronunciation">pronunciation guide</a>. You can also listen from the dictionary, flashcards, chat messages, or selected text on any page.</p></section>`;
+    main.innerHTML = `<header class="page-header"><p class="eyebrow">GIVE THE WORDS A VOICE</p><h1 id="page-title" tabindex="-1">Read ${esc(lang.name)} aloud</h1><p>Listen to a word, sentence, or passage. OpenAI and Gemini receive the pronunciation guide with each speech request. Generated pronunciation is approximate.</p></header><section class="speech-studio"><div class="speech-studio-heading"><h2>A little listening practice</h2><button type="button" class="button secondary" id="studio-settings">Voice & API settings</button></div><section class="studio-ai" aria-labelledby="studio-ai-title"><h3 id="studio-ai-title">Create a passage with OpenAI</h3><p id="studio-connection" class="ai-fineprint">OpenAI / ${esc(settings.models.openai)}. Uses your OpenAI key independently of chat and speech provider choices.</p><div class="field"><label for="studio-topic">Topic or idea (optional)</label><input id="studio-topic" maxlength="500" placeholder="For example: a day with friends"></div><div class="actions"><button type="button" class="button secondary" id="studio-paragraph">Generate paragraph</button><button type="button" class="button secondary" id="studio-essay">Generate short essay</button><button type="button" class="button secondary" id="studio-ai-stop" hidden>Stop</button></div><p class="ai-fineprint">Generation replaces the text below after it succeeds and includes a toggleable English translation. AI may make mistakes; vocabulary is limited to the language reference. Requests send your topic or text and the selected language's references to OpenAI and may incur charges.</p><p id="studio-ai-status" role="status"></p></section><form id="speech-form"><div class="field"><label for="speech-text">Text to read (up to 3,000 characters)</label><textarea id="speech-text" rows="7" maxlength="3000"></textarea></div><div class="speech-example-translation"><button type="button" class="button secondary" id="studio-translation-toggle" aria-expanded="false" aria-controls="studio-translation">Show English translation</button><button type="button" class="button secondary" id="studio-ai-translate">Translate to English with OpenAI</button><p id="studio-translation" lang="en" hidden></p><p id="studio-ai-notes" class="ai-fineprint"></p></div><div class="actions"><button class="button" type="submit">Read aloud</button><button class="button secondary" type="button" id="studio-example">Use example sentence</button></div></form><p class="ai-fineprint">Synthetic speech, never a native-speaker recording. Compare with the <a href="#${languageId()}/pronunciation">pronunciation guide</a>. You can also listen from the dictionary, flashcards, chat messages, or selected text on any page.</p></section>`;
     $('speech-text').value = lang.example;
     const translationToggle = $('studio-translation-toggle');
     const translation = $('studio-translation');
@@ -297,17 +309,64 @@
       translationToggle.setAttribute('aria-expanded', 'false');
       translationToggle.textContent = 'Show English translation';
     }
+    const textInput = $('speech-text');
+    const taskStatus = $('studio-ai-status');
+    const notes = $('studio-ai-notes');
+    function taskBusy(busy) {
+      for (const id of ['studio-paragraph', 'studio-essay', 'studio-ai-translate']) $(id).disabled = busy;
+      $('studio-ai-stop').hidden = !busy;
+      textInput.setAttribute('aria-busy', String(busy));
+    }
+    async function runTask(kind) {
+      if (studioJob) return;
+      if (kind === 'translate' && !textInput.value.trim()) { taskStatus.textContent = 'Enter text in the selected language before translating.'; return; }
+      if (!keys.openai) { taskStatus.textContent = 'Add your OpenAI key in AI settings, then try again.'; openSettings('openai'); return; }
+      stopSpeech();
+      const source = scrub(textInput.value);
+      const controller = new AbortController();
+      const job = {controller, cancelUI() {
+        if (document.contains(textInput)) { taskBusy(false); taskStatus.textContent = 'Request cancelled. Existing text and translation have been kept.'; }
+      }};
+      studioJob = job;
+      taskBusy(true);
+      taskStatus.textContent = kind === 'translate' ? `Translating ${lang.name} to English...` : `Generating a ${kind === 'essay' ? 'short essay' : 'paragraph'} in ${lang.name}...`;
+      let timedOut = false;
+      const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, 180000);
+      try {
+        const result = await api.studioTask({kind, lang, key: keys.openai, model: settings.models.openai, topic: scrub($('studio-topic').value), text: source, signal: controller.signal});
+        if (studioJob !== job || controller.signal.aborted || !document.contains(textInput)) return;
+        if (kind !== 'translate') stopSpeech();
+        textInput.value = scrub(result.text);
+        translation.textContent = scrub(result.translation);
+        notes.textContent = result.notes ? `AI notes: ${scrub(result.notes)}` : '';
+        translationToggle.hidden = false;
+        hideTranslation();
+        taskStatus.textContent = kind === 'translate' ? 'English translation ready. Use Show English translation to reveal it.' : `${kind === 'essay' ? 'Short essay' : 'Paragraph'} ready in ${lang.name}. English translation is hidden.`;
+        announce(taskStatus.textContent);
+      } catch (error) {
+        if (studioJob === job && document.contains(textInput)) taskStatus.textContent = error.name === 'AbortError' ? (timedOut ? 'Request timed out. Existing text has been kept; try again.' : 'Request cancelled. Existing text has been kept.') : error.message;
+      } finally {
+        clearTimeout(timeout);
+        if (studioJob === job) { studioJob = null; if (document.contains(textInput)) taskBusy(false); }
+      }
+    }
+    $('studio-paragraph').addEventListener('click', () => runTask('paragraph'));
+    $('studio-essay').addEventListener('click', () => runTask('essay'));
+    $('studio-ai-translate').addEventListener('click', () => runTask('translate'));
+    $('studio-ai-stop').addEventListener('click', stopStudio);
+    $('studio-topic').addEventListener('input', stopStudio);
     translationToggle.addEventListener('click', () => {
       translation.hidden = !translation.hidden;
       translationToggle.setAttribute('aria-expanded', String(!translation.hidden));
       translationToggle.textContent = translation.hidden ? 'Show English translation' : 'Hide English translation';
     });
     $('speech-text').addEventListener('input', () => {
+      stopStudio(); stopSpeech(); notes.textContent = ''; taskStatus.textContent = '';
       hideTranslation(); translation.textContent = ''; translationToggle.hidden = true;
     });
     $('studio-settings').addEventListener('click', openSettings);
     $('studio-example').addEventListener('click', () => {
-      stopSpeech();
+      stopStudio(); stopSpeech(); notes.textContent = ''; taskStatus.textContent = '';
       const example = api.exampleSentence(lang, $('speech-text').value);
       $('speech-text').value = example.sentence;
       translation.textContent = example.translation;
@@ -317,7 +376,7 @@
     $('speech-form').addEventListener('submit', event => { event.preventDefault(); speak($('speech-text').value, lang); });
   }
   global.addEventListener('hashchange', () => {
-    stopChat();
+    stopChat(); stopStudio();
     if (audioLanguage && audioLanguage !== language().name) stopSpeech();
     $('ai-chat-link').href = `#${languageId()}/chat`;
   });

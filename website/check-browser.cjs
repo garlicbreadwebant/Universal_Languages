@@ -82,7 +82,12 @@ async function run() {
       if (mockMode === '401') return new Response('never display test-key-openai', {status:401});
       if (url.includes('/audio/speech')) return new Response(new Uint8Array(48), {headers:{'Content-Type':'audio/mpeg'}});
       const provider = url.includes('anthropic') ? 'claude' : url.includes('googleapis') ? 'gemini' : 'openai';
-      const text = '**sali** — hello. <img src=x onerror="window.xss=true">';
+      let text = '**sali** — hello. <img src=x onerror="window.xss=true">';
+      if (JSON.parse(options.body).text?.format?.name === 'language_reading') {
+        const input = JSON.parse(JSON.parse(options.body).input[0].content);
+        const target = input.language || input.sourceLanguage;
+        text = mockMode === 'badstudio' ? 'invalid JSON' : JSON.stringify({...(input.form ? {text: target === 'Lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.'} : {}), translation: 'I learn. I read a book.', notes: 'Practice text.'});
+      }
       const delta = provider === 'openai' ? {type:'response.output_text.delta',delta:text} : provider === 'claude' ? {type:'content_block_delta',delta:{type:'text_delta',text}} : {candidates:[{content:{parts:[{text}]}}]};
       const end = provider === 'openai' ? {type:'response.completed'} : provider === 'claude' ? {type:'message_stop'} : {candidates:[{finishReason:'STOP'}]};
       return new Response(new ReadableStream({start(controller) {
@@ -101,6 +106,11 @@ async function run() {
     await value('chat-input', text); await evaluate("document.getElementById('chat-form').requestSubmit()");
     await until("document.querySelector('.assistant .message-content')?.textContent.includes('sali') && document.getElementById('chat-stop').hidden");
   }
+  await navigate('#lumena/speech');
+  await click('studio-paragraph');
+  assert.equal(await evaluate("document.getElementById('ai-settings').open && document.getElementById('ai-provider').value === 'openai'"), true);
+  await click('ai-close-settings');
+  await navigate('#lumena/chat');
   await configure('openai'); await send('Teach me a greeting');
   assert.equal(await evaluate("document.querySelector('.assistant strong').textContent"), 'sali');
   assert.equal(await evaluate("!!document.querySelector('.message-content img') || !!window.xss"), false);
@@ -146,6 +156,47 @@ async function run() {
     await click('studio-example');
     assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), false);
   }
+  await configure('claude', 'openai');
+  for (const id of ['lumena', 'narela']) {
+    await navigate(`#${id}/speech`);
+    await value('studio-topic', 'Learning with friends');
+    for (const button of ['studio-paragraph', 'studio-essay']) {
+      await click(button);
+      await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
+      const expected = id === 'lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.';
+      assert.equal(await evaluate("document.getElementById('speech-text').value"), expected);
+      assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
+      assert.equal(await evaluate('mockCalls.at(-1).url'), 'https://api.openai.com/v1/responses');
+      assert.equal(await evaluate('mockCalls.at(-1).headers.Authorization'), 'Bearer test-key-openai');
+      assert.equal(await evaluate('mockCalls.at(-1).body.model'), 'gpt-4.1-mini');
+      await click('studio-translation-toggle');
+      assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), 'I learn. I read a book.');
+    }
+    const input = id === 'lumena' ? 'mi lena Lumena.' : 'Mi lena Narela.';
+    await value('speech-text', input); await click('studio-ai-translate');
+    await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
+    assert.equal(await evaluate("document.getElementById('speech-text').value"), input);
+    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
+    await evaluate("mockMode = 'badstudio'"); await click('studio-paragraph');
+    await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('complete')");
+    assert.equal(await evaluate("document.getElementById('speech-text').value"), input);
+    assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), 'I learn. I read a book.');
+    await evaluate("mockMode = 'slow'"); await click('studio-essay');
+    await until("!document.getElementById('studio-ai-stop').hidden"); await click('studio-ai-stop');
+    assert.equal(await evaluate("document.getElementById('speech-text').value"), input);
+    assert.equal(await evaluate("document.getElementById('studio-ai-stop').hidden"), true);
+    await click('studio-paragraph'); await until("!document.getElementById('studio-ai-stop').hidden");
+    await value('speech-text', 'Changed during request');
+    assert.equal(await evaluate("document.getElementById('studio-ai-stop').hidden"), true);
+    assert.equal(await evaluate("document.getElementById('speech-text').value"), 'Changed during request');
+    assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), '');
+    await evaluate("mockMode = 'ok'");
+  }
+  await command('Page.captureScreenshot', {format: 'png', captureBeyondViewport: true}).then(result => fs.writeFileSync(path.join(root, 'speech-studio-desktop.png'), Buffer.from(result.data, 'base64')));
+  await command('Emulation.setDeviceMetricsOverride', {width: 390, height: 844, deviceScaleFactor: 1, mobile: true});
+  assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth'), true);
+  await command('Page.captureScreenshot', {format: 'png', captureBeyondViewport: true}).then(result => fs.writeFileSync(path.join(root, 'speech-studio-mobile.png'), Buffer.from(result.data, 'base64')));
+  await command('Emulation.setDeviceMetricsOverride', {width: 1440, height: 1050, deviceScaleFactor: 1, mobile: false});
   await navigate('#narela/chat'); assert.equal(await evaluate("document.querySelectorAll('.chat-message').length"), 0);
   for (const provider of ['gemini', 'claude']) { await configure(provider); await send(`Hello from ${provider}`); }
   assert.equal(await evaluate("mockCalls.at(-1).body.system.includes('Narela') && mockCalls.at(-1).body.system.includes('LEXICON')"), true);
