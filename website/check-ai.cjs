@@ -47,6 +47,19 @@ async function run() {
   assert.match(incomplete, /output limit/);
   assert.equal(api.textDelta('gemini', {candidates: [{content: {parts: [{thought: true, text: 'hidden'}, {text: 'visible'}]}}]}), 'visible');
   for (const lang of Object.values(data)) {
+    const examples = new Set();
+    for (let i = 0; i < 48; i++) {
+      const example = api.exampleSentence(lang, '', () => i / 48);
+      assert(example.translation.endsWith('.')); assert(example.sentence.endsWith('.'));
+      for (const token of example.sentence.slice(0, -1).split(' ')) {
+        assert(token === lang.name || lang.entries.some(entry => entry.word.toLowerCase() === token.toLowerCase()), `${lang.name} example uses known word: ${token}`);
+      }
+      examples.add(example.sentence);
+      assert.notEqual(api.exampleSentence(lang, example.sentence, () => i / 48).sentence, example.sentence);
+    }
+    assert.equal(examples.size, 48);
+    assert.deepEqual(api.exampleSentence(lang, '', () => 0), {sentence: lang.name === 'Lumena' ? 'mi leta puka.' : 'Mi reda buki.', translation: 'I read a book.'});
+    assert.equal(api.exampleSentence(lang, '', () => 2 / 48).sentence, lang.name === 'Lumena' ? 'mi pu leta puka.' : 'Mi fu reda buki.');
     const context = api.languageContext(lang, 'quiz');
     assert(context.includes(lang.documents.grammar)); assert(context.includes(lang.entries.at(-1).word));
     assert(context.includes('Wait for an answer'));

@@ -29,6 +29,8 @@ The **Read aloud** page accepts up to 3,000 characters. Dictionary entries, flas
 
 API speech includes the language's pronunciation guide as delivery instructions. Browser speech uses the browser/device voice and cannot be taught these rules. All voices are synthetic and may mispronounce constructed words; compare with the written guide. A browser speech service may send text to its vendor and may not work offline.
 
+In **Read aloud**, **Use example sentence** generates a different practice sentence from 48 combinations per language using documented pronouns, tense markers, and vocabulary. This runs locally without an API call. Use **Show English translation** below the sentence to reveal its matching English meaning. Each new example hides the translation again. Editing the text clears the translation to avoid showing a meaning that no longer matches. Read aloud speaks only the target-language text.
+
 ### Key and conversation privacy
 
 - Keys are held in a private JavaScript closure in the current page, never in localStorage, sessionStorage, cookies, IndexedDB, URLs, chat exports, source files, or GitHub. The password field is emptied after applying settings. No key validation request is made automatically.

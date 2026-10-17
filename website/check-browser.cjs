@@ -57,6 +57,22 @@ async function run() {
   const value = (id, text) => evaluate(`document.getElementById(${JSON.stringify(id)}).value = ${JSON.stringify(text)}; document.getElementById(${JSON.stringify(id)}).dispatchEvent(new Event('input', {bubbles:true}))`);
   const change = (id, text) => evaluate(`document.getElementById(${JSON.stringify(id)}).value = ${JSON.stringify(text)}; document.getElementById(${JSON.stringify(id)}).dispatchEvent(new Event('change', {bubbles:true}))`);
   await command('Emulation.setDeviceMetricsOverride', {width: 1440, height: 1050, deviceScaleFactor: 1, mobile: false});
+  if (process.env.PAGES_URL) {
+    const base = process.env.PAGES_URL.replace(/\/$/, '') + '/';
+    await command('Page.navigate', {url: base});
+    await until("!!document.querySelector('#page-title')");
+    for (const language of ['lumena', 'narela']) {
+      await evaluate(`document.querySelector('[data-language="${language}"]').click()`);
+      for (const [page, element] of [['flashcards', 'flashcard-reveal'], ['chat', 'chat-input'], ['speech', 'speech-text'], ['dictionary', 'search']]) {
+        await evaluate(`document.querySelector('[data-page="${page}"]').click()`);
+        await until(`!!document.getElementById('${element}')`);
+        assert.equal(await evaluate('location.hash'), `#${language}/${page}`);
+      }
+    }
+    assert.deepEqual(exceptions, []);
+    console.log('OK: published Pages navigation buttons open flashcards, chat, speech, and dictionary for both languages without browser exceptions.');
+    return;
+  }
   await command('Page.navigate', {url: `http://127.0.0.1:${port}/index.html#lumena/chat`});
   await until("!!document.getElementById('chat-input')");
   await evaluate(`window.mockCalls = []; window.mockMode = 'ok';
@@ -104,6 +120,32 @@ async function run() {
   await until("!document.getElementById('speech-audio').hidden");
   assert.equal(await evaluate("mockCalls.at(-1).body.model"), 'gpt-4o-mini-tts');
   await click('speech-stop');
+  for (const id of ['lumena', 'narela']) {
+    await navigate(`#${id}/speech`);
+    const callsBefore = await evaluate('mockCalls.length');
+    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
+    let previous = await evaluate("document.getElementById('speech-text').value");
+    await click('studio-example');
+    assert.notEqual(await evaluate("document.getElementById('speech-text').value"), previous);
+    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
+    await click('studio-translation-toggle');
+    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), false);
+    assert.equal(await evaluate("document.getElementById('studio-translation-toggle').getAttribute('aria-expanded')"), 'true');
+    assert(await evaluate("document.getElementById('studio-translation').textContent.length > 0"));
+    previous = await evaluate("document.getElementById('speech-text').value");
+    await click('studio-example');
+    assert.notEqual(await evaluate("document.getElementById('speech-text').value"), previous);
+    assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
+    assert.equal(await evaluate('mockCalls.length'), callsBefore);
+    await evaluate("document.getElementById('speech-form').requestSubmit()");
+    await until("!document.getElementById('speech-audio').hidden");
+    assert.equal(await evaluate('mockCalls.at(-1).body.input'), await evaluate("document.getElementById('speech-text').value"));
+    await value('speech-text', 'Edited text');
+    assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), true);
+    assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), '');
+    await click('studio-example');
+    assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), false);
+  }
   await navigate('#narela/chat'); assert.equal(await evaluate("document.querySelectorAll('.chat-message').length"), 0);
   for (const provider of ['gemini', 'claude']) { await configure(provider); await send(`Hello from ${provider}`); }
   assert.equal(await evaluate("mockCalls.at(-1).body.system.includes('Narela') && mockCalls.at(-1).body.system.includes('LEXICON')"), true);

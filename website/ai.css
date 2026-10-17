@@ -26,6 +26,7 @@ legend{font-size:13px;font-weight:650;padding:0 7px}
 .speech-player{position:fixed;left:50%;bottom:85px;transform:translateX(-50%);z-index:16;width:min(700px,calc(100% - 30px));background:var(--white);border:1px solid #becbc0;border-radius:10px;box-shadow:0 8px 40px #203b3526;padding:14px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 .speech-player>div{flex:1;min-width:160px}.speech-player strong{display:block;font-size:12px}#speech-status{font-size:11px;color:var(--muted)}.speech-player audio{width:100%;height:38px;order:3}
 .speech-studio{max-width:820px;background:#ffffff85;border:1px solid var(--line);border-radius:10px;padding:28px}.speech-studio-heading{margin-bottom:24px}.speech-studio .actions{margin-top:18px}
+.speech-example-translation{margin-top:14px}.speech-example-translation .button{font-size:11px;padding:8px 12px}#studio-translation{padding:14px 16px;background:var(--pale);border-left:3px solid var(--green);border-radius:0 5px 5px 0;font-size:14px;color:var(--ink)}
 .word-listen{display:block;font:11px var(--sans);margin-top:8px;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--green)}
 #flashcard-listen{margin:0 8px 15px}#flashcard-reveal{margin-bottom:15px}
 .chat-page-header{display:flex;align-items:center;justify-content:space-between;gap:15px}.chat-page-header h1{font-size:40px;margin-bottom:0}

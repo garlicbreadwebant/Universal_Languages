@@ -119,6 +119,24 @@
     if (provider === 'gemini') return {url: `https://generativelanguage.googleapis.com/v1beta/models/${modelId(model)}:generateContent`, body: {contents: [{role: 'user', parts: [{text, speech_metadata: {style: instructions}}]}], generationConfig: {responseModalities: ['AUDIO'], speechConfig: {voiceConfig: {voice}}}}};
     throw new ProviderError('Claude has no speech adapter here. Choose browser speech, OpenAI, or Gemini.');
   }
+  function exampleSentence(lang, previous = '', random = Math.random) {
+    const lumena = lang.name === 'Lumena';
+    const subjects = lumena ? [['mi', 'I'], ['ti', 'You'], ['mu', 'We'], ['lu', 'They']] : [['Mi', 'I'], ['Ti', 'You'], ['Min', 'We'], ['Lin', 'They']];
+    const word = english => lang.entries.find(entry => entry.english === english)?.word;
+    const actions = [['read', 'read', 'a book', word('book')], ['drink', 'drank', 'water', word('water')], ['eat', 'ate', 'food', word('food')], ['learn', 'learned', lang.name, lang.name]];
+    const examples = [];
+    for (const [subject, englishSubject] of subjects) {
+      for (const [verb, past, englishObject, object] of actions) {
+        if (!word(verb) || !object) continue;
+        for (const tense of ['present', 'past', 'future']) {
+          const marker = tense === 'past' ? 'pa ' : tense === 'future' ? (lumena ? 'pu ' : 'fu ') : '';
+          examples.push({sentence: `${subject} ${marker}${word(verb)} ${object}.`, translation: `${englishSubject} ${tense === 'past' ? past : tense === 'future' ? `will ${verb}` : verb} ${englishObject}.`});
+        }
+      }
+    }
+    const available = examples.filter(example => example.sentence !== previous);
+    return available[Math.floor(random() * available.length)] || {sentence: lang.example, translation: lang.translation};
+  }
   function pcmWav(bytes, rate = 24000) {
     if (bytes.length % 2 || !Number.isInteger(rate) || rate < 8000 || rate > 96000) throw new ProviderError('Unsupported PCM audio format.');
     const result = new Uint8Array(44 + bytes.length), view = new DataView(result.buffer);
@@ -143,7 +161,7 @@
     if (/audio\/(mpeg|mp3|ogg)/i.test(mime)) return new Blob([bytes], {type: mime});
     throw new ProviderError('The provider returned an unsupported audio format.');
   }
-  const api = {providers, modelId, chatRequest, headers, httpError, post, readSSE, textDelta, chat: safeOperation(chat), languageContext, speechRequest, pcmWav, speech: safeOperation(speech)};
+  const api = {providers, modelId, chatRequest, headers, httpError, post, readSSE, textDelta, chat: safeOperation(chat), languageContext, speechRequest, exampleSentence, pcmWav, speech: safeOperation(speech)};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   global.LanguageAIClient = api;
 })(typeof window !== 'undefined' ? window : globalThis);

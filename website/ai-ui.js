@@ -287,10 +287,33 @@
   }
   function mountSpeech(main, lang) {
     mounted = null;
-    main.innerHTML = `<header class="page-header"><p class="eyebrow">GIVE THE WORDS A VOICE</p><h1 id="page-title" tabindex="-1">Read ${esc(lang.name)} aloud</h1><p>Listen to a word, sentence, or passage. OpenAI and Gemini receive the pronunciation guide with each speech request. Generated pronunciation is approximate.</p></header><section class="speech-studio"><div class="speech-studio-heading"><h2>A little listening practice</h2><button type="button" class="button secondary" id="studio-settings">Voice & API settings</button></div><form id="speech-form"><div class="field"><label for="speech-text">Text to read (up to 3,000 characters)</label><textarea id="speech-text" rows="7" maxlength="3000"></textarea></div><div class="actions"><button class="button" type="submit">Read aloud</button><button class="button secondary" type="button" id="studio-example">Use example sentence</button></div></form><p class="ai-fineprint">Synthetic speech, never a native-speaker recording. Compare with the <a href="#${languageId()}/pronunciation">pronunciation guide</a>. You can also listen from the dictionary, flashcards, chat messages, or selected text on any page.</p></section>`;
+    main.innerHTML = `<header class="page-header"><p class="eyebrow">GIVE THE WORDS A VOICE</p><h1 id="page-title" tabindex="-1">Read ${esc(lang.name)} aloud</h1><p>Listen to a word, sentence, or passage. OpenAI and Gemini receive the pronunciation guide with each speech request. Generated pronunciation is approximate.</p></header><section class="speech-studio"><div class="speech-studio-heading"><h2>A little listening practice</h2><button type="button" class="button secondary" id="studio-settings">Voice & API settings</button></div><form id="speech-form"><div class="field"><label for="speech-text">Text to read (up to 3,000 characters)</label><textarea id="speech-text" rows="7" maxlength="3000"></textarea></div><div class="speech-example-translation"><button type="button" class="button secondary" id="studio-translation-toggle" aria-expanded="false" aria-controls="studio-translation">Show English translation</button><p id="studio-translation" lang="en" hidden></p></div><div class="actions"><button class="button" type="submit">Read aloud</button><button class="button secondary" type="button" id="studio-example">Use example sentence</button></div></form><p class="ai-fineprint">Synthetic speech, never a native-speaker recording. Compare with the <a href="#${languageId()}/pronunciation">pronunciation guide</a>. You can also listen from the dictionary, flashcards, chat messages, or selected text on any page.</p></section>`;
     $('speech-text').value = lang.example;
+    const translationToggle = $('studio-translation-toggle');
+    const translation = $('studio-translation');
+    translation.textContent = lang.translation;
+    function hideTranslation() {
+      translation.hidden = true;
+      translationToggle.setAttribute('aria-expanded', 'false');
+      translationToggle.textContent = 'Show English translation';
+    }
+    translationToggle.addEventListener('click', () => {
+      translation.hidden = !translation.hidden;
+      translationToggle.setAttribute('aria-expanded', String(!translation.hidden));
+      translationToggle.textContent = translation.hidden ? 'Show English translation' : 'Hide English translation';
+    });
+    $('speech-text').addEventListener('input', () => {
+      hideTranslation(); translation.textContent = ''; translationToggle.hidden = true;
+    });
     $('studio-settings').addEventListener('click', openSettings);
-    $('studio-example').addEventListener('click', () => { $('speech-text').value = lang.example; });
+    $('studio-example').addEventListener('click', () => {
+      stopSpeech();
+      const example = api.exampleSentence(lang, $('speech-text').value);
+      $('speech-text').value = example.sentence;
+      translation.textContent = example.translation;
+      translationToggle.hidden = false; hideTranslation();
+      announce(`New ${lang.name} example sentence ready. English translation is hidden.`);
+    });
     $('speech-form').addEventListener('submit', event => { event.preventDefault(); speak($('speech-text').value, lang); });
   }
   global.addEventListener('hashchange', () => {
