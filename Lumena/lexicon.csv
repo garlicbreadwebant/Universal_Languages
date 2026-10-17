@@ -1,0 +1,257 @@
+english,lumena,category,notes
+I / me,mi,pronoun,First person singular
+you (singular),ti,pronoun,One addressee
+he / she / it,li,pronoun,Gender-neutral third person singular
+we / us,mu,pronoun,Inclusion of listener unspecified
+you (plural),timu,pronoun,Multiple addressees
+they / them,lu,pronoun,Third person plural
+self,se,pronoun,Refers to subject of current clause
+someone,penu,pronoun/noun,Unspecified person; also person as noun
+this / these,ta,determiner/pronoun,Number specified separately
+that / those,to,determiner/pronoun,Number specified separately
+plural,ma,particle,Before noun; more than one
+some,soma,quantifier,Unspecified subset or amount
+all / every,ala,quantifier,Before noun; ala te for all of a specified group
+few / little quantity,poka,quantifier,Small number or amount
+of / related to,te,relation,Thing followed by related person or thing
+and,ni,connector,Coordinates phrases or clauses
+or,o,connector,Inclusive alternatives
+but,wa,connector,Contrastive coordination
+because,pako,connector,Following clause gives reason
+if,si,connector,Introduces condition before result
+end condition,sipu,particle,Spoken end of condition when needed
+past,pa,particle,Before aspect and predicate
+future,pu,particle,Before aspect and predicate
+ongoing,tu,particle,Progressive aspect
+completed,pe,particle,Completed relative to reference time
+not / no,no,particle,Predicate negation or rejection of proposition
+yes,ya,particle,Affirms proposition; repeat clause after negative questions
+yes/no question,ka,particle,At end of clause
+who,ki,question,Person question in answer position
+what,ke,question,Thing question in answer position
+where,kana,question,Location question in answer position
+when,kama,question,Time question in answer position
+how,kimo,question,Manner question in answer position
+how many / much,kaniti,question,Before noun or alone
+why,kosa,question,Clause-final reason question
+which,kela,question,Before noun
+content clause start,pasi,particle,Opens an embedded proposition
+content clause end,pasu,particle,Closes an embedded proposition
+relative clause start,yasi,particle,Follows the noun phrase being described
+relative clause end,yasu,particle,Closes relative clause
+relative reference,ye,pronoun,Resumes head noun inside its relative clause
+at / in,na,relation,Location; interior versus vicinity supplied by context
+on / above,su,relation,Vertical superior position; contact unspecified
+under,nu,relation,Vertical inferior position
+to / toward,a,relation,Direction or recipient
+from,tawe,relation,Origin
+with,konu,relation,Accompaniment; not an instrument marker
+without,sena,relation,Absence of accompanying item
+for,po,relation,Intended beneficiary or purpose
+using / by means of,pi,relation,Instrument
+between,mita,relation,Follow with coordinated endpoints
+than / compared with,luwa,relation,Comparison standard
+manner marker,me,particle,Marks following description as event manner
+more,pulu,degree,Before description
+most,masi,degree,Before description; specify comparison set
+very,weli,degree,Before description
+equally,sami,degree,Before description; comparison with luwa
+can / able,pote,modal,Ability only; followed by verb
+must / obliged,tewa,modal,Obligation; followed by verb or content clause
+want,wola,modal/verb,Noun object or content clause or bare action verb; bare verb shares subject
+be,esa,verb,Subject plus identity description or location complement
+exist,eki,verb,Existential; followed by existing entity
+see,sewa,verb,Transitive; perceive visually
+hear,suna,verb,Transitive; perceive sound
+look at,luka,verb,Transitive; direct visual attention to
+know,sawa,verb,Transitive; noun or content clause
+understand,kowa,verb,Transitive; object may be contextually omitted
+learn,lena,verb,Transitive; object may be contextually omitted
+teach,letawe,verb,Transitive subject matter; learner with a
+read,leta,verb,Transitive; object may be contextually omitted
+write,lita,verb,Transitive text; recipient with a
+speak / say,tala,verb,Transitive language or content clause; addressee with a
+ask,kesa,verb,Transitive question or content clause; addressee with a
+eat,numa,verb,Transitive; food object may be omitted
+drink,sipa,verb,Transitive; drink object may be omitted
+go,wata,verb,Intransitive; destination with a
+come,wena,verb,Intransitive; destination with a
+walk,pala,verb,Intransitive; destination with a
+run,yuma,verb,Intransitive; destination with a
+sleep,somi,verb,Intransitive
+sit,sita,verb,Intransitive
+stand,tana,verb,Intransitive
+stay,wesa,verb,Intransitive; location with na
+live / be alive,wita,verb,Intransitive
+die,mola,verb,Intransitive
+help,sama,verb,Transitive person; task with po and content clause
+love,ama,verb,Transitive person or thing
+like / enjoy,liwa,verb,Transitive person thing or content clause
+need,neta,verb,Transitive noun or content clause
+have / possess,awa,verb,Transitive possessed item
+give,pana,verb,Transitive thing; recipient with a
+take,tekawe,verb,Transitive thing; source with tawe
+bring,puna,verb,Transitive thing; destination with a
+make / cause,pami,verb,Transitive product or content clause for caused event
+use,usa,verb,Transitive thing used
+work,lawo,verb,Intransitive; task with po
+open,opa,verb,Transitive object opened
+close,kosawe,verb,Transitive object closed
+begin,inia,verb,Intransitive; event as subject
+finish,pina,verb,Intransitive; event as subject
+allow,lasi,verb,Transitive person; permitted action with a and content clause
+choose,sela,verb,Transitive chosen item
+buy,koma,verb,Transitive item; seller with tawe
+sell,wema,verb,Transitive item; buyer with a
+find,nowa,verb,Transitive thing found
+lose,lusa,verb,Transitive thing lost
+remember,mema,verb,Transitive item or content clause
+forget,poma,verb,Transitive item or content clause
+think,pesa,verb,Transitive content clause
+feel,seti,verb,Transitive sensation or content clause
+wait,wati,verb,Intransitive; awaited person or event with po
+touch,toki,verb,Transitive touched entity
+cut,kata,verb,Transitive object cut
+become,wila,verb,Subject plus resulting description or noun
+person,pela,noun,Individual human; penu also means unspecified person
+child,nila,noun,Young human; no gender implied
+parent,paliwe,noun,Parent or caregiver; specify relationship when needed
+mother,mama,noun,Mother as social or parental identity
+father,papa,noun,Father as social or parental identity
+sibling,sipi,noun,Sibling of any gender
+family,pamiwe,noun,Family group; composition unspecified
+friend,ami,noun,Person in friendly relationship
+body,kopa,noun,Physical body
+head,kapa,noun,Body part
+eye,oka,noun,Organ of sight
+ear,ona,noun,Organ of hearing
+mouth,muka,noun,Body part
+hand,mana,noun,Body part
+foot,peta,noun,Body part
+heart,kati,noun,Body organ; not automatically an emotion metaphor
+skin,sika,noun,Body covering
+water,aku,noun,Water substance
+food,nupa,noun,Edible nourishment
+air,awi,noun,Air substance
+fire,api,noun,Combustion
+earth / soil,tela,noun,Ground material; not planet name
+sun,sola,noun,Star providing local daylight
+moon,luna,noun,Natural satellite
+star,seteli,noun,Astronomical star
+sky,seli,noun,Apparent sky
+rain,puwi,noun,Rainfall
+river,liwawe,noun,Flowing natural watercourse
+sea,mali,noun,Large saltwater body
+mountain,mota,noun,Elevated landform
+tree,ali,noun,Woody plant
+plant,paliyo,noun,Living plant
+animal,sunawe,noun,Nonhuman animal in everyday usage
+bird,wiki,noun,Bird
+fish,pisi,noun,Fish
+stone,pete,noun,Rock material or piece
+house / home,tama,noun,Dwelling; household membership supplied by context
+room,kami,noun,Interior room
+door,tola,noun,Door
+book,puka,noun,Book
+paper,pape,noun,Paper material
+clothing,panu,noun,Garment or clothing material
+tool,nala,noun,Implement for a task
+road / path,luta,noun,Route for travel
+city,ula,noun,Urban settlement
+country,nati,noun,Political country; not rural countryside
+world,muni,noun,World; domain supplied by context
+place,loka,noun,Location
+time,temi,noun,Time
+day,tiya,noun,Day; calendar or daylight sense specified by context
+night,noki,noun,Nighttime
+week,sema,noun,Seven-day period
+month,mesi,noun,Calendar month; specify calendar
+year,yaliwe,noun,Calendar year; specify calendar
+name,nami,noun,Name or label
+word,woki,noun,Word
+language,nalawe,noun,Human language
+idea,itea,noun,Thought or proposal
+life,witi,noun,Life or living duration
+money,moni,noun,Money; currency unspecified
+number,namiwe,noun,Numeric value
+question,kesi,noun,Question
+answer,tali,noun,Answer
+problem,polema,noun,Problem requiring attention
+good,pona,description,Positive evaluation
+bad,mala,description,Negative evaluation
+large,wala,description,Large size
+small,pika,description,Small size
+long,lona,description,Long extent or duration
+short,petawe,description,Short extent or duration
+new,nowi,description,Not previously used or recently introduced
+old (age),wepa,description,Advanced age
+former,aniti,description,Earlier status; not necessarily aged
+hot,wota,description,High temperature
+cold,kola,description,Low temperature
+clean,pula,description,Free of relevant dirt
+dirty,tuta,description,Containing relevant dirt
+easy,lisa,description,Low difficulty
+difficult,tula,description,High difficulty
+fast,yapa,description,High speed
+slow,senu,description,Low speed
+happy,yomi,description,Experiencing happiness
+sad,sati,description,Experiencing sadness
+ill,mela,description,Unwell
+healthy,somawe,description,In good health
+strong,pota,description,High strength
+weak,pema,description,Low strength
+true,wela,description,Factually true
+false,ela,description,Factually false
+same,sana,description,Identical with respect to stated criterion
+different,tipa,description,Different with respect to stated criterion
+important,kawi,description,High relevance or consequence
+beautiful,pelawe,description,Aesthetic approval
+full,punawe,description,Filled to relevant capacity
+empty,waka,description,Containing none of relevant contents
+red,luti,description,Color term; boundaries to be evaluated
+yellow,yela,description,Color term; boundaries to be evaluated
+green,weti,description,Color term; boundaries to be evaluated
+blue,lupi,description,Color term; boundaries to be evaluated
+black,nilawe,description,Color term
+white,alapa,description,Color term
+near,nela,description,Small distance
+far,palawe,description,Large distance
+here,ena,adverb,At speaker's contextually indicated location
+there,tona,adverb,At contextually indicated other location
+now,nuna,adverb,At current reference moment
+yesterday,pati,adverb,Day before local current day
+today,nuti,adverb,Local current day
+tomorrow,puti,adverb,Day after local current day
+always,alate,adverb,At every relevant occasion
+sometimes,sote,adverb,At some relevant occasions
+never,note,adverb,At no relevant occasion; not a second negation
+before,ate,relation,Earlier than the following time or event
+after,apo,relation,Later than the following time or event
+inside,nina,description,In the interior
+outside,pola,description,Outside the relevant boundary
+left,lewa,description,Left direction in stated frame of reference
+right,yewa,description,Right direction in stated frame of reference
+zero,suno,number,0
+one,una,number,1
+two,tuli,number,2
+three,sani,number,3
+four,peka,number,4
+five,lima,number,5
+six,noku,number,6
+seven,sepi,number,7
+eight,watu,number,8
+nine,yune,number,9
+ten,teka,number,10
+hundred,seta,number,100
+thousand,mila,number,1000
+digit sequence,nume,particle,Read following digits separately
+decimal point,puto,particle,Followed by individual fractional digits
+negative number,neka,particle,Before number
+divided by,suli,particle,Between numerator and denominator
+ordinal marker,noli,particle,Before cardinal number
+hello,sali,phrase,Greeting
+goodbye,watiwe,phrase,Farewell
+please,pali,phrase,Before command
+thank you,tani,phrase,Gratitude
+you are welcome,yali,phrase,Response to gratitude
+sorry,pata,phrase,Apology; explain situation if needed

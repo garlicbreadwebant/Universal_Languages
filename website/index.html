@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Lumena and Narela: two constructed languages, with searchable dictionaries, pronunciation guides, grammar, and lessons.">
+  <meta name="color-scheme" content="light">
+  <title>Language Library · Lumena & Narela</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Language library navigation">
+      <a class="brand" href="#lumena/overview" aria-label="Language Library home"><span class="brand-icon" aria-hidden="true">a<span>↗</span></span><span>Language<br>Library<span class="brand-caption">WORDS BRING US CLOSER</span></span></a>
+      <p class="nav-label">YOUR EXPLORATION</p>
+      <nav id="navigation" aria-label="Reference pages">
+        <a data-page="overview" href="#lumena/overview"><span aria-hidden="true">◉</span> Overview</a>
+        <a data-page="dictionary" href="#lumena/dictionary"><span aria-hidden="true">Aa</span> Dictionary</a>
+        <a data-page="pronunciation" href="#lumena/pronunciation"><span aria-hidden="true">◌</span> Pronunciation</a>
+        <a data-page="grammar" href="#lumena/grammar"><span aria-hidden="true">≡</span> Grammar</a>
+        <a data-page="lessons" href="#lumena/lessons"><span aria-hidden="true">↗</span> First lessons</a>
+        <a data-page="design" href="#lumena/design"><span aria-hidden="true">◇</span> Design notes</a>
+        <a data-page="changelog" href="#lumena/changelog"><span aria-hidden="true">↺</span> Changelog</a>
+      </nav>
+      <div class="sidebar-note"><span class="small-dot" aria-hidden="true"></span> A work in progress<p>Two language prototypes.<br>One place to explore.</p><a href="../README.md">Workspace documentation ↗</a></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span class="breadcrumb">THE LANGUAGE COLLECTION <span aria-hidden="true">/</span> <strong id="current-language">Lumena</strong></span><div class="language-switch" role="group" aria-label="Choose language"><button type="button" data-language="lumena" aria-pressed="true">Lumena</button><button type="button" data-language="narela" aria-pressed="false">Narela</button></div></header>
+      <main id="main" tabindex="-1"><noscript><h1>Explore the languages</h1><p>Enable JavaScript for the interactive library, or read the <a href="../Lumena/README.md">Lumena guides</a> and <a href="../Narela/README.md">Narela guides</a>.</p></noscript></main>
+      <footer><span>Made for curious minds. Built for connection.</span><span>Language prototypes · Edition 0.1</span></footer>
+    </div>
+  </div>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>

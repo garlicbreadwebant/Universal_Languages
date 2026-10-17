@@ -1,0 +1,239 @@
+english,narela,category,notes
+a / an,un,grammar,Indefinite article
+all / every,ala,grammar,Before noun
+and,an,grammar,Connects words or clauses
+because,beko,grammar,Introduces a reason
+but,ba,grammar,Contrast
+can / be able to,pote,grammar,Before verb
+future / will,fu,grammar,Tense marker
+he / she / it,li,grammar,Gender-neutral singular
+I / me,mi,grammar,First person singular
+if,si,grammar,Conditional
+must / have to,deve,grammar,Before verb
+no / not,no,grammar,Negative answer or negation
+of / possessive link,de,grammar,Thing + de + owner
+ongoing action,du,grammar,Aspect marker
+or,o,grammar,Alternatives
+past,pa,grammar,Tense marker
+question marker,ka,grammar,End of yes/no question
+self,se,grammar,Reflexive object
+some,soma,grammar,Before noun
+that / those,to,grammar,Noun marks plural
+the,la,grammar,Definite article
+they / them,lin,grammar,Third person plural
+this / these,ta,grammar,Noun marks plural
+we / us,min,grammar,First person plural
+yes,ya,grammar,Affirmative answer
+you,ti,grammar,Singular
+you all,tin,grammar,Plural
+above / over,su,question/relation/time,Starter sense: above / over
+after,apo,question/relation/time,Starter sense: after
+at / in,na,question/relation/time,Starter sense: at / in
+before,pre,question/relation/time,Starter sense: before
+below / under,suba,question/relation/time,Starter sense: below / under
+between,bina,question/relation/time,Starter sense: between
+far,fara,question/relation/time,Starter sense: far
+for / intended for,por,question/relation/time,Starter sense: for / intended for
+from,da,question/relation/time,Starter sense: from
+here,hena,question/relation/time,Starter sense: here
+how,komo,question/relation/time,Starter sense: how
+how many / how much,kanti,question/relation/time,Starter sense: how many / how much
+inside,nina,question/relation/time,Starter sense: inside
+left (direction),leva,question/relation/time,Starter sense: left (direction)
+near,nera,question/relation/time,Starter sense: near
+now,nuna,question/relation/time,Starter sense: now
+on / on top of,sura,question/relation/time,Starter sense: on / on top of
+outside,fora,question/relation/time,Starter sense: outside
+right (direction),reva,question/relation/time,Starter sense: right (direction)
+there,hona,question/relation/time,Starter sense: there
+through,tru,question/relation/time,Starter sense: through
+to / toward,a,question/relation/time,Starter sense: to / toward
+today,nudi,question/relation/time,Starter sense: today
+tomorrow,fudi,question/relation/time,Starter sense: tomorrow
+what,ke,question/relation/time,Starter sense: what
+when,kama,question/relation/time,Starter sense: when
+where,kana,question/relation/time,Starter sense: where
+which,kela,question/relation/time,Starter sense: which
+who,ki,question/relation/time,Starter sense: who
+why,kora,question/relation/time,Starter sense: why
+with,kon,question/relation/time,Starter sense: with
+without,sena,question/relation/time,Starter sense: without
+yesterday,padi,question/relation/time,Starter sense: yesterday
+ask,kesa,verb,Starter sense: ask
+be / am / is / are,esa,verb,Starter sense: be / am / is / are
+become,vira,verb,Starter sense: become
+begin / start,inia,verb,Starter sense: begin / start
+bring,bura,verb,Starter sense: bring
+buy,koma,verb,Starter sense: buy
+choose,sela,verb,Starter sense: choose
+close / shut,klosa,verb,Starter sense: close / shut
+come,vena,verb,Starter sense: come
+die,mora,verb,Starter sense: die
+do / make,fena,verb,Starter sense: do / make
+drink,sipa,verb,Starter sense: drink
+eat,numa,verb,Starter sense: eat
+end / finish,fina,verb,Starter sense: end / finish
+exist / there is,exi,verb,Starter sense: exist / there is
+feel,senti,verb,Starter sense: feel
+find,trova,verb,Starter sense: find
+forget,foga,verb,Starter sense: forget
+give,dona,verb,Starter sense: give
+go,vada,verb,Starter sense: go
+have / own,hava,verb,Starter sense: have / own
+hear,suna,verb,Starter sense: hear
+help,hela,verb,Starter sense: help
+know,sava,verb,Starter sense: know
+learn,lena,verb,Starter sense: learn
+like / enjoy,liva,verb,Starter sense: like / enjoy
+live / be alive,vita,verb,Starter sense: live / be alive
+look at,luka,verb,Starter sense: look at
+lose,lusa,verb,Starter sense: lose
+love,ama,verb,Starter sense: love
+need,neda,verb,Starter sense: need
+open,opa,verb,Starter sense: open
+read,reda,verb,Starter sense: read
+remember,mema,verb,Starter sense: remember
+run,ruma,verb,Starter sense: run
+say / speak,tala,verb,Starter sense: say / speak
+see,seva,verb,Starter sense: see
+sell,vema,verb,Starter sense: sell
+sit,sida,verb,Starter sense: sit
+sleep,somi,verb,Starter sense: sleep
+stand,stana,verb,Starter sense: stand
+stay / remain,resta,verb,Starter sense: stay / remain
+take,teka,verb,Starter sense: take
+teach,lera,verb,Starter sense: teach
+think,pensa,verb,Starter sense: think
+understand,kova,verb,Starter sense: understand
+use,uza,verb,Starter sense: use
+wait,wata,verb,Starter sense: wait
+walk,pala,verb,Starter sense: walk
+want,vola,verb,Starter sense: want
+work,labora,verb,Starter sense: work
+write,rita,verb,Starter sense: write
+air,avi,noun,Starter sense: air
+animal,zuna,noun,Starter sense: animal
+arm,brana,noun,Starter sense: arm
+back (body),dorsa,noun,Starter sense: back (body)
+bird,vila,noun,Starter sense: bird
+body,korpa,noun,Starter sense: body
+book,buki,noun,Starter sense: book
+child,nili,noun,Starter sense: child
+city / town,urba,noun,Starter sense: city / town
+clothing,vesti,noun,Starter sense: clothing
+country / nation,nati,noun,Starter sense: country / nation
+day,dia,noun,Starter sense: day
+door,dora,noun,Starter sense: door
+earth / soil,tera,noun,Starter sense: earth / soil
+eye,oka,noun,Starter sense: eye
+face,fasa,noun,Starter sense: face
+family,fami,noun,Starter sense: family
+father,papa,noun,Starter sense: father
+fire,afi,noun,Starter sense: fire
+fish,pisi,noun,Starter sense: fish
+food,nupa,noun,Starter sense: food
+foot,peda,noun,Starter sense: foot
+friend,amri,noun,Starter sense: friend
+hand,mana,noun,Starter sense: hand
+head,kapa,noun,Starter sense: head
+heart,kardi,noun,Starter sense: heart
+home / house,doma,noun,Starter sense: home / house
+idea,idea,noun,Starter sense: idea
+language,nara,noun,Starter sense: language
+life,viti,noun,Starter sense: life
+light,lumi,noun,Starter sense: light
+man,manu,noun,Starter sense: man
+money,moni,noun,Starter sense: money
+month,mesi,noun,Starter sense: month
+moon,luna,noun,Starter sense: moon
+mother,mama,noun,Starter sense: mother
+mountain,monta,noun,Starter sense: mountain
+mouth,buka,noun,Starter sense: mouth
+name,nami,noun,Starter sense: name
+night,noki,noun,Starter sense: night
+parent,pari,noun,Starter sense: parent
+person / human,mira,noun,Starter sense: person / human
+place,loka,noun,Starter sense: place
+rain,pluvi,noun,Starter sense: rain
+river,riva,noun,Starter sense: river
+road / path,ruta,noun,Starter sense: road / path
+sea,mari,noun,Starter sense: sea
+sibling,sibi,noun,Starter sense: sibling
+sky,seli,noun,Starter sense: sky
+star,steli,noun,Starter sense: star
+stone,petra,noun,Starter sense: stone
+sun,sola,noun,Starter sense: sun
+thing / object,tini,noun,Starter sense: thing / object
+time,temi,noun,Starter sense: time
+tree,arbi,noun,Starter sense: tree
+water,aku,noun,Starter sense: water
+way / method,meti,noun,Starter sense: way / method
+week,sema,noun,Starter sense: week
+woman,femi,noun,Starter sense: woman
+word,voki,noun,Starter sense: word
+world,mundi,noun,Starter sense: world
+year,yari,noun,Starter sense: year
+always,altem,description/adverb,Starter sense: always
+bad,mala,description/adverb,Starter sense: bad
+beautiful,bela,description/adverb,Starter sense: beautiful
+big / large,bala,description/adverb,Starter sense: big / large
+black,nigra,description/adverb,Starter sense: black
+blue,blu,description/adverb,Starter sense: blue
+clean,pura,description/adverb,Starter sense: clean
+cold,kolda,description/adverb,Starter sense: cold
+different,difa,description/adverb,Starter sense: different
+difficult,dura,description/adverb,Starter sense: difficult
+dirty,duta,description/adverb,Starter sense: dirty
+easy,lisa,description/adverb,Starter sense: easy
+empty,vaka,description/adverb,Starter sense: empty
+fast / quickly,rapa,description/adverb,Starter sense: fast / quickly
+few / little (quantity),poka,description/adverb,Starter sense: few / little (quantity)
+full,plena,description/adverb,Starter sense: full
+good / well,bona,description/adverb,Starter sense: good / well
+green,verdi,description/adverb,Starter sense: green
+happy,hapi,description/adverb,Starter sense: happy
+hot,hotha,description/adverb,Starter sense: hot
+important,gravi,description/adverb,Starter sense: important
+long,longa,description/adverb,Starter sense: long
+many / much,multa,description/adverb,Starter sense: many / much
+more,plu,description/adverb,Starter sense: more
+most (comparison),maxi,description/adverb,Starter sense: most (comparison)
+never,notem,description/adverb,Starter sense: never
+new,nova,description/adverb,Starter sense: new
+old (age),vefa,description/adverb,Starter sense: old (age)
+old / former (not new),anti,description/adverb,Starter sense: old / former (not new)
+only,soli,description/adverb,Starter sense: only
+red,rudi,description/adverb,Starter sense: red
+sad,sadi,description/adverb,Starter sense: sad
+same,sama,description/adverb,Starter sense: same
+short,breva,description/adverb,Starter sense: short
+sick / ill,mela,description/adverb,Starter sense: sick / ill
+slow / slowly,lenta,description/adverb,Starter sense: slow / slowly
+small,pika,description/adverb,Starter sense: small
+sometimes,sotem,description/adverb,Starter sense: sometimes
+strong,forta,description/adverb,Starter sense: strong
+true / correct,vera,description/adverb,Starter sense: true / correct
+very,veri,description/adverb,Starter sense: very
+weak,fema,description/adverb,Starter sense: weak
+white,alba,description/adverb,Starter sense: white
+wrong / incorrect,erra,description/adverb,Starter sense: wrong / incorrect
+yellow,yela,description/adverb,Starter sense: yellow
+zero,nul,number,Starter sense: zero
+one,en,number,Starter sense: one
+two,do,number,Starter sense: two
+three,tri,number,Starter sense: three
+four,kat,number,Starter sense: four
+five,pen,number,Starter sense: five
+six,ses,number,Starter sense: six
+seven,sep,number,Starter sense: seven
+eight,ok,number,Starter sense: eight
+nine,nev,number,Starter sense: nine
+ten,des,number,Starter sense: ten
+hundred,sent,number,Starter sense: hundred
+thousand,mil,number,Starter sense: thousand
+excuse me / sorry,parda,phrase,Starter sense: excuse me / sorry
+goodbye,vadi,phrase,Starter sense: goodbye
+hello,sali,phrase,Starter sense: hello
+please,pali,phrase,Starter sense: please
+thank you,dani,phrase,Starter sense: thank you
+you're welcome,yali,phrase,Starter sense: you're welcome
