@@ -2,6 +2,7 @@
 
 ## October 17, 2026 — Learner experience and project policies
 
+- Restored the floating chat companion toolbar on phone and desktop layouts, with footer clearance and separate speech-player positioning.
 - Added a mobile navigation menu, larger touch controls, readable form text, and responsive learner layouts while retaining the paper-and-green theme.
 - Combined English translation actions: reuse an existing translation without an API call, or request an OpenAI translation for edited text.
 - Added English-to-Lumena and English-to-Narela translation with a separate English input and review notes.

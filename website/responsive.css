@@ -22,10 +22,11 @@ main{padding:28px 5% 45px;min-width:0}.hero{grid-template-columns:1fr}.explore-g
 #navigation a span{width:22px;flex-shrink:0}#navigation a[aria-current=page]{border-color:#c6d7c0}
 .topbar{padding:12px 5%;min-height:70px;gap:10px}.language-switch button{font-size:14px;padding:8px 14px;min-width:80px}
 .breadcrumb{font-size:0}.breadcrumb>span{display:none}.breadcrumb strong{font-size:14px}
-.ai-tools{position:static;transform:none;max-width:760px;margin:0 auto 22px;justify-content:center;flex-wrap:wrap;width:90%;padding:8px;box-shadow:none}
-.ai-tools button,.ai-tools a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;font-size:13px;padding:10px 12px}
-.speech-player{bottom:max(12px,env(safe-area-inset-bottom));max-height:45dvh;overflow:auto}
-footer{flex-direction:column;align-items:stretch;gap:16px;padding:24px 5% 28px;font-size:12px}
+.ai-tools{position:fixed;z-index:15;left:auto;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));transform:none;max-width:420px;margin:0;justify-content:center;flex-wrap:nowrap;width:calc(100% - 24px);padding:6px;box-shadow:0 6px 28px #203b3526}
+.ai-tools button,.ai-tools a{display:inline-flex;align-items:center;justify-content:center;flex:1 1 auto;min-height:44px;min-width:44px;font-size:12px;padding:10px 8px}
+.speech-player{bottom:calc(96px + env(safe-area-inset-bottom));max-height:45dvh;overflow:auto}
+.chat-active .speech-player{bottom:max(12px,env(safe-area-inset-bottom))}
+footer{flex-direction:column;align-items:stretch;gap:16px;padding:24px 5% calc(120px + env(safe-area-inset-bottom));font-size:12px}
 .footer-intro{display:grid;gap:4px}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0;padding:0;overflow:visible}
 .footer-links a{min-height:44px;display:flex;align-items:center;border-radius:6px;padding:8px;font-size:12px;white-space:normal;width:auto}
 .policy-document{max-width:780px}.policy-document h2{font-size:27px}.policy-document a{overflow-wrap:anywhere}

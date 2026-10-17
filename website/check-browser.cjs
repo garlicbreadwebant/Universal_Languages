@@ -235,6 +235,14 @@ async function run() {
       await evaluate(`location.hash = '#narela/${page}'`);
       await until(`document.title.startsWith(${JSON.stringify(title)})`);
       assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), true, `${width}px ${page} has no page overflow`);
+      if (page !== 'chat') {
+        assert.equal(await evaluate("getComputedStyle(document.querySelector('.ai-tools')).position"), 'fixed');
+        const dockTop = await evaluate("document.querySelector('.ai-tools').getBoundingClientRect().top");
+        await evaluate('window.scrollTo(0, document.documentElement.scrollHeight)');
+        assert.equal(await evaluate("document.querySelector('.ai-tools').getBoundingClientRect().top"), dockTop);
+        assert.equal(await evaluate("(() => {const r = document.querySelector('.ai-tools').getBoundingClientRect(); return r.left >= 0 && r.right <= innerWidth && r.bottom <= innerHeight;})()"), true);
+        await evaluate('window.scrollTo(0, 0)');
+      }
       const smallTargets = await evaluate(`Array.from(document.querySelectorAll('button, select, .footer-links a')).filter(el => el.getClientRects().length && !el.closest('dialog:not([open])')).filter(el => {const r = el.getBoundingClientRect(); return r.height < 43.5 || r.width < 43.5;}).map(el => el.id || el.textContent.trim())`);
       assert.deepEqual(smallTargets, [], `${width}px ${page} touch controls are at least 44px`);
       if (page === 'speech' && width <= 390) await command('Page.captureScreenshot', {format: 'png', captureBeyondViewport: true}).then(result => fs.writeFileSync(path.join(root, `learner-speech-${width}.png`), Buffer.from(result.data, 'base64')));
