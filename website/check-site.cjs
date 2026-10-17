@@ -43,7 +43,7 @@ assert(markdown('| Word | Meaning |\n|---|---|\n| aku | water |', 'lumena').incl
 assert(markdown('1. First\n2. Second', 'narela').includes('<ol><li>First</li><li>Second</li></ol>'));
 const index = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
 for (const match of index.matchAll(/(?:src|href)="([^"]+)"/g)) {
-  if (match[1].startsWith('#')) continue;
+  if (/^(#|https?:\/\/)/.test(match[1])) continue;
   assert(fs.existsSync(path.resolve(__dirname, match[1])), `Local asset/link exists: ${match[1]}`);
 }
 for (const name of ['app.js', 'data.js', 'build-data.cjs', 'check-site.cjs']) execFileSync(process.execPath, ['--check', path.join(__dirname, name)]);

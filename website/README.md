@@ -24,4 +24,8 @@ Use node website/build-data.cjs --check to detect a stale snapshot without writi
 - build-data.cjs: standard-library-only content builder.
 - check-site.cjs: source and behavior checks.
 
-Layout uses system fonts and CSS shapes. There are no external services, tracking, accounts, or dependencies. Local preview and publication are optional; this deliverable is a local website.
+Layout uses system fonts and CSS shapes. There are no external runtime services, tracking, accounts, or dependencies.
+
+## GitHub Pages
+
+`node website/build-site.cjs` stages public assets and language references in `.site-build/`, with paths adjusted for hosting at the repository URL. GitHub Actions runs validation and builds this directory before publishing it through GitHub Pages. Pull requests run the same checks without deploying. Keep Pages configured to use GitHub Actions.
