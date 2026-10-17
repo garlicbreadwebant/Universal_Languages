@@ -4,7 +4,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const out = path.join(root, '.site-build');
 fs.mkdirSync(out, {recursive: true});
-for (const name of ['index.html', 'styles.css', 'app.js', 'data.js', 'favicon.svg']) {
+for (const name of ['index.html', 'styles.css', 'ai.css', 'app.js', 'data.js', 'ai-client.js', 'ai-ui.js', 'favicon.svg']) {
   fs.copyFileSync(path.join(__dirname, name), path.join(out, name));
 }
 for (const name of ['Lumena', 'Narela']) {

@@ -29,6 +29,43 @@ for (const [id, lang] of Object.entries(data)) {
   }
 }
 assert.deepEqual(parseRoute('#narela/grammar', data), {language: 'narela', page: 'grammar'});
+for (const language of Object.keys(data)) {
+  assert.deepEqual(parseRoute(`#${language}/flashcards`, data), {language, page: 'flashcards'});
+  const elements = new Map();
+  const element = id => {
+    if (!elements.has(id)) elements.set(id, {value: '', hidden: false, dataset: {}, listeners: {}, attributes: {},
+      addEventListener(type, listener) { this.listeners[type] = listener; },
+      setAttribute(key, value) { this.attributes[key] = value; },
+      querySelector() { return null; }});
+    return elements.get(id);
+  };
+  element('flashcard-direction').value = 'word';
+  const browser = {LANGUAGE_DATA: data, document: {getElementById: element, querySelectorAll: () => []}, addEventListener() {}};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'app.js'), 'utf8'), {window: browser, document: browser.document, location: {hash: `#${language}/flashcards`}});
+  const click = id => element(id).listeners.click();
+  assert.equal(element('flashcard-prompt').textContent, data[language].entries[0].word);
+  assert.equal(element('flashcard-answer').hidden, true);
+  click('flashcard-reveal');
+  assert.equal(element('flashcard-answer').hidden, false);
+  assert.equal(element('flashcard-translation').textContent, data[language].entries[0].english);
+  click('flashcard-next');
+  assert.equal(element('flashcard-answer').hidden, true);
+  assert.equal(element('flashcard-prompt').textContent, data[language].entries[1].word);
+  click('flashcard-previous');
+  click('flashcard-previous');
+  assert.equal(element('flashcard-prompt').textContent, data[language].entries.at(-1).word);
+  const category = data[language].entries[0].category;
+  element('flashcard-category').value = category;
+  element('flashcard-category').listeners.change();
+  const subset = data[language].entries.filter(entry => entry.category === category);
+  assert.equal(element('flashcard-progress').textContent, `Card 1 of ${subset.length}`);
+  element('flashcard-direction').value = 'english';
+  element('flashcard-direction').listeners.change();
+  assert.equal(element('flashcard-prompt').textContent, subset[0].english);
+  click('flashcard-shuffle');
+  assert(subset.some(entry => entry.english === element('flashcard-prompt').textContent));
+  assert.equal(element('flashcard-answer').hidden, true);
+}
 assert.deepEqual(parseRoute('#__proto__/constructor', data), {language: 'lumena', page: 'overview'});
 assert.equal(safeLink('javascript:alert(1)', 'lumena'), null);
 assert.equal(safeLink('//example.com', 'lumena'), null);
@@ -46,5 +83,6 @@ for (const match of index.matchAll(/(?:src|href)="([^"]+)"/g)) {
   if (/^(#|https?:\/\/)/.test(match[1])) continue;
   assert(fs.existsSync(path.resolve(__dirname, match[1])), `Local asset/link exists: ${match[1]}`);
 }
-for (const name of ['app.js', 'data.js', 'build-data.cjs', 'check-site.cjs']) execFileSync(process.execPath, ['--check', path.join(__dirname, name)]);
+for (const name of ['app.js', 'data.js', 'ai-client.js', 'ai-ui.js', 'build-data.cjs', 'check-site.cjs', 'check-ai.cjs']) execFileSync(process.execPath, ['--check', path.join(__dirname, name)]);
+console.log(execFileSync(process.execPath, [path.join(__dirname, 'check-ai.cjs')], {encoding: 'utf8'}).trim());
 console.log('OK: search, filters, routes, all reference pages, safe rendering, source freshness, local assets, and JavaScript syntax.');

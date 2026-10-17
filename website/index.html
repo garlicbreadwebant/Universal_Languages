@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://api.openai.com https://generativelanguage.googleapis.com https://api.anthropic.com; media-src 'self' blob:; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
   <meta name="description" content="Explore Lumena and Narela: two constructed languages, with searchable dictionaries, pronunciation guides, grammar, and lessons.">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#245b45">
@@ -12,7 +14,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Language Library · Lumena & Narela</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ai.css">
   <script src="data.js" defer></script>
+  <script src="ai-client.js" defer></script>
+  <script src="ai-ui.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -24,6 +29,9 @@
       <nav id="navigation" aria-label="Reference pages">
         <a data-page="overview" href="#lumena/overview"><span aria-hidden="true">◉</span> Overview</a>
         <a data-page="dictionary" href="#lumena/dictionary"><span aria-hidden="true">Aa</span> Dictionary</a>
+        <a data-page="flashcards" href="#lumena/flashcards"><span aria-hidden="true">▤</span> Flashcards</a>
+        <a data-page="chat" href="#lumena/chat"><span aria-hidden="true">↗</span> Chat companion</a>
+        <a data-page="speech" href="#lumena/speech"><span aria-hidden="true">♪</span> Read aloud</a>
         <a data-page="pronunciation" href="#lumena/pronunciation"><span aria-hidden="true">◌</span> Pronunciation</a>
         <a data-page="grammar" href="#lumena/grammar"><span aria-hidden="true">≡</span> Grammar</a>
         <a data-page="lessons" href="#lumena/lessons"><span aria-hidden="true">↗</span> First lessons</a>

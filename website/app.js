@@ -1,7 +1,7 @@
 /* Plain JavaScript; all language content is rendered as escaped text. */
 (function (global) {
   'use strict';
-  const pages = {overview: 'Overview', dictionary: 'Dictionary', pronunciation: 'Pronunciation', grammar: 'Grammar', lessons: 'First lessons', design: 'Design notes', changelog: 'Changelog'};
+  const pages = {overview: 'Overview', dictionary: 'Dictionary', flashcards: 'Flashcards', chat: 'Chat companion', speech: 'Read aloud', pronunciation: 'Pronunciation', grammar: 'Grammar', lessons: 'First lessons', design: 'Design notes', changelog: 'Changelog'};
   const documentFiles = {overview: 'README.md', pronunciation: 'PRONUNCIATION.md', grammar: 'GRAMMAR.md', lessons: 'LESSONS.md', design: 'DESIGN.md', changelog: 'CHANGELOG.md'};
   const escape = value => String(value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
   const normalize = value => String(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -79,6 +79,7 @@
   }
   // Pure helpers are exported for the dependency-free checks.
   const helpers = {filterEntries, parseRoute, safeLink, markdown};
+  global.LanguageLibraryMarkdown = markdown;
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   if (!global.document) return;
   const data = global.LANGUAGE_DATA;
@@ -122,6 +123,11 @@
       return;
     }
     result.innerHTML = `<div class="table-scroll" role="region" aria-label="Dictionary results" tabindex="0"><table><caption class="sr-only">English to ${escape(lang.name)} dictionary</caption><thead><tr><th scope="col">English</th><th scope="col">${escape(lang.name)}</th><th scope="col">Category</th><th scope="col">Usage notes</th></tr></thead><tbody>${filtered.slice(start, start + pageSize).map(e => `<tr><td>${escape(e.english)}</td><td class="word-cell">${escape(e.word)}</td><td><span class="category-tag">${escape(e.category)}</span></td><td class="entry-notes">${escape(e.notes)}</td></tr>`).join('')}</tbody></table></div><div class="pagination"><span>${start + 1}–${Math.min(start + pageSize, filtered.length)} of ${filtered.length} entries</span><div><button id="previous-page" type="button" ${pageNumber === 1 ? 'disabled' : ''}>← Previous</button> <span>Page ${pageNumber} of ${totalPages}</span> <button id="next-page" type="button" ${pageNumber === totalPages ? 'disabled' : ''}>Next →</button></div></div>`;
+    if (global.LanguageAI) result.querySelectorAll('.word-cell').forEach((cell, index) => {
+      const listen = document.createElement('button'); listen.type = 'button'; listen.className = 'word-listen';
+      listen.textContent = 'Listen'; listen.dataset.speak = filtered[start + index].word;
+      listen.setAttribute('aria-label', `Listen to ${filtered[start + index].word}`); cell.append(listen);
+    });
     for (const [id, delta] of [['previous-page', -1], ['next-page', 1]]) {
       document.getElementById(id).addEventListener('click', () => {
         pageNumber += delta; renderResults();
@@ -130,8 +136,68 @@
       });
     }
   }
+  function flashcards(lang) {
+    const categories = [...new Set(lang.entries.map(entry => entry.category))].sort();
+    return `<header class="page-header"><p class="eyebrow">A LITTLE PRACTICE, EVERY DAY</p><h1 id="page-title" tabindex="-1">${escape(lang.name)} flashcards</h1><p>Try recalling each word before revealing the answer. Practice the whole dictionary or choose a word category.</p></header>
+      <div class="dictionary-controls"><div class="field"><label for="flashcard-category">Word category</label><select id="flashcard-category"><option value="">All categories</option>${categories.map(value => `<option value="${escape(value)}">${escape(value)}</option>`).join('')}</select></div><div class="field"><label for="flashcard-direction">Show first</label><select id="flashcard-direction"><option value="word">${escape(lang.name)}</option><option value="english">English</option></select></div></div>
+      <section class="flashcard-practice" aria-label="Vocabulary practice"><p id="flashcard-progress" role="status"></p><div class="flashcard"><p class="eyebrow" id="flashcard-prompt-label"></p><p class="flashcard-word" id="flashcard-prompt"></p><button class="button" type="button" id="flashcard-reveal" aria-expanded="false" aria-controls="flashcard-answer">Reveal answer</button><div id="flashcard-answer" hidden><p class="flashcard-translation" id="flashcard-translation"></p><p id="flashcard-notes"></p></div></div><div class="flashcard-actions"><button class="button secondary" type="button" id="flashcard-previous">Previous</button><button class="button secondary" type="button" id="flashcard-shuffle">Shuffle deck</button><button class="button" type="button" id="flashcard-next">Next</button></div></section>`;
+  }
+  function setupFlashcards(lang) {
+    const categorySelect = document.getElementById('flashcard-category');
+    const directionSelect = document.getElementById('flashcard-direction');
+    const reveal = document.getElementById('flashcard-reveal');
+    let deck = lang.entries.slice(), position = 0;
+    function showCard() {
+      const entry = deck[position];
+      const wordFirst = directionSelect.value === 'word';
+      document.getElementById('flashcard-progress').textContent = deck.length ? `Card ${position + 1} of ${deck.length}` : 'No cards in this category.';
+      document.getElementById('flashcard-prompt-label').textContent = entry ? `${wordFirst ? lang.name : 'English'} / ${entry.category}` : '';
+      document.getElementById('flashcard-prompt').textContent = entry ? (wordFirst ? entry.word : entry.english) : 'No cards available';
+      document.getElementById('flashcard-translation').textContent = entry ? (wordFirst ? entry.english : entry.word) : '';
+      document.getElementById('flashcard-notes').textContent = entry ? entry.notes : '';
+      let listen = document.getElementById('flashcard-listen');
+      if (!listen && global.LanguageAI) {
+        listen = document.createElement('button'); listen.id = 'flashcard-listen'; listen.type = 'button';
+        listen.className = 'button secondary'; listen.textContent = 'Listen to word';
+        document.getElementById('flashcard-prompt').after(listen);
+      }
+      if (listen) { listen.dataset.speak = entry ? entry.word : ''; listen.disabled = !entry; }
+      document.getElementById('flashcard-answer').hidden = true;
+      reveal.setAttribute('aria-expanded', 'false');
+      reveal.textContent = 'Reveal answer';
+      reveal.disabled = !entry;
+      for (const id of ['flashcard-previous', 'flashcard-next', 'flashcard-shuffle']) document.getElementById(id).disabled = deck.length < 2;
+    }
+    categorySelect.addEventListener('change', () => {
+      deck = filterEntries(lang.entries, '', categorySelect.value);
+      position = 0; showCard();
+    });
+    directionSelect.addEventListener('change', showCard);
+    reveal.addEventListener('click', () => {
+      const answer = document.getElementById('flashcard-answer');
+      answer.hidden = !answer.hidden;
+      reveal.setAttribute('aria-expanded', String(!answer.hidden));
+      reveal.textContent = answer.hidden ? 'Reveal answer' : 'Hide answer';
+      if (!answer.hidden) announce(document.getElementById('flashcard-translation').textContent);
+    });
+    for (const [id, delta] of [['flashcard-previous', -1], ['flashcard-next', 1]]) {
+      document.getElementById(id).addEventListener('click', () => {
+        position = (position + delta + deck.length) % deck.length;
+        showCard();
+      });
+    }
+    document.getElementById('flashcard-shuffle').addEventListener('click', () => {
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+      position = 0; showCard(); announce('Deck shuffled. Starting at card 1.');
+    });
+    showCard();
+  }
   function render(focus = false) {
     const lang = data[state.language];
+    document.body?.classList?.toggle('chat-active', state.page === 'chat');
     document.title = `${pages[state.page]} · ${lang.name} · Language Library`;
     document.getElementById('current-language').textContent = lang.name;
     document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === state.language)));
@@ -148,6 +214,12 @@
       document.getElementById('category').addEventListener('change', event => { category = event.target.value; pageNumber = 1; renderResults(); });
       document.getElementById('clear-search').addEventListener('click', () => { query = ''; search.value = ''; pageNumber = 1; renderResults(); search.focus(); });
       renderResults();
+    } else if (state.page === 'flashcards') {
+      main.innerHTML = flashcards(lang);
+      setupFlashcards(lang);
+    } else if (state.page === 'chat' || state.page === 'speech') {
+      if (global.LanguageAI) global.LanguageAI[state.page === 'chat' ? 'mountChat' : 'mountSpeech'](main, lang);
+      else main.innerHTML = '<h1 id="page-title" tabindex="-1">AI tools could not load</h1><p>Keep ai-client.js and ai-ui.js beside index.html and reload.</p>';
     } else {
       main.innerHTML = `<p class="eyebrow">${escape(lang.name)} / THE REFERENCE COLLECTION</p><a class="source-link" href="../${lang.name}/${documentFiles[state.page]}">Read the Markdown source ↗</a><article class="document">${markdown(lang.documents[state.page], state.language)}</article>`;
       const title = main.querySelector('h1'); if (title) { title.id = 'page-title'; title.tabIndex = -1; }
