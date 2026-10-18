@@ -17,14 +17,17 @@ const rows = source.map((line, i) => {
 const words = new Set();
 const english = new Set();
 for (const row of rows) {
-  if (words.has(row.narela)) errors.push(`Duplicate Narela word: ${row.narela}`);
   if (english.has(row.english)) errors.push(`Duplicate English headword: ${row.english}`);
   words.add(row.narela); english.add(row.english);
-  if (!/^[abdefghiklmnoprstuvwxyz]+$/.test(row.narela)) errors.push(`Invalid native spelling: ${row.narela}`);
+  // Shared English senses may translate to the same word. Validate every phrase component.
+  for (const token of row.narela.split(/(?: \/ |[ -])/).filter(Boolean)) {
+    if (token === 'Esperanto') continue; // Borrowed proper name; not a native root.
+    if (!/^[abdefghiklmnoprstuvwxyz]+$/.test(token.toLowerCase())) errors.push(`Invalid native spelling: ${token}`);
+  }
 }
 function render(reverse) {
   const title = reverse ? 'Narela to English Dictionary' : 'English to Narela Dictionary';
-  const lines = [`# ${title}`, '', 'Narela 0.1 — October 17, 2026', '',
+  const lines = [`# ${title}`, '', `Narela ${require('../../versions.json').languages.narela} — October 18, 2026`, '',
     'Generated from [lexicon.csv](lexicon.csv). Edit that source and run the checker with `--write`.', '',
     'Meanings are limited by the notes. See [grammar](GRAMMAR.md) and [sentence examples](LESSONS.md).', '',
     reverse ? '| Narela | English | Category | Notes |' : '| English | Narela | Category | Notes |',
@@ -82,5 +85,5 @@ if (errors.length) {
   console.error([...new Set(errors)].join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`OK: ${rows.length} unique entries; native spellings, example words, links, and dictionaries checked.`);
+  console.log(`OK: ${rows.length} English headwords; native spellings, example words, links, and dictionaries checked.`);
 }

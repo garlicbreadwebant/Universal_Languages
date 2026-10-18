@@ -255,3 +255,144 @@ please,pali,phrase,Before command
 thank you,tani,phrase,Gratitude
 you are welcome,yali,phrase,Response to gratitude
 sorry,pata,phrase,Apology; explain situation if needed
+a / an,puka,grammar,No indefinite article; bare puka can mean a book; example noun rather than an article translation
+can / be able to,pote,modal,Ability only; followed by verb; English lookup variant of can / able
+future / will,pu,particle,Before aspect and predicate; English lookup variant of future
+must / have to,tewa,modal,Obligation; followed by verb or content clause; English lookup variant of must / obliged
+no / not,no,particle,Predicate negation or rejection of proposition; English lookup variant of not / no
+of / possessive link,te,relation,Thing followed by related person or thing; English lookup variant of of / related to
+ongoing action,tu,particle,Progressive aspect; English lookup variant of ongoing
+question marker,ka,particle,At end of clause; English lookup variant of yes/no question
+the,puka,grammar,No definite article; bare puka can mean the book in context; use ta puka to identify this book
+you,ti,pronoun,One addressee; English lookup variant of you (singular)
+you all,timu,pronoun,Multiple addressees; English lookup variant of you (plural)
+above / over,su,relation,Vertical superior position; contact unspecified; English lookup variant of on / above
+below / under,nu,relation,Vertical inferior position; English lookup variant of under
+for / intended for,po,relation,Intended beneficiary or purpose; English lookup variant of for
+how many / how much,kaniti,question,Before noun or alone; English lookup variant of how many / much
+left (direction),lewa,description,Left direction in stated frame of reference; English lookup variant of left
+on / on top of,su,relation,On or above; contact is not encoded; add toki when contact matters; English lookup variant of on
+right (direction),yewa,description,Right direction in stated frame of reference; English lookup variant of right
+through,natu,relation,Through an interior or passage; mi wata natu tama
+be / am / is / are,esa,verb,Subject plus identity description or location complement; English lookup variant of be
+begin / start,inia,verb,Intransitive; event as subject; English lookup variant of begin
+close / shut,kosawe,verb,Transitive object closed; English lookup variant of close
+do / make,pami,verb,Transitive product or content clause for caused event; English lookup variant of make / cause
+end / finish,pina,verb,Intransitive; event as subject; English lookup variant of finish
+exist / there is,eki,verb,Existential; followed by existing entity; English lookup variant of exist
+have / own,awa,verb,Transitive possessed item; English lookup variant of have / possess
+say / speak,tala,verb,Transitive language or content clause; addressee with a; English lookup variant of speak / say
+stay / remain,wesa,verb,Intransitive; location with na; English lookup variant of stay
+arm,manawe,noun,Arm; mi sewa manawe te ti
+back (body),kopana,noun,Rear of torso; kopana te mi
+city / town,ula,noun,Urban settlement; English lookup variant of city
+country / nation,nati,noun,Political country; not rural countryside; English lookup variant of country
+face,kapana,noun,Front of head; kapana te ti
+home / house,tama,noun,Dwelling; household membership supplied by context; English lookup variant of house / home
+light,lumi,noun,Visible light; lumi te sola
+man,wilo,noun,Adult male human; mi sewa wilo
+person / human,pela,noun,Individual human; penu also means unspecified person; English lookup variant of person
+thing / object,ito,noun,Thing or object; mi tekawe ito
+way / method,meti,noun,Method; not a road; meti te lawo
+woman,wina,noun,Adult female human; mi sewa wina
+big / large,wala,description,Large size; English lookup variant of large
+fast / quickly,yapa,description,High speed; English lookup variant of fast
+few / little (quantity),poka,quantifier,Small number or amount; English lookup variant of few / little quantity
+good / well,pona,description,Positive evaluation; English lookup variant of good
+many / much,muli,quantifier,Large number or amount before noun; muli puka
+most (comparison),masi,degree,Before description; specify comparison set; English lookup variant of most
+old / former (not new),aniti,description,Earlier status only; describe age or prior use explicitly when that distinction matters
+only,solo,degree,Restricts the following phrase; solo mi lena
+sick / ill,mela,description,Unwell; English lookup variant of ill
+slow / slowly,senu,description,Low speed; English lookup variant of slow
+true / correct,wela,description,Factually true; English lookup variant of true
+wrong / incorrect,ela,description,False or incorrect in the stated criterion; tali esa ela
+excuse me / sorry,pata,phrase,Apology; explain situation if needed; English lookup variant of sorry
+you're welcome,yali,phrase,Response to gratitude; English lookup variant of you are welcome
+he,li,pronoun,Gender-neutral third person; Lumena does not encode English he versus she
+she,li,pronoun,Gender-neutral third person; specify identity separately if relevant
+it,li,pronoun,Gender-neutral third person or thing
+one / people,penu,pronoun/noun,Unspecified person; not the numeral one
+my,te mi,relation,Possessor phrase after noun; puka te mi
+your,te ti,relation,One addressee; use te timu for multiple addressees
+whether / question marker,ka,particle,At end of clause; English lookup variant of yes/no question
+that (clause),pasi,particle,Opens a content clause; close it with pasu
+in,na,relation,At or in; distinguish interior with an explicit description when needed
+on,su,relation,On or above; contact is not encoded; add toki when contact matters
+over,su,relation,Vertical superior position; contact unspecified; English lookup variant of on / above
+to,a,relation,Direction or recipient; English lookup variant of to / toward
+from / of,tawe / te,relation,Origin versus association or possession
+about,pili,relation,Topic of speech or thought; mi tala pili puka
+before (place or time),ate / na kapana te,relation,Ate is temporal before; spatial phrase literally at the face of
+until,katiwe,relation,Endpoint in time or space; mi wati katiwe puti
+how much,kaniti,question,Before noun or alone; English lookup variant of how many / much
+this (thing),ta,determiner/pronoun,This; number-neutral
+that (thing),to,determiner/pronoun,That; number-neutral
+often,potewe,adverb,On many occasions; mi lena potewe
+also,ani,adverb,In addition; mi ani lena
+already,yami,adverb,Before or by the reference time; mi yami lena
+still / yet,nuki,adverb,Continuation; mi nuki lena
+together,konu,relation,With others; name the companion after konu for precision
+well,me pona,adverb,Manner phrase; mi lawo me pona
+clearly,me kali,adverb,Manner phrase; mi tala me kali
+carefully,me kasi,adverb,Manner phrase; mi kata panu me kasi
+have,awa,verb,Transitive possessed item; English lookup variant of have / possess
+speak,tala,verb,Transitive language or content clause; addressee with a; English lookup variant of speak / say
+say,tala,verb,Transitive language or content clause; addressee with a; English lookup variant of speak / say
+know (a fact),sawa,verb,Transitive; noun or content clause; English lookup variant of know
+know (be acquainted),sawa,verb,Knowing a person or thing; distinguish acquaintance through context
+can / be able,pote,modal,Ability only; followed by verb; English lookup variant of can / able
+live,wita,verb,Intransitive; English lookup variant of live / be alive
+play,lutiwe,verb,Play a game or instrument; mi lutiwe
+like,liwa,verb,Transitive person thing or content clause; English lookup variant of like / enjoy
+ask (a question),kesa,verb,Transitive question or content clause; addressee with a; English lookup variant of ask
+repeat,lati,verb,Say or do again; mi lati woki
+big,wala,description,Large size; English lookup variant of large
+old (not new),nowipa,description,Previously used or no longer new; puka nowipa
+young,yuni,description,Early in life; nila yuni
+clear,kali,description,Clear in perception or meaning; woki kali
+other,aliwe,description,Another or other; puka aliwe
+Esperanto,Esperanto,noun,Borrowed proper language name; mi lena Esperanto
+sentence,talawe,noun,Sentence of language; talawe te Lumena
+school,tama-lena,noun,Head-first compound: learning house; mi wata a tama-lena
+teacher,penu-letawe,noun,Head-first compound: teaching person; penu-letawe letawe Lumena
+student,penu-lena,noun,Head-first compound: learning person; penu-lena lena
+house,tama,noun,Dwelling; household membership supplied by context; English lookup variant of house / home
+window,poni,noun,Window in a building; poni te tama
+table,tapula,noun,Table furniture; puka esa su tapula
+chair,sitawe,noun,Chair; mi sita na sitawe
+garden,tamali,noun,Cultivated garden; ali esa na tamali
+country (land),nati,noun,Political country; not rural countryside; English lookup variant of country
+road,luta,noun,Route for travel; English lookup variant of road / path
+bread,panawe,noun,Bread; mi numa panawe
+fruit,pumi,noun,Fruit; mi numa pumi
+apple,pomi,noun,Apple fruit; mi numa pomi
+milk,miliki,noun,Milk; mi sipa miliki
+tea,teya,noun,Tea drink; mi sipa teya
+coffee,kapi,noun,Coffee drink; mi sipa kapi
+salt,saliwe,noun,Edible salt; saliwe esa na nupa
+earth (soil),tela,noun,Ground material; not planet name; English lookup variant of earth / soil
+flower,puli,noun,Flower; mi sewa puli
+dog,kuni,noun,Dog; kuni numa
+cat,katiyo,noun,Cat; katiyo somi
+morning,matina,noun,Morning; mi lena na matina
+evening,wesela,noun,Evening; mi somi na wesela
+hour,ola,noun,Hour; una ola
+health,saniwe,noun,State of health; saniwe te mi
+peace,pasiwe,noun,Peace; absence of conflict; mu wola pasiwe
+music,musiki,noun,Music; mi suna musiki
+answer (noun),tali,noun,Answer; English lookup variant of answer
+goal,selawe,noun,Aim or target; selawe te mi
+choir,kolali,noun,Group of singers; mi suna kolali
+newspaper,puka-nuti,noun,Head-first compound: today book; conventional sense newspaper
+condition,siwe,noun,A condition; siwe te lawo
+related,tewe,description,Related; ito tewe
+reference,yena,noun,A reference; yena te puka
+manner,melawe,noun,Manner; melawe te lawo
+sequence,namiwe-luta,noun,Head-first compound: number path; ordered sequence
+digit,namiwe,noun,Numeric digit in context; also numeric value
+decimal,putowe,description,Decimal; namiwe putowe
+point,putona,noun,Point or dot; putona na pape
+negative,nekawe,description,Below zero; namiwe nekawe
+minus,neka,particle,Before a number to make it negative
+divide,suli,particle,Divided by between quantities; una suli tuli

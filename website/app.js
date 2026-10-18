@@ -18,7 +18,7 @@
     try { decoded = decodeURIComponent(target); } catch { return null; }
     if (/^https?:\/\//i.test(decoded)) return decoded;
     if (/^[a-z]+:/i.test(decoded) || decoded.startsWith('//') || decoded.includes('\\')) return null;
-    const cross = decoded.match(/^\.\.\/(Lumena|Narela)\/([^#]+)$/);
+    const cross = decoded.match(/^\.\.\/(Lumena|Narela|Esperanto|Taluma)\/([^#]+)$/);
     const owner = cross ? cross[1].toLowerCase() : language;
     const file = cross ? cross[2] : decoded;
     const sitePage = { 'privacy.md': 'privacy', 'cookies.md': 'cookies', 'terms.md': 'terms', 'changelog.md': 'updates' }[file];
@@ -26,7 +26,7 @@
     const page = Object.keys(documentFiles).find(key => documentFiles[key] === file);
     if (page) return `#${owner}/${page}`;
     if (/Dictionary\.md$/.test(file)) return `#${owner}/dictionary`;
-    if (file === 'lexicon.csv') return `../${owner === 'lumena' ? 'Lumena' : 'Narela'}/lexicon.csv`;
+    if (file === 'lexicon.csv') return `../${{lumena: 'Lumena', narela: 'Narela', esperanto: 'Esperanto', taluma: 'Taluma'}[owner]}/lexicon.csv`;
     return null;
   }
   // A deliberately small Markdown renderer for the repository's document format.
@@ -93,8 +93,8 @@
   const route = page => `#${state.language}/${page}`;
   const announce = message => { document.getElementById('announcement').textContent = message; };
   function overview(lang) {
-    return `<section class="hero" aria-labelledby="page-title"><div><p class="eyebrow">A LANGUAGE TO EXPLORE · ${escape(lang.name)}</p><h1 id="page-title" tabindex="-1">A small world.<br><em>A shared word.</em></h1><p class="lead">${escape(lang.tagline)} ${escape(lang.description)} Discover the words, learn the patterns, and try your first conversation.</p><div class="actions"><a class="button" href="${route('lessons')}">Start learning <span aria-hidden="true">↗</span></a><a class="button secondary" href="${route('dictionary')}">Explore dictionary</a></div></div><div class="word-art"><span class="art-tag">YOUR FIRST WORD</span><span class="word">${escape(lang.greeting)}</span><span class="word-caption">Hello. A place to begin.</span><span class="art-dot" aria-hidden="true"></span></div></section>
-      <div class="fact-strip"><span><strong>${lang.entries.length}</strong> dictionary entries</span>${lang.facts.map(f => `<span>${escape(f)}</span>`).join('')}<span>Edition 0.1</span></div>
+    return `<section class="hero" aria-labelledby="page-title"><div><p class="eyebrow">A LANGUAGE TO EXPLORE · ${escape(lang.name)}</p><h1 id="page-title" tabindex="-1">A small world.<br><em>A shared word.</em></h1><p class="lead">${escape(lang.tagline)} ${escape(lang.description)} Discover the words, learn the patterns, and try your first conversation.</p><div class="actions"><a class="button" href="${route('lessons')}">Start learning <span aria-hidden="true">↗</span></a><a class="button secondary" href="${route('dictionary')}">Explore dictionary</a></div></div><div class="word-art"><span class="art-tag">YOUR FIRST WORD</span><span class="word${lang.greeting.length > 4 ? ' word-long' : ''}">${escape(lang.greeting)}</span><span class="word-caption">Hello. A place to begin.</span><span class="art-dot" aria-hidden="true"></span></div></section>
+      <div class="fact-strip"><span><strong>${lang.entries.length}</strong> dictionary entries</span>${lang.facts.map(f => `<span>${escape(f)}</span>`).join('')}<span>Edition ${escape(lang.version)}</span></div>
       <div class="section-heading"><h2>Find your way into ${escape(lang.name)}</h2><span>A little curiosity goes a long way</span></div>
       <div class="explore-grid">${[
         ['01', 'dictionary', 'Discover the words', 'Find an everyday word, explore its meaning, and build your vocabulary.', 'Open dictionary'],
@@ -102,8 +102,8 @@
         ['03', 'grammar', 'See the patterns', 'Build clear sentences with consistent rules and practical examples.', 'Read the grammar']
       ].map(([number, page, title, desc, label]) => `<a class="explore-card" href="${route(page)}"><span class="card-number">${number} /</span><h3>${title}</h3><p>${desc}</p><span class="card-link">${label} <span aria-hidden="true">↗</span></span></a>`).join('')}</div>
       <section class="example-panel" aria-label="A sentence to try"><div><p class="eyebrow">A SENTENCE TO TRY</p><p class="example">${escape(lang.example)}</p><p class="translation">${escape(lang.translation)}</p></div><p class="example-note">Every conversation begins somewhere.<br><a href="${route('lessons')}">Try the first lessons →</a></p></section>
-      <section class="community" aria-labelledby="community-title"><p class="eyebrow">HELP SHAPE WHAT COMES NEXT</p><h2 id="community-title">A language grows through people.</h2><p>These are early language prototypes. Your experience can make the next lesson clearer, the next word more useful, and the project easier to maintain.</p><div class="community-paths"><div><h3>Learn & speak</h3><p>Try a lesson, say an example aloud, and tell us where you got stuck. Every language background brings a useful perspective.</p><a href="https://github.com/garlicbreadwebant/Universal_Languages/issues/new?template=feedback.md">Share your learning experience ↗</a></div><div><h3>Build & maintain</h3><p>Improve a guide, review vocabulary, or make the library more accessible. Start with a small correction or propose an idea.</p><a href="https://github.com/garlicbreadwebant/Universal_Languages/blob/master/CONTRIBUTING.md">Find your first contribution ↗</a></div></div></section>
-      <p class="edition-note">${escape(lang.name)} is a language prototype. Its learnability across language backgrounds still needs real-world testing. <a href="${route('design')}">Read the design notes.</a></p>`;
+      <section class="community" aria-labelledby="community-title"><p class="eyebrow">HELP SHAPE WHAT COMES NEXT</p><h2 id="community-title">A language grows through people.</h2><p>This library brings together language prototypes and established Esperanto. Your experience can make the next lesson clearer, the next word more useful, and the project easier to maintain.</p><div class="community-paths"><div><h3>Learn & speak</h3><p>Try a lesson, say an example aloud, and tell us where you got stuck. Every language background brings a useful perspective.</p><a href="https://github.com/garlicbreadwebant/Universal_Languages/issues/new?template=feedback.md">Share your learning experience ↗</a></div><div><h3>Build & maintain</h3><p>Improve a guide, review vocabulary, or make the library more accessible. Start with a small correction or propose an idea.</p><a href="https://github.com/garlicbreadwebant/Universal_Languages/blob/master/CONTRIBUTING.md">Find your first contribution ↗</a></div></div></section>
+      <p class="edition-note">${lang.established ? 'Esperanto is an established language. This beginner collection introduces its vocabulary and grammar.' : escape(lang.name) + ' is a language prototype. Its learnability across language backgrounds still needs real-world testing.'} <a href="${route('design')}">Read the design notes.</a></p>`;
   }
   function dictionary(lang) {
     const categories = [...new Set(lang.entries.map(e => e.category))].sort();

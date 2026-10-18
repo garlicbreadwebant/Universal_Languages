@@ -52,15 +52,18 @@ async function run() {
       const example = api.exampleSentence(lang, '', () => i / 48);
       assert(example.translation.endsWith('.')); assert(example.sentence.endsWith('.'));
       for (const token of example.sentence.slice(0, -1).split(' ')) {
-        assert(token === lang.name || lang.entries.some(entry => entry.word.toLowerCase() === token.toLowerCase()), `${lang.name} example uses known word: ${token}`);
+        const base = lang.name === 'Esperanto' ? token.replace(/(as|is|os)$/, 'i').replace(/n$/, '') : token;
+        assert(base === lang.name || lang.entries.some(entry => entry.word.toLowerCase() === base.toLowerCase()), `${lang.name} example uses known word: ${token}`);
       }
       examples.add(example.sentence);
       assert.notEqual(api.exampleSentence(lang, example.sentence, () => i / 48).sentence, example.sentence);
     }
     assert.equal(examples.size, 48);
-    assert.deepEqual(api.exampleSentence(lang, '', () => 0), {sentence: lang.name === 'Lumena' ? 'mi leta puka.' : 'Mi reda buki.', translation: 'I read a book.'});
-    assert.equal(api.exampleSentence(lang, '', () => 2 / 48).sentence, lang.name === 'Lumena' ? 'mi pu leta puka.' : 'Mi fu reda buki.');
+    assert.deepEqual(api.exampleSentence(lang, '', () => 0), {sentence: lang.name === 'Lumena' ? 'mi leta puka.' : lang.name === 'Taluma' ? 'mi leka lipo.' : lang.name === 'Esperanto' ? 'Mi legas libron.' : 'Mi reda buki.', translation: 'I read a book.'});
+    assert.equal(api.exampleSentence(lang, '', () => 1 / 48).sentence, lang.name === 'Lumena' ? 'mi pa leta puka.' : lang.name === 'Taluma' ? 'mi pa leka lipo.' : lang.name === 'Esperanto' ? 'Mi legis libron.' : 'Mi pa reda buki.');
+    assert.equal(api.exampleSentence(lang, '', () => 2 / 48).sentence, lang.name === 'Lumena' ? 'mi pu leta puka.' : lang.name === 'Taluma' ? 'mi pu leka lipo.' : lang.name === 'Esperanto' ? 'Mi legos libron.' : 'Mi fu reda buki.');
     const context = api.languageContext(lang, 'quiz');
+    for (const entry of lang.entries) assert(context.includes(`${entry.word} | ${entry.english} |`), `${lang.name} training reference includes ${entry.english}`);
     assert(context.includes(lang.documents.grammar)); assert(context.includes(lang.entries.at(-1).word));
     assert(context.includes('Wait for an answer'));
     for (const provider of ['openai', 'gemini']) {

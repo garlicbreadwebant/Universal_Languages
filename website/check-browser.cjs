@@ -61,7 +61,7 @@ async function run() {
     const base = process.env.PAGES_URL.replace(/\/$/, '') + '/';
     await command('Page.navigate', {url: base});
     await until("!!document.querySelector('#page-title')");
-    for (const language of ['lumena', 'narela']) {
+    for (const language of ['lumena', 'narela', 'esperanto', 'taluma']) {
       await evaluate(`document.querySelector('[data-language="${language}"]').click()`);
       for (const [page, element] of [['flashcards', 'flashcard-reveal'], ['chat', 'chat-input'], ['speech', 'speech-text'], ['dictionary', 'search']]) {
         await evaluate(`document.querySelector('[data-page="${page}"]').click()`);
@@ -70,7 +70,7 @@ async function run() {
       }
     }
     assert.deepEqual(exceptions, []);
-    console.log('OK: published Pages navigation buttons open flashcards, chat, speech, and dictionary for both languages without browser exceptions.');
+    console.log('OK: published Pages navigation buttons open flashcards, chat, speech, and dictionary for all four languages without browser exceptions.');
     return;
   }
   await command('Page.navigate', {url: `http://127.0.0.1:${port}/index.html#lumena/chat`});
@@ -86,7 +86,7 @@ async function run() {
       if (JSON.parse(options.body).text?.format?.name === 'language_reading') {
         const input = JSON.parse(JSON.parse(options.body).input[0].content);
         const target = input.targetLanguage || input.language || input.sourceLanguage;
-        text = mockMode === 'badstudio' ? 'invalid JSON' : JSON.stringify({...((input.form || input.targetLanguage) ? {text: target === 'Lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.'} : {}), translation: 'I learn. I read a book.', notes: 'Practice text.'});
+        text = mockMode === 'badstudio' ? 'invalid JSON' : JSON.stringify({...((input.form || input.targetLanguage) ? {text: target === 'Lumena' ? 'mi lena Lumena. mi leta puka.' : target === 'Taluma' ? 'mi lena Taluma. mi leka lipo.' : target === 'Esperanto' ? 'Mi lernas Esperanton. Mi legas libron.' : 'Mi lena Narela. Mi reda buki.'} : {}), translation: 'I learn. I read a book.', notes: 'Practice text.'});
       }
       const delta = provider === 'openai' ? {type:'response.output_text.delta',delta:text} : provider === 'claude' ? {type:'content_block_delta',delta:{type:'text_delta',text}} : {candidates:[{content:{parts:[{text}]}}]};
       const end = provider === 'openai' ? {type:'response.completed'} : provider === 'claude' ? {type:'message_stop'} : {candidates:[{finishReason:'STOP'}]};
@@ -130,7 +130,7 @@ async function run() {
   await until("!document.getElementById('speech-audio').hidden");
   assert.equal(await evaluate("mockCalls.at(-1).body.model"), 'gpt-4o-mini-tts');
   await click('speech-stop');
-  for (const id of ['lumena', 'narela']) {
+  for (const id of ['lumena', 'narela', 'esperanto', 'taluma']) {
     await navigate(`#${id}/speech`);
     const callsBefore = await evaluate('mockCalls.length');
     assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
@@ -156,14 +156,21 @@ async function run() {
     await click('studio-example');
     assert.equal(await evaluate("document.getElementById('studio-translation-toggle').hidden"), false);
   }
+  await navigate('#taluma/dictionary');
+  await value('search', 'carefully');
+  assert(await evaluate("document.querySelector('.word-cell').textContent.includes('kasi-me')"));
+  await value('search', 'a / an');
+  assert(await evaluate("document.querySelector('.word-cell').textContent.startsWith('sa')"));
+  await navigate('#taluma/flashcards');
+  assert.equal(await evaluate("document.getElementById('flashcard-progress').textContent"), 'Card 1 of 397');
   await configure('claude', 'openai');
-  for (const id of ['lumena', 'narela']) {
+  for (const id of ['lumena', 'narela', 'esperanto', 'taluma']) {
     await navigate(`#${id}/speech`);
     await value('studio-topic', 'Learning with friends');
     for (const button of ['studio-paragraph', 'studio-essay']) {
       await click(button);
       await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
-      const expected = id === 'lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.';
+      const expected = id === 'lumena' ? 'mi lena Lumena. mi leta puka.' : id === 'taluma' ? 'mi lena Taluma. mi leka lipo.' : id === 'esperanto' ? 'Mi lernas Esperanton. Mi legas libron.' : 'Mi lena Narela. Mi reda buki.';
       assert.equal(await evaluate("document.getElementById('speech-text').value"), expected);
       assert.equal(await evaluate("document.getElementById('studio-translation').hidden"), true);
       assert.equal(await evaluate('mockCalls.at(-1).url'), 'https://api.openai.com/v1/responses');
@@ -172,7 +179,7 @@ async function run() {
       await click('studio-translation-toggle');
       assert.equal(await evaluate("document.getElementById('studio-translation').textContent"), 'I learn. I read a book.');
     }
-    const input = id === 'lumena' ? 'mi lena Lumena.' : 'Mi lena Narela.';
+    const input = id === 'lumena' ? 'mi lena Lumena.' : id === 'taluma' ? 'mi lena Taluma.' : id === 'esperanto' ? 'Mi lernas Esperanton.' : 'Mi lena Narela.';
     await value('speech-text', input); await click('studio-translation-toggle');
     await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
     assert.equal(await evaluate("document.getElementById('speech-text').value"), input);
@@ -186,8 +193,8 @@ async function run() {
     await click('studio-from-english');
     await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
     assert.equal(await evaluate('JSON.parse(mockCalls.at(-1).body.input[0].content).sourceLanguage'), 'English');
-    assert.equal(await evaluate('JSON.parse(mockCalls.at(-1).body.input[0].content).targetLanguage'), id === 'lumena' ? 'Lumena' : 'Narela');
-    assert.equal(await evaluate("document.getElementById('speech-text').value"), id === 'lumena' ? 'mi lena Lumena. mi leta puka.' : 'Mi lena Narela. Mi reda buki.');
+    assert.equal(await evaluate('JSON.parse(mockCalls.at(-1).body.input[0].content).targetLanguage'), id === 'lumena' ? 'Lumena' : id === 'taluma' ? 'Taluma' : id === 'esperanto' ? 'Esperanto' : 'Narela');
+    assert.equal(await evaluate("document.getElementById('speech-text').value"), id === 'lumena' ? 'mi lena Lumena. mi leta puka.' : id === 'taluma' ? 'mi lena Taluma. mi leka lipo.' : id === 'esperanto' ? 'Mi lernas Esperanton. Mi legas libron.' : 'Mi lena Narela. Mi reda buki.');
     await value('speech-text', input); await click('studio-translation-toggle');
     await until("document.getElementById('studio-ai-stop').hidden && document.getElementById('studio-ai-status').textContent.includes('ready')");
     await evaluate("mockMode = 'badstudio'"); await click('studio-paragraph');
@@ -232,9 +239,13 @@ async function run() {
   for (const width of [320, 390, 768, 1024, 1440]) {
     await command('Emulation.setDeviceMetricsOverride', {width, height: 900, deviceScaleFactor: 1, mobile: width < 801});
     for (const [page, title] of Object.entries(pageTitles)) {
-      await evaluate(`location.hash = '#narela/${page}'`);
+      await evaluate(`location.hash = '#taluma/${page}'`);
       await until(`document.title.startsWith(${JSON.stringify(title)})`);
       assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), true, `${width}px ${page} has no page overflow`);
+      if (page === 'overview') {
+        assert.equal(await evaluate("(() => {const word = document.querySelector('.word-art .word').getBoundingClientRect(); const art = document.querySelector('.word-art').getBoundingClientRect(); return word.left >= art.left && word.right <= art.right;})()"), true, `${width}px Taluma greeting fits its artwork`);
+        if ([390, 1440].includes(width)) await command('Page.captureScreenshot', {format: 'png', captureBeyondViewport: true}).then(result => fs.writeFileSync(path.join(root, `taluma-overview-${width}.png`), Buffer.from(result.data, 'base64')));
+      }
       if (page !== 'chat') {
         assert.equal(await evaluate("getComputedStyle(document.querySelector('.ai-tools')).position"), 'fixed');
         const dockTop = await evaluate("document.querySelector('.ai-tools').getBoundingClientRect().top");
@@ -259,7 +270,7 @@ async function run() {
     for (const page of ['privacy', 'cookies', 'terms', 'updates']) {
       await evaluate(`document.querySelector('[data-site-page="${page}"]').click()`);
       await until(`document.title.startsWith(${JSON.stringify(pageTitles[page])})`);
-      assert.equal(await evaluate('location.hash'), `#narela/${page}`);
+      assert.equal(await evaluate('location.hash'), `#taluma/${page}`);
     }
   }
   await navigate('#narela/chat');

@@ -1,0 +1,398 @@
+english,esperanto,category,notes
+I / me,mi,pronoun,First person singular; object min
+you,vi,pronoun,Singular or plural; object vin
+he,li,pronoun,Third person singular masculine
+she,ŝi,pronoun,Third person singular feminine
+it,ĝi,pronoun,Third person singular for a thing or animal
+we / us,ni,pronoun,First person plural; object nin
+they / them,ili,pronoun,Third person plural; object ilin
+self,si,pronoun,Reflexive for a third-person subject
+one / people,oni,pronoun,Indefinite human subject
+my,mia,adjective,Possessive; agrees with the noun
+your,via,adjective,Possessive for singular or plural you
+the,la,article,Invariable definite article
+hello,saluton,expression,Conventional greeting
+thank you,dankon,expression,Conventional expression of thanks
+please,bonvolu,expression,Polite request followed by an infinitive
+goodbye,ĝis revido,expression,Conventional farewell; literally until seeing again
+yes,jes,particle,Affirmative answer
+no / not,ne,particle,Negative answer or negation
+whether / question marker,ĉu,particle,Introduces a yes-no question
+and,kaj,conjunction,Connects words or clauses
+or,aŭ,conjunction,Alternative
+but,sed,conjunction,Contrast
+because,ĉar,conjunction,Reason
+if,se,conjunction,Condition
+that (clause),ke,conjunction,Introduces a subordinate statement
+in,en,preposition,Location; add directional -n when appropriate
+on,sur,preposition,On a surface
+under,sub,preposition,Below
+over,super,preposition,Above
+to,al,preposition,Toward or recipient
+from / of,de,preposition,Origin or possession depending on context
+with,kun,preposition,Accompaniment
+without,sen,preposition,Absence
+for,por,preposition,Purpose or intended recipient
+about,pri,preposition,Topic
+through,tra,preposition,Passage through
+between,inter,preposition,Between or among
+before (place or time),antaŭ,preposition,In front of or earlier than
+after,post,preposition,Later than or behind
+until,ĝis,preposition,Endpoint in time or space
+what,kio,pronoun,Question about a thing
+who,kiu,pronoun,Question about a person or selection
+where,kie,adverb,Question about location
+when,kiam,adverb,Question about time
+why,kial,adverb,Question about reason
+how,kiel,adverb,Question about manner
+how much,kiom,adverb,Question about quantity
+this (thing),tio ĉi,pronoun,Near demonstrative; also ĉi tio
+that (thing),tio,pronoun,Demonstrative thing
+here,ĉi tie,adverb,Near location; also tie ĉi
+there,tie,adverb,That location
+now,nun,adverb,At the present time
+today,hodiaŭ,adverb,On this day
+yesterday,hieraŭ,adverb,On the previous day
+tomorrow,morgaŭ,adverb,On the following day
+always,ĉiam,adverb,At all times
+never,neniam,adverb,At no time
+often,ofte,adverb,Frequently
+very,tre,adverb,High degree
+also,ankaŭ,adverb,In addition
+only,nur,adverb,Restriction
+already,jam,adverb,Before or by the relevant time
+still / yet,ankoraŭ,adverb,Continuation or remaining possibility
+together,kune,adverb,In company
+well,bone,adverb,In a good manner
+clearly,klare,adverb,In a clear manner
+carefully,zorge,adverb,With care
+zero,nul,number,0
+one,unu,number,1
+two,du,number,2
+three,tri,number,3
+four,kvar,number,4
+five,kvin,number,5
+six,ses,number,6
+seven,sep,number,7
+eight,ok,number,8
+nine,naŭ,number,9
+ten,dek,number,10
+hundred,cent,number,100
+thousand,mil,number,1000
+be,esti,verb,Infinitive; present estas
+have,havi,verb,Possess; infinitive
+do / make,fari,verb,Perform or create
+go,iri,verb,Move or travel
+come,veni,verb,Move toward
+see,vidi,verb,Visual perception
+hear,aŭdi,verb,Auditory perception
+speak,paroli,verb,Speak a language or talk
+say,diri,verb,Utter something
+read,legi,verb,Read written material
+write,skribi,verb,Produce written text
+learn,lerni,verb,Acquire knowledge or skill
+teach,instrui,verb,Give instruction
+understand,kompreni,verb,Grasp meaning
+know (a fact),scii,verb,Know information
+know (be acquainted),koni,verb,Be familiar with a person or thing
+want,voli,verb,Wish or intend
+can / be able,povi,verb,Be able to do something
+must / have to,devi,verb,Obligation
+eat,manĝi,verb,Consume food
+drink,trinki,verb,Consume a liquid
+sleep,dormi,verb,Be asleep
+live,vivi,verb,Be alive
+work,labori,verb,Perform work
+play,ludi,verb,Play a game or instrument
+love,ami,verb,Feel love for
+like,ŝati,verb,Appreciate or enjoy
+help,helpi,verb,Assist
+give,doni,verb,Provide something
+take,preni,verb,Take hold of
+buy,aĉeti,verb,Obtain by payment
+sell,vendi,verb,Exchange for payment
+open,malfermi,verb,Cause to be open
+close,fermi,verb,Cause to be closed
+ask (a question),demandi,verb,Put a question
+answer,respondi,verb,Reply
+repeat,ripeti,verb,Say or do again
+find,trovi,verb,Discover or locate
+think,pensi,verb,Have thoughts
+walk,piediri,verb,Go on foot
+sit,sidi,verb,Be seated
+stand,stari,verb,Be upright
+good,bona,adjective,Positive quality; agrees with noun
+bad,malbona,adjective,Opposite of bona
+big,granda,adjective,Large in size
+small,malgranda,adjective,Small in size
+new,nova,adjective,Recent or not previously used
+old (not new),malnova,adjective,Opposite of nova
+young,juna,adjective,Early in life
+old (age),maljuna,adjective,Advanced in age
+beautiful,bela,adjective,Pleasing appearance
+happy,feliĉa,adjective,Happy or fortunate
+sad,malĝoja,adjective,Sorrowful
+easy,facila,adjective,Requiring little effort
+difficult,malfacila,adjective,Requiring effort
+clear,klara,adjective,Clear in perception or meaning
+important,grava,adjective,Of significance
+same,sama,adjective,Identical
+other,alia,adjective,Another or different
+hot,varma,adjective,Warm or hot
+cold,malvarma,adjective,Low temperature
+red,ruĝa,adjective,Color
+blue,blua,adjective,Color
+green,verda,adjective,Color
+white,blanka,adjective,Color
+black,nigra,adjective,Color
+person,homo,noun,Human being
+friend,amiko,noun,Friend; gender not specified here
+family,familio,noun,Family group
+child,infano,noun,Young human
+mother,patrino,noun,Female parent
+father,patro,noun,Male parent
+name,nomo,noun,Name or designation
+language,lingvo,noun,Language
+Esperanto,Esperanto,noun,Language name; object Esperanton
+word,vorto,noun,Unit of language
+sentence,frazo,noun,Sentence or phrase
+book,libro,noun,Written volume
+paper,papero,noun,Writing material
+school,lernejo,noun,Place for learning
+teacher,instruisto,noun,Person who teaches
+student,lernanto,noun,Person who learns
+house,domo,noun,Building for habitation
+room,ĉambro,noun,Room in a building
+door,pordo,noun,Doorway closure
+window,fenestro,noun,Window in a building
+table,tablo,noun,Piece of furniture
+chair,seĝo,noun,Seat for one person
+garden,ĝardeno,noun,Cultivated outdoor space
+city,urbo,noun,Town or city
+country (land),lando,noun,Country or territory
+world,mondo,noun,The world
+road,vojo,noun,Way or road
+water,akvo,noun,Water; object akvon
+food,manĝaĵo,noun,Something to eat; object manĝaĵon
+bread,pano,noun,Baked staple food
+fruit,frukto,noun,Fruit
+apple,pomo,noun,Apple fruit
+milk,lakto,noun,Milk
+tea,teo,noun,Tea beverage
+coffee,kafo,noun,Coffee beverage
+salt,salo,noun,Edible salt
+sun,suno,noun,The sun
+moon,luno,noun,The moon
+star,stelo,noun,Star in the sky
+earth (soil),tero,noun,Earth or ground
+sky,ĉielo,noun,Sky or heaven
+air,aero,noun,Air
+fire,fajro,noun,Fire
+tree,arbo,noun,Tree
+flower,floro,noun,Flower
+animal,besto,noun,Animal
+dog,hundo,noun,Dog
+cat,kato,noun,Cat
+bird,birdo,noun,Bird
+fish,fiŝo,noun,Fish animal
+day,tago,noun,Day
+night,nokto,noun,Night
+morning,mateno,noun,Early part of day
+evening,vespero,noun,Evening
+week,semajno,noun,Seven-day period
+month,monato,noun,Calendar month
+year,jaro,noun,Year
+time,tempo,noun,Time or duration
+hour,horo,noun,Sixty-minute unit
+hand,mano,noun,Hand
+head,kapo,noun,Head of body
+eye,okulo,noun,Organ of sight
+ear,orelo,noun,Organ of hearing
+mouth,buŝo,noun,Mouth
+heart,koro,noun,Heart
+health,sano,noun,State of being healthy
+peace,paco,noun,Absence of war or conflict
+music,muziko,noun,Music
+question,demando,noun,Question
+answer (noun),respondo,noun,Reply
+goal,celo,noun,Aim or target
+choir,ĥoro,noun,Group of singers
+newspaper,ĵurnalo,noun,Newspaper or journal
+you (singular),vi,pronoun,Singular or plural; object vin; English lookup variant of you
+he / she / it,li / ŝi / ĝi,pronoun,Select the pronoun by referent; no single gender-neutral equivalent is implied
+you (plural),vi,pronoun,Vi serves singular and plural; vi ĉiuj makes all addressees explicit
+someone,iu,pronoun,An unspecified person
+this / these,tiu ĉi / tiuj ĉi,determiner/pronoun,Singular and plural forms; also ĉi tiu and ĉi tiuj
+that / those,tiu / tiuj,determiner/pronoun,Singular and plural demonstratives
+plural,-j,grammar,Suffix after a noun or adjective; libro becomes libroj
+some,kelkaj,quantifier,Some countable items; use iom da for an unspecified amount
+all / every,ĉiu / ĉiuj,quantifier,Ĉiu is each or every; ĉiuj means all countable members
+few / little quantity,malmultaj / malmulte da,quantifier,Few countable things versus little of a substance
+of / related to,de,preposition,Possession or association; not every English of uses de
+end condition,fino de kondiĉo,grammar,Name of the concept; Esperanto has no obligatory spoken condition-end marker
+past,-is,grammar,Finite past-tense verb ending; lerni becomes lernis
+future,-os,grammar,Finite future-tense verb ending; lerni becomes lernos
+ongoing,estas leganta,grammar,Example: is reading; present active participle agrees with subject; simple legas often suffices
+completed,estas leginta,grammar,Example: has read; active perfect participle agrees with subject; completion is relative to a reference time
+not / no,ne,particle,Negation or negative answer
+yes/no question,ĉu,particle,At the beginning of a yes-no question
+how many / much,kiom,adverb,Quantity question; kiom da akvo means how much water
+which,kiu,determiner/pronoun,Selection; plural kiuj when needed
+content clause start,ke,conjunction,Introduces a declarative content clause; not every embedded clause uses ke
+content clause end,fino de subfrazo,grammar,Name of the concept; no obligatory spoken clause-end marker
+relative clause start,kiu,grammar,Relative pronoun example; relative clauses also use other correlatives
+relative clause end,fino de rilata subfrazo,grammar,Name of the concept; no obligatory spoken relative-end marker
+relative reference,kiu / kiun,grammar,Relative pronoun agrees in number; -n depends on its role within the clause
+at / in,ĉe / en,preposition,Ĉe means at or by; en means in
+on / above,sur / super,preposition,Sur means on a surface; super means above
+to / toward,al,preposition,Toward or recipient; English lookup variant of to
+from,de / el,preposition,De marks origin; el means out of
+using / by means of,per,preposition,Instrument or means
+than / compared with,ol,conjunction,Comparison standard
+manner marker,-e,grammar,Derived-adverb ending; bona becomes bone; not a separate word before an adjective
+more,pli,adverb,Comparative degree
+most,plej,adverb,Superlative degree
+equally,same,adverb,In the same way or to the same degree; tiel ... kiel for as ... as
+can / able,povi,verb,Infinitive of ability; present povas
+must / obliged,devi,verb,Infinitive of obligation; present devas
+exist,ekzisti,verb,To exist; estas also appears in existential sentences
+look at,rigardi,verb,Direct visual attention toward
+know,scii,verb,Know information; use koni for acquaintance
+speak / say,paroli / diri,verb,Paroli is speak or talk; diri is say something
+ask,demandi,verb,Ask a question; peti means request something
+run,kuri,verb,Move at a run
+stay,resti,verb,Remain in a place or state
+live / be alive,vivi,verb,Be alive; English lookup variant of live
+die,morti,verb,Cease to live
+like / enjoy,ŝati,verb,Appreciate or enjoy; English lookup variant of like
+need,bezoni,verb,Require something
+have / possess,havi,verb,Possess; infinitive; English lookup variant of have
+bring,alporti,verb,Carry or deliver toward a destination
+make / cause,fari / kaŭzi,verb,Fari means do or make; kaŭzi means cause
+use,uzi,verb,Employ something for a purpose
+begin,komenciĝi,verb,Intransitive: an event begins; komenci begins something
+finish,finiĝi,verb,Intransitive: an event ends; fini ends something
+allow,permesi,verb,Permit
+choose,elekti,verb,Select
+lose,perdi,verb,Lose something
+remember,memori,verb,Retain in memory
+forget,forgesi,verb,Fail to remember
+feel,senti,verb,Experience a sensation
+wait,atendi,verb,Wait for someone or something
+touch,tuŝi,verb,Make physical contact with
+cut,tranĉi,verb,Cut with an edge
+become,iĝi,verb,Change into a state or identity
+parent,patro / patrino,noun,Father or mother; gepatroj for parents collectively
+sibling,frato / fratino,noun,Brother or sister; gefratoj for siblings collectively
+body,korpo,noun,Physical body
+foot,piedo,noun,Body part
+skin,haŭto,noun,Body covering
+earth / soil,tero,noun,Earth or ground; English lookup variant of earth (soil)
+rain,pluvo,noun,Rainfall
+river,rivero,noun,Natural flowing watercourse
+sea,maro,noun,Large saltwater body
+mountain,monto,noun,Elevated landform
+plant,planto,noun,Living plant
+stone,ŝtono,noun,Stone or rock
+house / home,domo / hejmo,noun,Domo is a building; hejmo is the place one calls home
+clothing,vestoj,noun,Clothes collectively; plural of vesto
+tool,ilo,noun,Implement
+road / path,vojo,noun,Way or road; English lookup variant of road
+country,lando,noun,Country or territory; English lookup variant of country (land)
+place,loko,noun,Location
+idea,ideo,noun,Thought or proposal
+life,vivo,noun,Life or living duration
+money,mono,noun,Money
+number,nombro,noun,Numeric quantity; numero for an identifying number
+problem,problemo,noun,Problem requiring attention
+large,granda,adjective,Large in size; English lookup variant of big
+long,longa,adjective,Long in extent
+short,mallonga,adjective,Short in extent
+former,iama,adjective,Of an earlier time or status
+clean,pura,adjective,Free from dirt
+dirty,malpura,adjective,Containing dirt
+fast,rapida,adjective,High speed; rapide is quickly
+slow,malrapida,adjective,Low speed; malrapide is slowly
+ill,malsana,adjective,Unwell
+healthy,sana,adjective,In good health
+strong,forta,adjective,High strength
+weak,malforta,adjective,Low strength
+true,vera,adjective,Factually true; ĝusta for correct
+false,malvera,adjective,Factually untrue
+different,malsama,adjective,Not the same
+full,plena,adjective,Filled to capacity
+empty,malplena,adjective,Without contents
+yellow,flava,adjective,Color
+near,proksima,adjective,Small distance; proksime for nearby
+far,malproksima,adjective,Large distance; malproksime for far away
+sometimes,kelkfoje,adverb,On some occasions
+before,antaŭ,preposition,Earlier than or in front of
+inside,interne,adverb,In the interior; interne de before a noun phrase
+outside,ekstere,adverb,Outside; ekstere de before a noun phrase
+left,maldekstra,adjective,Direction; maldekstre for to the left
+right,dekstra,adjective,Direction; dekstre for to the right
+digit sequence,cifera sinsekvo,noun,Name for a sequence of digits; read the digits individually
+decimal point,komo,noun,Decimal separator conventionally read komo; a written point may be named punkto
+negative number,negativa nombro,noun,A number below zero; read minus before its magnitude
+divided by,dividite per,expression,Fraction or division reading
+ordinal marker,-a,grammar,Ordinal ending on a numeral; tri becomes tria
+you are welcome,nedankinde,expression,Response to thanks
+sorry,pardonu,expression,Apology or request to excuse
+a / an,libro,grammar,No indefinite article; bare libro can mean a book; example noun rather than an article translation
+can / be able to,povi,verb,Infinitive of ability; present povas; English lookup variant of can / able
+future / will,-os,grammar,Finite future-tense verb ending; lerni becomes lernos; English lookup variant of future
+of / possessive link,de,preposition,Possession or association; not every English of uses de; English lookup variant of of / related to
+ongoing action,estas leganta,grammar,Example: is reading; present active participle agrees with subject; simple legas often suffices; English lookup variant of ongoing
+question marker,ĉu,particle,At the beginning of a yes-no question; English lookup variant of yes/no question
+you all,vi,pronoun,Vi serves singular and plural; vi ĉiuj makes all addressees explicit; English lookup variant of you (plural)
+above / over,sur / super,preposition,Sur means on a surface; super means above; English lookup variant of on / above
+below / under,sub,preposition,Below; English lookup variant of under
+for / intended for,por,preposition,Purpose or intended recipient; English lookup variant of for
+how many / how much,kiom,adverb,Quantity question; kiom da akvo means how much water; English lookup variant of how many / much
+left (direction),maldekstra,adjective,Direction; maldekstre for to the left; English lookup variant of left
+on / on top of,sur,preposition,On a surface; English lookup variant of on
+right (direction),dekstra,adjective,Direction; dekstre for to the right; English lookup variant of right
+be / am / is / are,esti,verb,Infinitive; present estas; English lookup variant of be
+begin / start,komenciĝi,verb,Intransitive: an event begins; komenci begins something; English lookup variant of begin
+close / shut,fermi,verb,Cause to be closed; English lookup variant of close
+end / finish,finiĝi,verb,Intransitive: an event ends; fini ends something; English lookup variant of finish
+exist / there is,ekzisti,verb,To exist; estas also appears in existential sentences; English lookup variant of exist
+have / own,havi,verb,Possess; infinitive; English lookup variant of have; English lookup variant of have / possess
+say / speak,diri / paroli,verb,Diri is say something; paroli is speak or talk
+stay / remain,resti,verb,Remain in a place or state; English lookup variant of stay
+arm,brako,noun,Upper limb
+back (body),dorso,noun,Rear of torso
+city / town,urbo,noun,Town or city; English lookup variant of city
+country / nation,lando / nacio,noun,Lando is a country or land; nacio is a nation
+face,vizaĝo,noun,Front of head
+home / house,hejmo / domo,noun,Hejmo is home; domo is a house building
+light,lumo,noun,Visible light
+man,viro,noun,Adult male human
+person / human,homo,noun,Human being; English lookup variant of person
+thing / object,aĵo / objekto,noun,Thing or object
+way / method,metodo,noun,Method rather than a road
+woman,virino,noun,Adult female human
+big / large,granda,adjective,Large in size; English lookup variant of big; English lookup variant of large
+fast / quickly,rapida / rapide,adjective/adverb,Adjective versus manner adverb
+few / little (quantity),malmultaj / malmulte da,quantifier,Few countable things versus little of a substance; English lookup variant of few / little quantity
+good / well,bona / bone,adjective/adverb,Adjective versus adverb
+many / much,multaj / multe da,quantifier,Countable plural versus quantity of a substance
+most (comparison),plej,adverb,Superlative degree; English lookup variant of most
+old / former (not new),malnova / iama,adjective,Old as not new versus former status
+sick / ill,malsana,adjective,Unwell; English lookup variant of ill
+slow / slowly,malrapida / malrapide,adjective/adverb,Adjective versus manner adverb
+true / correct,vera / ĝusta,adjective,Vera means factually true; ĝusta means correct or appropriate
+wrong / incorrect,malĝusta,adjective,Incorrect rather than factually untrue
+excuse me / sorry,pardonu,expression,Apology or request to excuse; English lookup variant of sorry
+you're welcome,nedankinde,expression,Response to thanks; English lookup variant of you are welcome
+condition,kondiĉo,noun,A condition
+related,rilata,adjective,Related
+reference,referenco,noun,A reference
+manner,maniero,noun,Manner or way
+sequence,sinsekvo,noun,An ordered sequence
+digit,cifero,noun,Numeral digit
+decimal,dekuma,adjective,Base ten
+point,punkto,noun,Point or dot
+negative,negativa,adjective,Negative; below zero for numbers
+minus,minus,expression,Minus before a number
+divide,dividi,verb,Divide a quantity

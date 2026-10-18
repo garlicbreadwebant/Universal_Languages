@@ -1,6 +1,6 @@
 # Narela
 
-Version 0.1 — October 17, 2026
+Version 0.2.0 — October 18, 2026
 
 Narela is an original auxiliary language prototype with invariant verbs, subject–verb–object order, a plural ending, and a practical starter vocabulary. This edition reorganizes the original document into the same reference format as Lumena while retaining Narela's words and core rules.
 

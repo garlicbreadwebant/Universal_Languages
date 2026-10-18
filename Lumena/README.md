@@ -1,6 +1,6 @@
 # Lumena
 
-Version 0.1 — October 17, 2026
+Version 0.2.0 — October 18, 2026
 
 Lumena is a proposed international auxiliary language designed for predictable speech, regular grammar, and practical communication. The working name is pronounced /luˈmena/. It is an original prototype, not an established community language or a demonstrated optimum for all people.
 

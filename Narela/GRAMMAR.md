@@ -1,4 +1,4 @@
-# Narela grammar 0.1
+# Narela grammar 0.2.0
 
 The following rules preserve the original starter grammar. Narela and Lumena have different vocabularies and rules; use one language consistently.
 
@@ -32,6 +32,10 @@ The given modal pattern distinguishes inability from lack of obligation: Mi no p
 The starter does not standardize relative clauses, nested reported speech, passive constructions, or recursive large-number expressions. Prefer short independent clauses until these are defined and reviewed. This edition documents those limits instead of importing Lumena rules.
 
 ## Adding words
+
+The shared-vocabulary expansion adds the instrument relation per (by means of), comparison relation ol (than), and the numerical readings minus (negative sign), punto desima (decimal separator), and divida per (divided by). Put ordina before a cardinal for an ordinal: ordina tri buki means third book. These additions do not standardize nested clauses or recursive number expressions.
+
+Dictionary entries for content-clause ends, relative-clause ends, completed aspect, and manner markers describe concepts or paraphrases where no equivalent particle exists. Their usage notes are part of the entry; do not insert the descriptive phrase as a grammatical marker. Slash-separated target forms are alternatives selected by sense, never a sentence to pronounce literally.
 
 For each new entry, record its English meaning, Narela spelling, part of speech, and an example. Check existing roots before inventing another. Prefer one clear everyday meaning per root and explicitly note deliberate shared meanings. Keep pronunciation and grammar consistent. Future additions can cover occupations, technology, detailed emotions, and specialized topics.
 

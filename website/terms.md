@@ -4,7 +4,7 @@ Effective October 17, 2026.
 
 ## Purpose and acceptance
 
-These terms describe use of the Language Library website and its optional learning tools. By using those tools, you agree to these terms. If you do not agree, discontinue use. The library is an open-source educational project offering early constructed-language prototypes. Vocabulary, rules, translations, and features may change.
+These terms describe use of the Language Library website and its optional learning tools. By using those tools, you agree to these terms. If you do not agree, discontinue use. The library is an open-source educational project offering the Lumena, Narela, and Taluma language prototypes alongside beginner material for established Esperanto. Vocabulary, rules, translations, and features may change.
 
 ## Learning and AI limitations
 

@@ -1,5 +1,32 @@
 # Website changelog
 
+## 0.2.0 — October 18, 2026
+
+- Published the four-language collection with 397 matching English headwords in each dictionary, flashcard deck, and AI reference.
+- Added Esperanto learning materials and the new Taluma prototype with its grammar and lexical validation.
+- Ordered the top navigation Taluma, Lumena, Narela, Esperanto and gave Esperanto a darker green button with distinct hover and selected states.
+- Removed one-time migration scripts and generated build/screenshot leftovers.
+- Added shared release metadata and LF text normalization for consistent generated-file checks.
+- Versioned Lumena and Narela at 0.2.0, the Esperanto learning collection at 0.2.0, and Taluma at 0.1.0.
+
+## October 18, 2026 — Taluma prototype
+
+- Added Taluma with the same 397 English lookup entries, standard reference structure, dictionaries, flashcards, chat, speech, and local examples.
+- Added lexical dependency and selected grammatical regression checks for the new language.
+- Extended shared coverage and browser checks to all four languages; retained the existing visual theme.
+
+## October 18, 2026 — Shared English vocabulary
+
+- Expanded Esperanto and aligned all three collections to the same 397 English lookup entries.
+- Preserved the original starter entries and English lookup variants with sense-specific notes.
+- Added build-time parity checks and verified every entry is reachable in flashcards and AI learning references.
+
+## October 18, 2026 — Esperanto collection
+
+- Added Esperanto with the same reference structure, paper-and-green design, navigation, dictionaries, flashcards, chat, and reading tools.
+- Added Unicode vocabulary, beginner lessons, source notes, and Esperanto-specific offline sentence generation.
+- Extended validation and publication to include all three language collections.
+
 ## October 17, 2026 — Learner experience and project policies
 
 - Restored the floating chat companion toolbar on phone and desktop layouts, with footer clearance and separate speech-player positioning.

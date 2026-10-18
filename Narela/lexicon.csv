@@ -237,3 +237,162 @@ hello,sali,phrase,Starter sense: hello
 please,pali,phrase,Starter sense: please
 thank you,dani,phrase,Starter sense: thank you
 you're welcome,yali,phrase,Starter sense: you're welcome
+you (singular),ti,grammar,Singular; English lookup variant of you
+you (plural),tin,grammar,Plural; English lookup variant of you all
+someone,mira,noun,An unspecified person; no indefinite pronoun distinction in starter
+plural,n,grammar,Suffix -n after a noun; buki becomes bukin; not a standalone word
+few / little quantity,poka,description/adverb,Starter sense: few / little (quantity); English lookup variant of few / little (quantity)
+of / related to,de,grammar,Thing + de + owner; English lookup variant of of / possessive link
+end condition,fina de kondisa,grammar,Name of concept: end of condition; starter has no spoken condition-end marker
+future,fu,grammar,Tense marker; English lookup variant of future / will
+ongoing,du,grammar,Aspect marker; English lookup variant of ongoing action
+completed,fina,verb,End or finish; describe completion in a separate clause; no standardized perfect-aspect particle
+not / no,no,grammar,Negative answer or negation; English lookup variant of no / not
+yes/no question,ka,grammar,End of yes/no question; English lookup variant of question marker
+how many / much,kanti,question/relation/time,Starter sense: how many / how much; English lookup variant of how many / how much
+content clause start,inia de fraza,grammar,Name of concept: start of clause; nested content clauses are not standardized
+content clause end,fina de fraza,grammar,Name of concept: end of clause; no clause-end particle is standardized
+relative clause start,inia de fraza relati,grammar,Name of concept; relative clauses are not standardized
+relative clause end,fina de fraza relati,grammar,Name of concept; no relative-end particle is standardized
+relative reference,referi relati,grammar,Name of concept; relative-clause resumptive syntax is not standardized
+on / above,su,question/relation/time,Starter sense: above / over; English lookup variant of above / over
+under,suba,question/relation/time,Starter sense: below / under; English lookup variant of below / under
+for,por,question/relation/time,Starter sense: for / intended for; English lookup variant of for / intended for
+using / by means of,per,relation,Instrument; Mi rita per ilo
+than / compared with,ol,relation,Comparison standard after comparative; Doma esa plu bala ol buki
+manner marker,moda,noun,Name of concept: manner; adverbs precede the verb without a separate marker
+most,maxi,description/adverb,Starter sense: most (comparison); English lookup variant of most (comparison)
+equally,egali,description/adverb,To an equal degree; Mi egali sava
+can / able,pote,grammar,Before verb; English lookup variant of can / be able to
+must / obliged,deve,grammar,Before verb; English lookup variant of must / have to
+be,esa,verb,Starter sense: be / am / is / are; English lookup variant of be / am / is / are
+exist,exi,verb,Starter sense: exist / there is; English lookup variant of exist / there is
+speak / say,tala,verb,Starter sense: say / speak; English lookup variant of say / speak
+stay,resta,verb,Starter sense: stay / remain; English lookup variant of stay / remain
+have / possess,hava,verb,Starter sense: have / own; English lookup variant of have / own
+make / cause,fena / kauza,verb,Fena means do or make; kauza means cause a thing or event; Mi kauza ta
+close,klosa,verb,Starter sense: close / shut; English lookup variant of close / shut
+begin,inia,verb,Starter sense: begin / start; English lookup variant of begin / start
+finish,fina,verb,Starter sense: end / finish; English lookup variant of end / finish
+allow,perma,verb,Permit an activity or thing; Mi perma ta
+touch,tuka,verb,Make physical contact; Mi tuka buki
+cut,kata,verb,Cut something; Mi kata pani
+person,mira,noun,Starter sense: person / human; English lookup variant of person / human
+ear,orela,noun,Ear; orela de mi
+skin,peli,noun,Skin; peli de mi
+plant,planta,noun,Living plant; un planta
+house / home,doma,noun,Starter sense: home / house; English lookup variant of home / house
+room,kambra,noun,Interior room; un kambra
+paper,paperi,noun,Paper material; Mi rita sura paperi
+tool,ilo,noun,Tool; un ilo
+city,urba,noun,Starter sense: city / town; English lookup variant of city / town
+country,nati,noun,Starter sense: country / nation; English lookup variant of country / nation
+number,numera,noun,Numeric quantity; un numera
+question,kesi,noun,Question; Mi kesa un kesi
+answer,respa,noun,Answer; un respa
+problem,problema,noun,Problem; un problema
+good,bona,description/adverb,Starter sense: good / well; English lookup variant of good / well
+large,bala,description/adverb,Starter sense: big / large; English lookup variant of big / large
+former,anti,description/adverb,Former or old as in the starter; does not specifically mean advanced age
+fast,rapa,description/adverb,Starter sense: fast / quickly; English lookup variant of fast / quickly
+slow,lenta,description/adverb,Starter sense: slow / slowly; English lookup variant of slow / slowly
+ill,mela,description/adverb,Starter sense: sick / ill; English lookup variant of sick / ill
+healthy,sana,description/adverb,In good health; Mi esa sana
+true,vera,description/adverb,Starter sense: true / correct; English lookup variant of true / correct
+false,falsa,description/adverb,Factually false; differs from incorrect; un respa falsa
+left,leva,question/relation/time,Starter sense: left (direction); English lookup variant of left (direction)
+right,reva,question/relation/time,Starter sense: right (direction); English lookup variant of right (direction)
+digit sequence,seria de digi,noun,Name of concept; read digits separately; seria de digi
+decimal point,punto desima,noun,Name of decimal separator; numeric reading extension; do punto desima nul pen
+negative number,numera negati,noun,Name of concept; minus before magnitude; minus do
+divided by,divida per,expression,Division reading; en divida per do
+ordinal marker,ordina,grammar,New ordinal word before a cardinal; ordina tri buki means third book
+you are welcome,yali,phrase,Starter sense: you're welcome; English lookup variant of you're welcome
+sorry,parda,phrase,Starter sense: excuse me / sorry; English lookup variant of excuse me / sorry
+he,li,grammar,Gender-neutral singular pronoun; does not encode male gender
+she,li,grammar,Gender-neutral singular pronoun; does not encode female gender
+it,li,grammar,Gender-neutral singular pronoun also used for things
+one / people,mira,noun,Generic person; not the numeral one
+my,de mi,grammar,Possessor phrase after noun; buki de mi
+your,de ti,grammar,One addressee; de tin for multiple addressees
+whether / question marker,ka,grammar,End of yes/no question; English lookup variant of question marker; English lookup variant of yes/no question
+that (clause),fraza,noun,Clause as a named concept; embedded that-clause syntax is not standardized
+in,na,relation,At or in; interior reading supplied by context
+on,sura,relation,On a surface
+over,su,question/relation/time,Starter sense: above / over; English lookup variant of above / over; English lookup variant of on / above
+to,a,question/relation/time,Starter sense: to / toward; English lookup variant of to / toward
+from / of,da / de,relation,Origin versus possession
+about,pri,relation,Topic; Mi tala pri buki
+before (place or time),pre,relation,Before; temporal or spatial interpretation from context
+until,til,relation,Endpoint; Mi wata til fudi
+how much,kanti,question/relation/time,Starter sense: how many / how much; English lookup variant of how many / how much; English lookup variant of how many / much
+this (thing),ta,grammar,Demonstrative; noun number determines plurality
+that (thing),to,grammar,Demonstrative; noun number determines plurality
+often,ofta,description/adverb,Frequently; Mi ofta lena
+also,anki,description/adverb,In addition; Mi anki lena
+already,yami,description/adverb,By the relevant time; Mi yami lena
+still / yet,ankiha,description/adverb,Continuing; Mi ankiha lena
+together,kuni,description/adverb,Together; Min kuni labora
+well,bona,description/adverb,Good manner; Mi bona labora
+clearly,klari,description/adverb,Clear manner; Mi klari tala
+carefully,kura,description/adverb,Careful manner; Mi kura rita
+have,hava,verb,Starter sense: have / own; English lookup variant of have / own; English lookup variant of have / possess
+speak,tala,verb,Starter sense: say / speak; English lookup variant of say / speak; English lookup variant of speak / say
+say,tala,verb,Starter sense: say / speak; English lookup variant of say / speak; English lookup variant of speak / say
+know (a fact),sava,verb,Starter sense: know; English lookup variant of know
+know (be acquainted),sava,verb,Know a person or thing; context distinguishes acquaintance
+can / be able,pote,grammar,Before verb; English lookup variant of can / be able to; English lookup variant of can / able
+live,vita,verb,Starter sense: live / be alive; English lookup variant of live / be alive
+play,ludi,verb,Play a game or instrument; Mi ludi
+like,liva,verb,Starter sense: like / enjoy; English lookup variant of like / enjoy
+ask (a question),kesa,verb,Starter sense: ask; English lookup variant of ask
+repeat,repa,verb,Say or do again; Mi repa un voki
+big,bala,description/adverb,Starter sense: big / large; English lookup variant of big / large; English lookup variant of large
+old (not new),anti,description/adverb,Existing starter old or former sense; buki anti
+young,yuni,description/adverb,Early in life; nili yuni
+clear,klari,description/adverb,Clear in meaning or perception; un voki klari
+other,alteri,description/adverb,Another or other; un buki alteri
+Esperanto,Esperanto,noun,Borrowed proper language name; Mi lena Esperanto
+sentence,fraza,noun,Sentence or clause; un fraza
+school,skola,noun,School; Mi vada a skola
+teacher,lerari,noun,Regular teach + -ri; Lerari lera Narela
+student,lenari,noun,Regular learn + -ri; Lenari lena
+house,doma,noun,Starter sense: home / house; English lookup variant of home / house; English lookup variant of house / home
+window,fenestra,noun,Window; un fenestra
+table,tabla,noun,Table furniture; buki sura tabla
+chair,sedia,noun,Chair; Mi sida na sedia
+garden,gardina,noun,Garden; un gardina
+country (land),nati,noun,Starter sense: country / nation; English lookup variant of country / nation; English lookup variant of country
+road,ruta,noun,Starter sense: road / path; English lookup variant of road / path
+bread,pani,noun,Bread; Mi numa pani
+fruit,fruta,noun,Fruit; Mi numa fruta
+apple,pomi,noun,Apple; Mi numa pomi
+milk,lakti,noun,Milk; Mi sipa lakti
+tea,tea,noun,Tea drink; Mi sipa tea
+coffee,kafi,noun,Coffee drink; Mi sipa kafi
+salt,saliha,noun,Edible salt; saliha na nupa
+earth (soil),tera,noun,Starter sense: earth / soil; English lookup variant of earth / soil
+flower,flora,noun,Flower; un flora
+dog,kani,noun,Dog; Kani numa
+cat,kati,noun,Cat; Kati somi
+morning,matina,noun,Morning; Mi lena na matina
+evening,vespera,noun,Evening; Mi somi na vespera
+hour,hori,noun,Hour; en hori
+health,sani,noun,Health; sani de mi
+peace,pasi,noun,Peace; Min vola pasi
+music,musika,noun,Music; Mi suna musika
+answer (noun),respa,noun,Answer; un respa; English lookup variant of answer
+goal,selia,noun,Aim or target; selia de mi
+choir,kori,noun,Group of singers; un kori
+newspaper,yurnali,noun,Newspaper; Mi reda yurnali
+condition,kondisa,noun,A condition; un kondisa
+related,relati,description/adverb,Related; fraza relati
+reference,referi,noun,A reference; un referi
+manner,moda,noun,Manner; un moda
+sequence,seria,noun,An ordered sequence; un seria
+digit,digi,noun,Numeral digit; un digi
+decimal,desima,description/adverb,Decimal; punto desima
+point,punto,noun,Point or punctuation dot; un punto
+negative,negati,description/adverb,Below zero for numbers; numera negati
+minus,minus,expression,Minus in a number reading; minus do
+divide,divida,verb,Divide a quantity; divida per do

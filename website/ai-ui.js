@@ -33,7 +33,7 @@
       <div class="ai-fields"><div class="field"><label for="ai-length">Maximum response tokens</label><select id="ai-length"><option value="1024">Short · 1,024</option><option value="2048">Standard · 2,048</option><option value="4096">Long · 4,096</option><option value="8192">Extended · 8,192</option></select></div><div class="field"><label for="ai-instructions">Learning preferences (optional)</label><textarea id="ai-instructions" maxlength="2000" rows="2" placeholder="For example: explain grammar in simple English"></textarea></div></div></fieldset>
       <fieldset><legend>Read aloud</legend><div class="ai-fields"><div class="field"><label for="ai-speech-provider">Speech provider</label><select id="ai-speech-provider"><option value="browser">Browser voice · no key needed</option><option value="openai">OpenAI · API key required</option><option value="gemini">Gemini · API key required</option></select></div><div class="field"><label for="ai-rate">Playback speed</label><select id="ai-rate"><option value="0.75">0.75× · slower</option><option value="1">1× · normal</option><option value="1.25">1.25× · faster</option></select></div></div>
       <div id="ai-cloud-speech"><div class="ai-fields"><div class="field"><label for="ai-speech-model">Speech model ID</label><input id="ai-speech-model" maxlength="100" spellcheck="false"></div><div class="field"><label for="ai-voice">Voice</label><select id="ai-voice"></select></div></div><p class="ai-fineprint">Speech uses the key for its own provider. Select that provider above to add its key, then switch back to your preferred chat provider.</p></div>
-      <p class="ai-fineprint">Claude chat works with any of these speech options. Browser speech uses your device/browser's speech service, which may send text online. All speech is synthetic. Pronunciation of Lumena and Narela is approximate; the written pronunciation guide is the reference.</p></fieldset>
+      <p class="ai-fineprint">Claude chat works with any of these speech options. Browser speech uses your device/browser's speech service, which may send text online. All speech is synthetic. Pronunciation may be approximate for any language in this collection; the written pronunciation guide is the reference.</p></fieldset>
       <p id="ai-settings-status" role="status"></p><div class="ai-dialog-actions"><button type="button" id="ai-forget-all" class="ai-danger">Forget all keys & chats</button><button class="button" type="submit">Apply for this session</button></div></form></dialog>`);
   function refreshKeyState() {
     const provider = $('ai-provider').value;
@@ -123,6 +123,7 @@
     if (settings.speech === 'browser') {
       if (!global.speechSynthesis || !global.SpeechSynthesisUtterance) { status.textContent = 'Browser speech is unavailable. Choose OpenAI or Gemini in AI settings.'; return; }
       const utterance = new SpeechSynthesisUtterance(text);
+      if (language().name === 'Esperanto') utterance.lang = 'eo';
       utterance.rate = settings.rate;
       status.textContent = 'Browser voice · approximate pronunciation';
       utterance.onend = () => { if (token === speechSequence) status.textContent = 'Finished · browser voice'; };

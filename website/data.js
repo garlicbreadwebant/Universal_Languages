@@ -12,6 +12,7 @@ window.LANGUAGE_DATA = {
       "Open syllables",
       "No inflection"
     ],
+    "version": "0.2.0",
     "entries": [
       {
         "english": "I / me",
@@ -1548,15 +1549,861 @@ window.LANGUAGE_DATA = {
         "word": "pata",
         "category": "phrase",
         "notes": "Apology; explain situation if needed"
+      },
+      {
+        "english": "a / an",
+        "word": "puka",
+        "category": "grammar",
+        "notes": "No indefinite article; bare puka can mean a book; example noun rather than an article translation"
+      },
+      {
+        "english": "can / be able to",
+        "word": "pote",
+        "category": "modal",
+        "notes": "Ability only; followed by verb; English lookup variant of can / able"
+      },
+      {
+        "english": "future / will",
+        "word": "pu",
+        "category": "particle",
+        "notes": "Before aspect and predicate; English lookup variant of future"
+      },
+      {
+        "english": "must / have to",
+        "word": "tewa",
+        "category": "modal",
+        "notes": "Obligation; followed by verb or content clause; English lookup variant of must / obliged"
+      },
+      {
+        "english": "no / not",
+        "word": "no",
+        "category": "particle",
+        "notes": "Predicate negation or rejection of proposition; English lookup variant of not / no"
+      },
+      {
+        "english": "of / possessive link",
+        "word": "te",
+        "category": "relation",
+        "notes": "Thing followed by related person or thing; English lookup variant of of / related to"
+      },
+      {
+        "english": "ongoing action",
+        "word": "tu",
+        "category": "particle",
+        "notes": "Progressive aspect; English lookup variant of ongoing"
+      },
+      {
+        "english": "question marker",
+        "word": "ka",
+        "category": "particle",
+        "notes": "At end of clause; English lookup variant of yes/no question"
+      },
+      {
+        "english": "the",
+        "word": "puka",
+        "category": "grammar",
+        "notes": "No definite article; bare puka can mean the book in context; use ta puka to identify this book"
+      },
+      {
+        "english": "you",
+        "word": "ti",
+        "category": "pronoun",
+        "notes": "One addressee; English lookup variant of you (singular)"
+      },
+      {
+        "english": "you all",
+        "word": "timu",
+        "category": "pronoun",
+        "notes": "Multiple addressees; English lookup variant of you (plural)"
+      },
+      {
+        "english": "above / over",
+        "word": "su",
+        "category": "relation",
+        "notes": "Vertical superior position; contact unspecified; English lookup variant of on / above"
+      },
+      {
+        "english": "below / under",
+        "word": "nu",
+        "category": "relation",
+        "notes": "Vertical inferior position; English lookup variant of under"
+      },
+      {
+        "english": "for / intended for",
+        "word": "po",
+        "category": "relation",
+        "notes": "Intended beneficiary or purpose; English lookup variant of for"
+      },
+      {
+        "english": "how many / how much",
+        "word": "kaniti",
+        "category": "question",
+        "notes": "Before noun or alone; English lookup variant of how many / much"
+      },
+      {
+        "english": "left (direction)",
+        "word": "lewa",
+        "category": "description",
+        "notes": "Left direction in stated frame of reference; English lookup variant of left"
+      },
+      {
+        "english": "on / on top of",
+        "word": "su",
+        "category": "relation",
+        "notes": "On or above; contact is not encoded; add toki when contact matters; English lookup variant of on"
+      },
+      {
+        "english": "right (direction)",
+        "word": "yewa",
+        "category": "description",
+        "notes": "Right direction in stated frame of reference; English lookup variant of right"
+      },
+      {
+        "english": "through",
+        "word": "natu",
+        "category": "relation",
+        "notes": "Through an interior or passage; mi wata natu tama"
+      },
+      {
+        "english": "be / am / is / are",
+        "word": "esa",
+        "category": "verb",
+        "notes": "Subject plus identity description or location complement; English lookup variant of be"
+      },
+      {
+        "english": "begin / start",
+        "word": "inia",
+        "category": "verb",
+        "notes": "Intransitive; event as subject; English lookup variant of begin"
+      },
+      {
+        "english": "close / shut",
+        "word": "kosawe",
+        "category": "verb",
+        "notes": "Transitive object closed; English lookup variant of close"
+      },
+      {
+        "english": "do / make",
+        "word": "pami",
+        "category": "verb",
+        "notes": "Transitive product or content clause for caused event; English lookup variant of make / cause"
+      },
+      {
+        "english": "end / finish",
+        "word": "pina",
+        "category": "verb",
+        "notes": "Intransitive; event as subject; English lookup variant of finish"
+      },
+      {
+        "english": "exist / there is",
+        "word": "eki",
+        "category": "verb",
+        "notes": "Existential; followed by existing entity; English lookup variant of exist"
+      },
+      {
+        "english": "have / own",
+        "word": "awa",
+        "category": "verb",
+        "notes": "Transitive possessed item; English lookup variant of have / possess"
+      },
+      {
+        "english": "say / speak",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Transitive language or content clause; addressee with a; English lookup variant of speak / say"
+      },
+      {
+        "english": "stay / remain",
+        "word": "wesa",
+        "category": "verb",
+        "notes": "Intransitive; location with na; English lookup variant of stay"
+      },
+      {
+        "english": "arm",
+        "word": "manawe",
+        "category": "noun",
+        "notes": "Arm; mi sewa manawe te ti"
+      },
+      {
+        "english": "back (body)",
+        "word": "kopana",
+        "category": "noun",
+        "notes": "Rear of torso; kopana te mi"
+      },
+      {
+        "english": "city / town",
+        "word": "ula",
+        "category": "noun",
+        "notes": "Urban settlement; English lookup variant of city"
+      },
+      {
+        "english": "country / nation",
+        "word": "nati",
+        "category": "noun",
+        "notes": "Political country; not rural countryside; English lookup variant of country"
+      },
+      {
+        "english": "face",
+        "word": "kapana",
+        "category": "noun",
+        "notes": "Front of head; kapana te ti"
+      },
+      {
+        "english": "home / house",
+        "word": "tama",
+        "category": "noun",
+        "notes": "Dwelling; household membership supplied by context; English lookup variant of house / home"
+      },
+      {
+        "english": "light",
+        "word": "lumi",
+        "category": "noun",
+        "notes": "Visible light; lumi te sola"
+      },
+      {
+        "english": "man",
+        "word": "wilo",
+        "category": "noun",
+        "notes": "Adult male human; mi sewa wilo"
+      },
+      {
+        "english": "person / human",
+        "word": "pela",
+        "category": "noun",
+        "notes": "Individual human; penu also means unspecified person; English lookup variant of person"
+      },
+      {
+        "english": "thing / object",
+        "word": "ito",
+        "category": "noun",
+        "notes": "Thing or object; mi tekawe ito"
+      },
+      {
+        "english": "way / method",
+        "word": "meti",
+        "category": "noun",
+        "notes": "Method; not a road; meti te lawo"
+      },
+      {
+        "english": "woman",
+        "word": "wina",
+        "category": "noun",
+        "notes": "Adult female human; mi sewa wina"
+      },
+      {
+        "english": "big / large",
+        "word": "wala",
+        "category": "description",
+        "notes": "Large size; English lookup variant of large"
+      },
+      {
+        "english": "fast / quickly",
+        "word": "yapa",
+        "category": "description",
+        "notes": "High speed; English lookup variant of fast"
+      },
+      {
+        "english": "few / little (quantity)",
+        "word": "poka",
+        "category": "quantifier",
+        "notes": "Small number or amount; English lookup variant of few / little quantity"
+      },
+      {
+        "english": "good / well",
+        "word": "pona",
+        "category": "description",
+        "notes": "Positive evaluation; English lookup variant of good"
+      },
+      {
+        "english": "many / much",
+        "word": "muli",
+        "category": "quantifier",
+        "notes": "Large number or amount before noun; muli puka"
+      },
+      {
+        "english": "most (comparison)",
+        "word": "masi",
+        "category": "degree",
+        "notes": "Before description; specify comparison set; English lookup variant of most"
+      },
+      {
+        "english": "old / former (not new)",
+        "word": "aniti",
+        "category": "description",
+        "notes": "Earlier status only; describe age or prior use explicitly when that distinction matters"
+      },
+      {
+        "english": "only",
+        "word": "solo",
+        "category": "degree",
+        "notes": "Restricts the following phrase; solo mi lena"
+      },
+      {
+        "english": "sick / ill",
+        "word": "mela",
+        "category": "description",
+        "notes": "Unwell; English lookup variant of ill"
+      },
+      {
+        "english": "slow / slowly",
+        "word": "senu",
+        "category": "description",
+        "notes": "Low speed; English lookup variant of slow"
+      },
+      {
+        "english": "true / correct",
+        "word": "wela",
+        "category": "description",
+        "notes": "Factually true; English lookup variant of true"
+      },
+      {
+        "english": "wrong / incorrect",
+        "word": "ela",
+        "category": "description",
+        "notes": "False or incorrect in the stated criterion; tali esa ela"
+      },
+      {
+        "english": "excuse me / sorry",
+        "word": "pata",
+        "category": "phrase",
+        "notes": "Apology; explain situation if needed; English lookup variant of sorry"
+      },
+      {
+        "english": "you're welcome",
+        "word": "yali",
+        "category": "phrase",
+        "notes": "Response to gratitude; English lookup variant of you are welcome"
+      },
+      {
+        "english": "he",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral third person; Lumena does not encode English he versus she"
+      },
+      {
+        "english": "she",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral third person; specify identity separately if relevant"
+      },
+      {
+        "english": "it",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral third person or thing"
+      },
+      {
+        "english": "one / people",
+        "word": "penu",
+        "category": "pronoun/noun",
+        "notes": "Unspecified person; not the numeral one"
+      },
+      {
+        "english": "my",
+        "word": "te mi",
+        "category": "relation",
+        "notes": "Possessor phrase after noun; puka te mi"
+      },
+      {
+        "english": "your",
+        "word": "te ti",
+        "category": "relation",
+        "notes": "One addressee; use te timu for multiple addressees"
+      },
+      {
+        "english": "whether / question marker",
+        "word": "ka",
+        "category": "particle",
+        "notes": "At end of clause; English lookup variant of yes/no question"
+      },
+      {
+        "english": "that (clause)",
+        "word": "pasi",
+        "category": "particle",
+        "notes": "Opens a content clause; close it with pasu"
+      },
+      {
+        "english": "in",
+        "word": "na",
+        "category": "relation",
+        "notes": "At or in; distinguish interior with an explicit description when needed"
+      },
+      {
+        "english": "on",
+        "word": "su",
+        "category": "relation",
+        "notes": "On or above; contact is not encoded; add toki when contact matters"
+      },
+      {
+        "english": "over",
+        "word": "su",
+        "category": "relation",
+        "notes": "Vertical superior position; contact unspecified; English lookup variant of on / above"
+      },
+      {
+        "english": "to",
+        "word": "a",
+        "category": "relation",
+        "notes": "Direction or recipient; English lookup variant of to / toward"
+      },
+      {
+        "english": "from / of",
+        "word": "tawe / te",
+        "category": "relation",
+        "notes": "Origin versus association or possession"
+      },
+      {
+        "english": "about",
+        "word": "pili",
+        "category": "relation",
+        "notes": "Topic of speech or thought; mi tala pili puka"
+      },
+      {
+        "english": "before (place or time)",
+        "word": "ate / na kapana te",
+        "category": "relation",
+        "notes": "Ate is temporal before; spatial phrase literally at the face of"
+      },
+      {
+        "english": "until",
+        "word": "katiwe",
+        "category": "relation",
+        "notes": "Endpoint in time or space; mi wati katiwe puti"
+      },
+      {
+        "english": "how much",
+        "word": "kaniti",
+        "category": "question",
+        "notes": "Before noun or alone; English lookup variant of how many / much"
+      },
+      {
+        "english": "this (thing)",
+        "word": "ta",
+        "category": "determiner/pronoun",
+        "notes": "This; number-neutral"
+      },
+      {
+        "english": "that (thing)",
+        "word": "to",
+        "category": "determiner/pronoun",
+        "notes": "That; number-neutral"
+      },
+      {
+        "english": "often",
+        "word": "potewe",
+        "category": "adverb",
+        "notes": "On many occasions; mi lena potewe"
+      },
+      {
+        "english": "also",
+        "word": "ani",
+        "category": "adverb",
+        "notes": "In addition; mi ani lena"
+      },
+      {
+        "english": "already",
+        "word": "yami",
+        "category": "adverb",
+        "notes": "Before or by the reference time; mi yami lena"
+      },
+      {
+        "english": "still / yet",
+        "word": "nuki",
+        "category": "adverb",
+        "notes": "Continuation; mi nuki lena"
+      },
+      {
+        "english": "together",
+        "word": "konu",
+        "category": "relation",
+        "notes": "With others; name the companion after konu for precision"
+      },
+      {
+        "english": "well",
+        "word": "me pona",
+        "category": "adverb",
+        "notes": "Manner phrase; mi lawo me pona"
+      },
+      {
+        "english": "clearly",
+        "word": "me kali",
+        "category": "adverb",
+        "notes": "Manner phrase; mi tala me kali"
+      },
+      {
+        "english": "carefully",
+        "word": "me kasi",
+        "category": "adverb",
+        "notes": "Manner phrase; mi kata panu me kasi"
+      },
+      {
+        "english": "have",
+        "word": "awa",
+        "category": "verb",
+        "notes": "Transitive possessed item; English lookup variant of have / possess"
+      },
+      {
+        "english": "speak",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Transitive language or content clause; addressee with a; English lookup variant of speak / say"
+      },
+      {
+        "english": "say",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Transitive language or content clause; addressee with a; English lookup variant of speak / say"
+      },
+      {
+        "english": "know (a fact)",
+        "word": "sawa",
+        "category": "verb",
+        "notes": "Transitive; noun or content clause; English lookup variant of know"
+      },
+      {
+        "english": "know (be acquainted)",
+        "word": "sawa",
+        "category": "verb",
+        "notes": "Knowing a person or thing; distinguish acquaintance through context"
+      },
+      {
+        "english": "can / be able",
+        "word": "pote",
+        "category": "modal",
+        "notes": "Ability only; followed by verb; English lookup variant of can / able"
+      },
+      {
+        "english": "live",
+        "word": "wita",
+        "category": "verb",
+        "notes": "Intransitive; English lookup variant of live / be alive"
+      },
+      {
+        "english": "play",
+        "word": "lutiwe",
+        "category": "verb",
+        "notes": "Play a game or instrument; mi lutiwe"
+      },
+      {
+        "english": "like",
+        "word": "liwa",
+        "category": "verb",
+        "notes": "Transitive person thing or content clause; English lookup variant of like / enjoy"
+      },
+      {
+        "english": "ask (a question)",
+        "word": "kesa",
+        "category": "verb",
+        "notes": "Transitive question or content clause; addressee with a; English lookup variant of ask"
+      },
+      {
+        "english": "repeat",
+        "word": "lati",
+        "category": "verb",
+        "notes": "Say or do again; mi lati woki"
+      },
+      {
+        "english": "big",
+        "word": "wala",
+        "category": "description",
+        "notes": "Large size; English lookup variant of large"
+      },
+      {
+        "english": "old (not new)",
+        "word": "nowipa",
+        "category": "description",
+        "notes": "Previously used or no longer new; puka nowipa"
+      },
+      {
+        "english": "young",
+        "word": "yuni",
+        "category": "description",
+        "notes": "Early in life; nila yuni"
+      },
+      {
+        "english": "clear",
+        "word": "kali",
+        "category": "description",
+        "notes": "Clear in perception or meaning; woki kali"
+      },
+      {
+        "english": "other",
+        "word": "aliwe",
+        "category": "description",
+        "notes": "Another or other; puka aliwe"
+      },
+      {
+        "english": "Esperanto",
+        "word": "Esperanto",
+        "category": "noun",
+        "notes": "Borrowed proper language name; mi lena Esperanto"
+      },
+      {
+        "english": "sentence",
+        "word": "talawe",
+        "category": "noun",
+        "notes": "Sentence of language; talawe te Lumena"
+      },
+      {
+        "english": "school",
+        "word": "tama-lena",
+        "category": "noun",
+        "notes": "Head-first compound: learning house; mi wata a tama-lena"
+      },
+      {
+        "english": "teacher",
+        "word": "penu-letawe",
+        "category": "noun",
+        "notes": "Head-first compound: teaching person; penu-letawe letawe Lumena"
+      },
+      {
+        "english": "student",
+        "word": "penu-lena",
+        "category": "noun",
+        "notes": "Head-first compound: learning person; penu-lena lena"
+      },
+      {
+        "english": "house",
+        "word": "tama",
+        "category": "noun",
+        "notes": "Dwelling; household membership supplied by context; English lookup variant of house / home"
+      },
+      {
+        "english": "window",
+        "word": "poni",
+        "category": "noun",
+        "notes": "Window in a building; poni te tama"
+      },
+      {
+        "english": "table",
+        "word": "tapula",
+        "category": "noun",
+        "notes": "Table furniture; puka esa su tapula"
+      },
+      {
+        "english": "chair",
+        "word": "sitawe",
+        "category": "noun",
+        "notes": "Chair; mi sita na sitawe"
+      },
+      {
+        "english": "garden",
+        "word": "tamali",
+        "category": "noun",
+        "notes": "Cultivated garden; ali esa na tamali"
+      },
+      {
+        "english": "country (land)",
+        "word": "nati",
+        "category": "noun",
+        "notes": "Political country; not rural countryside; English lookup variant of country"
+      },
+      {
+        "english": "road",
+        "word": "luta",
+        "category": "noun",
+        "notes": "Route for travel; English lookup variant of road / path"
+      },
+      {
+        "english": "bread",
+        "word": "panawe",
+        "category": "noun",
+        "notes": "Bread; mi numa panawe"
+      },
+      {
+        "english": "fruit",
+        "word": "pumi",
+        "category": "noun",
+        "notes": "Fruit; mi numa pumi"
+      },
+      {
+        "english": "apple",
+        "word": "pomi",
+        "category": "noun",
+        "notes": "Apple fruit; mi numa pomi"
+      },
+      {
+        "english": "milk",
+        "word": "miliki",
+        "category": "noun",
+        "notes": "Milk; mi sipa miliki"
+      },
+      {
+        "english": "tea",
+        "word": "teya",
+        "category": "noun",
+        "notes": "Tea drink; mi sipa teya"
+      },
+      {
+        "english": "coffee",
+        "word": "kapi",
+        "category": "noun",
+        "notes": "Coffee drink; mi sipa kapi"
+      },
+      {
+        "english": "salt",
+        "word": "saliwe",
+        "category": "noun",
+        "notes": "Edible salt; saliwe esa na nupa"
+      },
+      {
+        "english": "earth (soil)",
+        "word": "tela",
+        "category": "noun",
+        "notes": "Ground material; not planet name; English lookup variant of earth / soil"
+      },
+      {
+        "english": "flower",
+        "word": "puli",
+        "category": "noun",
+        "notes": "Flower; mi sewa puli"
+      },
+      {
+        "english": "dog",
+        "word": "kuni",
+        "category": "noun",
+        "notes": "Dog; kuni numa"
+      },
+      {
+        "english": "cat",
+        "word": "katiyo",
+        "category": "noun",
+        "notes": "Cat; katiyo somi"
+      },
+      {
+        "english": "morning",
+        "word": "matina",
+        "category": "noun",
+        "notes": "Morning; mi lena na matina"
+      },
+      {
+        "english": "evening",
+        "word": "wesela",
+        "category": "noun",
+        "notes": "Evening; mi somi na wesela"
+      },
+      {
+        "english": "hour",
+        "word": "ola",
+        "category": "noun",
+        "notes": "Hour; una ola"
+      },
+      {
+        "english": "health",
+        "word": "saniwe",
+        "category": "noun",
+        "notes": "State of health; saniwe te mi"
+      },
+      {
+        "english": "peace",
+        "word": "pasiwe",
+        "category": "noun",
+        "notes": "Peace; absence of conflict; mu wola pasiwe"
+      },
+      {
+        "english": "music",
+        "word": "musiki",
+        "category": "noun",
+        "notes": "Music; mi suna musiki"
+      },
+      {
+        "english": "answer (noun)",
+        "word": "tali",
+        "category": "noun",
+        "notes": "Answer; English lookup variant of answer"
+      },
+      {
+        "english": "goal",
+        "word": "selawe",
+        "category": "noun",
+        "notes": "Aim or target; selawe te mi"
+      },
+      {
+        "english": "choir",
+        "word": "kolali",
+        "category": "noun",
+        "notes": "Group of singers; mi suna kolali"
+      },
+      {
+        "english": "newspaper",
+        "word": "puka-nuti",
+        "category": "noun",
+        "notes": "Head-first compound: today book; conventional sense newspaper"
+      },
+      {
+        "english": "condition",
+        "word": "siwe",
+        "category": "noun",
+        "notes": "A condition; siwe te lawo"
+      },
+      {
+        "english": "related",
+        "word": "tewe",
+        "category": "description",
+        "notes": "Related; ito tewe"
+      },
+      {
+        "english": "reference",
+        "word": "yena",
+        "category": "noun",
+        "notes": "A reference; yena te puka"
+      },
+      {
+        "english": "manner",
+        "word": "melawe",
+        "category": "noun",
+        "notes": "Manner; melawe te lawo"
+      },
+      {
+        "english": "sequence",
+        "word": "namiwe-luta",
+        "category": "noun",
+        "notes": "Head-first compound: number path; ordered sequence"
+      },
+      {
+        "english": "digit",
+        "word": "namiwe",
+        "category": "noun",
+        "notes": "Numeric digit in context; also numeric value"
+      },
+      {
+        "english": "decimal",
+        "word": "putowe",
+        "category": "description",
+        "notes": "Decimal; namiwe putowe"
+      },
+      {
+        "english": "point",
+        "word": "putona",
+        "category": "noun",
+        "notes": "Point or dot; putona na pape"
+      },
+      {
+        "english": "negative",
+        "word": "nekawe",
+        "category": "description",
+        "notes": "Below zero; namiwe nekawe"
+      },
+      {
+        "english": "minus",
+        "word": "neka",
+        "category": "particle",
+        "notes": "Before a number to make it negative"
+      },
+      {
+        "english": "divide",
+        "word": "suli",
+        "category": "particle",
+        "notes": "Divided by between quantities; una suli tuli"
       }
     ],
     "documents": {
-      "overview": "# Lumena\n\nVersion 0.1 — October 17, 2026\n\nLumena is a proposed international auxiliary language designed for predictable speech, regular grammar, and practical communication. The working name is pronounced /luˈmena/. It is an original prototype, not an established community language or a demonstrated optimum for all people.\n\nStart with [pronunciation](PRONUNCIATION.md), then the [first lessons](LESSONS.md). Consult the [grammar](GRAMMAR.md), [English dictionary](English%20to%20Lumena%20Dictionary.md), and [reverse dictionary](Lumena%20to%20English%20Dictionary.md). [Design notes](DESIGN.md) explain the choices and limitations.\n\n## At a glance\n\n- Five vowels and nine consonants; no consonant clusters or final consonants.\n- Fixed spelling and predictable stress; pitch and vowel length do not change meaning.\n- Subject–verb–object sentences; unchanged verbs and nouns.\n- Optional time and number markers, with explicit forms whenever precision matters.\n- Gender-neutral pronouns, no grammatical gender, no noun classes, no agreement.\n- Separate words for grammatical operations; no irregular conjugations or mandatory articles.\n\n`mi lena Lumena.` — I learn Lumena.\n\n`ti no kowa ka?` — Do you not understand?\n\n`pali tala senu.` — Please speak slowly.\n\n## Files and maintenance\n\n`lexicon.csv` is the vocabulary source of truth. The two Markdown dictionaries are generated from it and include every entry. Edit the CSV, then run:\n\n```powershell\nnode Lumena/tools/check_language.cjs --write\nnode Lumena/tools/check_language.cjs\n```\n\nThe checker verifies unique headwords, sound patterns, example vocabulary, local Markdown links, and generated dictionary freshness. It cannot establish naturalness, translation quality, or learner outcomes.\n\nNew roots need a narrow definition, grammatical category, example, pronunciation check, collision check, and learner review. Record accepted changes in [CHANGELOG.md](CHANGELOG.md). Keep the core stable during a learning trial; publish breaking changes with a migration table. Technical vocabulary, recordings, translations of these English teaching materials, and independently reviewed accessibility materials remain future work.\n",
+      "overview": "# Lumena\n\nVersion 0.2.0 — October 18, 2026\n\nLumena is a proposed international auxiliary language designed for predictable speech, regular grammar, and practical communication. The working name is pronounced /luˈmena/. It is an original prototype, not an established community language or a demonstrated optimum for all people.\n\nStart with [pronunciation](PRONUNCIATION.md), then the [first lessons](LESSONS.md). Consult the [grammar](GRAMMAR.md), [English dictionary](English%20to%20Lumena%20Dictionary.md), and [reverse dictionary](Lumena%20to%20English%20Dictionary.md). [Design notes](DESIGN.md) explain the choices and limitations.\n\n## At a glance\n\n- Five vowels and nine consonants; no consonant clusters or final consonants.\n- Fixed spelling and predictable stress; pitch and vowel length do not change meaning.\n- Subject–verb–object sentences; unchanged verbs and nouns.\n- Optional time and number markers, with explicit forms whenever precision matters.\n- Gender-neutral pronouns, no grammatical gender, no noun classes, no agreement.\n- Separate words for grammatical operations; no irregular conjugations or mandatory articles.\n\n`mi lena Lumena.` — I learn Lumena.\n\n`ti no kowa ka?` — Do you not understand?\n\n`pali tala senu.` — Please speak slowly.\n\n## Files and maintenance\n\n`lexicon.csv` is the vocabulary source of truth. The two Markdown dictionaries are generated from it and include every entry. Edit the CSV, then run:\n\n```powershell\nnode Lumena/tools/check_language.cjs --write\nnode Lumena/tools/check_language.cjs\n```\n\nThe checker verifies unique headwords, sound patterns, example vocabulary, local Markdown links, and generated dictionary freshness. It cannot establish naturalness, translation quality, or learner outcomes.\n\nNew roots need a narrow definition, grammatical category, example, pronunciation check, collision check, and learner review. Record accepted changes in [CHANGELOG.md](CHANGELOG.md). Keep the core stable during a learning trial; publish breaking changes with a migration table. Technical vocabulary, recordings, translations of these English teaching materials, and independently reviewed accessibility materials remain future work.\n",
       "pronunciation": "# Pronunciation and spelling\n\n## Alphabet\n\nUse these 14 lowercase Latin letters: **a e i k l m n o p s t u w y**. Capitalization has no grammatical meaning. Native vocabulary has one sound per letter and no silent letters or digraphs. IPA below is the reference; English hints are approximate and depend on accent.\n\n| Letter | IPA | Articulation or approximate hint |\n|---|---|---|\n| a | /a/ | Open central vowel; approximately the vowel in Spanish casa |\n| e | /e/ | Mid front vowel; a steady vowel, without the glide in English day |\n| i | /i/ | High front vowel; approximately machine |\n| o | /o/ | Mid back rounded vowel; steady, without the glide in English go |\n| u | /u/ | High back rounded vowel; approximately flute |\n| p | /p/ | Lips close and release; approximately spin's p |\n| t | /t/ | Tongue at teeth or ridge behind teeth |\n| k | /k/ | Back of tongue closes against the soft palate |\n| m | /m/ | Lips closed, sound through nose |\n| n | /n/ | Tongue at teeth or ridge, sound through nose |\n| s | /s/ | Approximately see |\n| l | /l/ | Tongue touches ridge; air passes along its sides |\n| w | /w/ | Approximately we |\n| y | /j/ | Approximately yes; always a consonant |\n\n## Syllables and stress\n\nEach syllable is a vowel alone or one consonant plus one vowel: **(C)V**. Repeat this pattern to form words. `aku` divides `a-ku`; `Lumena` divides `lu-me-na`. Adjacent vowels remain separate syllables: `mea` is `me-a`. There are no diphthongs in the reference pronunciation.\n\nStress the next-to-last syllable of each word; a one-syllable word has its only syllable. `lena` is **LE**-na, `Lumena` is lu-**ME**-na. In connected speech, particles may be lighter, but do not drop their vowels. Maintain word boundaries, particularly between successive vowels.\n\nSlight aspiration, dental versus alveolar t, and modest differences in vowel quality are acceptable when understandable. Aim for the reference sounds; no rule requires an English accent. There is no competing r sound, but l remains the spelling and reference articulation. Accent tolerance does not guarantee that every substitution is intelligible.\n\n## Names, writing, and access\n\nKeep personal and place names in their owners' preferred spelling. For speech, ask the person for a pronunciation; optionally record a consented Lumena approximation alongside the original. Foreign names and quotations are outside native phonotactic checks. Do not silently rename people.\n\nSpaces separate words. Use ordinary periods, commas, and question marks; punctuation is a reading aid, not a replacement for spoken grammatical markers. Arabic digits are accepted. Hyphens join transparent lexical compounds in writing; pronounce both components as separate words with their own stress. A compound containing a grammatical particle is not a native lexical compound.\n\nThe Latin alphabet reduces typing requirements on many systems but is not equally familiar worldwide. Teaching should include sound demonstrations and later script-specific transliteration guides. This edition provides text and IPA, not validated audio, Braille conventions, or a signed equivalent. Do not describe it as accessible to everyone merely because its rules are regular.\n",
-      "grammar": "# Lumena grammar 0.1\n\n## 1. Basic clauses\n\nThe default is **subject + predicate + object + complements**. Use an overt subject in statements. Nouns and pronouns have the same form in every role; verbs never conjugate. `mi sewa ti.` = I see you. A noun alone is number-neutral: `mi sewa nila.` = I see a child or children. Use `una nila` for exactly one child and `ma nila` for more than one. Context can supply number when it is irrelevant.\n\nPronouns: `mi` I; `ti` you (one); `li` a third person or thing (one); `mu` we; `timu` you (more than one); `lu` they. `mu` leaves inclusion of the listener unspecified; say `mi ni ti` (I and you) or explicitly name the group when necessary. `se` is the reflexive object referring to the subject of its own clause: `li sewa se.` = They see themself. It does not refer across clause boundaries.\n\nUse `esa` for identity, description, or location: `li esa mela.` = They are ill. `aku esa na tama.` = Water is in the house. Use `eki` for existence: `eki aku.` = There is water. Existence clauses are the exception to the overt-subject rule. There is no passive construction in this core; name the actor or use `penu` (someone).\n\n## 2. Noun phrases\n\nOrder: **demonstrative + quantity + noun + descriptions + possessive phrase**. All slots except the noun are optional. `ta tuli puka wala te mi` = these two large books of mine. `ta` this/these; `to` that/those. These can stand alone as pronouns. There are no articles. `ma` marks plural; numbers replace it. `soma` some, `ala` all, and `poka` few occupy the quantity slot. For all of a specific group say `ala te` followed by that group; `ala te ta nila` = all of these children.\n\nDescriptions follow nouns. Multiple descriptions apply independently to the head noun, not successively to each other. Possession uses **thing + te + possessor**: `puka te ti`. A possessive phrase reaches the end of its noun phrase; rephrase nested ownership or use separate clauses if unclear. `te` indicates a relationship, not always legal ownership. Describe the relationship explicitly where that distinction matters.\n\n## 3. Verbs, time, aspect, and negation\n\nPredicate order: **subject + time + aspect + no + modal + verb + object + complements**. Omit unused slots. Time is `pa` past or `pu` future. With no time marker the clause is context-dependent, not obligatorily present. Aspect is `tu` ongoing or `pe` completed relative to the reference time; choose at most one. `mi pa tu numa.` = I was eating. `mi pu pe numa.` = I will have finished eating.\n\nTime phrases such as `nuna` now or `pati` yesterday go at the end; do not combine contradictory times without explanation. State the reference time for completed aspect when context is insufficient.\n\n`no` negates the following predicate, including any modal. `mi no pote pala.` = I cannot walk. `mi no tewa pala.` = I am not obliged to walk. To prohibit an action, use `no pala!` = Do not walk! To state an obligation not to act, use `mi tewa pasi [mi no pala] pasu.` = I must not walk. This longer form keeps negation scope explicit.\n\nModals: `pote` able to; `tewa` obliged to; `wola` want to. At most one modal occurs in a simple predicate. `tewa` and `wola` may take an explicit content clause instead of a bare verb; this permits explicit scope or a different embedded subject. For other nested meanings use a content clause with a suitable main verb. `wola` can also take a noun object: `mi wola aku.` = I want water. `neta` need takes a noun or content clause. `pote` means ability; permission is expressed with `lasi` allow.\n\n## 4. Questions and commands\n\nAppend `ka` to a complete clause for yes/no questions: `ti lena ka?` = Are you learning? Answer with a full affirmative or negative clause when a bare answer could be ambiguous, especially after negative questions. `ya` affirms the proposition just asked; `no` rejects it. For a negative question prefer `mi lena` or `mi no lena`.\n\nQuestion words stay where their answers belong: `ki` who; `ke` what; `kana` where; `kama` when; `kimo` how; `kaniti` how many/much; `kosa` why. `ti sewa ki?` = Whom do you see? `ki sewa ti?` = Who sees you? Do not add `ka` to these questions. `kaniti puka` = how many books. `kela puka` = which book. `kosa` asks for the reason for the whole clause and appears last.\n\nCommands omit the subject: `wena!` = Come! Add `pali` first for please. `no` precedes a negative command. Name the addressee separately if needed.\n\n## 5. Relations and adverbs\n\nRelations precede their noun phrases: `na` at/in, `su` on/above, `nu` under, `a` to/toward, `tawe` from, `konu` with/accompanied by, `sena` without, `po` for/intended for, `pi` using/by means of, `mita` between. `mi pana puka a ti.` = I give a book to you. `mi kata panu pi nala.` = I cut cloth using a tool. `su` covers above with or without contact; add a full clause using `toki` (touch) when contact matters. `mita` takes a coordinated pair: `mita mi ni ti` = between me and you.\n\nDegree words precede descriptions: `weli wala` very large; `pulu wala` larger; `masi wala` largest. A comparison uses `luwa`: `ta tama esa pulu wala luwa to tama.` = This house is larger than that house. A superlative needs a comparison set: `masi wala na ta ma tama` = largest among these houses. Equality: `ta tama esa sami wala luwa to tama.` = This house is as large as that house.\n\nManner follows the predicate's object, if any, and uses `me` when an object is present: `mi tala Lumena me senu.` = I speak Lumena slowly. Without `me`, a description immediately following a noun modifies that noun: `mi sewa nila me yapa.` = I see the child quickly; `mi sewa nila yapa.` = I see a fast child. For an intransitive verb, `mi pala senu` is unambiguous. `me` can always be used for clarity.\n\n## 6. Joining and embedding\n\n`ni` and; `o` inclusive or; `wa` but; `pako` because. Repeat full clauses for complex coordination: `mi numa ni ti sipa.` = I eat and you drink. Exclusive or uses `una te` plus alternatives and an explicit choice context; do not assume that `o` excludes both.\n\n`si ... , ...` marks if ... then ...; `mi pu wena si ti kesa` is not the core order. Use `si ti kesa, mi pu wena.` = If you ask, I will come. End a nested or potentially ambiguous condition with `sipu` before starting the result: `si ti kesa sipu mi pu wena.` Commas alone are not a spoken delimiter.\n\nUse `pasi` to open and `pasu` to close a content clause: `mi sawa pasi ti pa wena pasu.` = I know that you came. Markers remain spoken; square brackets in explanations are only visual aids. A nested clause must close before its parent. This is the regular way to express thoughts, reported statements, and propositions as objects. `mi tala pasi li esa mela pasu.` = I say that they are ill. Direct quotation requires announcing a quotation in the surrounding shared language until quotation conventions are standardized.\n\nUse `yasi ... yasu` for a relative clause after a noun phrase. Inside it, `ye` resumes the head noun in its required role: `penu yasi mi sewa ye yasu` = the person whom I see. `penu yasi ye sewa mi yasu` = the person who sees me. Exactly one `ye` belongs to each relative clause; inner relative clauses have their own. This costs syllables but avoids silent gaps and uncertain attachment. Repeat a noun or use separate clauses when pronoun reference would be unclear.\n\n## 7. Word formation and valency\n\nRoots have the categories listed in the dictionary. Do not freely change a noun into a verb. A description can be an adverb via `me`. Noun compounds are **head first**, written with hyphens: `tama-lena` learning house (school); `penu-lena` learning person (learner); `tama-mela` illness house (clinic). These compounds conventionally describe association; they do not mechanically encode every possible relationship. Define specialized compounds in the dictionary before depending on them in precise communication. There are no productive affixes in 0.1.\n\nBasic verb argument patterns are in the lexicon notes: transitive verbs take a direct object; intransitive verbs do not. Use `pana` give + thing + `a` recipient. `lasi` allow + person + `a` action content clause. `mi lasi ti a pasi ti pala pasu.` = I allow you to walk. For causation say `mi pami pasi ti pala pasu.` = I cause you to walk. Avoid silently changing a verb's argument pattern to imitate English.\n\n## 8. Numbers and precision\n\nDigits: `suno` 0, `una` 1, `tuli` 2, `sani` 3, `peka` 4, `lima` 5, `noku` 6, `sepi` 7, `watu` 8, `yune` 9. Scales: `teka` 10, `seta` 100, `mila` 1,000. Write groups largest first; a digit before a scale multiplies it, adjacent descending groups add. A bare scale means one of that scale. `teka una` = 11; `tuli teka sani` = 23; `una seta lima teka noku` = 156; `tuli mila sani seta` = 2,300. Omit zero groups. These scale constructions cover 1–9,999; use `suno` for zero. For larger values use digit reading in this core to avoid undefined recursive scale conventions.\n\n`nume` begins a digit-by-digit reading of an identifier or large numeral; `nume una suno tuli` = the digit sequence 102. `puto` separates an integer from decimal digits: `tuli puto suno lima` = 2.05. `neka` before a number makes it negative. `pali` already means please and is never a decimal marker. Fractions use `suli` (divided by): `una suli tuli` = one half. Ordinals use `noli` before a cardinal: `noli sani puka` = third book. A quantity precedes its noun. Measurements use number + unit; specify calendar, time zone, and units in shared standard notation where precision is needed. Monetary units and technical unit names are borrowed labels, not newly assigned native roots.\n",
+      "grammar": "# Lumena grammar 0.2.0\n\n## 1. Basic clauses\n\nThe default is **subject + predicate + object + complements**. Use an overt subject in statements. Nouns and pronouns have the same form in every role; verbs never conjugate. `mi sewa ti.` = I see you. A noun alone is number-neutral: `mi sewa nila.` = I see a child or children. Use `una nila` for exactly one child and `ma nila` for more than one. Context can supply number when it is irrelevant.\n\nPronouns: `mi` I; `ti` you (one); `li` a third person or thing (one); `mu` we; `timu` you (more than one); `lu` they. `mu` leaves inclusion of the listener unspecified; say `mi ni ti` (I and you) or explicitly name the group when necessary. `se` is the reflexive object referring to the subject of its own clause: `li sewa se.` = They see themself. It does not refer across clause boundaries.\n\nUse `esa` for identity, description, or location: `li esa mela.` = They are ill. `aku esa na tama.` = Water is in the house. Use `eki` for existence: `eki aku.` = There is water. Existence clauses are the exception to the overt-subject rule. There is no passive construction in this core; name the actor or use `penu` (someone).\n\n## 2. Noun phrases\n\nOrder: **demonstrative + quantity + noun + descriptions + possessive phrase**. All slots except the noun are optional. `ta tuli puka wala te mi` = these two large books of mine. `ta` this/these; `to` that/those. These can stand alone as pronouns. There are no articles. `ma` marks plural; numbers replace it. `soma` some, `ala` all, and `poka` few occupy the quantity slot. For all of a specific group say `ala te` followed by that group; `ala te ta nila` = all of these children.\n\nDescriptions follow nouns. Multiple descriptions apply independently to the head noun, not successively to each other. Possession uses **thing + te + possessor**: `puka te ti`. A possessive phrase reaches the end of its noun phrase; rephrase nested ownership or use separate clauses if unclear. `te` indicates a relationship, not always legal ownership. Describe the relationship explicitly where that distinction matters.\n\n## 3. Verbs, time, aspect, and negation\n\nPredicate order: **subject + time + aspect + no + modal + verb + object + complements**. Omit unused slots. Time is `pa` past or `pu` future. With no time marker the clause is context-dependent, not obligatorily present. Aspect is `tu` ongoing or `pe` completed relative to the reference time; choose at most one. `mi pa tu numa.` = I was eating. `mi pu pe numa.` = I will have finished eating.\n\nTime phrases such as `nuna` now or `pati` yesterday go at the end; do not combine contradictory times without explanation. State the reference time for completed aspect when context is insufficient.\n\n`no` negates the following predicate, including any modal. `mi no pote pala.` = I cannot walk. `mi no tewa pala.` = I am not obliged to walk. To prohibit an action, use `no pala!` = Do not walk! To state an obligation not to act, use `mi tewa pasi [mi no pala] pasu.` = I must not walk. This longer form keeps negation scope explicit.\n\nModals: `pote` able to; `tewa` obliged to; `wola` want to. At most one modal occurs in a simple predicate. `tewa` and `wola` may take an explicit content clause instead of a bare verb; this permits explicit scope or a different embedded subject. For other nested meanings use a content clause with a suitable main verb. `wola` can also take a noun object: `mi wola aku.` = I want water. `neta` need takes a noun or content clause. `pote` means ability; permission is expressed with `lasi` allow.\n\n## 4. Questions and commands\n\nAppend `ka` to a complete clause for yes/no questions: `ti lena ka?` = Are you learning? Answer with a full affirmative or negative clause when a bare answer could be ambiguous, especially after negative questions. `ya` affirms the proposition just asked; `no` rejects it. For a negative question prefer `mi lena` or `mi no lena`.\n\nQuestion words stay where their answers belong: `ki` who; `ke` what; `kana` where; `kama` when; `kimo` how; `kaniti` how many/much; `kosa` why. `ti sewa ki?` = Whom do you see? `ki sewa ti?` = Who sees you? Do not add `ka` to these questions. `kaniti puka` = how many books. `kela puka` = which book. `kosa` asks for the reason for the whole clause and appears last.\n\nCommands omit the subject: `wena!` = Come! Add `pali` first for please. `no` precedes a negative command. Name the addressee separately if needed.\n\n## 5. Relations and adverbs\n\nRelations precede their noun phrases: `na` at/in, `su` on/above, `nu` under, `a` to/toward, `tawe` from, `konu` with/accompanied by, `sena` without, `po` for/intended for, `pi` using/by means of, `mita` between. `mi pana puka a ti.` = I give a book to you. `mi kata panu pi nala.` = I cut cloth using a tool. `su` covers above with or without contact; add a full clause using `toki` (touch) when contact matters. `mita` takes a coordinated pair: `mita mi ni ti` = between me and you.\n\nDegree words precede descriptions: `weli wala` very large; `pulu wala` larger; `masi wala` largest. A comparison uses `luwa`: `ta tama esa pulu wala luwa to tama.` = This house is larger than that house. A superlative needs a comparison set: `masi wala na ta ma tama` = largest among these houses. Equality: `ta tama esa sami wala luwa to tama.` = This house is as large as that house.\n\nManner follows the predicate's object, if any, and uses `me` when an object is present: `mi tala Lumena me senu.` = I speak Lumena slowly. Without `me`, a description immediately following a noun modifies that noun: `mi sewa nila me yapa.` = I see the child quickly; `mi sewa nila yapa.` = I see a fast child. For an intransitive verb, `mi pala senu` is unambiguous. `me` can always be used for clarity.\n\n## 6. Joining and embedding\n\n`ni` and; `o` inclusive or; `wa` but; `pako` because. Repeat full clauses for complex coordination: `mi numa ni ti sipa.` = I eat and you drink. Exclusive or uses `una te` plus alternatives and an explicit choice context; do not assume that `o` excludes both.\n\n`si ... , ...` marks if ... then ...; `mi pu wena si ti kesa` is not the core order. Use `si ti kesa, mi pu wena.` = If you ask, I will come. End a nested or potentially ambiguous condition with `sipu` before starting the result: `si ti kesa sipu mi pu wena.` Commas alone are not a spoken delimiter.\n\nUse `pasi` to open and `pasu` to close a content clause: `mi sawa pasi ti pa wena pasu.` = I know that you came. Markers remain spoken; square brackets in explanations are only visual aids. A nested clause must close before its parent. This is the regular way to express thoughts, reported statements, and propositions as objects. `mi tala pasi li esa mela pasu.` = I say that they are ill. Direct quotation requires announcing a quotation in the surrounding shared language until quotation conventions are standardized.\n\nUse `yasi ... yasu` for a relative clause after a noun phrase. Inside it, `ye` resumes the head noun in its required role: `penu yasi mi sewa ye yasu` = the person whom I see. `penu yasi ye sewa mi yasu` = the person who sees me. Exactly one `ye` belongs to each relative clause; inner relative clauses have their own. This costs syllables but avoids silent gaps and uncertain attachment. Repeat a noun or use separate clauses when pronoun reference would be unclear.\n\n## 7. Word formation and valency\n\nThe shared-vocabulary expansion adds ordinary roots and defines learning-related compounds in the dictionary. Entries may contain a phrase or slash-separated alternatives selected by meaning. These are not additional affixes. Bare nouns cover English a/an/the in context; the dictionary illustrates this with puka rather than inventing articles.\n\nRoots have the categories listed in the dictionary. Do not freely change a noun into a verb. A description can be an adverb via `me`. Noun compounds are **head first**, written with hyphens: `tama-lena` learning house (school); `penu-lena` learning person (learner); `tama-mela` illness house (clinic). These compounds conventionally describe association; they do not mechanically encode every possible relationship. Define specialized compounds in the dictionary before depending on them in precise communication. There are no productive affixes in 0.2.0.\n\nBasic verb argument patterns are in the lexicon notes: transitive verbs take a direct object; intransitive verbs do not. Use `pana` give + thing + `a` recipient. `lasi` allow + person + `a` action content clause. `mi lasi ti a pasi ti pala pasu.` = I allow you to walk. For causation say `mi pami pasi ti pala pasu.` = I cause you to walk. Avoid silently changing a verb's argument pattern to imitate English.\n\n## 8. Numbers and precision\n\nDigits: `suno` 0, `una` 1, `tuli` 2, `sani` 3, `peka` 4, `lima` 5, `noku` 6, `sepi` 7, `watu` 8, `yune` 9. Scales: `teka` 10, `seta` 100, `mila` 1,000. Write groups largest first; a digit before a scale multiplies it, adjacent descending groups add. A bare scale means one of that scale. `teka una` = 11; `tuli teka sani` = 23; `una seta lima teka noku` = 156; `tuli mila sani seta` = 2,300. Omit zero groups. These scale constructions cover 1–9,999; use `suno` for zero. For larger values use digit reading in this core to avoid undefined recursive scale conventions.\n\n`nume` begins a digit-by-digit reading of an identifier or large numeral; `nume una suno tuli` = the digit sequence 102. `puto` separates an integer from decimal digits: `tuli puto suno lima` = 2.05. `neka` before a number makes it negative. `pali` already means please and is never a decimal marker. Fractions use `suli` (divided by): `una suli tuli` = one half. Ordinals use `noli` before a cardinal: `noli sani puka` = third book. A quantity precedes its noun. Measurements use number + unit; specify calendar, time zone, and units in shared standard notation where precision is needed. Monetary units and technical unit names are borrowed labels, not newly assigned native roots.\n",
       "lessons": "# First lessons\n\nSpend as much time as needed on each lesson. These are practice units, not a promise of fluency within a fixed number of days. Sound out the words using the pronunciation guide.\n\n## 1. Meet someone\n\n| Lumena | English |\n|---|---|\n| sali. | Hello. |\n| nami te mi esa Ana. | My name is Ana. |\n| nami te ti esa ke? | What is your name? |\n| mi esa penu. | I am a person. |\n| sani. | Three. |\n\nAna is an illustrative proper name. Names retain their owners' spelling. Practice `mi`, `ti`, and `li` without changing the verb `esa`.\n\n## 2. Ask for help\n\n| Lumena | English |\n|---|---|\n| pali sama mi. | Please help me. |\n| mi no kowa. | I do not understand. |\n| pali tala me senu. | Please speak slowly. |\n| aku esa kana? | Where is the water? |\n| mi neta nupa ni aku. | I need food and water. |\n| tani. | Thank you. |\n| yali. | You are welcome. |\n\n## 3. Describe an action\n\n| Lumena | English |\n|---|---|\n| mi lena Lumena. | I learn Lumena. |\n| mi tu lena Lumena. | I am learning Lumena. |\n| mu pa pala a tama pati. | We walked home yesterday. |\n| lu pu wena puti. | They will come tomorrow. |\n| ti wola ta puka ka? | Do you want this book? |\n| nila sewa tuli wiki. | A child sees two birds. |\n\n`tama` means a dwelling; `a tama` is “to a dwelling/home,” with the specific home supplied by context. Add `te mi` to specify mine.\n\n## 4. Explain and connect\n\n| Lumena | English |\n|---|---|\n| mi pote leta. | I can read. |\n| mi ama ti. | I love you. |\n| si ti wena sipu mi pu pami nupa. | If you come, I will make food. |\n| mi esa yomi pako ti esa na ta tama. | I am happy because you are in this house. |\n| mi sawa pasi ti pa wena pasu. | I know that you came. |\n| penu yasi ye sama mi yasu esa na tama. | The person who helps me is in the house. |\n\n## 5. Mini-dialogue\n\n| Speaker | Lumena | English |\n|---|---|---|\n| A | sali. ti tala Lumena ka? | Hello. Do you speak Lumena? |\n| B | mi tu lena Lumena. pali tala me senu. | I am learning Lumena. Please speak slowly. |\n| A | ti neta ke? | What do you need? |\n| B | mi neta aku. | I need water. |\n| A | aku esa na ta tama. | Water is in this house. |\n| B | tani. | Thank you. |\n\n## Practice\n\nTranslate before looking at the answers:\n\n1. I do not see you.\n2. Will they come?\n3. My two books.\n4. Who helps you?\n5. I know that you are learning.\n6. Twenty-three people.\n7. I cannot walk.\n8. Please do not go.\n\nAnswers:\n\n1. `mi no sewa ti.`\n2. `lu pu wena ka?`\n3. `tuli puka te mi`\n4. `ki sama ti?`\n5. `mi sawa pasi ti tu lena pasu.`\n6. `tuli teka sani penu`\n7. `mi no pote pala.`\n8. `pali no wata!`\n\nPractice repairing misunderstanding: say `mi no kowa`, ask `ke?`, repeat the relevant noun, and use a full clause. Reading these answers checks the rules; conversation with diverse learners is needed to check real communication.\n",
-      "design": "# Review, evidence, and design decisions\n\n## Repository review\n\nThe supplied workspace initially contained `Narela/English to New Language Dictionary.md` and an empty `Universal/` directory. The Narela file was subsequently observed at `Narela/English to Narela Dictionary.md`; this work did not rename it. The root dictionary shown in the IDE tab list was not present on disk during review. Narela's single document combines pronunciation, 14 grammar rules, thematic vocabulary tables, numbers, and sample sentences. Its strengths are invariant verbs, a clear starter scope, useful phrases, and instructions to check new words.\n\n| Finding in Narela | Consequence | Lumena response |\n|---|---|---|\n| “Usual English sounds”; no explicit inventory | Learners need English knowledge to interpret letters; x and y need clarification | Explicit letter-to-IPA table and articulatory guidance |\n| Clusters in klosa, stana, tru, blu; closed syllables in numbers | Additional production demands for learners unfamiliar with these sequences | Native (C)V syllables only |\n| Plural -n plus min/tin/lin | Adds final consonants and a morphological rule | Separate optional plural marker; independent plural pronouns |\n| Present “unmarked” | May force a present reading even when context supplies past | Unmarked time is context-dependent |\n| No full rules for relative or content clauses | Difficult to express everyday complex thoughts predictably | Overt opening/closing particles and explicit resumed relative role |\n| Short definitions and no verb argument frames | Hidden English assumptions about meaning and objects | Narrower senses and argument notes in CSV |\n| Grammar and lexicon in one manually edited file | Conflicts become harder to detect as vocabulary grows | Source CSV, generated dictionaries, focused documents and checker |\n| Many visibly European-looking words | Unequal familiarity; no evidence of globally balanced recognition | Treat forms as provisional; do not claim neutral or globally familiar vocabulary |\n\nThese are design limitations, not evidence that Narela cannot be learned. Lumena is a separate design and is not backward-compatible with Narela; similar spellings may have different meanings. Do not mix the two dictionaries.\n\n## What research supports, and what it does not\n\nThe following are primary descriptive or research sources, accessed October 17, 2026. The proposed rules are design inferences, not prescriptions from these sources.\n\n- Ian Maddieson, [WALS chapter 2: Vowel Quality Inventories](https://wals.info/chapter/2): five-vowel inventories are the most frequent individual size in this sample, but occur in only about a third of sampled languages. We choose /a e i o u/ as a manageable compromise; this does not make all five vowels familiar to everyone.\n- Maddieson, [WALS chapter 12: Syllable Structure](https://wals.info/chapter/12): languages differ in permitted consonant and vowel sequences. Choosing open syllables avoids clusters in native words; the cost is longer words and a smaller supply of short distinct forms.\n- Matthew Dryer, [WALS chapter 81: Order of Subject, Object and Verb](https://wals.info/chapter/81): subject–object–verb and subject–verb–object are both widely represented patterns. We choose one fixed SVO order for predictability, not because it is universal or demonstrably easiest.\n- Maddieson, [WALS chapter 13: Tone](https://wals.info/chapter/13): tone systems vary across languages. Omitting lexical tone removes a contrast for learners whose languages lack it; it sacrifices information-carrying capacity and does not imply tonal languages are inferior.\n- [Second Language Phonology, Cambridge University Press](https://www.cambridge.org/core/books/second-language-phonology/988842E51A7BC87179025DA57DAD854E): research treats acquisition of speech categories as sensitive to learners' language experience and input. We therefore require cross-background trials and intelligibility work instead of claiming a universal easiest inventory.\n\nWALS counts languages in its samples, not populations of learners, and does not measure learning time for this constructed language. Typological frequency is a design input, not proof of learnability. No source establishes Lumena as optimal.\n\n## Optimization priorities\n\n1. Understandable communication and easy recovery after misunderstanding.\n2. Predictable rules and minimal obligatory memorization of exceptions.\n3. Reasonable speaking effort, typing effort, and vocabulary size.\n4. Concision where it does not create recurring ambiguity.\n\nNine consonants avoid a required r/l or voiced/unvoiced stop distinction. This is a hypothesis about useful simplification, not a claim that each retained sound is universal. Restricting sounds increases near-neighbor words; the vocabulary needs listening trials. Short particles save syllables but can be hard to hear. Explicit clause closers cost syllables and require training. Mandatory copulas and fixed word order reduce some interpretation choices while favoring learners familiar with those patterns.\n\nRoots are provisional constructed labels, including adaptations retained from Narela and forms resembling words in multiple languages. No systematic etymological balancing or legal/name clearance has been completed. Avoid invented claims that the lexicon represents every continent. A globally inclusive vocabulary process needs paid participation, multilingual teaching materials, and community authority over future changes.\n\n## Evaluation before a stable release\n\nRecruit consenting adults across unrelated language families, scripts, literacy levels, and accessibility needs. Include speakers with backgrounds such as Arabic, Mandarin, Hindi, Spanish, Swahili, Indonesian, Japanese, and additional underrepresented languages; this illustrative list is not representative by itself. Consult educators and disabled users about formats and task design.\n\nRun a small pilot first, then use its variance to plan sample sizes and preregister the larger comparison. Give equal instruction time and comparable vocabulary exposure. Counterbalance matched learning tasks against Narela or another explicitly chosen baseline; account for prior language-learning experience. Test both first encounters and delayed retention.\n\nMeasure successful information transfer in directions, requests, and short narratives; time to complete tasks; comprehension accuracy; requests for repetition; word confusions; delayed recall; and learner-reported effort. Evaluate mixed-background speaker/listener pairs and noisy conditions, not only written exercises or imitation of an instructor. Report outcomes separately by learner group as well as overall; a favorable average can hide substantial disadvantage.\n\nBefore the trial, specify acceptable accuracy and burden thresholds with participants and instructors. Revise confusable roots and rules using observed errors. Release anonymized methods and aggregate results with consent; collect only necessary personal data. No real learner evaluation or audio intelligibility testing has been performed for version 0.1.\n",
-      "changelog": "# Changelog\n\n## 0.1 — October 17, 2026\n\nInitial Lumena prototype: pronunciation, reference grammar, structured starter vocabulary, two generated dictionaries, introductory exercises, Narela review, and validation script. No learner outcomes have been measured. Narela remains unchanged.\n"
+      "design": "# Review, evidence, and design decisions\n\n## Repository review\n\nThe supplied workspace initially contained `Narela/English to New Language Dictionary.md` and an empty `Universal/` directory. The Narela file was subsequently observed at `Narela/English to Narela Dictionary.md`; this work did not rename it. The root dictionary shown in the IDE tab list was not present on disk during review. Narela's single document combines pronunciation, 14 grammar rules, thematic vocabulary tables, numbers, and sample sentences. Its strengths are invariant verbs, a clear starter scope, useful phrases, and instructions to check new words.\n\n| Finding in Narela | Consequence | Lumena response |\n|---|---|---|\n| “Usual English sounds”; no explicit inventory | Learners need English knowledge to interpret letters; x and y need clarification | Explicit letter-to-IPA table and articulatory guidance |\n| Clusters in klosa, stana, tru, blu; closed syllables in numbers | Additional production demands for learners unfamiliar with these sequences | Native (C)V syllables only |\n| Plural -n plus min/tin/lin | Adds final consonants and a morphological rule | Separate optional plural marker; independent plural pronouns |\n| Present “unmarked” | May force a present reading even when context supplies past | Unmarked time is context-dependent |\n| No full rules for relative or content clauses | Difficult to express everyday complex thoughts predictably | Overt opening/closing particles and explicit resumed relative role |\n| Short definitions and no verb argument frames | Hidden English assumptions about meaning and objects | Narrower senses and argument notes in CSV |\n| Grammar and lexicon in one manually edited file | Conflicts become harder to detect as vocabulary grows | Source CSV, generated dictionaries, focused documents and checker |\n| Many visibly European-looking words | Unequal familiarity; no evidence of globally balanced recognition | Treat forms as provisional; do not claim neutral or globally familiar vocabulary |\n\nThese are design limitations, not evidence that Narela cannot be learned. Lumena is a separate design and is not backward-compatible with Narela; similar spellings may have different meanings. Do not mix the two dictionaries.\n\n## What research supports, and what it does not\n\nThe following are primary descriptive or research sources, accessed October 17, 2026. The proposed rules are design inferences, not prescriptions from these sources.\n\n- Ian Maddieson, [WALS chapter 2: Vowel Quality Inventories](https://wals.info/chapter/2): five-vowel inventories are the most frequent individual size in this sample, but occur in only about a third of sampled languages. We choose /a e i o u/ as a manageable compromise; this does not make all five vowels familiar to everyone.\n- Maddieson, [WALS chapter 12: Syllable Structure](https://wals.info/chapter/12): languages differ in permitted consonant and vowel sequences. Choosing open syllables avoids clusters in native words; the cost is longer words and a smaller supply of short distinct forms.\n- Matthew Dryer, [WALS chapter 81: Order of Subject, Object and Verb](https://wals.info/chapter/81): subject–object–verb and subject–verb–object are both widely represented patterns. We choose one fixed SVO order for predictability, not because it is universal or demonstrably easiest.\n- Maddieson, [WALS chapter 13: Tone](https://wals.info/chapter/13): tone systems vary across languages. Omitting lexical tone removes a contrast for learners whose languages lack it; it sacrifices information-carrying capacity and does not imply tonal languages are inferior.\n- [Second Language Phonology, Cambridge University Press](https://www.cambridge.org/core/books/second-language-phonology/988842E51A7BC87179025DA57DAD854E): research treats acquisition of speech categories as sensitive to learners' language experience and input. We therefore require cross-background trials and intelligibility work instead of claiming a universal easiest inventory.\n\nWALS counts languages in its samples, not populations of learners, and does not measure learning time for this constructed language. Typological frequency is a design input, not proof of learnability. No source establishes Lumena as optimal.\n\n## Optimization priorities\n\n1. Understandable communication and easy recovery after misunderstanding.\n2. Predictable rules and minimal obligatory memorization of exceptions.\n3. Reasonable speaking effort, typing effort, and vocabulary size.\n4. Concision where it does not create recurring ambiguity.\n\nNine consonants avoid a required r/l or voiced/unvoiced stop distinction. This is a hypothesis about useful simplification, not a claim that each retained sound is universal. Restricting sounds increases near-neighbor words; the vocabulary needs listening trials. Short particles save syllables but can be hard to hear. Explicit clause closers cost syllables and require training. Mandatory copulas and fixed word order reduce some interpretation choices while favoring learners familiar with those patterns.\n\nRoots are provisional constructed labels, including adaptations retained from Narela and forms resembling words in multiple languages. No systematic etymological balancing or legal/name clearance has been completed. Avoid invented claims that the lexicon represents every continent. A globally inclusive vocabulary process needs paid participation, multilingual teaching materials, and community authority over future changes.\n\n## Evaluation before a stable release\n\nRecruit consenting adults across unrelated language families, scripts, literacy levels, and accessibility needs. Include speakers with backgrounds such as Arabic, Mandarin, Hindi, Spanish, Swahili, Indonesian, Japanese, and additional underrepresented languages; this illustrative list is not representative by itself. Consult educators and disabled users about formats and task design.\n\nRun a small pilot first, then use its variance to plan sample sizes and preregister the larger comparison. Give equal instruction time and comparable vocabulary exposure. Counterbalance matched learning tasks against Narela or another explicitly chosen baseline; account for prior language-learning experience. Test both first encounters and delayed retention.\n\nMeasure successful information transfer in directions, requests, and short narratives; time to complete tasks; comprehension accuracy; requests for repetition; word confusions; delayed recall; and learner-reported effort. Evaluate mixed-background speaker/listener pairs and noisy conditions, not only written exercises or imitation of an instructor. Report outcomes separately by learner group as well as overall; a favorable average can hide substantial disadvantage.\n\nBefore the trial, specify acceptable accuracy and burden thresholds with participants and instructors. Revise confusable roots and rules using observed errors. Release anonymized methods and aggregate results with consent; collect only necessary personal data. No real learner evaluation or audio intelligibility testing has been performed for versions 0.1 or 0.2.0.\n",
+      "changelog": "# Changelog\n\n## 0.2.0 — October 18, 2026\n\n- Preserved the original 256 rows and expanded to 397 shared English headwords.\n- Added everyday roots, documented noun compounds, and English lookup variants with usage examples.\n- Added phrase-aware spelling validation and allowed one native form to serve multiple English senses.\n\n## 0.1 — October 17, 2026\n\nInitial Lumena prototype: pronunciation, reference grammar, structured starter vocabulary, two generated dictionaries, introductory exercises, Narela review, and validation script. No learner outcomes have been measured. Narela remains unchanged.\n"
     }
   },
   "narela": {
@@ -1571,6 +2418,7 @@ window.LANGUAGE_DATA = {
       "Plural −n",
       "Optional articles"
     ],
+    "version": "0.2.0",
     "entries": [
       {
         "english": "a / an",
@@ -2999,15 +3847,5782 @@ window.LANGUAGE_DATA = {
         "word": "yali",
         "category": "phrase",
         "notes": "Starter sense: you're welcome"
+      },
+      {
+        "english": "you (singular)",
+        "word": "ti",
+        "category": "grammar",
+        "notes": "Singular; English lookup variant of you"
+      },
+      {
+        "english": "you (plural)",
+        "word": "tin",
+        "category": "grammar",
+        "notes": "Plural; English lookup variant of you all"
+      },
+      {
+        "english": "someone",
+        "word": "mira",
+        "category": "noun",
+        "notes": "An unspecified person; no indefinite pronoun distinction in starter"
+      },
+      {
+        "english": "plural",
+        "word": "n",
+        "category": "grammar",
+        "notes": "Suffix -n after a noun; buki becomes bukin; not a standalone word"
+      },
+      {
+        "english": "few / little quantity",
+        "word": "poka",
+        "category": "description/adverb",
+        "notes": "Starter sense: few / little (quantity); English lookup variant of few / little (quantity)"
+      },
+      {
+        "english": "of / related to",
+        "word": "de",
+        "category": "grammar",
+        "notes": "Thing + de + owner; English lookup variant of of / possessive link"
+      },
+      {
+        "english": "end condition",
+        "word": "fina de kondisa",
+        "category": "grammar",
+        "notes": "Name of concept: end of condition; starter has no spoken condition-end marker"
+      },
+      {
+        "english": "future",
+        "word": "fu",
+        "category": "grammar",
+        "notes": "Tense marker; English lookup variant of future / will"
+      },
+      {
+        "english": "ongoing",
+        "word": "du",
+        "category": "grammar",
+        "notes": "Aspect marker; English lookup variant of ongoing action"
+      },
+      {
+        "english": "completed",
+        "word": "fina",
+        "category": "verb",
+        "notes": "End or finish; describe completion in a separate clause; no standardized perfect-aspect particle"
+      },
+      {
+        "english": "not / no",
+        "word": "no",
+        "category": "grammar",
+        "notes": "Negative answer or negation; English lookup variant of no / not"
+      },
+      {
+        "english": "yes/no question",
+        "word": "ka",
+        "category": "grammar",
+        "notes": "End of yes/no question; English lookup variant of question marker"
+      },
+      {
+        "english": "how many / much",
+        "word": "kanti",
+        "category": "question/relation/time",
+        "notes": "Starter sense: how many / how much; English lookup variant of how many / how much"
+      },
+      {
+        "english": "content clause start",
+        "word": "inia de fraza",
+        "category": "grammar",
+        "notes": "Name of concept: start of clause; nested content clauses are not standardized"
+      },
+      {
+        "english": "content clause end",
+        "word": "fina de fraza",
+        "category": "grammar",
+        "notes": "Name of concept: end of clause; no clause-end particle is standardized"
+      },
+      {
+        "english": "relative clause start",
+        "word": "inia de fraza relati",
+        "category": "grammar",
+        "notes": "Name of concept; relative clauses are not standardized"
+      },
+      {
+        "english": "relative clause end",
+        "word": "fina de fraza relati",
+        "category": "grammar",
+        "notes": "Name of concept; no relative-end particle is standardized"
+      },
+      {
+        "english": "relative reference",
+        "word": "referi relati",
+        "category": "grammar",
+        "notes": "Name of concept; relative-clause resumptive syntax is not standardized"
+      },
+      {
+        "english": "on / above",
+        "word": "su",
+        "category": "question/relation/time",
+        "notes": "Starter sense: above / over; English lookup variant of above / over"
+      },
+      {
+        "english": "under",
+        "word": "suba",
+        "category": "question/relation/time",
+        "notes": "Starter sense: below / under; English lookup variant of below / under"
+      },
+      {
+        "english": "for",
+        "word": "por",
+        "category": "question/relation/time",
+        "notes": "Starter sense: for / intended for; English lookup variant of for / intended for"
+      },
+      {
+        "english": "using / by means of",
+        "word": "per",
+        "category": "relation",
+        "notes": "Instrument; Mi rita per ilo"
+      },
+      {
+        "english": "than / compared with",
+        "word": "ol",
+        "category": "relation",
+        "notes": "Comparison standard after comparative; Doma esa plu bala ol buki"
+      },
+      {
+        "english": "manner marker",
+        "word": "moda",
+        "category": "noun",
+        "notes": "Name of concept: manner; adverbs precede the verb without a separate marker"
+      },
+      {
+        "english": "most",
+        "word": "maxi",
+        "category": "description/adverb",
+        "notes": "Starter sense: most (comparison); English lookup variant of most (comparison)"
+      },
+      {
+        "english": "equally",
+        "word": "egali",
+        "category": "description/adverb",
+        "notes": "To an equal degree; Mi egali sava"
+      },
+      {
+        "english": "can / able",
+        "word": "pote",
+        "category": "grammar",
+        "notes": "Before verb; English lookup variant of can / be able to"
+      },
+      {
+        "english": "must / obliged",
+        "word": "deve",
+        "category": "grammar",
+        "notes": "Before verb; English lookup variant of must / have to"
+      },
+      {
+        "english": "be",
+        "word": "esa",
+        "category": "verb",
+        "notes": "Starter sense: be / am / is / are; English lookup variant of be / am / is / are"
+      },
+      {
+        "english": "exist",
+        "word": "exi",
+        "category": "verb",
+        "notes": "Starter sense: exist / there is; English lookup variant of exist / there is"
+      },
+      {
+        "english": "speak / say",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Starter sense: say / speak; English lookup variant of say / speak"
+      },
+      {
+        "english": "stay",
+        "word": "resta",
+        "category": "verb",
+        "notes": "Starter sense: stay / remain; English lookup variant of stay / remain"
+      },
+      {
+        "english": "have / possess",
+        "word": "hava",
+        "category": "verb",
+        "notes": "Starter sense: have / own; English lookup variant of have / own"
+      },
+      {
+        "english": "make / cause",
+        "word": "fena / kauza",
+        "category": "verb",
+        "notes": "Fena means do or make; kauza means cause a thing or event; Mi kauza ta"
+      },
+      {
+        "english": "close",
+        "word": "klosa",
+        "category": "verb",
+        "notes": "Starter sense: close / shut; English lookup variant of close / shut"
+      },
+      {
+        "english": "begin",
+        "word": "inia",
+        "category": "verb",
+        "notes": "Starter sense: begin / start; English lookup variant of begin / start"
+      },
+      {
+        "english": "finish",
+        "word": "fina",
+        "category": "verb",
+        "notes": "Starter sense: end / finish; English lookup variant of end / finish"
+      },
+      {
+        "english": "allow",
+        "word": "perma",
+        "category": "verb",
+        "notes": "Permit an activity or thing; Mi perma ta"
+      },
+      {
+        "english": "touch",
+        "word": "tuka",
+        "category": "verb",
+        "notes": "Make physical contact; Mi tuka buki"
+      },
+      {
+        "english": "cut",
+        "word": "kata",
+        "category": "verb",
+        "notes": "Cut something; Mi kata pani"
+      },
+      {
+        "english": "person",
+        "word": "mira",
+        "category": "noun",
+        "notes": "Starter sense: person / human; English lookup variant of person / human"
+      },
+      {
+        "english": "ear",
+        "word": "orela",
+        "category": "noun",
+        "notes": "Ear; orela de mi"
+      },
+      {
+        "english": "skin",
+        "word": "peli",
+        "category": "noun",
+        "notes": "Skin; peli de mi"
+      },
+      {
+        "english": "plant",
+        "word": "planta",
+        "category": "noun",
+        "notes": "Living plant; un planta"
+      },
+      {
+        "english": "house / home",
+        "word": "doma",
+        "category": "noun",
+        "notes": "Starter sense: home / house; English lookup variant of home / house"
+      },
+      {
+        "english": "room",
+        "word": "kambra",
+        "category": "noun",
+        "notes": "Interior room; un kambra"
+      },
+      {
+        "english": "paper",
+        "word": "paperi",
+        "category": "noun",
+        "notes": "Paper material; Mi rita sura paperi"
+      },
+      {
+        "english": "tool",
+        "word": "ilo",
+        "category": "noun",
+        "notes": "Tool; un ilo"
+      },
+      {
+        "english": "city",
+        "word": "urba",
+        "category": "noun",
+        "notes": "Starter sense: city / town; English lookup variant of city / town"
+      },
+      {
+        "english": "country",
+        "word": "nati",
+        "category": "noun",
+        "notes": "Starter sense: country / nation; English lookup variant of country / nation"
+      },
+      {
+        "english": "number",
+        "word": "numera",
+        "category": "noun",
+        "notes": "Numeric quantity; un numera"
+      },
+      {
+        "english": "question",
+        "word": "kesi",
+        "category": "noun",
+        "notes": "Question; Mi kesa un kesi"
+      },
+      {
+        "english": "answer",
+        "word": "respa",
+        "category": "noun",
+        "notes": "Answer; un respa"
+      },
+      {
+        "english": "problem",
+        "word": "problema",
+        "category": "noun",
+        "notes": "Problem; un problema"
+      },
+      {
+        "english": "good",
+        "word": "bona",
+        "category": "description/adverb",
+        "notes": "Starter sense: good / well; English lookup variant of good / well"
+      },
+      {
+        "english": "large",
+        "word": "bala",
+        "category": "description/adverb",
+        "notes": "Starter sense: big / large; English lookup variant of big / large"
+      },
+      {
+        "english": "former",
+        "word": "anti",
+        "category": "description/adverb",
+        "notes": "Former or old as in the starter; does not specifically mean advanced age"
+      },
+      {
+        "english": "fast",
+        "word": "rapa",
+        "category": "description/adverb",
+        "notes": "Starter sense: fast / quickly; English lookup variant of fast / quickly"
+      },
+      {
+        "english": "slow",
+        "word": "lenta",
+        "category": "description/adverb",
+        "notes": "Starter sense: slow / slowly; English lookup variant of slow / slowly"
+      },
+      {
+        "english": "ill",
+        "word": "mela",
+        "category": "description/adverb",
+        "notes": "Starter sense: sick / ill; English lookup variant of sick / ill"
+      },
+      {
+        "english": "healthy",
+        "word": "sana",
+        "category": "description/adverb",
+        "notes": "In good health; Mi esa sana"
+      },
+      {
+        "english": "true",
+        "word": "vera",
+        "category": "description/adverb",
+        "notes": "Starter sense: true / correct; English lookup variant of true / correct"
+      },
+      {
+        "english": "false",
+        "word": "falsa",
+        "category": "description/adverb",
+        "notes": "Factually false; differs from incorrect; un respa falsa"
+      },
+      {
+        "english": "left",
+        "word": "leva",
+        "category": "question/relation/time",
+        "notes": "Starter sense: left (direction); English lookup variant of left (direction)"
+      },
+      {
+        "english": "right",
+        "word": "reva",
+        "category": "question/relation/time",
+        "notes": "Starter sense: right (direction); English lookup variant of right (direction)"
+      },
+      {
+        "english": "digit sequence",
+        "word": "seria de digi",
+        "category": "noun",
+        "notes": "Name of concept; read digits separately; seria de digi"
+      },
+      {
+        "english": "decimal point",
+        "word": "punto desima",
+        "category": "noun",
+        "notes": "Name of decimal separator; numeric reading extension; do punto desima nul pen"
+      },
+      {
+        "english": "negative number",
+        "word": "numera negati",
+        "category": "noun",
+        "notes": "Name of concept; minus before magnitude; minus do"
+      },
+      {
+        "english": "divided by",
+        "word": "divida per",
+        "category": "expression",
+        "notes": "Division reading; en divida per do"
+      },
+      {
+        "english": "ordinal marker",
+        "word": "ordina",
+        "category": "grammar",
+        "notes": "New ordinal word before a cardinal; ordina tri buki means third book"
+      },
+      {
+        "english": "you are welcome",
+        "word": "yali",
+        "category": "phrase",
+        "notes": "Starter sense: you're welcome; English lookup variant of you're welcome"
+      },
+      {
+        "english": "sorry",
+        "word": "parda",
+        "category": "phrase",
+        "notes": "Starter sense: excuse me / sorry; English lookup variant of excuse me / sorry"
+      },
+      {
+        "english": "he",
+        "word": "li",
+        "category": "grammar",
+        "notes": "Gender-neutral singular pronoun; does not encode male gender"
+      },
+      {
+        "english": "she",
+        "word": "li",
+        "category": "grammar",
+        "notes": "Gender-neutral singular pronoun; does not encode female gender"
+      },
+      {
+        "english": "it",
+        "word": "li",
+        "category": "grammar",
+        "notes": "Gender-neutral singular pronoun also used for things"
+      },
+      {
+        "english": "one / people",
+        "word": "mira",
+        "category": "noun",
+        "notes": "Generic person; not the numeral one"
+      },
+      {
+        "english": "my",
+        "word": "de mi",
+        "category": "grammar",
+        "notes": "Possessor phrase after noun; buki de mi"
+      },
+      {
+        "english": "your",
+        "word": "de ti",
+        "category": "grammar",
+        "notes": "One addressee; de tin for multiple addressees"
+      },
+      {
+        "english": "whether / question marker",
+        "word": "ka",
+        "category": "grammar",
+        "notes": "End of yes/no question; English lookup variant of question marker; English lookup variant of yes/no question"
+      },
+      {
+        "english": "that (clause)",
+        "word": "fraza",
+        "category": "noun",
+        "notes": "Clause as a named concept; embedded that-clause syntax is not standardized"
+      },
+      {
+        "english": "in",
+        "word": "na",
+        "category": "relation",
+        "notes": "At or in; interior reading supplied by context"
+      },
+      {
+        "english": "on",
+        "word": "sura",
+        "category": "relation",
+        "notes": "On a surface"
+      },
+      {
+        "english": "over",
+        "word": "su",
+        "category": "question/relation/time",
+        "notes": "Starter sense: above / over; English lookup variant of above / over; English lookup variant of on / above"
+      },
+      {
+        "english": "to",
+        "word": "a",
+        "category": "question/relation/time",
+        "notes": "Starter sense: to / toward; English lookup variant of to / toward"
+      },
+      {
+        "english": "from / of",
+        "word": "da / de",
+        "category": "relation",
+        "notes": "Origin versus possession"
+      },
+      {
+        "english": "about",
+        "word": "pri",
+        "category": "relation",
+        "notes": "Topic; Mi tala pri buki"
+      },
+      {
+        "english": "before (place or time)",
+        "word": "pre",
+        "category": "relation",
+        "notes": "Before; temporal or spatial interpretation from context"
+      },
+      {
+        "english": "until",
+        "word": "til",
+        "category": "relation",
+        "notes": "Endpoint; Mi wata til fudi"
+      },
+      {
+        "english": "how much",
+        "word": "kanti",
+        "category": "question/relation/time",
+        "notes": "Starter sense: how many / how much; English lookup variant of how many / how much; English lookup variant of how many / much"
+      },
+      {
+        "english": "this (thing)",
+        "word": "ta",
+        "category": "grammar",
+        "notes": "Demonstrative; noun number determines plurality"
+      },
+      {
+        "english": "that (thing)",
+        "word": "to",
+        "category": "grammar",
+        "notes": "Demonstrative; noun number determines plurality"
+      },
+      {
+        "english": "often",
+        "word": "ofta",
+        "category": "description/adverb",
+        "notes": "Frequently; Mi ofta lena"
+      },
+      {
+        "english": "also",
+        "word": "anki",
+        "category": "description/adverb",
+        "notes": "In addition; Mi anki lena"
+      },
+      {
+        "english": "already",
+        "word": "yami",
+        "category": "description/adverb",
+        "notes": "By the relevant time; Mi yami lena"
+      },
+      {
+        "english": "still / yet",
+        "word": "ankiha",
+        "category": "description/adverb",
+        "notes": "Continuing; Mi ankiha lena"
+      },
+      {
+        "english": "together",
+        "word": "kuni",
+        "category": "description/adverb",
+        "notes": "Together; Min kuni labora"
+      },
+      {
+        "english": "well",
+        "word": "bona",
+        "category": "description/adverb",
+        "notes": "Good manner; Mi bona labora"
+      },
+      {
+        "english": "clearly",
+        "word": "klari",
+        "category": "description/adverb",
+        "notes": "Clear manner; Mi klari tala"
+      },
+      {
+        "english": "carefully",
+        "word": "kura",
+        "category": "description/adverb",
+        "notes": "Careful manner; Mi kura rita"
+      },
+      {
+        "english": "have",
+        "word": "hava",
+        "category": "verb",
+        "notes": "Starter sense: have / own; English lookup variant of have / own; English lookup variant of have / possess"
+      },
+      {
+        "english": "speak",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Starter sense: say / speak; English lookup variant of say / speak; English lookup variant of speak / say"
+      },
+      {
+        "english": "say",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Starter sense: say / speak; English lookup variant of say / speak; English lookup variant of speak / say"
+      },
+      {
+        "english": "know (a fact)",
+        "word": "sava",
+        "category": "verb",
+        "notes": "Starter sense: know; English lookup variant of know"
+      },
+      {
+        "english": "know (be acquainted)",
+        "word": "sava",
+        "category": "verb",
+        "notes": "Know a person or thing; context distinguishes acquaintance"
+      },
+      {
+        "english": "can / be able",
+        "word": "pote",
+        "category": "grammar",
+        "notes": "Before verb; English lookup variant of can / be able to; English lookup variant of can / able"
+      },
+      {
+        "english": "live",
+        "word": "vita",
+        "category": "verb",
+        "notes": "Starter sense: live / be alive; English lookup variant of live / be alive"
+      },
+      {
+        "english": "play",
+        "word": "ludi",
+        "category": "verb",
+        "notes": "Play a game or instrument; Mi ludi"
+      },
+      {
+        "english": "like",
+        "word": "liva",
+        "category": "verb",
+        "notes": "Starter sense: like / enjoy; English lookup variant of like / enjoy"
+      },
+      {
+        "english": "ask (a question)",
+        "word": "kesa",
+        "category": "verb",
+        "notes": "Starter sense: ask; English lookup variant of ask"
+      },
+      {
+        "english": "repeat",
+        "word": "repa",
+        "category": "verb",
+        "notes": "Say or do again; Mi repa un voki"
+      },
+      {
+        "english": "big",
+        "word": "bala",
+        "category": "description/adverb",
+        "notes": "Starter sense: big / large; English lookup variant of big / large; English lookup variant of large"
+      },
+      {
+        "english": "old (not new)",
+        "word": "anti",
+        "category": "description/adverb",
+        "notes": "Existing starter old or former sense; buki anti"
+      },
+      {
+        "english": "young",
+        "word": "yuni",
+        "category": "description/adverb",
+        "notes": "Early in life; nili yuni"
+      },
+      {
+        "english": "clear",
+        "word": "klari",
+        "category": "description/adverb",
+        "notes": "Clear in meaning or perception; un voki klari"
+      },
+      {
+        "english": "other",
+        "word": "alteri",
+        "category": "description/adverb",
+        "notes": "Another or other; un buki alteri"
+      },
+      {
+        "english": "Esperanto",
+        "word": "Esperanto",
+        "category": "noun",
+        "notes": "Borrowed proper language name; Mi lena Esperanto"
+      },
+      {
+        "english": "sentence",
+        "word": "fraza",
+        "category": "noun",
+        "notes": "Sentence or clause; un fraza"
+      },
+      {
+        "english": "school",
+        "word": "skola",
+        "category": "noun",
+        "notes": "School; Mi vada a skola"
+      },
+      {
+        "english": "teacher",
+        "word": "lerari",
+        "category": "noun",
+        "notes": "Regular teach + -ri; Lerari lera Narela"
+      },
+      {
+        "english": "student",
+        "word": "lenari",
+        "category": "noun",
+        "notes": "Regular learn + -ri; Lenari lena"
+      },
+      {
+        "english": "house",
+        "word": "doma",
+        "category": "noun",
+        "notes": "Starter sense: home / house; English lookup variant of home / house; English lookup variant of house / home"
+      },
+      {
+        "english": "window",
+        "word": "fenestra",
+        "category": "noun",
+        "notes": "Window; un fenestra"
+      },
+      {
+        "english": "table",
+        "word": "tabla",
+        "category": "noun",
+        "notes": "Table furniture; buki sura tabla"
+      },
+      {
+        "english": "chair",
+        "word": "sedia",
+        "category": "noun",
+        "notes": "Chair; Mi sida na sedia"
+      },
+      {
+        "english": "garden",
+        "word": "gardina",
+        "category": "noun",
+        "notes": "Garden; un gardina"
+      },
+      {
+        "english": "country (land)",
+        "word": "nati",
+        "category": "noun",
+        "notes": "Starter sense: country / nation; English lookup variant of country / nation; English lookup variant of country"
+      },
+      {
+        "english": "road",
+        "word": "ruta",
+        "category": "noun",
+        "notes": "Starter sense: road / path; English lookup variant of road / path"
+      },
+      {
+        "english": "bread",
+        "word": "pani",
+        "category": "noun",
+        "notes": "Bread; Mi numa pani"
+      },
+      {
+        "english": "fruit",
+        "word": "fruta",
+        "category": "noun",
+        "notes": "Fruit; Mi numa fruta"
+      },
+      {
+        "english": "apple",
+        "word": "pomi",
+        "category": "noun",
+        "notes": "Apple; Mi numa pomi"
+      },
+      {
+        "english": "milk",
+        "word": "lakti",
+        "category": "noun",
+        "notes": "Milk; Mi sipa lakti"
+      },
+      {
+        "english": "tea",
+        "word": "tea",
+        "category": "noun",
+        "notes": "Tea drink; Mi sipa tea"
+      },
+      {
+        "english": "coffee",
+        "word": "kafi",
+        "category": "noun",
+        "notes": "Coffee drink; Mi sipa kafi"
+      },
+      {
+        "english": "salt",
+        "word": "saliha",
+        "category": "noun",
+        "notes": "Edible salt; saliha na nupa"
+      },
+      {
+        "english": "earth (soil)",
+        "word": "tera",
+        "category": "noun",
+        "notes": "Starter sense: earth / soil; English lookup variant of earth / soil"
+      },
+      {
+        "english": "flower",
+        "word": "flora",
+        "category": "noun",
+        "notes": "Flower; un flora"
+      },
+      {
+        "english": "dog",
+        "word": "kani",
+        "category": "noun",
+        "notes": "Dog; Kani numa"
+      },
+      {
+        "english": "cat",
+        "word": "kati",
+        "category": "noun",
+        "notes": "Cat; Kati somi"
+      },
+      {
+        "english": "morning",
+        "word": "matina",
+        "category": "noun",
+        "notes": "Morning; Mi lena na matina"
+      },
+      {
+        "english": "evening",
+        "word": "vespera",
+        "category": "noun",
+        "notes": "Evening; Mi somi na vespera"
+      },
+      {
+        "english": "hour",
+        "word": "hori",
+        "category": "noun",
+        "notes": "Hour; en hori"
+      },
+      {
+        "english": "health",
+        "word": "sani",
+        "category": "noun",
+        "notes": "Health; sani de mi"
+      },
+      {
+        "english": "peace",
+        "word": "pasi",
+        "category": "noun",
+        "notes": "Peace; Min vola pasi"
+      },
+      {
+        "english": "music",
+        "word": "musika",
+        "category": "noun",
+        "notes": "Music; Mi suna musika"
+      },
+      {
+        "english": "answer (noun)",
+        "word": "respa",
+        "category": "noun",
+        "notes": "Answer; un respa; English lookup variant of answer"
+      },
+      {
+        "english": "goal",
+        "word": "selia",
+        "category": "noun",
+        "notes": "Aim or target; selia de mi"
+      },
+      {
+        "english": "choir",
+        "word": "kori",
+        "category": "noun",
+        "notes": "Group of singers; un kori"
+      },
+      {
+        "english": "newspaper",
+        "word": "yurnali",
+        "category": "noun",
+        "notes": "Newspaper; Mi reda yurnali"
+      },
+      {
+        "english": "condition",
+        "word": "kondisa",
+        "category": "noun",
+        "notes": "A condition; un kondisa"
+      },
+      {
+        "english": "related",
+        "word": "relati",
+        "category": "description/adverb",
+        "notes": "Related; fraza relati"
+      },
+      {
+        "english": "reference",
+        "word": "referi",
+        "category": "noun",
+        "notes": "A reference; un referi"
+      },
+      {
+        "english": "manner",
+        "word": "moda",
+        "category": "noun",
+        "notes": "Manner; un moda"
+      },
+      {
+        "english": "sequence",
+        "word": "seria",
+        "category": "noun",
+        "notes": "An ordered sequence; un seria"
+      },
+      {
+        "english": "digit",
+        "word": "digi",
+        "category": "noun",
+        "notes": "Numeral digit; un digi"
+      },
+      {
+        "english": "decimal",
+        "word": "desima",
+        "category": "description/adverb",
+        "notes": "Decimal; punto desima"
+      },
+      {
+        "english": "point",
+        "word": "punto",
+        "category": "noun",
+        "notes": "Point or punctuation dot; un punto"
+      },
+      {
+        "english": "negative",
+        "word": "negati",
+        "category": "description/adverb",
+        "notes": "Below zero for numbers; numera negati"
+      },
+      {
+        "english": "minus",
+        "word": "minus",
+        "category": "expression",
+        "notes": "Minus in a number reading; minus do"
+      },
+      {
+        "english": "divide",
+        "word": "divida",
+        "category": "verb",
+        "notes": "Divide a quantity; divida per do"
       }
     ],
     "documents": {
-      "overview": "# Narela\n\nVersion 0.1 — October 17, 2026\n\nNarela is an original auxiliary language prototype with invariant verbs, subject–verb–object order, a plural ending, and a practical starter vocabulary. This edition reorganizes the original document into the same reference format as Lumena while retaining Narela's words and core rules.\n\nStart with [pronunciation](PRONUNCIATION.md), then [lessons](LESSONS.md). Consult the [grammar](GRAMMAR.md), [English dictionary](English%20to%20Narela%20Dictionary.md), [reverse dictionary](Narela%20to%20English%20Dictionary.md), and [design notes](DESIGN.md).\n\n## At a glance\n\n- Five steady vowels; consonant clusters and final consonants are allowed.\n- Subject–verb–object word order and invariant verbs.\n- Plural -n; optional after a numeral.\n- Optional articles un and la.\n- Gender-neutral third-person pronouns.\n\n## Files and maintenance\n\nlexicon.csv is the vocabulary source of truth. Both dictionaries are generated from it. From the workspace root run:\n\n~~~powershell\nnode Narela/tools/check_language.cjs --write\nnode Narela/tools/check_language.cjs\n~~~\n\nThe checker verifies unique entries, native spelling, example vocabulary, local links, and dictionary freshness. It permits Narela's documented plural and word-building rules. It cannot judge naturalness or learning outcomes. See [CHANGELOG.md](CHANGELOG.md) for changes.\n",
+      "overview": "# Narela\n\nVersion 0.2.0 — October 18, 2026\n\nNarela is an original auxiliary language prototype with invariant verbs, subject–verb–object order, a plural ending, and a practical starter vocabulary. This edition reorganizes the original document into the same reference format as Lumena while retaining Narela's words and core rules.\n\nStart with [pronunciation](PRONUNCIATION.md), then [lessons](LESSONS.md). Consult the [grammar](GRAMMAR.md), [English dictionary](English%20to%20Narela%20Dictionary.md), [reverse dictionary](Narela%20to%20English%20Dictionary.md), and [design notes](DESIGN.md).\n\n## At a glance\n\n- Five steady vowels; consonant clusters and final consonants are allowed.\n- Subject–verb–object word order and invariant verbs.\n- Plural -n; optional after a numeral.\n- Optional articles un and la.\n- Gender-neutral third-person pronouns.\n\n## Files and maintenance\n\nlexicon.csv is the vocabulary source of truth. Both dictionaries are generated from it. From the workspace root run:\n\n~~~powershell\nnode Narela/tools/check_language.cjs --write\nnode Narela/tools/check_language.cjs\n~~~\n\nThe checker verifies unique entries, native spelling, example vocabulary, local links, and dictionary freshness. It permits Narela's documented plural and word-building rules. It cannot judge naturalness or learning outcomes. See [CHANGELOG.md](CHANGELOG.md) for changes.\n",
       "pronunciation": "# Narela pronunciation\n\n## Starter pronunciation\n\nPronounce every letter. Vowels: a as in father, e as in bed, i as in machine, o as in go, u as in flute. Keep each vowel steady. Consonants have their usual English sounds; g is always hard as in give. Stress the next-to-last syllable. Adjacent vowels are separate sounds.\n\n## Reference sounds\n\nThis table makes the original English-based guidance more explicit. The entries for x, y, r and h clarify previously underspecified letters; they are conventions for this reference edition, not changes to vocabulary.\n\n| Letters | Reference IPA | Guidance |\n|---|---|---|\n| a e i o u | /a e i o u/ | Five steady vowels; avoid an English-style glide in e and o |\n| b d g | /b d g/ | Voiced stops; g is always hard |\n| p t k | /p t k/ | Unvoiced stops |\n| f v | /f v/ | Lower lip near upper teeth |\n| s z | /s z/ | As in see and zoo |\n| m n | /m n/ | Nasal consonants |\n| l | /l/ | As in light |\n| r | /ɾ/ | A short tongue tap; an understandable trill or approximant is acceptable |\n| h | /h/ | Audible breath as in hat |\n| x | /ks/ | Two sounds, as in exi and maxi |\n| y | /j/ | As in yes |\n| w | /w/ | As in we; used in wata |\n\nNarela uses consonant clusters and final consonants: klosa, stana, tri, nul, and the plural ending -n. Do not replace these with Lumena's open-syllable rules. Adjacent vowels have separate syllables. Stress the next-to-last syllable; stress the only syllable in a one-syllable word. Adding plural -n does not add a syllable.\n\nThe letter sequence th in hotha is /t.h/, with each letter pronounced; it is not the English sound in thin. Preferred syllabification is hot-ha. English pronunciation hints remain approximate across accents.\n\n## Names and writing\n\nCapitalization does not change meaning. Preserve people's preferred names and ask for their pronunciation. Use spaces between words and ordinary punctuation. IPA is a pronunciation reference, not additional spelling to memorize. Audio demonstrations and learner studies remain future work.\n",
-      "grammar": "# Narela grammar 0.1\n\nThe following rules preserve the original starter grammar. Narela and Lumena have different vocabularies and rules; use one language consistently.\n\n## Core rules\n\n1. Word order: subject + verb + object. Mi seva ti = I see you.\n2. Verbs never change for person or number. Present is unmarked. Put pa before a verb for past, fu for future, and du for ongoing action.\n3. Negation: no immediately before the verb. Mi no sava = I do not know. Marker order: subject + tense + du + no + verb + object; omit unused markers.\n4. Questions: add ka at the end for yes/no questions. Ti sava ka? = Do you know? Otherwise put the question word where its answer belongs: Ti seva ke? = What do you see?\n5. Adjectives follow nouns: doma bala = big house. Adjectives never change for plural.\n6. Plural nouns add -n: buki = book; bukin = books. After a number the plural ending is optional.\n7. Possession: thing + de + owner. Buki de mi = my book. Pronouns have the same subject and object forms.\n8. Articles: un = a/an; la = the. Articles can be omitted when the meaning is clear.\n9. Commands use the bare verb: Vena! = Come! Add pali for please.\n10. Use esa for be and exi for exist: Mi esa hapi = I am happy. Exi un doma = There is a house.\n11. Can and must precede the main verb: Mi pote reda = I can read. Mi deve vada = I must go. Negation precedes the modal: Mi no pote reda = I cannot read.\n12. Comparison: plu + adjective = more; maxi + adjective = most. Plu bala = bigger.\n13. Numbers precede nouns. Adverbs precede the main verb after any grammar markers.\n14. Optional word building: verb + -ri names its doer (lena, learn; lenari, learner). Noun + -la makes a related adjective (sola, sun; solala, solar).\n\n## Numbers\n\nBuild numbers largest unit first. A multiplier precedes its unit: des en = 11; do des = 20; do des tri = 23; en sent pen des ses = 156. Tri buki = three books.\n\n## Precision and scope\n\nUse a full affirmative or negative clause when answering a negative question. The original starter does not define a special answer convention for negative questions.\n\nThe given modal pattern distinguishes inability from lack of obligation: Mi no pote vada = I cannot go; Mi no deve vada = I do not have to go. A separate construction for must not is not standardized. Rephrase as a negative command where suitable.\n\nThe starter does not standardize relative clauses, nested reported speech, passive constructions, or recursive large-number expressions. Prefer short independent clauses until these are defined and reviewed. This edition documents those limits instead of importing Lumena rules.\n\n## Adding words\n\nFor each new entry, record its English meaning, Narela spelling, part of speech, and an example. Check existing roots before inventing another. Prefer one clear everyday meaning per root and explicitly note deliberate shared meanings. Keep pronunciation and grammar consistent. Future additions can cover occupations, technology, detailed emotions, and specialized topics.\n\nEdit lexicon.csv and run the checker with --write to update both dictionaries. New specialized senses need explicit notes and usage examples.\n",
+      "grammar": "# Narela grammar 0.2.0\n\nThe following rules preserve the original starter grammar. Narela and Lumena have different vocabularies and rules; use one language consistently.\n\n## Core rules\n\n1. Word order: subject + verb + object. Mi seva ti = I see you.\n2. Verbs never change for person or number. Present is unmarked. Put pa before a verb for past, fu for future, and du for ongoing action.\n3. Negation: no immediately before the verb. Mi no sava = I do not know. Marker order: subject + tense + du + no + verb + object; omit unused markers.\n4. Questions: add ka at the end for yes/no questions. Ti sava ka? = Do you know? Otherwise put the question word where its answer belongs: Ti seva ke? = What do you see?\n5. Adjectives follow nouns: doma bala = big house. Adjectives never change for plural.\n6. Plural nouns add -n: buki = book; bukin = books. After a number the plural ending is optional.\n7. Possession: thing + de + owner. Buki de mi = my book. Pronouns have the same subject and object forms.\n8. Articles: un = a/an; la = the. Articles can be omitted when the meaning is clear.\n9. Commands use the bare verb: Vena! = Come! Add pali for please.\n10. Use esa for be and exi for exist: Mi esa hapi = I am happy. Exi un doma = There is a house.\n11. Can and must precede the main verb: Mi pote reda = I can read. Mi deve vada = I must go. Negation precedes the modal: Mi no pote reda = I cannot read.\n12. Comparison: plu + adjective = more; maxi + adjective = most. Plu bala = bigger.\n13. Numbers precede nouns. Adverbs precede the main verb after any grammar markers.\n14. Optional word building: verb + -ri names its doer (lena, learn; lenari, learner). Noun + -la makes a related adjective (sola, sun; solala, solar).\n\n## Numbers\n\nBuild numbers largest unit first. A multiplier precedes its unit: des en = 11; do des = 20; do des tri = 23; en sent pen des ses = 156. Tri buki = three books.\n\n## Precision and scope\n\nUse a full affirmative or negative clause when answering a negative question. The original starter does not define a special answer convention for negative questions.\n\nThe given modal pattern distinguishes inability from lack of obligation: Mi no pote vada = I cannot go; Mi no deve vada = I do not have to go. A separate construction for must not is not standardized. Rephrase as a negative command where suitable.\n\nThe starter does not standardize relative clauses, nested reported speech, passive constructions, or recursive large-number expressions. Prefer short independent clauses until these are defined and reviewed. This edition documents those limits instead of importing Lumena rules.\n\n## Adding words\n\nThe shared-vocabulary expansion adds the instrument relation per (by means of), comparison relation ol (than), and the numerical readings minus (negative sign), punto desima (decimal separator), and divida per (divided by). Put ordina before a cardinal for an ordinal: ordina tri buki means third book. These additions do not standardize nested clauses or recursive number expressions.\n\nDictionary entries for content-clause ends, relative-clause ends, completed aspect, and manner markers describe concepts or paraphrases where no equivalent particle exists. Their usage notes are part of the entry; do not insert the descriptive phrase as a grammatical marker. Slash-separated target forms are alternatives selected by sense, never a sentence to pronounce literally.\n\nFor each new entry, record its English meaning, Narela spelling, part of speech, and an example. Check existing roots before inventing another. Prefer one clear everyday meaning per root and explicitly note deliberate shared meanings. Keep pronunciation and grammar consistent. Future additions can cover occupations, technology, detailed emotions, and specialized topics.\n\nEdit lexicon.csv and run the checker with --write to update both dictionaries. New specialized senses need explicit notes and usage examples.\n",
       "lessons": "# First lessons\n\n## 1. Start a conversation\n\nPractice the greeting sali, please pali, thanks dani, and goodbye vadi. Use the sentence table below to introduce yourself, ask a question, and request help.\n\n## 2. Build a sentence\n\nUse subject + verb + object. Add pa before the verb for past, fu for future, and du for an ongoing action. Put no after these markers to negate the predicate. Nouns add -n for plural; after a numeral that ending is optional.\n\n## 3. Everyday sentences\n\n| Narela | English |\n|---|---|\n| Sali. Nami de mi esa… | Hello. My name is… |\n| Nami de ti esa ke? | What is your name? |\n| Mi du lena la nara nova. | I am learning the new language. |\n| Mi no kova. | I do not understand. |\n| Pali hela mi. | Please help me. |\n| La aku esa kana? | Where is the water? |\n| Mi neda nupa an aku. | I need food and water. |\n| Min pa vada a doma padi. | We went home yesterday. |\n| Lin fu vena fudi. | They will come tomorrow. |\n| Ti vola ta buki ka? | Do you want this book? |\n| La nili seva do vila. | The child sees two birds. |\n| Ta doma esa plu bala. | This house is bigger. |\n| Mi pote reda. | I can read. |\n| Mi ama ti. | I love you. |\n| Si ti vena, mi fu fena nupa. | If you come, I will make food. |\n| Mi esa hapi beko ti esa hena. | I am happy because you are here. |\n\n## 4. Practice\n\nTranslate these before checking the answers:\n\n1. I do not see you.\n2. Do you know?\n3. Two books.\n4. Please come.\n5. I was learning.\n\nAnswers:\n\n1. Mi no seva ti.\n2. Ti sava ka?\n3. Do buki. (Do bukin is also allowed.)\n4. Pali vena!\n5. Mi pa du lena.\n\n## 5. Continue learning\n\nRead the [pronunciation guide](PRONUNCIATION.md) and [grammar](GRAMMAR.md). Practice speaking with a partner and record misunderstandings. These exercises demonstrate rules; they do not establish global ease of learning.\n",
       "design": "# Narela design notes\n\n## Scope of this edition\n\nThe original Narela starter combined pronunciation, 14 grammar rules, vocabulary, numbers, and examples in one English-first dictionary. This edition separates those sections into focused documents and adds a CSV vocabulary source, a generated reverse dictionary, practice exercises, and a validator.\n\nAll 238 original vocabulary entries and their spellings are retained. Core grammar and sentence translations are preserved. Pronunciation now explicitly documents previously underspecified x, y, r, and h; this reference clarification needs learner review.\n\n## Design choices\n\nInvariant verbs reduce conjugation rules. Fixed word order gives learners a consistent sentence template. Optional articles and regular plural -n offer familiar patterns for some learners, while consonant clusters, final consonants, and English-based teaching guidance may increase effort for others.\n\nNarela's vocabulary includes many European-looking forms. Familiarity for one group is not evidence of global neutrality. Regular grammar alone cannot establish that a language is easy for everyone.\n\n## Relationship to Lumena\n\nNarela is a separate language, not a spelling variant of Lumena. Lumena uses a smaller sound inventory, separate plural marking, and explicit embedded-clause conventions. Read the [Lumena design review](../Lumena/DESIGN.md) for the comparison and research sources. Do not automatically transfer its rules to Narela.\n\n## Open questions and evaluation\n\nVerb argument patterns, relative clauses, embedded speech, large numbers, and negation scope need further specification before a stable release. Test pronunciation, comprehension, delayed vocabulary recall, and communication tasks with learners across language backgrounds and literacy levels. Compare equal instruction time and report subgroup outcomes. No empirical learner trial has been completed for this edition.\n",
-      "changelog": "# Changelog\n\n## 0.1 — October 17, 2026\n\nReorganized the starter into the Lumena folder format: README, pronunciation, grammar, lessons, design notes, changelog, CSV vocabulary, bidirectional dictionaries, and tools/check_language.cjs. Preserved the original 238 entries and core grammar. Added explicit reference pronunciation guidance and documented unresolved grammar questions.\n"
+      "changelog": "# Changelog\n\n## 0.2.0 — October 18, 2026\n\n- Preserved the original 238 rows and expanded to 397 shared English headwords.\n- Added everyday vocabulary, regular doer nouns, and examples in dictionary notes.\n- Added explicit comparison, instrument, and numerical reading conventions to the grammar.\n- Named unsupported clause concepts without importing Lumena's embedded-clause syntax.\n\n## 0.1 — October 17, 2026\n\nReorganized the starter into the Lumena folder format: README, pronunciation, grammar, lessons, design notes, changelog, CSV vocabulary, bidirectional dictionaries, and tools/check_language.cjs. Preserved the original 238 entries and core grammar. Added explicit reference pronunciation guidance and documented unresolved grammar questions.\n"
+    }
+  },
+  "esperanto": {
+    "name": "Esperanto",
+    "established": true,
+    "tagline": "Shared words. Wider horizons.",
+    "description": "An established international auxiliary language with regular word endings and a living community.",
+    "greeting": "saluton",
+    "example": "Mi lernas Esperanton.",
+    "translation": "I am learning Esperanto.",
+    "facts": [
+      "28 letters",
+      "Regular verb endings",
+      "Plural −j"
+    ],
+    "version": "0.2.0",
+    "entries": [
+      {
+        "english": "I / me",
+        "word": "mi",
+        "category": "pronoun",
+        "notes": "First person singular; object min"
+      },
+      {
+        "english": "you",
+        "word": "vi",
+        "category": "pronoun",
+        "notes": "Singular or plural; object vin"
+      },
+      {
+        "english": "he",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Third person singular masculine"
+      },
+      {
+        "english": "she",
+        "word": "ŝi",
+        "category": "pronoun",
+        "notes": "Third person singular feminine"
+      },
+      {
+        "english": "it",
+        "word": "ĝi",
+        "category": "pronoun",
+        "notes": "Third person singular for a thing or animal"
+      },
+      {
+        "english": "we / us",
+        "word": "ni",
+        "category": "pronoun",
+        "notes": "First person plural; object nin"
+      },
+      {
+        "english": "they / them",
+        "word": "ili",
+        "category": "pronoun",
+        "notes": "Third person plural; object ilin"
+      },
+      {
+        "english": "self",
+        "word": "si",
+        "category": "pronoun",
+        "notes": "Reflexive for a third-person subject"
+      },
+      {
+        "english": "one / people",
+        "word": "oni",
+        "category": "pronoun",
+        "notes": "Indefinite human subject"
+      },
+      {
+        "english": "my",
+        "word": "mia",
+        "category": "adjective",
+        "notes": "Possessive; agrees with the noun"
+      },
+      {
+        "english": "your",
+        "word": "via",
+        "category": "adjective",
+        "notes": "Possessive for singular or plural you"
+      },
+      {
+        "english": "the",
+        "word": "la",
+        "category": "article",
+        "notes": "Invariable definite article"
+      },
+      {
+        "english": "hello",
+        "word": "saluton",
+        "category": "expression",
+        "notes": "Conventional greeting"
+      },
+      {
+        "english": "thank you",
+        "word": "dankon",
+        "category": "expression",
+        "notes": "Conventional expression of thanks"
+      },
+      {
+        "english": "please",
+        "word": "bonvolu",
+        "category": "expression",
+        "notes": "Polite request followed by an infinitive"
+      },
+      {
+        "english": "goodbye",
+        "word": "ĝis revido",
+        "category": "expression",
+        "notes": "Conventional farewell; literally until seeing again"
+      },
+      {
+        "english": "yes",
+        "word": "jes",
+        "category": "particle",
+        "notes": "Affirmative answer"
+      },
+      {
+        "english": "no / not",
+        "word": "ne",
+        "category": "particle",
+        "notes": "Negative answer or negation"
+      },
+      {
+        "english": "whether / question marker",
+        "word": "ĉu",
+        "category": "particle",
+        "notes": "Introduces a yes-no question"
+      },
+      {
+        "english": "and",
+        "word": "kaj",
+        "category": "conjunction",
+        "notes": "Connects words or clauses"
+      },
+      {
+        "english": "or",
+        "word": "aŭ",
+        "category": "conjunction",
+        "notes": "Alternative"
+      },
+      {
+        "english": "but",
+        "word": "sed",
+        "category": "conjunction",
+        "notes": "Contrast"
+      },
+      {
+        "english": "because",
+        "word": "ĉar",
+        "category": "conjunction",
+        "notes": "Reason"
+      },
+      {
+        "english": "if",
+        "word": "se",
+        "category": "conjunction",
+        "notes": "Condition"
+      },
+      {
+        "english": "that (clause)",
+        "word": "ke",
+        "category": "conjunction",
+        "notes": "Introduces a subordinate statement"
+      },
+      {
+        "english": "in",
+        "word": "en",
+        "category": "preposition",
+        "notes": "Location; add directional -n when appropriate"
+      },
+      {
+        "english": "on",
+        "word": "sur",
+        "category": "preposition",
+        "notes": "On a surface"
+      },
+      {
+        "english": "under",
+        "word": "sub",
+        "category": "preposition",
+        "notes": "Below"
+      },
+      {
+        "english": "over",
+        "word": "super",
+        "category": "preposition",
+        "notes": "Above"
+      },
+      {
+        "english": "to",
+        "word": "al",
+        "category": "preposition",
+        "notes": "Toward or recipient"
+      },
+      {
+        "english": "from / of",
+        "word": "de",
+        "category": "preposition",
+        "notes": "Origin or possession depending on context"
+      },
+      {
+        "english": "with",
+        "word": "kun",
+        "category": "preposition",
+        "notes": "Accompaniment"
+      },
+      {
+        "english": "without",
+        "word": "sen",
+        "category": "preposition",
+        "notes": "Absence"
+      },
+      {
+        "english": "for",
+        "word": "por",
+        "category": "preposition",
+        "notes": "Purpose or intended recipient"
+      },
+      {
+        "english": "about",
+        "word": "pri",
+        "category": "preposition",
+        "notes": "Topic"
+      },
+      {
+        "english": "through",
+        "word": "tra",
+        "category": "preposition",
+        "notes": "Passage through"
+      },
+      {
+        "english": "between",
+        "word": "inter",
+        "category": "preposition",
+        "notes": "Between or among"
+      },
+      {
+        "english": "before (place or time)",
+        "word": "antaŭ",
+        "category": "preposition",
+        "notes": "In front of or earlier than"
+      },
+      {
+        "english": "after",
+        "word": "post",
+        "category": "preposition",
+        "notes": "Later than or behind"
+      },
+      {
+        "english": "until",
+        "word": "ĝis",
+        "category": "preposition",
+        "notes": "Endpoint in time or space"
+      },
+      {
+        "english": "what",
+        "word": "kio",
+        "category": "pronoun",
+        "notes": "Question about a thing"
+      },
+      {
+        "english": "who",
+        "word": "kiu",
+        "category": "pronoun",
+        "notes": "Question about a person or selection"
+      },
+      {
+        "english": "where",
+        "word": "kie",
+        "category": "adverb",
+        "notes": "Question about location"
+      },
+      {
+        "english": "when",
+        "word": "kiam",
+        "category": "adverb",
+        "notes": "Question about time"
+      },
+      {
+        "english": "why",
+        "word": "kial",
+        "category": "adverb",
+        "notes": "Question about reason"
+      },
+      {
+        "english": "how",
+        "word": "kiel",
+        "category": "adverb",
+        "notes": "Question about manner"
+      },
+      {
+        "english": "how much",
+        "word": "kiom",
+        "category": "adverb",
+        "notes": "Question about quantity"
+      },
+      {
+        "english": "this (thing)",
+        "word": "tio ĉi",
+        "category": "pronoun",
+        "notes": "Near demonstrative; also ĉi tio"
+      },
+      {
+        "english": "that (thing)",
+        "word": "tio",
+        "category": "pronoun",
+        "notes": "Demonstrative thing"
+      },
+      {
+        "english": "here",
+        "word": "ĉi tie",
+        "category": "adverb",
+        "notes": "Near location; also tie ĉi"
+      },
+      {
+        "english": "there",
+        "word": "tie",
+        "category": "adverb",
+        "notes": "That location"
+      },
+      {
+        "english": "now",
+        "word": "nun",
+        "category": "adverb",
+        "notes": "At the present time"
+      },
+      {
+        "english": "today",
+        "word": "hodiaŭ",
+        "category": "adverb",
+        "notes": "On this day"
+      },
+      {
+        "english": "yesterday",
+        "word": "hieraŭ",
+        "category": "adverb",
+        "notes": "On the previous day"
+      },
+      {
+        "english": "tomorrow",
+        "word": "morgaŭ",
+        "category": "adverb",
+        "notes": "On the following day"
+      },
+      {
+        "english": "always",
+        "word": "ĉiam",
+        "category": "adverb",
+        "notes": "At all times"
+      },
+      {
+        "english": "never",
+        "word": "neniam",
+        "category": "adverb",
+        "notes": "At no time"
+      },
+      {
+        "english": "often",
+        "word": "ofte",
+        "category": "adverb",
+        "notes": "Frequently"
+      },
+      {
+        "english": "very",
+        "word": "tre",
+        "category": "adverb",
+        "notes": "High degree"
+      },
+      {
+        "english": "also",
+        "word": "ankaŭ",
+        "category": "adverb",
+        "notes": "In addition"
+      },
+      {
+        "english": "only",
+        "word": "nur",
+        "category": "adverb",
+        "notes": "Restriction"
+      },
+      {
+        "english": "already",
+        "word": "jam",
+        "category": "adverb",
+        "notes": "Before or by the relevant time"
+      },
+      {
+        "english": "still / yet",
+        "word": "ankoraŭ",
+        "category": "adverb",
+        "notes": "Continuation or remaining possibility"
+      },
+      {
+        "english": "together",
+        "word": "kune",
+        "category": "adverb",
+        "notes": "In company"
+      },
+      {
+        "english": "well",
+        "word": "bone",
+        "category": "adverb",
+        "notes": "In a good manner"
+      },
+      {
+        "english": "clearly",
+        "word": "klare",
+        "category": "adverb",
+        "notes": "In a clear manner"
+      },
+      {
+        "english": "carefully",
+        "word": "zorge",
+        "category": "adverb",
+        "notes": "With care"
+      },
+      {
+        "english": "zero",
+        "word": "nul",
+        "category": "number",
+        "notes": "0"
+      },
+      {
+        "english": "one",
+        "word": "unu",
+        "category": "number",
+        "notes": "1"
+      },
+      {
+        "english": "two",
+        "word": "du",
+        "category": "number",
+        "notes": "2"
+      },
+      {
+        "english": "three",
+        "word": "tri",
+        "category": "number",
+        "notes": "3"
+      },
+      {
+        "english": "four",
+        "word": "kvar",
+        "category": "number",
+        "notes": "4"
+      },
+      {
+        "english": "five",
+        "word": "kvin",
+        "category": "number",
+        "notes": "5"
+      },
+      {
+        "english": "six",
+        "word": "ses",
+        "category": "number",
+        "notes": "6"
+      },
+      {
+        "english": "seven",
+        "word": "sep",
+        "category": "number",
+        "notes": "7"
+      },
+      {
+        "english": "eight",
+        "word": "ok",
+        "category": "number",
+        "notes": "8"
+      },
+      {
+        "english": "nine",
+        "word": "naŭ",
+        "category": "number",
+        "notes": "9"
+      },
+      {
+        "english": "ten",
+        "word": "dek",
+        "category": "number",
+        "notes": "10"
+      },
+      {
+        "english": "hundred",
+        "word": "cent",
+        "category": "number",
+        "notes": "100"
+      },
+      {
+        "english": "thousand",
+        "word": "mil",
+        "category": "number",
+        "notes": "1000"
+      },
+      {
+        "english": "be",
+        "word": "esti",
+        "category": "verb",
+        "notes": "Infinitive; present estas"
+      },
+      {
+        "english": "have",
+        "word": "havi",
+        "category": "verb",
+        "notes": "Possess; infinitive"
+      },
+      {
+        "english": "do / make",
+        "word": "fari",
+        "category": "verb",
+        "notes": "Perform or create"
+      },
+      {
+        "english": "go",
+        "word": "iri",
+        "category": "verb",
+        "notes": "Move or travel"
+      },
+      {
+        "english": "come",
+        "word": "veni",
+        "category": "verb",
+        "notes": "Move toward"
+      },
+      {
+        "english": "see",
+        "word": "vidi",
+        "category": "verb",
+        "notes": "Visual perception"
+      },
+      {
+        "english": "hear",
+        "word": "aŭdi",
+        "category": "verb",
+        "notes": "Auditory perception"
+      },
+      {
+        "english": "speak",
+        "word": "paroli",
+        "category": "verb",
+        "notes": "Speak a language or talk"
+      },
+      {
+        "english": "say",
+        "word": "diri",
+        "category": "verb",
+        "notes": "Utter something"
+      },
+      {
+        "english": "read",
+        "word": "legi",
+        "category": "verb",
+        "notes": "Read written material"
+      },
+      {
+        "english": "write",
+        "word": "skribi",
+        "category": "verb",
+        "notes": "Produce written text"
+      },
+      {
+        "english": "learn",
+        "word": "lerni",
+        "category": "verb",
+        "notes": "Acquire knowledge or skill"
+      },
+      {
+        "english": "teach",
+        "word": "instrui",
+        "category": "verb",
+        "notes": "Give instruction"
+      },
+      {
+        "english": "understand",
+        "word": "kompreni",
+        "category": "verb",
+        "notes": "Grasp meaning"
+      },
+      {
+        "english": "know (a fact)",
+        "word": "scii",
+        "category": "verb",
+        "notes": "Know information"
+      },
+      {
+        "english": "know (be acquainted)",
+        "word": "koni",
+        "category": "verb",
+        "notes": "Be familiar with a person or thing"
+      },
+      {
+        "english": "want",
+        "word": "voli",
+        "category": "verb",
+        "notes": "Wish or intend"
+      },
+      {
+        "english": "can / be able",
+        "word": "povi",
+        "category": "verb",
+        "notes": "Be able to do something"
+      },
+      {
+        "english": "must / have to",
+        "word": "devi",
+        "category": "verb",
+        "notes": "Obligation"
+      },
+      {
+        "english": "eat",
+        "word": "manĝi",
+        "category": "verb",
+        "notes": "Consume food"
+      },
+      {
+        "english": "drink",
+        "word": "trinki",
+        "category": "verb",
+        "notes": "Consume a liquid"
+      },
+      {
+        "english": "sleep",
+        "word": "dormi",
+        "category": "verb",
+        "notes": "Be asleep"
+      },
+      {
+        "english": "live",
+        "word": "vivi",
+        "category": "verb",
+        "notes": "Be alive"
+      },
+      {
+        "english": "work",
+        "word": "labori",
+        "category": "verb",
+        "notes": "Perform work"
+      },
+      {
+        "english": "play",
+        "word": "ludi",
+        "category": "verb",
+        "notes": "Play a game or instrument"
+      },
+      {
+        "english": "love",
+        "word": "ami",
+        "category": "verb",
+        "notes": "Feel love for"
+      },
+      {
+        "english": "like",
+        "word": "ŝati",
+        "category": "verb",
+        "notes": "Appreciate or enjoy"
+      },
+      {
+        "english": "help",
+        "word": "helpi",
+        "category": "verb",
+        "notes": "Assist"
+      },
+      {
+        "english": "give",
+        "word": "doni",
+        "category": "verb",
+        "notes": "Provide something"
+      },
+      {
+        "english": "take",
+        "word": "preni",
+        "category": "verb",
+        "notes": "Take hold of"
+      },
+      {
+        "english": "buy",
+        "word": "aĉeti",
+        "category": "verb",
+        "notes": "Obtain by payment"
+      },
+      {
+        "english": "sell",
+        "word": "vendi",
+        "category": "verb",
+        "notes": "Exchange for payment"
+      },
+      {
+        "english": "open",
+        "word": "malfermi",
+        "category": "verb",
+        "notes": "Cause to be open"
+      },
+      {
+        "english": "close",
+        "word": "fermi",
+        "category": "verb",
+        "notes": "Cause to be closed"
+      },
+      {
+        "english": "ask (a question)",
+        "word": "demandi",
+        "category": "verb",
+        "notes": "Put a question"
+      },
+      {
+        "english": "answer",
+        "word": "respondi",
+        "category": "verb",
+        "notes": "Reply"
+      },
+      {
+        "english": "repeat",
+        "word": "ripeti",
+        "category": "verb",
+        "notes": "Say or do again"
+      },
+      {
+        "english": "find",
+        "word": "trovi",
+        "category": "verb",
+        "notes": "Discover or locate"
+      },
+      {
+        "english": "think",
+        "word": "pensi",
+        "category": "verb",
+        "notes": "Have thoughts"
+      },
+      {
+        "english": "walk",
+        "word": "piediri",
+        "category": "verb",
+        "notes": "Go on foot"
+      },
+      {
+        "english": "sit",
+        "word": "sidi",
+        "category": "verb",
+        "notes": "Be seated"
+      },
+      {
+        "english": "stand",
+        "word": "stari",
+        "category": "verb",
+        "notes": "Be upright"
+      },
+      {
+        "english": "good",
+        "word": "bona",
+        "category": "adjective",
+        "notes": "Positive quality; agrees with noun"
+      },
+      {
+        "english": "bad",
+        "word": "malbona",
+        "category": "adjective",
+        "notes": "Opposite of bona"
+      },
+      {
+        "english": "big",
+        "word": "granda",
+        "category": "adjective",
+        "notes": "Large in size"
+      },
+      {
+        "english": "small",
+        "word": "malgranda",
+        "category": "adjective",
+        "notes": "Small in size"
+      },
+      {
+        "english": "new",
+        "word": "nova",
+        "category": "adjective",
+        "notes": "Recent or not previously used"
+      },
+      {
+        "english": "old (not new)",
+        "word": "malnova",
+        "category": "adjective",
+        "notes": "Opposite of nova"
+      },
+      {
+        "english": "young",
+        "word": "juna",
+        "category": "adjective",
+        "notes": "Early in life"
+      },
+      {
+        "english": "old (age)",
+        "word": "maljuna",
+        "category": "adjective",
+        "notes": "Advanced in age"
+      },
+      {
+        "english": "beautiful",
+        "word": "bela",
+        "category": "adjective",
+        "notes": "Pleasing appearance"
+      },
+      {
+        "english": "happy",
+        "word": "feliĉa",
+        "category": "adjective",
+        "notes": "Happy or fortunate"
+      },
+      {
+        "english": "sad",
+        "word": "malĝoja",
+        "category": "adjective",
+        "notes": "Sorrowful"
+      },
+      {
+        "english": "easy",
+        "word": "facila",
+        "category": "adjective",
+        "notes": "Requiring little effort"
+      },
+      {
+        "english": "difficult",
+        "word": "malfacila",
+        "category": "adjective",
+        "notes": "Requiring effort"
+      },
+      {
+        "english": "clear",
+        "word": "klara",
+        "category": "adjective",
+        "notes": "Clear in perception or meaning"
+      },
+      {
+        "english": "important",
+        "word": "grava",
+        "category": "adjective",
+        "notes": "Of significance"
+      },
+      {
+        "english": "same",
+        "word": "sama",
+        "category": "adjective",
+        "notes": "Identical"
+      },
+      {
+        "english": "other",
+        "word": "alia",
+        "category": "adjective",
+        "notes": "Another or different"
+      },
+      {
+        "english": "hot",
+        "word": "varma",
+        "category": "adjective",
+        "notes": "Warm or hot"
+      },
+      {
+        "english": "cold",
+        "word": "malvarma",
+        "category": "adjective",
+        "notes": "Low temperature"
+      },
+      {
+        "english": "red",
+        "word": "ruĝa",
+        "category": "adjective",
+        "notes": "Color"
+      },
+      {
+        "english": "blue",
+        "word": "blua",
+        "category": "adjective",
+        "notes": "Color"
+      },
+      {
+        "english": "green",
+        "word": "verda",
+        "category": "adjective",
+        "notes": "Color"
+      },
+      {
+        "english": "white",
+        "word": "blanka",
+        "category": "adjective",
+        "notes": "Color"
+      },
+      {
+        "english": "black",
+        "word": "nigra",
+        "category": "adjective",
+        "notes": "Color"
+      },
+      {
+        "english": "person",
+        "word": "homo",
+        "category": "noun",
+        "notes": "Human being"
+      },
+      {
+        "english": "friend",
+        "word": "amiko",
+        "category": "noun",
+        "notes": "Friend; gender not specified here"
+      },
+      {
+        "english": "family",
+        "word": "familio",
+        "category": "noun",
+        "notes": "Family group"
+      },
+      {
+        "english": "child",
+        "word": "infano",
+        "category": "noun",
+        "notes": "Young human"
+      },
+      {
+        "english": "mother",
+        "word": "patrino",
+        "category": "noun",
+        "notes": "Female parent"
+      },
+      {
+        "english": "father",
+        "word": "patro",
+        "category": "noun",
+        "notes": "Male parent"
+      },
+      {
+        "english": "name",
+        "word": "nomo",
+        "category": "noun",
+        "notes": "Name or designation"
+      },
+      {
+        "english": "language",
+        "word": "lingvo",
+        "category": "noun",
+        "notes": "Language"
+      },
+      {
+        "english": "Esperanto",
+        "word": "Esperanto",
+        "category": "noun",
+        "notes": "Language name; object Esperanton"
+      },
+      {
+        "english": "word",
+        "word": "vorto",
+        "category": "noun",
+        "notes": "Unit of language"
+      },
+      {
+        "english": "sentence",
+        "word": "frazo",
+        "category": "noun",
+        "notes": "Sentence or phrase"
+      },
+      {
+        "english": "book",
+        "word": "libro",
+        "category": "noun",
+        "notes": "Written volume"
+      },
+      {
+        "english": "paper",
+        "word": "papero",
+        "category": "noun",
+        "notes": "Writing material"
+      },
+      {
+        "english": "school",
+        "word": "lernejo",
+        "category": "noun",
+        "notes": "Place for learning"
+      },
+      {
+        "english": "teacher",
+        "word": "instruisto",
+        "category": "noun",
+        "notes": "Person who teaches"
+      },
+      {
+        "english": "student",
+        "word": "lernanto",
+        "category": "noun",
+        "notes": "Person who learns"
+      },
+      {
+        "english": "house",
+        "word": "domo",
+        "category": "noun",
+        "notes": "Building for habitation"
+      },
+      {
+        "english": "room",
+        "word": "ĉambro",
+        "category": "noun",
+        "notes": "Room in a building"
+      },
+      {
+        "english": "door",
+        "word": "pordo",
+        "category": "noun",
+        "notes": "Doorway closure"
+      },
+      {
+        "english": "window",
+        "word": "fenestro",
+        "category": "noun",
+        "notes": "Window in a building"
+      },
+      {
+        "english": "table",
+        "word": "tablo",
+        "category": "noun",
+        "notes": "Piece of furniture"
+      },
+      {
+        "english": "chair",
+        "word": "seĝo",
+        "category": "noun",
+        "notes": "Seat for one person"
+      },
+      {
+        "english": "garden",
+        "word": "ĝardeno",
+        "category": "noun",
+        "notes": "Cultivated outdoor space"
+      },
+      {
+        "english": "city",
+        "word": "urbo",
+        "category": "noun",
+        "notes": "Town or city"
+      },
+      {
+        "english": "country (land)",
+        "word": "lando",
+        "category": "noun",
+        "notes": "Country or territory"
+      },
+      {
+        "english": "world",
+        "word": "mondo",
+        "category": "noun",
+        "notes": "The world"
+      },
+      {
+        "english": "road",
+        "word": "vojo",
+        "category": "noun",
+        "notes": "Way or road"
+      },
+      {
+        "english": "water",
+        "word": "akvo",
+        "category": "noun",
+        "notes": "Water; object akvon"
+      },
+      {
+        "english": "food",
+        "word": "manĝaĵo",
+        "category": "noun",
+        "notes": "Something to eat; object manĝaĵon"
+      },
+      {
+        "english": "bread",
+        "word": "pano",
+        "category": "noun",
+        "notes": "Baked staple food"
+      },
+      {
+        "english": "fruit",
+        "word": "frukto",
+        "category": "noun",
+        "notes": "Fruit"
+      },
+      {
+        "english": "apple",
+        "word": "pomo",
+        "category": "noun",
+        "notes": "Apple fruit"
+      },
+      {
+        "english": "milk",
+        "word": "lakto",
+        "category": "noun",
+        "notes": "Milk"
+      },
+      {
+        "english": "tea",
+        "word": "teo",
+        "category": "noun",
+        "notes": "Tea beverage"
+      },
+      {
+        "english": "coffee",
+        "word": "kafo",
+        "category": "noun",
+        "notes": "Coffee beverage"
+      },
+      {
+        "english": "salt",
+        "word": "salo",
+        "category": "noun",
+        "notes": "Edible salt"
+      },
+      {
+        "english": "sun",
+        "word": "suno",
+        "category": "noun",
+        "notes": "The sun"
+      },
+      {
+        "english": "moon",
+        "word": "luno",
+        "category": "noun",
+        "notes": "The moon"
+      },
+      {
+        "english": "star",
+        "word": "stelo",
+        "category": "noun",
+        "notes": "Star in the sky"
+      },
+      {
+        "english": "earth (soil)",
+        "word": "tero",
+        "category": "noun",
+        "notes": "Earth or ground"
+      },
+      {
+        "english": "sky",
+        "word": "ĉielo",
+        "category": "noun",
+        "notes": "Sky or heaven"
+      },
+      {
+        "english": "air",
+        "word": "aero",
+        "category": "noun",
+        "notes": "Air"
+      },
+      {
+        "english": "fire",
+        "word": "fajro",
+        "category": "noun",
+        "notes": "Fire"
+      },
+      {
+        "english": "tree",
+        "word": "arbo",
+        "category": "noun",
+        "notes": "Tree"
+      },
+      {
+        "english": "flower",
+        "word": "floro",
+        "category": "noun",
+        "notes": "Flower"
+      },
+      {
+        "english": "animal",
+        "word": "besto",
+        "category": "noun",
+        "notes": "Animal"
+      },
+      {
+        "english": "dog",
+        "word": "hundo",
+        "category": "noun",
+        "notes": "Dog"
+      },
+      {
+        "english": "cat",
+        "word": "kato",
+        "category": "noun",
+        "notes": "Cat"
+      },
+      {
+        "english": "bird",
+        "word": "birdo",
+        "category": "noun",
+        "notes": "Bird"
+      },
+      {
+        "english": "fish",
+        "word": "fiŝo",
+        "category": "noun",
+        "notes": "Fish animal"
+      },
+      {
+        "english": "day",
+        "word": "tago",
+        "category": "noun",
+        "notes": "Day"
+      },
+      {
+        "english": "night",
+        "word": "nokto",
+        "category": "noun",
+        "notes": "Night"
+      },
+      {
+        "english": "morning",
+        "word": "mateno",
+        "category": "noun",
+        "notes": "Early part of day"
+      },
+      {
+        "english": "evening",
+        "word": "vespero",
+        "category": "noun",
+        "notes": "Evening"
+      },
+      {
+        "english": "week",
+        "word": "semajno",
+        "category": "noun",
+        "notes": "Seven-day period"
+      },
+      {
+        "english": "month",
+        "word": "monato",
+        "category": "noun",
+        "notes": "Calendar month"
+      },
+      {
+        "english": "year",
+        "word": "jaro",
+        "category": "noun",
+        "notes": "Year"
+      },
+      {
+        "english": "time",
+        "word": "tempo",
+        "category": "noun",
+        "notes": "Time or duration"
+      },
+      {
+        "english": "hour",
+        "word": "horo",
+        "category": "noun",
+        "notes": "Sixty-minute unit"
+      },
+      {
+        "english": "hand",
+        "word": "mano",
+        "category": "noun",
+        "notes": "Hand"
+      },
+      {
+        "english": "head",
+        "word": "kapo",
+        "category": "noun",
+        "notes": "Head of body"
+      },
+      {
+        "english": "eye",
+        "word": "okulo",
+        "category": "noun",
+        "notes": "Organ of sight"
+      },
+      {
+        "english": "ear",
+        "word": "orelo",
+        "category": "noun",
+        "notes": "Organ of hearing"
+      },
+      {
+        "english": "mouth",
+        "word": "buŝo",
+        "category": "noun",
+        "notes": "Mouth"
+      },
+      {
+        "english": "heart",
+        "word": "koro",
+        "category": "noun",
+        "notes": "Heart"
+      },
+      {
+        "english": "health",
+        "word": "sano",
+        "category": "noun",
+        "notes": "State of being healthy"
+      },
+      {
+        "english": "peace",
+        "word": "paco",
+        "category": "noun",
+        "notes": "Absence of war or conflict"
+      },
+      {
+        "english": "music",
+        "word": "muziko",
+        "category": "noun",
+        "notes": "Music"
+      },
+      {
+        "english": "question",
+        "word": "demando",
+        "category": "noun",
+        "notes": "Question"
+      },
+      {
+        "english": "answer (noun)",
+        "word": "respondo",
+        "category": "noun",
+        "notes": "Reply"
+      },
+      {
+        "english": "goal",
+        "word": "celo",
+        "category": "noun",
+        "notes": "Aim or target"
+      },
+      {
+        "english": "choir",
+        "word": "ĥoro",
+        "category": "noun",
+        "notes": "Group of singers"
+      },
+      {
+        "english": "newspaper",
+        "word": "ĵurnalo",
+        "category": "noun",
+        "notes": "Newspaper or journal"
+      },
+      {
+        "english": "you (singular)",
+        "word": "vi",
+        "category": "pronoun",
+        "notes": "Singular or plural; object vin; English lookup variant of you"
+      },
+      {
+        "english": "he / she / it",
+        "word": "li / ŝi / ĝi",
+        "category": "pronoun",
+        "notes": "Select the pronoun by referent; no single gender-neutral equivalent is implied"
+      },
+      {
+        "english": "you (plural)",
+        "word": "vi",
+        "category": "pronoun",
+        "notes": "Vi serves singular and plural; vi ĉiuj makes all addressees explicit"
+      },
+      {
+        "english": "someone",
+        "word": "iu",
+        "category": "pronoun",
+        "notes": "An unspecified person"
+      },
+      {
+        "english": "this / these",
+        "word": "tiu ĉi / tiuj ĉi",
+        "category": "determiner/pronoun",
+        "notes": "Singular and plural forms; also ĉi tiu and ĉi tiuj"
+      },
+      {
+        "english": "that / those",
+        "word": "tiu / tiuj",
+        "category": "determiner/pronoun",
+        "notes": "Singular and plural demonstratives"
+      },
+      {
+        "english": "plural",
+        "word": "-j",
+        "category": "grammar",
+        "notes": "Suffix after a noun or adjective; libro becomes libroj"
+      },
+      {
+        "english": "some",
+        "word": "kelkaj",
+        "category": "quantifier",
+        "notes": "Some countable items; use iom da for an unspecified amount"
+      },
+      {
+        "english": "all / every",
+        "word": "ĉiu / ĉiuj",
+        "category": "quantifier",
+        "notes": "Ĉiu is each or every; ĉiuj means all countable members"
+      },
+      {
+        "english": "few / little quantity",
+        "word": "malmultaj / malmulte da",
+        "category": "quantifier",
+        "notes": "Few countable things versus little of a substance"
+      },
+      {
+        "english": "of / related to",
+        "word": "de",
+        "category": "preposition",
+        "notes": "Possession or association; not every English of uses de"
+      },
+      {
+        "english": "end condition",
+        "word": "fino de kondiĉo",
+        "category": "grammar",
+        "notes": "Name of the concept; Esperanto has no obligatory spoken condition-end marker"
+      },
+      {
+        "english": "past",
+        "word": "-is",
+        "category": "grammar",
+        "notes": "Finite past-tense verb ending; lerni becomes lernis"
+      },
+      {
+        "english": "future",
+        "word": "-os",
+        "category": "grammar",
+        "notes": "Finite future-tense verb ending; lerni becomes lernos"
+      },
+      {
+        "english": "ongoing",
+        "word": "estas leganta",
+        "category": "grammar",
+        "notes": "Example: is reading; present active participle agrees with subject; simple legas often suffices"
+      },
+      {
+        "english": "completed",
+        "word": "estas leginta",
+        "category": "grammar",
+        "notes": "Example: has read; active perfect participle agrees with subject; completion is relative to a reference time"
+      },
+      {
+        "english": "not / no",
+        "word": "ne",
+        "category": "particle",
+        "notes": "Negation or negative answer"
+      },
+      {
+        "english": "yes/no question",
+        "word": "ĉu",
+        "category": "particle",
+        "notes": "At the beginning of a yes-no question"
+      },
+      {
+        "english": "how many / much",
+        "word": "kiom",
+        "category": "adverb",
+        "notes": "Quantity question; kiom da akvo means how much water"
+      },
+      {
+        "english": "which",
+        "word": "kiu",
+        "category": "determiner/pronoun",
+        "notes": "Selection; plural kiuj when needed"
+      },
+      {
+        "english": "content clause start",
+        "word": "ke",
+        "category": "conjunction",
+        "notes": "Introduces a declarative content clause; not every embedded clause uses ke"
+      },
+      {
+        "english": "content clause end",
+        "word": "fino de subfrazo",
+        "category": "grammar",
+        "notes": "Name of the concept; no obligatory spoken clause-end marker"
+      },
+      {
+        "english": "relative clause start",
+        "word": "kiu",
+        "category": "grammar",
+        "notes": "Relative pronoun example; relative clauses also use other correlatives"
+      },
+      {
+        "english": "relative clause end",
+        "word": "fino de rilata subfrazo",
+        "category": "grammar",
+        "notes": "Name of the concept; no obligatory spoken relative-end marker"
+      },
+      {
+        "english": "relative reference",
+        "word": "kiu / kiun",
+        "category": "grammar",
+        "notes": "Relative pronoun agrees in number; -n depends on its role within the clause"
+      },
+      {
+        "english": "at / in",
+        "word": "ĉe / en",
+        "category": "preposition",
+        "notes": "Ĉe means at or by; en means in"
+      },
+      {
+        "english": "on / above",
+        "word": "sur / super",
+        "category": "preposition",
+        "notes": "Sur means on a surface; super means above"
+      },
+      {
+        "english": "to / toward",
+        "word": "al",
+        "category": "preposition",
+        "notes": "Toward or recipient; English lookup variant of to"
+      },
+      {
+        "english": "from",
+        "word": "de / el",
+        "category": "preposition",
+        "notes": "De marks origin; el means out of"
+      },
+      {
+        "english": "using / by means of",
+        "word": "per",
+        "category": "preposition",
+        "notes": "Instrument or means"
+      },
+      {
+        "english": "than / compared with",
+        "word": "ol",
+        "category": "conjunction",
+        "notes": "Comparison standard"
+      },
+      {
+        "english": "manner marker",
+        "word": "-e",
+        "category": "grammar",
+        "notes": "Derived-adverb ending; bona becomes bone; not a separate word before an adjective"
+      },
+      {
+        "english": "more",
+        "word": "pli",
+        "category": "adverb",
+        "notes": "Comparative degree"
+      },
+      {
+        "english": "most",
+        "word": "plej",
+        "category": "adverb",
+        "notes": "Superlative degree"
+      },
+      {
+        "english": "equally",
+        "word": "same",
+        "category": "adverb",
+        "notes": "In the same way or to the same degree; tiel ... kiel for as ... as"
+      },
+      {
+        "english": "can / able",
+        "word": "povi",
+        "category": "verb",
+        "notes": "Infinitive of ability; present povas"
+      },
+      {
+        "english": "must / obliged",
+        "word": "devi",
+        "category": "verb",
+        "notes": "Infinitive of obligation; present devas"
+      },
+      {
+        "english": "exist",
+        "word": "ekzisti",
+        "category": "verb",
+        "notes": "To exist; estas also appears in existential sentences"
+      },
+      {
+        "english": "look at",
+        "word": "rigardi",
+        "category": "verb",
+        "notes": "Direct visual attention toward"
+      },
+      {
+        "english": "know",
+        "word": "scii",
+        "category": "verb",
+        "notes": "Know information; use koni for acquaintance"
+      },
+      {
+        "english": "speak / say",
+        "word": "paroli / diri",
+        "category": "verb",
+        "notes": "Paroli is speak or talk; diri is say something"
+      },
+      {
+        "english": "ask",
+        "word": "demandi",
+        "category": "verb",
+        "notes": "Ask a question; peti means request something"
+      },
+      {
+        "english": "run",
+        "word": "kuri",
+        "category": "verb",
+        "notes": "Move at a run"
+      },
+      {
+        "english": "stay",
+        "word": "resti",
+        "category": "verb",
+        "notes": "Remain in a place or state"
+      },
+      {
+        "english": "live / be alive",
+        "word": "vivi",
+        "category": "verb",
+        "notes": "Be alive; English lookup variant of live"
+      },
+      {
+        "english": "die",
+        "word": "morti",
+        "category": "verb",
+        "notes": "Cease to live"
+      },
+      {
+        "english": "like / enjoy",
+        "word": "ŝati",
+        "category": "verb",
+        "notes": "Appreciate or enjoy; English lookup variant of like"
+      },
+      {
+        "english": "need",
+        "word": "bezoni",
+        "category": "verb",
+        "notes": "Require something"
+      },
+      {
+        "english": "have / possess",
+        "word": "havi",
+        "category": "verb",
+        "notes": "Possess; infinitive; English lookup variant of have"
+      },
+      {
+        "english": "bring",
+        "word": "alporti",
+        "category": "verb",
+        "notes": "Carry or deliver toward a destination"
+      },
+      {
+        "english": "make / cause",
+        "word": "fari / kaŭzi",
+        "category": "verb",
+        "notes": "Fari means do or make; kaŭzi means cause"
+      },
+      {
+        "english": "use",
+        "word": "uzi",
+        "category": "verb",
+        "notes": "Employ something for a purpose"
+      },
+      {
+        "english": "begin",
+        "word": "komenciĝi",
+        "category": "verb",
+        "notes": "Intransitive: an event begins; komenci begins something"
+      },
+      {
+        "english": "finish",
+        "word": "finiĝi",
+        "category": "verb",
+        "notes": "Intransitive: an event ends; fini ends something"
+      },
+      {
+        "english": "allow",
+        "word": "permesi",
+        "category": "verb",
+        "notes": "Permit"
+      },
+      {
+        "english": "choose",
+        "word": "elekti",
+        "category": "verb",
+        "notes": "Select"
+      },
+      {
+        "english": "lose",
+        "word": "perdi",
+        "category": "verb",
+        "notes": "Lose something"
+      },
+      {
+        "english": "remember",
+        "word": "memori",
+        "category": "verb",
+        "notes": "Retain in memory"
+      },
+      {
+        "english": "forget",
+        "word": "forgesi",
+        "category": "verb",
+        "notes": "Fail to remember"
+      },
+      {
+        "english": "feel",
+        "word": "senti",
+        "category": "verb",
+        "notes": "Experience a sensation"
+      },
+      {
+        "english": "wait",
+        "word": "atendi",
+        "category": "verb",
+        "notes": "Wait for someone or something"
+      },
+      {
+        "english": "touch",
+        "word": "tuŝi",
+        "category": "verb",
+        "notes": "Make physical contact with"
+      },
+      {
+        "english": "cut",
+        "word": "tranĉi",
+        "category": "verb",
+        "notes": "Cut with an edge"
+      },
+      {
+        "english": "become",
+        "word": "iĝi",
+        "category": "verb",
+        "notes": "Change into a state or identity"
+      },
+      {
+        "english": "parent",
+        "word": "patro / patrino",
+        "category": "noun",
+        "notes": "Father or mother; gepatroj for parents collectively"
+      },
+      {
+        "english": "sibling",
+        "word": "frato / fratino",
+        "category": "noun",
+        "notes": "Brother or sister; gefratoj for siblings collectively"
+      },
+      {
+        "english": "body",
+        "word": "korpo",
+        "category": "noun",
+        "notes": "Physical body"
+      },
+      {
+        "english": "foot",
+        "word": "piedo",
+        "category": "noun",
+        "notes": "Body part"
+      },
+      {
+        "english": "skin",
+        "word": "haŭto",
+        "category": "noun",
+        "notes": "Body covering"
+      },
+      {
+        "english": "earth / soil",
+        "word": "tero",
+        "category": "noun",
+        "notes": "Earth or ground; English lookup variant of earth (soil)"
+      },
+      {
+        "english": "rain",
+        "word": "pluvo",
+        "category": "noun",
+        "notes": "Rainfall"
+      },
+      {
+        "english": "river",
+        "word": "rivero",
+        "category": "noun",
+        "notes": "Natural flowing watercourse"
+      },
+      {
+        "english": "sea",
+        "word": "maro",
+        "category": "noun",
+        "notes": "Large saltwater body"
+      },
+      {
+        "english": "mountain",
+        "word": "monto",
+        "category": "noun",
+        "notes": "Elevated landform"
+      },
+      {
+        "english": "plant",
+        "word": "planto",
+        "category": "noun",
+        "notes": "Living plant"
+      },
+      {
+        "english": "stone",
+        "word": "ŝtono",
+        "category": "noun",
+        "notes": "Stone or rock"
+      },
+      {
+        "english": "house / home",
+        "word": "domo / hejmo",
+        "category": "noun",
+        "notes": "Domo is a building; hejmo is the place one calls home"
+      },
+      {
+        "english": "clothing",
+        "word": "vestoj",
+        "category": "noun",
+        "notes": "Clothes collectively; plural of vesto"
+      },
+      {
+        "english": "tool",
+        "word": "ilo",
+        "category": "noun",
+        "notes": "Implement"
+      },
+      {
+        "english": "road / path",
+        "word": "vojo",
+        "category": "noun",
+        "notes": "Way or road; English lookup variant of road"
+      },
+      {
+        "english": "country",
+        "word": "lando",
+        "category": "noun",
+        "notes": "Country or territory; English lookup variant of country (land)"
+      },
+      {
+        "english": "place",
+        "word": "loko",
+        "category": "noun",
+        "notes": "Location"
+      },
+      {
+        "english": "idea",
+        "word": "ideo",
+        "category": "noun",
+        "notes": "Thought or proposal"
+      },
+      {
+        "english": "life",
+        "word": "vivo",
+        "category": "noun",
+        "notes": "Life or living duration"
+      },
+      {
+        "english": "money",
+        "word": "mono",
+        "category": "noun",
+        "notes": "Money"
+      },
+      {
+        "english": "number",
+        "word": "nombro",
+        "category": "noun",
+        "notes": "Numeric quantity; numero for an identifying number"
+      },
+      {
+        "english": "problem",
+        "word": "problemo",
+        "category": "noun",
+        "notes": "Problem requiring attention"
+      },
+      {
+        "english": "large",
+        "word": "granda",
+        "category": "adjective",
+        "notes": "Large in size; English lookup variant of big"
+      },
+      {
+        "english": "long",
+        "word": "longa",
+        "category": "adjective",
+        "notes": "Long in extent"
+      },
+      {
+        "english": "short",
+        "word": "mallonga",
+        "category": "adjective",
+        "notes": "Short in extent"
+      },
+      {
+        "english": "former",
+        "word": "iama",
+        "category": "adjective",
+        "notes": "Of an earlier time or status"
+      },
+      {
+        "english": "clean",
+        "word": "pura",
+        "category": "adjective",
+        "notes": "Free from dirt"
+      },
+      {
+        "english": "dirty",
+        "word": "malpura",
+        "category": "adjective",
+        "notes": "Containing dirt"
+      },
+      {
+        "english": "fast",
+        "word": "rapida",
+        "category": "adjective",
+        "notes": "High speed; rapide is quickly"
+      },
+      {
+        "english": "slow",
+        "word": "malrapida",
+        "category": "adjective",
+        "notes": "Low speed; malrapide is slowly"
+      },
+      {
+        "english": "ill",
+        "word": "malsana",
+        "category": "adjective",
+        "notes": "Unwell"
+      },
+      {
+        "english": "healthy",
+        "word": "sana",
+        "category": "adjective",
+        "notes": "In good health"
+      },
+      {
+        "english": "strong",
+        "word": "forta",
+        "category": "adjective",
+        "notes": "High strength"
+      },
+      {
+        "english": "weak",
+        "word": "malforta",
+        "category": "adjective",
+        "notes": "Low strength"
+      },
+      {
+        "english": "true",
+        "word": "vera",
+        "category": "adjective",
+        "notes": "Factually true; ĝusta for correct"
+      },
+      {
+        "english": "false",
+        "word": "malvera",
+        "category": "adjective",
+        "notes": "Factually untrue"
+      },
+      {
+        "english": "different",
+        "word": "malsama",
+        "category": "adjective",
+        "notes": "Not the same"
+      },
+      {
+        "english": "full",
+        "word": "plena",
+        "category": "adjective",
+        "notes": "Filled to capacity"
+      },
+      {
+        "english": "empty",
+        "word": "malplena",
+        "category": "adjective",
+        "notes": "Without contents"
+      },
+      {
+        "english": "yellow",
+        "word": "flava",
+        "category": "adjective",
+        "notes": "Color"
+      },
+      {
+        "english": "near",
+        "word": "proksima",
+        "category": "adjective",
+        "notes": "Small distance; proksime for nearby"
+      },
+      {
+        "english": "far",
+        "word": "malproksima",
+        "category": "adjective",
+        "notes": "Large distance; malproksime for far away"
+      },
+      {
+        "english": "sometimes",
+        "word": "kelkfoje",
+        "category": "adverb",
+        "notes": "On some occasions"
+      },
+      {
+        "english": "before",
+        "word": "antaŭ",
+        "category": "preposition",
+        "notes": "Earlier than or in front of"
+      },
+      {
+        "english": "inside",
+        "word": "interne",
+        "category": "adverb",
+        "notes": "In the interior; interne de before a noun phrase"
+      },
+      {
+        "english": "outside",
+        "word": "ekstere",
+        "category": "adverb",
+        "notes": "Outside; ekstere de before a noun phrase"
+      },
+      {
+        "english": "left",
+        "word": "maldekstra",
+        "category": "adjective",
+        "notes": "Direction; maldekstre for to the left"
+      },
+      {
+        "english": "right",
+        "word": "dekstra",
+        "category": "adjective",
+        "notes": "Direction; dekstre for to the right"
+      },
+      {
+        "english": "digit sequence",
+        "word": "cifera sinsekvo",
+        "category": "noun",
+        "notes": "Name for a sequence of digits; read the digits individually"
+      },
+      {
+        "english": "decimal point",
+        "word": "komo",
+        "category": "noun",
+        "notes": "Decimal separator conventionally read komo; a written point may be named punkto"
+      },
+      {
+        "english": "negative number",
+        "word": "negativa nombro",
+        "category": "noun",
+        "notes": "A number below zero; read minus before its magnitude"
+      },
+      {
+        "english": "divided by",
+        "word": "dividite per",
+        "category": "expression",
+        "notes": "Fraction or division reading"
+      },
+      {
+        "english": "ordinal marker",
+        "word": "-a",
+        "category": "grammar",
+        "notes": "Ordinal ending on a numeral; tri becomes tria"
+      },
+      {
+        "english": "you are welcome",
+        "word": "nedankinde",
+        "category": "expression",
+        "notes": "Response to thanks"
+      },
+      {
+        "english": "sorry",
+        "word": "pardonu",
+        "category": "expression",
+        "notes": "Apology or request to excuse"
+      },
+      {
+        "english": "a / an",
+        "word": "libro",
+        "category": "grammar",
+        "notes": "No indefinite article; bare libro can mean a book; example noun rather than an article translation"
+      },
+      {
+        "english": "can / be able to",
+        "word": "povi",
+        "category": "verb",
+        "notes": "Infinitive of ability; present povas; English lookup variant of can / able"
+      },
+      {
+        "english": "future / will",
+        "word": "-os",
+        "category": "grammar",
+        "notes": "Finite future-tense verb ending; lerni becomes lernos; English lookup variant of future"
+      },
+      {
+        "english": "of / possessive link",
+        "word": "de",
+        "category": "preposition",
+        "notes": "Possession or association; not every English of uses de; English lookup variant of of / related to"
+      },
+      {
+        "english": "ongoing action",
+        "word": "estas leganta",
+        "category": "grammar",
+        "notes": "Example: is reading; present active participle agrees with subject; simple legas often suffices; English lookup variant of ongoing"
+      },
+      {
+        "english": "question marker",
+        "word": "ĉu",
+        "category": "particle",
+        "notes": "At the beginning of a yes-no question; English lookup variant of yes/no question"
+      },
+      {
+        "english": "you all",
+        "word": "vi",
+        "category": "pronoun",
+        "notes": "Vi serves singular and plural; vi ĉiuj makes all addressees explicit; English lookup variant of you (plural)"
+      },
+      {
+        "english": "above / over",
+        "word": "sur / super",
+        "category": "preposition",
+        "notes": "Sur means on a surface; super means above; English lookup variant of on / above"
+      },
+      {
+        "english": "below / under",
+        "word": "sub",
+        "category": "preposition",
+        "notes": "Below; English lookup variant of under"
+      },
+      {
+        "english": "for / intended for",
+        "word": "por",
+        "category": "preposition",
+        "notes": "Purpose or intended recipient; English lookup variant of for"
+      },
+      {
+        "english": "how many / how much",
+        "word": "kiom",
+        "category": "adverb",
+        "notes": "Quantity question; kiom da akvo means how much water; English lookup variant of how many / much"
+      },
+      {
+        "english": "left (direction)",
+        "word": "maldekstra",
+        "category": "adjective",
+        "notes": "Direction; maldekstre for to the left; English lookup variant of left"
+      },
+      {
+        "english": "on / on top of",
+        "word": "sur",
+        "category": "preposition",
+        "notes": "On a surface; English lookup variant of on"
+      },
+      {
+        "english": "right (direction)",
+        "word": "dekstra",
+        "category": "adjective",
+        "notes": "Direction; dekstre for to the right; English lookup variant of right"
+      },
+      {
+        "english": "be / am / is / are",
+        "word": "esti",
+        "category": "verb",
+        "notes": "Infinitive; present estas; English lookup variant of be"
+      },
+      {
+        "english": "begin / start",
+        "word": "komenciĝi",
+        "category": "verb",
+        "notes": "Intransitive: an event begins; komenci begins something; English lookup variant of begin"
+      },
+      {
+        "english": "close / shut",
+        "word": "fermi",
+        "category": "verb",
+        "notes": "Cause to be closed; English lookup variant of close"
+      },
+      {
+        "english": "end / finish",
+        "word": "finiĝi",
+        "category": "verb",
+        "notes": "Intransitive: an event ends; fini ends something; English lookup variant of finish"
+      },
+      {
+        "english": "exist / there is",
+        "word": "ekzisti",
+        "category": "verb",
+        "notes": "To exist; estas also appears in existential sentences; English lookup variant of exist"
+      },
+      {
+        "english": "have / own",
+        "word": "havi",
+        "category": "verb",
+        "notes": "Possess; infinitive; English lookup variant of have; English lookup variant of have / possess"
+      },
+      {
+        "english": "say / speak",
+        "word": "diri / paroli",
+        "category": "verb",
+        "notes": "Diri is say something; paroli is speak or talk"
+      },
+      {
+        "english": "stay / remain",
+        "word": "resti",
+        "category": "verb",
+        "notes": "Remain in a place or state; English lookup variant of stay"
+      },
+      {
+        "english": "arm",
+        "word": "brako",
+        "category": "noun",
+        "notes": "Upper limb"
+      },
+      {
+        "english": "back (body)",
+        "word": "dorso",
+        "category": "noun",
+        "notes": "Rear of torso"
+      },
+      {
+        "english": "city / town",
+        "word": "urbo",
+        "category": "noun",
+        "notes": "Town or city; English lookup variant of city"
+      },
+      {
+        "english": "country / nation",
+        "word": "lando / nacio",
+        "category": "noun",
+        "notes": "Lando is a country or land; nacio is a nation"
+      },
+      {
+        "english": "face",
+        "word": "vizaĝo",
+        "category": "noun",
+        "notes": "Front of head"
+      },
+      {
+        "english": "home / house",
+        "word": "hejmo / domo",
+        "category": "noun",
+        "notes": "Hejmo is home; domo is a house building"
+      },
+      {
+        "english": "light",
+        "word": "lumo",
+        "category": "noun",
+        "notes": "Visible light"
+      },
+      {
+        "english": "man",
+        "word": "viro",
+        "category": "noun",
+        "notes": "Adult male human"
+      },
+      {
+        "english": "person / human",
+        "word": "homo",
+        "category": "noun",
+        "notes": "Human being; English lookup variant of person"
+      },
+      {
+        "english": "thing / object",
+        "word": "aĵo / objekto",
+        "category": "noun",
+        "notes": "Thing or object"
+      },
+      {
+        "english": "way / method",
+        "word": "metodo",
+        "category": "noun",
+        "notes": "Method rather than a road"
+      },
+      {
+        "english": "woman",
+        "word": "virino",
+        "category": "noun",
+        "notes": "Adult female human"
+      },
+      {
+        "english": "big / large",
+        "word": "granda",
+        "category": "adjective",
+        "notes": "Large in size; English lookup variant of big; English lookup variant of large"
+      },
+      {
+        "english": "fast / quickly",
+        "word": "rapida / rapide",
+        "category": "adjective/adverb",
+        "notes": "Adjective versus manner adverb"
+      },
+      {
+        "english": "few / little (quantity)",
+        "word": "malmultaj / malmulte da",
+        "category": "quantifier",
+        "notes": "Few countable things versus little of a substance; English lookup variant of few / little quantity"
+      },
+      {
+        "english": "good / well",
+        "word": "bona / bone",
+        "category": "adjective/adverb",
+        "notes": "Adjective versus adverb"
+      },
+      {
+        "english": "many / much",
+        "word": "multaj / multe da",
+        "category": "quantifier",
+        "notes": "Countable plural versus quantity of a substance"
+      },
+      {
+        "english": "most (comparison)",
+        "word": "plej",
+        "category": "adverb",
+        "notes": "Superlative degree; English lookup variant of most"
+      },
+      {
+        "english": "old / former (not new)",
+        "word": "malnova / iama",
+        "category": "adjective",
+        "notes": "Old as not new versus former status"
+      },
+      {
+        "english": "sick / ill",
+        "word": "malsana",
+        "category": "adjective",
+        "notes": "Unwell; English lookup variant of ill"
+      },
+      {
+        "english": "slow / slowly",
+        "word": "malrapida / malrapide",
+        "category": "adjective/adverb",
+        "notes": "Adjective versus manner adverb"
+      },
+      {
+        "english": "true / correct",
+        "word": "vera / ĝusta",
+        "category": "adjective",
+        "notes": "Vera means factually true; ĝusta means correct or appropriate"
+      },
+      {
+        "english": "wrong / incorrect",
+        "word": "malĝusta",
+        "category": "adjective",
+        "notes": "Incorrect rather than factually untrue"
+      },
+      {
+        "english": "excuse me / sorry",
+        "word": "pardonu",
+        "category": "expression",
+        "notes": "Apology or request to excuse; English lookup variant of sorry"
+      },
+      {
+        "english": "you're welcome",
+        "word": "nedankinde",
+        "category": "expression",
+        "notes": "Response to thanks; English lookup variant of you are welcome"
+      },
+      {
+        "english": "condition",
+        "word": "kondiĉo",
+        "category": "noun",
+        "notes": "A condition"
+      },
+      {
+        "english": "related",
+        "word": "rilata",
+        "category": "adjective",
+        "notes": "Related"
+      },
+      {
+        "english": "reference",
+        "word": "referenco",
+        "category": "noun",
+        "notes": "A reference"
+      },
+      {
+        "english": "manner",
+        "word": "maniero",
+        "category": "noun",
+        "notes": "Manner or way"
+      },
+      {
+        "english": "sequence",
+        "word": "sinsekvo",
+        "category": "noun",
+        "notes": "An ordered sequence"
+      },
+      {
+        "english": "digit",
+        "word": "cifero",
+        "category": "noun",
+        "notes": "Numeral digit"
+      },
+      {
+        "english": "decimal",
+        "word": "dekuma",
+        "category": "adjective",
+        "notes": "Base ten"
+      },
+      {
+        "english": "point",
+        "word": "punkto",
+        "category": "noun",
+        "notes": "Point or dot"
+      },
+      {
+        "english": "negative",
+        "word": "negativa",
+        "category": "adjective",
+        "notes": "Negative; below zero for numbers"
+      },
+      {
+        "english": "minus",
+        "word": "minus",
+        "category": "expression",
+        "notes": "Minus before a number"
+      },
+      {
+        "english": "divide",
+        "word": "dividi",
+        "category": "verb",
+        "notes": "Divide a quantity"
+      }
+    ],
+    "documents": {
+      "overview": "# Esperanto\n\nLearning collection version 0.2.0 — October 18, 2026.\n\nAn established international auxiliary language, presented here alongside [Lumena](../Lumena/README.md) and [Narela](../Narela/README.md). This collection is a beginner reference, not a new version of Esperanto or a complete dictionary.\n\n## Start here\n\n- [Pronunciation](PRONUNCIATION.md): 28 letters and predictable stress.\n- [Grammar](GRAMMAR.md): word endings, agreement, verbs, and questions.\n- [First lessons](LESSONS.md): short conversations with English meanings.\n- [English to Esperanto dictionary](English%20to%20Esperanto%20Dictionary.md).\n- [Esperanto to English dictionary](Esperanto%20to%20English%20Dictionary.md).\n- [Design and sources](DESIGN.md): scope and reference material.\n- [Changelog](CHANGELOG.md): changes to this learning collection.\n\n## Your first sentence\n\n`Saluton! Mi lernas Esperanton.` — Hello! I am learning Esperanto.\n\nThe dictionary gives verbs in their infinitive form. For example, `lerni` becomes `lernas` in the present tense. The object ending explains why the language name appears as `Esperanton` in this sentence.\n\n## Contribute\n\nEdit [lexicon.csv](lexicon.csv) and the guides. Run the language checker with --write to regenerate both dictionaries, then rebuild the website data. Corrections should follow established Esperanto usage. Edition 0.2.0 identifies this project's learning materials, not an Esperanto language version.\n",
+      "pronunciation": "# Esperanto pronunciation\n\n## Alphabet\n\nEsperanto has 28 letters: a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z. Q, w, x, and y are not part of the Esperanto alphabet. Each letter has a consistent sound; English comparisons below are approximate.\n\n| Letter | Sound | Example |\n|---|---|---|\n| a | /a/ as in father | patro — father |\n| e | /e/ a pure vowel without an English-style glide | bela — beautiful |\n| i | /i/ as in machine | mi — I |\n| o | /o/ a pure vowel without a glide | domo — house |\n| u | /u/ as in flute | unu — one |\n| c | /ts/ as in cats | celo — goal |\n| ĉ | /tʃ/ as in church | ĉambro — room |\n| g | /ɡ/ as in go | granda — big |\n| ĝ | /dʒ/ as in gem | ĝardeno — garden |\n| h | /h/ as in hat | hundo — dog |\n| ĥ | /x/ as in Scottish loch | ĥoro — choir |\n| j | /j/ as in yes | jes — yes |\n| ĵ | /ʒ/ as in vision | ĵurnalo — newspaper |\n| r | tapped or trilled /r/ | ruĝa — red |\n| s | /s/ as in sun | salo — salt |\n| ŝ | /ʃ/ as in ship | ŝi — she |\n| ŭ | /w/ a nonsyllabic glide | aŭ — or |\n| z | /z/ as in zoo | zorge — carefully |\n\nB, d, f, k, l, m, n, p, t, and v are broadly similar to their usual English consonant sounds. Pronounce all consonants in clusters; do not silently drop final letters.\n\n## Stress and syllables\n\nStress the next-to-last syllable: sa-LU-ton, es-pe-RAN-to, ler-NA-do. Each a, e, i, o, or u makes a syllable. J and ŭ do not: one-syllable aŭ contrasts with two-syllable au. In a word such as familio, pronounce the separate vowels: fa-mi-LI-o.\n\n## Typing and listening\n\nUse Unicode ĉ, ĝ, ĥ, ĵ, ŝ, and ŭ in this collection. The common x-system writes cx, gx, hx, jx, sx, and ux when needed for input; convert it before editing the CSV. The website's accent-insensitive search accepts gardeno for ĝardeno, but does not convert x-system input.\n\nBrowser and AI voices may approximate Esperanto incorrectly. Compare their output with the written rules.\n\n## Sources\n\nThese explanations are original summaries. See the [Fundamento grammar](https://www.akademio-de-esperanto.org/fundamento/gramatiko_angla.html) and [PMEG pronunciation guide](https://bertilow.com/pmeg/skribo_elparolo/elparolo/index.html) for fuller treatments.\n",
+      "grammar": "# Esperanto grammar\n\nThis is a beginner summary of established usage. It does not redefine Esperanto. See [design and sources](DESIGN.md) for further study.\n\n## Nouns and the article\n\nNouns end in -o. Add -j for the plural and -n for a direct object, in that order: libro (book), libroj (books), libron (book as object), librojn (books as object). The definite article la means the and does not change. There is no indefinite article corresponding to a or an.\n\n`Mi legas libron.` — I read a book.\n\n`Mi legas la librojn.` — I read the books.\n\n## Adjectives and adverbs\n\nAdjectives end in -a and agree with their noun in number and case. Derived adverbs usually end in -e. Some common adverbs such as nun and tre have other forms.\n\n`La bonaj amikoj legas bonajn librojn.` — The good friends read good books.\n\n`Ŝi parolas klare.` — She speaks clearly.\n\nAfter esti (to be), a predicate adjective has no object ending: `La libro estas bona.` — The book is good.\n\n## Pronouns\n\n| Esperanto | English |\n|---|---|\n| mi | I |\n| vi | you; singular or plural |\n| li | he |\n| ŝi | she |\n| ĝi | it |\n| ni | we |\n| ili | they |\n| si | reflexive referring to a third-person subject |\n| oni | people in general; one |\n\nAdd -n for objects and -a for possessive adjectives: min (me), vin (you as object), mia (my), via (your). Possessives agree like other adjectives: miaj libroj (my books). Si cannot replace mi, vi, or ni.\n\n## Verbs\n\nVerbs do not change for person or number. Dictionary entries use the infinitive ending -i.\n\n| Ending | Use | Example |\n|---|---|---|\n| -i | infinitive | lerni — to learn |\n| -as | present | lernas — learns / is learning |\n| -is | past | lernis — learned |\n| -os | future | lernos — will learn |\n| -us | conditional | lernus — would learn |\n| -u | command or wish | lernu — learn! |\n\n`Ni lernis hieraŭ.` — We learned yesterday.\n\n`Ili lernos morgaŭ.` — They will learn tomorrow.\n\n`Mi volas lerni.` — I want to learn.\n\n## Questions and negation\n\nStart a yes/no question with ĉu. Place ne before the expression being negated; before the verb it normally negates the statement.\n\n`Ĉu vi parolas Esperanton?` — Do you speak Esperanto?\n\n`Mi ne komprenas.` — I do not understand.\n\n`Kie estas la domo?` — Where is the house?\n\n## Word order and prepositions\n\nStart with subject–verb–object. The object ending allows other orders, but beginners need not rearrange sentences. Ordinary prepositions govern a noun without -n: en la domo (in the house), kun amiko (with a friend). Direction into a place can use -n: en la domon (into the house). The -n ending also has uses for measures and time expressions; it is not exclusively an object marker.\n\n## Numbers and word building\n\nNumbers do not agree like adjectives: unu libro (one book), du libroj (two books), dek du libroj (twelve books). Compound numbers combine hundreds, tens, and units.\n\nRoots combine with productive affixes: mal- forms an opposite (bona → malbona); -et- makes something small (domo → dometo); -ej- indicates a place (lerni → lernejo). These are examples, not a license to assume every possible compound has a conventional meaning.\n\n## Beyond this guide\n\nThe shared English vocabulary includes grammar labels from other languages. Some Esperanto entries are endings (-j or -is), worked constructions (estas leganta, is reading; estas leginta, has read), or names of concepts with no equivalent spoken marker. The active participle agrees with the subject in number; its relative time is measured against the tense of esti. Ordinary simple tenses often suffice. Read each entry's notes before using it as a translation. Slash-separated forms are alternatives, such as bona / bone for good / well.\n\nParticiples, correlatives, subordinate clauses, transitivity, and nuanced affix use deserve further study. Consult [PMEG](https://bertilow.com/pmeg/) and the [Fundamento](https://www.akademio-de-esperanto.org/fundamento/index.html). The starter dictionary is intentionally limited.\n",
+      "lessons": "# First lessons in Esperanto\n\nRead the [pronunciation guide](PRONUNCIATION.md), then say each sentence aloud. The dictionary lists base forms; see [grammar](GRAMMAR.md) for endings used in sentences.\n\n## 1. Meet someone\n\n| Esperanto | English |\n|---|---|\n| Saluton! | Hello! |\n| Mi estas Ana. | I am Ana. |\n| Kio estas via nomo? | What is your name? |\n| Mia nomo estas Ana. | My name is Ana. |\n| Dankon! | Thank you! |\n| Ĝis revido! | Goodbye! |\n\nSaluton and dankon are conventional greetings with an -n ending. Ĝis revido literally points to seeing each other again. Ana is a personal name.\n\n## 2. Build a sentence\n\n| Esperanto | English |\n|---|---|\n| Mi legas libron. | I read a book. |\n| Vi trinkas akvon. | You drink water. |\n| Ni manĝas manĝaĵon. | We eat food. |\n| Ŝi lernas Esperanton. | She is learning Esperanto. |\n\nPractice: replace the subject with ili. The verb stays the same. Keep the object ending -n.\n\n## 3. Describe and count\n\n| Esperanto | English |\n|---|---|\n| La libro estas bona. | The book is good. |\n| Mi havas du bonajn librojn. | I have two good books. |\n| La domoj estas grandaj. | The houses are big. |\n\nPractice: say that you have three good books. Remember adjective agreement.\n\n## 4. Ask and answer\n\n| Speaker | Esperanto | English |\n|---|---|---|\n| A | Ĉu vi parolas Esperanton? | Do you speak Esperanto? |\n| B | Jes. Mi lernas Esperanton. | Yes. I am learning Esperanto. |\n| A | Ĉu vi komprenas? | Do you understand? |\n| B | Mi ne komprenas. Bonvolu ripeti. | I do not understand. Please repeat. |\n\nBonvolu is a polite request form; the following verb is an infinitive.\n\n## 5. Change the time\n\n| Esperanto | English |\n|---|---|\n| Mi lernas hodiaŭ. | I am learning today. |\n| Mi lernis hieraŭ. | I learned yesterday. |\n| Mi lernos morgaŭ. | I will learn tomorrow. |\n\nPractice: write each sentence with ni and then vi. Do not add separate tense particles.\n\n## Check your answers\n\nLesson 2: Ili legas libron. Ili trinkas akvon. Ili manĝas manĝaĵon. Ili lernas Esperanton.\n\nLesson 3: Mi havas tri bonajn librojn.\n\nLesson 5: Ni lernas hodiaŭ. Ni lernis hieraŭ. Ni lernos morgaŭ. Vi lernas hodiaŭ. Vi lernis hieraŭ. Vi lernos morgaŭ.\n\n## Keep going\n\nUse the website dictionary and flashcards, then read the [grammar](GRAMMAR.md). This collection's vocabulary is a starting point; consult the [sources](DESIGN.md) for broader reading and established usage.\n",
+      "design": "# Esperanto collection design and sources\n\n## Scope\n\nEsperanto is an established international auxiliary language. Lumena and Narela are separate project prototypes. This folder adds learning material for Esperanto without changing its spelling, vocabulary, or grammar to match either prototype.\n\nThe folder follows the same project structure: six reference guides, a CSV lexicon, two generated dictionaries, and a Node.js validation tool. The website reuses the library's paper-and-green theme, navigation, dictionary, flashcards, and optional AI tools.\n\n## Editorial choices\n\nEntries use Unicode spelling and infinitive verbs. English labels distinguish senses where necessary. Notes explain usage and avoid treating a short English gloss as a full definition. Lessons introduce agreement and object endings early, so learners do not mistake Esperanto for an uninflected language.\n\nThis is a curated starter vocabulary, not the complete Esperanto lexicon. Edition numbers and changelog entries refer only to these materials. Automated checks catch malformed data and stale dictionaries; they cannot establish linguistic correctness or teaching quality.\n\n## Sources and further study\n\n- [Fundamento de Esperanto](https://www.akademio-de-esperanto.org/fundamento/index.html): foundational grammar, exercises, and vocabulary published by the Akademio de Esperanto.\n- [Fundamento grammar in English](https://www.akademio-de-esperanto.org/fundamento/gramatiko_angla.html): reference for the alphabet and basic grammatical rules.\n- [Plena Manlibro de Esperanta Gramatiko](https://bertilow.com/pmeg/): Bertilo Wennergren's detailed guide to contemporary usage.\n- [PMEG pronunciation](https://bertilow.com/pmeg/skribo_elparolo/elparolo/index.html): sound and stress guidance.\n\nThe explanations, lesson sentences, and concise English usage notes here are original learning material, rather than reproduced passages from these references. Follow the linked works for their complete explanations.\n\n## Review and contribution\n\nReport errors with a reference and a corrected example. Improve this collection's explanations rather than proposing language-wide reforms. Test pronunciation, agreement, object marking, Unicode search, and sentence examples with learners from different language backgrounds. Do not promise equal learning difficulty for everyone.\n",
+      "changelog": "# Esperanto collection changelog\n\n## 0.2.0 — October 18, 2026\n\n- Expanded from 219 to 397 English lookup entries, covering every original Lumena and Narela headword plus supporting vocabulary.\n- Preserved English lookup variants and distinguished grammatical constructions, word senses, and conventional phrases.\n- Added shared-vocabulary validation to keep all three dictionaries and their website training data aligned.\n\n## 0.1 — October 18, 2026\n\n- Added a starter lexicon and generated English–Esperanto and Esperanto–English dictionaries.\n- Added overview, pronunciation, grammar, lessons, and editorial/source notes in the same structure as Lumena and Narela.\n- Integrated the collection into the shared website, offline practice, and publication checks.\n\nThis version identifies the project's learning collection, not a version of the Esperanto language.\n"
+    }
+  },
+  "taluma": {
+    "name": "Taluma",
+    "tagline": "Clear patterns. Shared possibilities.",
+    "description": "A new auxiliary-language prototype with open syllables, regular word building, and explicit grammar.",
+    "greeting": "salo",
+    "example": "mi lena Taluma.",
+    "translation": "I learn Taluma.",
+    "facts": [
+      "14 letters",
+      "6 regular suffixes",
+      "Distinct clause markers"
+    ],
+    "version": "0.1.0",
+    "entries": [
+      {
+        "english": "I / me",
+        "word": "mi",
+        "category": "pronoun",
+        "notes": "First person singular"
+      },
+      {
+        "english": "you (singular)",
+        "word": "ti",
+        "category": "pronoun",
+        "notes": "One addressee"
+      },
+      {
+        "english": "he / she / it",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral singular referent; use names or explicit nouns to disambiguate"
+      },
+      {
+        "english": "we / us",
+        "word": "mu",
+        "category": "pronoun",
+        "notes": "Inclusion of listener unspecified"
+      },
+      {
+        "english": "you (plural)",
+        "word": "timu",
+        "category": "pronoun",
+        "notes": "Multiple addressees"
+      },
+      {
+        "english": "they / them",
+        "word": "lu",
+        "category": "pronoun",
+        "notes": "Third person plural"
+      },
+      {
+        "english": "self",
+        "word": "se",
+        "category": "pronoun",
+        "notes": "Refers to subject of current clause"
+      },
+      {
+        "english": "someone",
+        "word": "sa penu",
+        "category": "pronoun/noun",
+        "notes": "An unspecified person; not the numeral one"
+      },
+      {
+        "english": "this / these",
+        "word": "ta",
+        "category": "determiner/pronoun",
+        "notes": "Number specified separately"
+      },
+      {
+        "english": "that / those",
+        "word": "to",
+        "category": "determiner/pronoun",
+        "notes": "Number specified separately"
+      },
+      {
+        "english": "plural",
+        "word": "ma",
+        "category": "particle",
+        "notes": "Before noun"
+      },
+      {
+        "english": "some",
+        "word": "soma",
+        "category": "quantifier",
+        "notes": "Unspecified subset or amount"
+      },
+      {
+        "english": "all / every",
+        "word": "ala",
+        "category": "quantifier",
+        "notes": "Before noun"
+      },
+      {
+        "english": "few / little quantity",
+        "word": "poka",
+        "category": "quantifier",
+        "notes": "Small number or amount"
+      },
+      {
+        "english": "of / related to",
+        "word": "te",
+        "category": "relation",
+        "notes": "Thing followed by related person or thing"
+      },
+      {
+        "english": "and",
+        "word": "ni",
+        "category": "connector",
+        "notes": "Coordinates phrases or clauses"
+      },
+      {
+        "english": "or",
+        "word": "o",
+        "category": "connector",
+        "notes": "Inclusive alternatives"
+      },
+      {
+        "english": "but",
+        "word": "wa",
+        "category": "connector",
+        "notes": "Contrastive coordination"
+      },
+      {
+        "english": "because",
+        "word": "pako",
+        "category": "connector",
+        "notes": "Following clause gives reason"
+      },
+      {
+        "english": "if",
+        "word": "si",
+        "category": "connector",
+        "notes": "Introduces condition before result"
+      },
+      {
+        "english": "end condition",
+        "word": "nopaku",
+        "category": "particle",
+        "notes": "Closes an initial si condition before its result clause"
+      },
+      {
+        "english": "past",
+        "word": "pa",
+        "category": "particle",
+        "notes": "Before aspect and predicate"
+      },
+      {
+        "english": "future",
+        "word": "pu",
+        "category": "particle",
+        "notes": "Before aspect and predicate"
+      },
+      {
+        "english": "ongoing",
+        "word": "tu",
+        "category": "particle",
+        "notes": "Progressive aspect"
+      },
+      {
+        "english": "completed",
+        "word": "pe",
+        "category": "particle",
+        "notes": "Completed relative to reference time"
+      },
+      {
+        "english": "not / no",
+        "word": "no",
+        "category": "particle",
+        "notes": "Predicate negation or rejection of proposition"
+      },
+      {
+        "english": "yes",
+        "word": "ya",
+        "category": "particle",
+        "notes": "Affirms proposition"
+      },
+      {
+        "english": "yes/no question",
+        "word": "ka",
+        "category": "particle",
+        "notes": "At end of clause"
+      },
+      {
+        "english": "who",
+        "word": "ki",
+        "category": "question",
+        "notes": "Person question in answer position"
+      },
+      {
+        "english": "what",
+        "word": "ke",
+        "category": "question",
+        "notes": "Thing question in answer position"
+      },
+      {
+        "english": "where",
+        "word": "kana",
+        "category": "question",
+        "notes": "Location question in answer position"
+      },
+      {
+        "english": "when",
+        "word": "kama",
+        "category": "question",
+        "notes": "Time question in answer position"
+      },
+      {
+        "english": "how",
+        "word": "kimo",
+        "category": "question",
+        "notes": "Manner question in answer position"
+      },
+      {
+        "english": "how many / much",
+        "word": "kaniti",
+        "category": "question",
+        "notes": "Before noun or alone"
+      },
+      {
+        "english": "why",
+        "word": "kosa",
+        "category": "question",
+        "notes": "Clause-final reason question"
+      },
+      {
+        "english": "which",
+        "word": "kela",
+        "category": "question",
+        "notes": "Before noun"
+      },
+      {
+        "english": "content clause start",
+        "word": "kepi",
+        "category": "particle",
+        "notes": "Opens a declarative content clause; always close with nasuku"
+      },
+      {
+        "english": "content clause end",
+        "word": "nasuku",
+        "category": "particle",
+        "notes": "Closes the most recently opened content clause"
+      },
+      {
+        "english": "relative clause start",
+        "word": "yali",
+        "category": "particle",
+        "notes": "After the head noun; ye resumes that noun within the clause; close with moteka"
+      },
+      {
+        "english": "relative clause end",
+        "word": "moteka",
+        "category": "particle",
+        "notes": "Closes the most recently opened relative clause"
+      },
+      {
+        "english": "relative reference",
+        "word": "ye",
+        "category": "pronoun",
+        "notes": "Resumes head noun inside its relative clause"
+      },
+      {
+        "english": "at / in",
+        "word": "na",
+        "category": "relation",
+        "notes": "Location"
+      },
+      {
+        "english": "on / above",
+        "word": "sula / su",
+        "category": "relation",
+        "notes": "Sula means surface contact; su means position above"
+      },
+      {
+        "english": "under",
+        "word": "nu",
+        "category": "relation",
+        "notes": "Vertical inferior position"
+      },
+      {
+        "english": "to / toward",
+        "word": "a",
+        "category": "relation",
+        "notes": "Direction or recipient"
+      },
+      {
+        "english": "from",
+        "word": "tawe",
+        "category": "relation",
+        "notes": "Origin"
+      },
+      {
+        "english": "with",
+        "word": "konu",
+        "category": "relation",
+        "notes": "Accompaniment"
+      },
+      {
+        "english": "without",
+        "word": "sena",
+        "category": "relation",
+        "notes": "Absence of accompanying item"
+      },
+      {
+        "english": "for",
+        "word": "po",
+        "category": "relation",
+        "notes": "Intended beneficiary or purpose"
+      },
+      {
+        "english": "using / by means of",
+        "word": "pi",
+        "category": "relation",
+        "notes": "Instrument"
+      },
+      {
+        "english": "between",
+        "word": "mita",
+        "category": "relation",
+        "notes": "Follow with coordinated endpoints"
+      },
+      {
+        "english": "than / compared with",
+        "word": "luwa",
+        "category": "relation",
+        "notes": "Comparison standard"
+      },
+      {
+        "english": "manner marker",
+        "word": "-me",
+        "category": "grammar",
+        "notes": "Written suffix on a description stem; pona-me means well; never a standalone word before a description"
+      },
+      {
+        "english": "more",
+        "word": "pulu",
+        "category": "degree",
+        "notes": "Before description"
+      },
+      {
+        "english": "most",
+        "word": "masi",
+        "category": "degree",
+        "notes": "Before description"
+      },
+      {
+        "english": "very",
+        "word": "weli",
+        "category": "degree",
+        "notes": "Before description"
+      },
+      {
+        "english": "equally",
+        "word": "pale",
+        "category": "degree",
+        "notes": "Before description"
+      },
+      {
+        "english": "can / able",
+        "word": "pote",
+        "category": "modal",
+        "notes": "Ability only"
+      },
+      {
+        "english": "must / obliged",
+        "word": "tewa",
+        "category": "modal",
+        "notes": "Obligation"
+      },
+      {
+        "english": "want",
+        "word": "wola",
+        "category": "modal/verb",
+        "notes": "Noun object or content clause or bare action verb; Example: mi wola la ito"
+      },
+      {
+        "english": "be",
+        "word": "esa",
+        "category": "verb",
+        "notes": "Subject plus identity description or location complement; Example: mi esa penu"
+      },
+      {
+        "english": "exist",
+        "word": "eki",
+        "category": "verb",
+        "notes": "Existential; Example: eki aku"
+      },
+      {
+        "english": "see",
+        "word": "sewa",
+        "category": "verb",
+        "notes": "Transitive; Example: mi sewa la ito"
+      },
+      {
+        "english": "hear",
+        "word": "kuli",
+        "category": "verb",
+        "notes": "Transitive audible sound or source; Example: mi kuli musiko"
+      },
+      {
+        "english": "look at",
+        "word": "luka",
+        "category": "verb",
+        "notes": "Transitive; Example: mi luka la ito"
+      },
+      {
+        "english": "know",
+        "word": "sawa",
+        "category": "verb",
+        "notes": "Transitive information or content clause; know a fact; Example: mi sawa kepi ti lena nasuku"
+      },
+      {
+        "english": "understand",
+        "word": "kowa",
+        "category": "verb",
+        "notes": "Transitive; Example: mi kowa la ito"
+      },
+      {
+        "english": "learn",
+        "word": "lena",
+        "category": "verb",
+        "notes": "Transitive; Example: mi lena Taluma"
+      },
+      {
+        "english": "teach",
+        "word": "nisa",
+        "category": "verb",
+        "notes": "Transitive subject matter; learner introduced with a; Example: mi nisa Taluma a ti"
+      },
+      {
+        "english": "read",
+        "word": "leka",
+        "category": "verb",
+        "notes": "Transitive; Example: mi leka lipo"
+      },
+      {
+        "english": "write",
+        "word": "siki",
+        "category": "verb",
+        "notes": "Transitive text; recipient introduced with a; Example: mi siki sa talumo"
+      },
+      {
+        "english": "speak / say",
+        "word": "tala / teli",
+        "category": "verb",
+        "notes": "Speak a language versus say something; listener with a; Example: mi tala Taluma"
+      },
+      {
+        "english": "ask",
+        "word": "kesa",
+        "category": "verb",
+        "notes": "Transitive question or content clause; addressee introduced with a; Example: mi kesa keso a ti"
+      },
+      {
+        "english": "eat",
+        "word": "numa",
+        "category": "verb",
+        "notes": "Transitive; Example: mi numa nami"
+      },
+      {
+        "english": "drink",
+        "word": "sipa",
+        "category": "verb",
+        "notes": "Transitive; Example: mi sipa aku"
+      },
+      {
+        "english": "go",
+        "word": "wata",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi wata"
+      },
+      {
+        "english": "come",
+        "word": "wena",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi wena"
+      },
+      {
+        "english": "walk",
+        "word": "pala",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi pala"
+      },
+      {
+        "english": "run",
+        "word": "yuma",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi yuma"
+      },
+      {
+        "english": "sleep",
+        "word": "somi",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi somi"
+      },
+      {
+        "english": "sit",
+        "word": "sita",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi sita"
+      },
+      {
+        "english": "stand",
+        "word": "tana",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi tana"
+      },
+      {
+        "english": "stay",
+        "word": "wesa",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi wesa"
+      },
+      {
+        "english": "live / be alive",
+        "word": "wita",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi wita"
+      },
+      {
+        "english": "die",
+        "word": "mola",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi mola"
+      },
+      {
+        "english": "help",
+        "word": "sapu",
+        "category": "verb",
+        "notes": "Transitive person; Example: mi sapu ti"
+      },
+      {
+        "english": "love",
+        "word": "ama",
+        "category": "verb",
+        "notes": "Transitive person or thing; Example: mi ama la ito"
+      },
+      {
+        "english": "like / enjoy",
+        "word": "liwa",
+        "category": "verb",
+        "notes": "Transitive person thing or content clause; Example: mi liwa la ito"
+      },
+      {
+        "english": "need",
+        "word": "neta",
+        "category": "verb",
+        "notes": "Transitive noun or content clause; Example: mi neta la ito"
+      },
+      {
+        "english": "have / possess",
+        "word": "awa",
+        "category": "verb",
+        "notes": "Transitive possessed item; Example: mi awa la ito"
+      },
+      {
+        "english": "give",
+        "word": "pana",
+        "category": "verb",
+        "notes": "Transitive gift; recipient introduced with a; Example: mi pana lipo a ti"
+      },
+      {
+        "english": "take",
+        "word": "tekawe",
+        "category": "verb",
+        "notes": "Transitive thing; source introduced with tawe; Example: mi tekawe la lipo tawe ti"
+      },
+      {
+        "english": "bring",
+        "word": "puna",
+        "category": "verb",
+        "notes": "Transitive thing; destination introduced with a; Example: mi puna la lipo a ti"
+      },
+      {
+        "english": "make / cause",
+        "word": "pami / kausa",
+        "category": "verb",
+        "notes": "Pami makes a product; kausa takes a content clause describing a caused event; Example: mi kausa kepi ti lena nasuku"
+      },
+      {
+        "english": "use",
+        "word": "usa",
+        "category": "verb",
+        "notes": "Transitive thing used; Example: mi usa la ito"
+      },
+      {
+        "english": "work",
+        "word": "lawo",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi lawo"
+      },
+      {
+        "english": "open",
+        "word": "opa",
+        "category": "verb",
+        "notes": "Transitive object opened; Example: mi opa la ito"
+      },
+      {
+        "english": "close",
+        "word": "kosawe",
+        "category": "verb",
+        "notes": "Transitive object closed; Example: mi kosawe la ito"
+      },
+      {
+        "english": "begin",
+        "word": "inia",
+        "category": "verb",
+        "notes": "Intransitive; Example: la ito inia"
+      },
+      {
+        "english": "finish",
+        "word": "pina",
+        "category": "verb",
+        "notes": "Intransitive; Example: la ito pina"
+      },
+      {
+        "english": "allow",
+        "word": "lasi",
+        "category": "verb",
+        "notes": "Transitive permitted person; permitted action introduced with a plus a content clause; Example: mi lasi ti a kepi ti pala nasuku"
+      },
+      {
+        "english": "choose",
+        "word": "sela",
+        "category": "verb",
+        "notes": "Transitive chosen item; Example: mi sela la ito"
+      },
+      {
+        "english": "buy",
+        "word": "koma",
+        "category": "verb",
+        "notes": "Transitive item; Example: mi koma la ito"
+      },
+      {
+        "english": "sell",
+        "word": "wema",
+        "category": "verb",
+        "notes": "Transitive item; Example: mi wema la ito"
+      },
+      {
+        "english": "find",
+        "word": "nowa",
+        "category": "verb",
+        "notes": "Transitive thing found; Example: mi nowa la ito"
+      },
+      {
+        "english": "lose",
+        "word": "lusa",
+        "category": "verb",
+        "notes": "Transitive thing lost; Example: mi lusa la ito"
+      },
+      {
+        "english": "remember",
+        "word": "mema",
+        "category": "verb",
+        "notes": "Transitive item or content clause; Example: mi mema la ito"
+      },
+      {
+        "english": "forget",
+        "word": "poma",
+        "category": "verb",
+        "notes": "Transitive item or content clause; Example: mi poma la ito"
+      },
+      {
+        "english": "think",
+        "word": "pesa",
+        "category": "verb",
+        "notes": "Transitive content clause; Example: mi pesa kepi ti lena nasuku"
+      },
+      {
+        "english": "feel",
+        "word": "seti",
+        "category": "verb",
+        "notes": "Transitive sensation noun or content clause; Example: mi seti kepi mi esa yomo nasuku"
+      },
+      {
+        "english": "wait",
+        "word": "wati",
+        "category": "verb",
+        "notes": "Intransitive; awaited person or event introduced with po; Example: mi wati po ti"
+      },
+      {
+        "english": "touch",
+        "word": "toki",
+        "category": "verb",
+        "notes": "Transitive touched entity; Example: mi toki la ito"
+      },
+      {
+        "english": "cut",
+        "word": "kata",
+        "category": "verb",
+        "notes": "Transitive object cut; Example: mi kata la ito"
+      },
+      {
+        "english": "become",
+        "word": "wila",
+        "category": "verb",
+        "notes": "Subject plus resulting description or identity noun; Example: mi wila yomo"
+      },
+      {
+        "english": "person",
+        "word": "penu",
+        "category": "noun",
+        "notes": "A human being; referent and gender are supplied by context; Example: penu te mi"
+      },
+      {
+        "english": "child",
+        "word": "nila",
+        "category": "noun",
+        "notes": "Young human; Example: nila te mi"
+      },
+      {
+        "english": "parent",
+        "word": "paliwe",
+        "category": "noun",
+        "notes": "Parent or caregiver; Example: paliwe te mi"
+      },
+      {
+        "english": "mother",
+        "word": "mama",
+        "category": "noun",
+        "notes": "Mother as social or parental identity; Example: mama te mi"
+      },
+      {
+        "english": "father",
+        "word": "papa",
+        "category": "noun",
+        "notes": "Father as social or parental identity; Example: papa te mi"
+      },
+      {
+        "english": "sibling",
+        "word": "sipi",
+        "category": "noun",
+        "notes": "Sibling of any gender; Example: sipi te mi"
+      },
+      {
+        "english": "family",
+        "word": "pamiwe",
+        "category": "noun",
+        "notes": "Family group; Example: pamiwe te mi"
+      },
+      {
+        "english": "friend",
+        "word": "ami",
+        "category": "noun",
+        "notes": "Person in friendly relationship; Example: ami te mi"
+      },
+      {
+        "english": "body",
+        "word": "kopo",
+        "category": "noun",
+        "notes": "Physical body; Example: kopo te mi"
+      },
+      {
+        "english": "head",
+        "word": "kapo",
+        "category": "noun",
+        "notes": "Body part; Example: kapo te mi"
+      },
+      {
+        "english": "eye",
+        "word": "oko",
+        "category": "noun",
+        "notes": "Organ of sight; Example: oko te mi"
+      },
+      {
+        "english": "ear",
+        "word": "olo",
+        "category": "noun",
+        "notes": "Organ of hearing; Example: olo te mi"
+      },
+      {
+        "english": "mouth",
+        "word": "muko",
+        "category": "noun",
+        "notes": "Body part; Example: muko te mi"
+      },
+      {
+        "english": "hand",
+        "word": "mano",
+        "category": "noun",
+        "notes": "Body part; Example: mano te mi"
+      },
+      {
+        "english": "foot",
+        "word": "peto",
+        "category": "noun",
+        "notes": "Body part; Example: peto te mi"
+      },
+      {
+        "english": "heart",
+        "word": "kolo",
+        "category": "noun",
+        "notes": "Body organ; Example: kolo te mi"
+      },
+      {
+        "english": "skin",
+        "word": "pelo",
+        "category": "noun",
+        "notes": "Body covering; Example: pelo te mi"
+      },
+      {
+        "english": "water",
+        "word": "aku",
+        "category": "noun",
+        "notes": "Water substance; Example: aku te mi"
+      },
+      {
+        "english": "food",
+        "word": "nami",
+        "category": "noun",
+        "notes": "Edible nourishment; Example: nami te mi"
+      },
+      {
+        "english": "air",
+        "word": "awe",
+        "category": "noun",
+        "notes": "Air substance; Example: awe te mi"
+      },
+      {
+        "english": "fire",
+        "word": "pilo",
+        "category": "noun",
+        "notes": "Combustion; Example: pilo te mi"
+      },
+      {
+        "english": "earth / soil",
+        "word": "telo",
+        "category": "noun",
+        "notes": "Ground material; Example: telo te mi"
+      },
+      {
+        "english": "sun",
+        "word": "sola",
+        "category": "noun",
+        "notes": "Star providing local daylight; Example: sola te mi"
+      },
+      {
+        "english": "moon",
+        "word": "luno",
+        "category": "noun",
+        "notes": "Natural satellite; Example: luno te mi"
+      },
+      {
+        "english": "star",
+        "word": "seto",
+        "category": "noun",
+        "notes": "Astronomical star; Example: seto te mi"
+      },
+      {
+        "english": "sky",
+        "word": "selo",
+        "category": "noun",
+        "notes": "Apparent sky; Example: selo te mi"
+      },
+      {
+        "english": "rain",
+        "word": "puwo",
+        "category": "noun",
+        "notes": "Rainfall; Example: puwo te mi"
+      },
+      {
+        "english": "river",
+        "word": "liwo",
+        "category": "noun",
+        "notes": "Flowing natural watercourse; Example: liwo te mi"
+      },
+      {
+        "english": "sea",
+        "word": "malo",
+        "category": "noun",
+        "notes": "Large saltwater body; Example: malo te mi"
+      },
+      {
+        "english": "mountain",
+        "word": "moto",
+        "category": "noun",
+        "notes": "Elevated landform; Example: moto te mi"
+      },
+      {
+        "english": "tree",
+        "word": "alo",
+        "category": "noun",
+        "notes": "Woody plant; Example: alo te mi"
+      },
+      {
+        "english": "plant",
+        "word": "palo",
+        "category": "noun",
+        "notes": "Living plant; Example: palo te mi"
+      },
+      {
+        "english": "animal",
+        "word": "peso",
+        "category": "noun",
+        "notes": "Nonhuman animal in everyday usage; Example: peso te mi"
+      },
+      {
+        "english": "bird",
+        "word": "piki",
+        "category": "noun",
+        "notes": "Bird; Example: piki te mi"
+      },
+      {
+        "english": "fish",
+        "word": "piso",
+        "category": "noun",
+        "notes": "Fish; Example: piso te mi"
+      },
+      {
+        "english": "stone",
+        "word": "petu",
+        "category": "noun",
+        "notes": "Rock material or piece; Example: petu te mi"
+      },
+      {
+        "english": "house / home",
+        "word": "tomo",
+        "category": "noun",
+        "notes": "Dwelling; specify whose home using te plus possessor; Example: tomo te mi"
+      },
+      {
+        "english": "room",
+        "word": "kamo",
+        "category": "noun",
+        "notes": "Interior room; Example: kamo te mi"
+      },
+      {
+        "english": "door",
+        "word": "tolo",
+        "category": "noun",
+        "notes": "Door; Example: tolo te mi"
+      },
+      {
+        "english": "book",
+        "word": "lipo",
+        "category": "noun",
+        "notes": "Book; Example: lipo te mi"
+      },
+      {
+        "english": "paper",
+        "word": "papo",
+        "category": "noun",
+        "notes": "Paper material; Example: papo te mi"
+      },
+      {
+        "english": "clothing",
+        "word": "pano",
+        "category": "noun",
+        "notes": "Garment or clothing material; Example: pano te mi"
+      },
+      {
+        "english": "tool",
+        "word": "ilo",
+        "category": "noun",
+        "notes": "Implement for a task; Example: ilo te mi"
+      },
+      {
+        "english": "road / path",
+        "word": "luta",
+        "category": "noun",
+        "notes": "Route for travel; Example: luta te mi"
+      },
+      {
+        "english": "city",
+        "word": "ula",
+        "category": "noun",
+        "notes": "Urban settlement; Example: ula te mi"
+      },
+      {
+        "english": "country",
+        "word": "natio",
+        "category": "noun",
+        "notes": "Political country; Example: natio te mi"
+      },
+      {
+        "english": "world",
+        "word": "muno",
+        "category": "noun",
+        "notes": "World; Example: muno te mi"
+      },
+      {
+        "english": "place",
+        "word": "loko",
+        "category": "noun",
+        "notes": "Location; Example: loko te mi"
+      },
+      {
+        "english": "time",
+        "word": "temo",
+        "category": "noun",
+        "notes": "Time; Example: temo te mi"
+      },
+      {
+        "english": "day",
+        "word": "tayo",
+        "category": "noun",
+        "notes": "Day; Example: tayo te mi"
+      },
+      {
+        "english": "night",
+        "word": "noko",
+        "category": "noun",
+        "notes": "Nighttime; Example: noko te mi"
+      },
+      {
+        "english": "week",
+        "word": "semo",
+        "category": "noun",
+        "notes": "Seven-day period; Example: semo te mi"
+      },
+      {
+        "english": "month",
+        "word": "meso",
+        "category": "noun",
+        "notes": "Calendar month; Example: meso te mi"
+      },
+      {
+        "english": "year",
+        "word": "yalo",
+        "category": "noun",
+        "notes": "Calendar year; Example: yalo te mi"
+      },
+      {
+        "english": "name",
+        "word": "nomo",
+        "category": "noun",
+        "notes": "Name or label; Example: nomo te mi"
+      },
+      {
+        "english": "word",
+        "word": "woko",
+        "category": "noun",
+        "notes": "Word; Example: woko te mi"
+      },
+      {
+        "english": "language",
+        "word": "lino",
+        "category": "noun",
+        "notes": "Human language; Example: lino te mi"
+      },
+      {
+        "english": "idea",
+        "word": "iteo",
+        "category": "noun",
+        "notes": "Thought or proposal; Example: iteo te mi"
+      },
+      {
+        "english": "life",
+        "word": "wito",
+        "category": "noun",
+        "notes": "Life or living duration; Example: wito te mi"
+      },
+      {
+        "english": "money",
+        "word": "mono",
+        "category": "noun",
+        "notes": "Money; Example: mono te mi"
+      },
+      {
+        "english": "number",
+        "word": "nomu",
+        "category": "noun",
+        "notes": "Numeric quantity; not an identifying digit symbol; Example: nomu te mi"
+      },
+      {
+        "english": "question",
+        "word": "keso",
+        "category": "noun",
+        "notes": "Question; Example: keso te mi"
+      },
+      {
+        "english": "answer",
+        "word": "talo",
+        "category": "noun",
+        "notes": "Answer; Example: talo te mi"
+      },
+      {
+        "english": "problem",
+        "word": "polemo",
+        "category": "noun",
+        "notes": "Problem requiring attention; Example: polemo te mi"
+      },
+      {
+        "english": "good",
+        "word": "pona",
+        "category": "description",
+        "notes": "Positive evaluation; Example: la ito esa pona"
+      },
+      {
+        "english": "bad",
+        "word": "nopa",
+        "category": "description",
+        "notes": "Negative evaluation; Example: la ito esa nopa"
+      },
+      {
+        "english": "large",
+        "word": "walo",
+        "category": "description",
+        "notes": "Large size; Example: la ito esa walo"
+      },
+      {
+        "english": "small",
+        "word": "pika",
+        "category": "description",
+        "notes": "Small size; Example: la ito esa pika"
+      },
+      {
+        "english": "long",
+        "word": "lono",
+        "category": "description",
+        "notes": "Long extent or duration; Example: la ito esa lono"
+      },
+      {
+        "english": "short",
+        "word": "petalo",
+        "category": "description",
+        "notes": "Short extent or duration; Example: la ito esa petalo"
+      },
+      {
+        "english": "new",
+        "word": "nowo",
+        "category": "description",
+        "notes": "Not previously used or recently introduced; Example: la ito esa nowo"
+      },
+      {
+        "english": "old (age)",
+        "word": "wepo",
+        "category": "description",
+        "notes": "Advanced age; Example: la ito esa wepo"
+      },
+      {
+        "english": "former",
+        "word": "iamo",
+        "category": "description",
+        "notes": "Earlier status; Example: la ito esa iamo"
+      },
+      {
+        "english": "hot",
+        "word": "woto",
+        "category": "description",
+        "notes": "High temperature; Example: la ito esa woto"
+      },
+      {
+        "english": "cold",
+        "word": "kolope",
+        "category": "description",
+        "notes": "Low temperature; Example: la ito esa kolope"
+      },
+      {
+        "english": "clean",
+        "word": "pulo",
+        "category": "description",
+        "notes": "Free of relevant dirt; Example: la ito esa pulo"
+      },
+      {
+        "english": "dirty",
+        "word": "tuto",
+        "category": "description",
+        "notes": "Containing relevant dirt; Example: la ito esa tuto"
+      },
+      {
+        "english": "easy",
+        "word": "liso",
+        "category": "description",
+        "notes": "Low difficulty; Example: la ito esa liso"
+      },
+      {
+        "english": "difficult",
+        "word": "tulo",
+        "category": "description",
+        "notes": "High difficulty; Example: la ito esa tulo"
+      },
+      {
+        "english": "fast",
+        "word": "yapa",
+        "category": "description",
+        "notes": "High speed; Example: la ito esa yapa"
+      },
+      {
+        "english": "slow",
+        "word": "senu",
+        "category": "description",
+        "notes": "Low speed; Example: la ito esa senu"
+      },
+      {
+        "english": "happy",
+        "word": "yomo",
+        "category": "description",
+        "notes": "Experiencing happiness; Example: la ito esa yomo"
+      },
+      {
+        "english": "sad",
+        "word": "sato",
+        "category": "description",
+        "notes": "Experiencing sadness; Example: la ito esa sato"
+      },
+      {
+        "english": "ill",
+        "word": "melo",
+        "category": "description",
+        "notes": "Unwell; Example: la ito esa melo"
+      },
+      {
+        "english": "healthy",
+        "word": "sana",
+        "category": "description",
+        "notes": "In good health; Example: la ito esa sana"
+      },
+      {
+        "english": "strong",
+        "word": "poto",
+        "category": "description",
+        "notes": "High strength; Example: la ito esa poto"
+      },
+      {
+        "english": "weak",
+        "word": "pemo",
+        "category": "description",
+        "notes": "Low strength; Example: la ito esa pemo"
+      },
+      {
+        "english": "true",
+        "word": "welo",
+        "category": "description",
+        "notes": "Factually true; Example: la ito esa welo"
+      },
+      {
+        "english": "false",
+        "word": "elo",
+        "category": "description",
+        "notes": "Factually false; Example: la ito esa elo"
+      },
+      {
+        "english": "same",
+        "word": "sama",
+        "category": "description",
+        "notes": "Identical with respect to stated criterion; Example: la ito esa sama"
+      },
+      {
+        "english": "different",
+        "word": "tipo",
+        "category": "description",
+        "notes": "Different with respect to stated criterion; Example: la ito esa tipo"
+      },
+      {
+        "english": "important",
+        "word": "kawo",
+        "category": "description",
+        "notes": "High relevance or consequence; Example: la ito esa kawo"
+      },
+      {
+        "english": "beautiful",
+        "word": "penuwe",
+        "category": "description",
+        "notes": "Aesthetic approval; Example: la ito esa penuwe"
+      },
+      {
+        "english": "full",
+        "word": "puno",
+        "category": "description",
+        "notes": "Filled to relevant capacity; Example: la ito esa puno"
+      },
+      {
+        "english": "empty",
+        "word": "wako",
+        "category": "description",
+        "notes": "Containing none of relevant contents; Example: la ito esa wako"
+      },
+      {
+        "english": "red",
+        "word": "luto",
+        "category": "description",
+        "notes": "Color term; Example: la ito esa luto"
+      },
+      {
+        "english": "yellow",
+        "word": "yelo",
+        "category": "description",
+        "notes": "Color term; Example: la ito esa yelo"
+      },
+      {
+        "english": "green",
+        "word": "weto",
+        "category": "description",
+        "notes": "Color term; Example: la ito esa weto"
+      },
+      {
+        "english": "blue",
+        "word": "lupo",
+        "category": "description",
+        "notes": "Color term; Example: la ito esa lupo"
+      },
+      {
+        "english": "black",
+        "word": "nilo",
+        "category": "description",
+        "notes": "Color term; Example: la ito esa nilo"
+      },
+      {
+        "english": "white",
+        "word": "alapo",
+        "category": "description",
+        "notes": "Color term; Example: la ito esa alapo"
+      },
+      {
+        "english": "near",
+        "word": "nelo",
+        "category": "description",
+        "notes": "Small distance; Example: la ito esa nelo"
+      },
+      {
+        "english": "far",
+        "word": "palawe",
+        "category": "description",
+        "notes": "Large distance; Example: la ito esa palawe"
+      },
+      {
+        "english": "here",
+        "word": "ena",
+        "category": "adverb",
+        "notes": "At speaker's contextually indicated location; Example: mi lena ena"
+      },
+      {
+        "english": "there",
+        "word": "tona",
+        "category": "adverb",
+        "notes": "At contextually indicated other location; Example: mi lena tona"
+      },
+      {
+        "english": "now",
+        "word": "nuna",
+        "category": "adverb",
+        "notes": "At current reference moment; Example: mi lena nuna"
+      },
+      {
+        "english": "yesterday",
+        "word": "pati",
+        "category": "adverb",
+        "notes": "Day before local current day; Example: mi lena pati"
+      },
+      {
+        "english": "today",
+        "word": "nuti",
+        "category": "adverb",
+        "notes": "Local current day; Example: mi lena nuti"
+      },
+      {
+        "english": "tomorrow",
+        "word": "puti",
+        "category": "adverb",
+        "notes": "Day after local current day; Example: mi lena puti"
+      },
+      {
+        "english": "always",
+        "word": "alate",
+        "category": "adverb",
+        "notes": "At every relevant occasion; Example: mi lena alate"
+      },
+      {
+        "english": "sometimes",
+        "word": "sote",
+        "category": "adverb",
+        "notes": "At some relevant occasions; Example: mi lena sote"
+      },
+      {
+        "english": "never",
+        "word": "note",
+        "category": "adverb",
+        "notes": "At no relevant occasion; Example: mi lena note"
+      },
+      {
+        "english": "before",
+        "word": "ate",
+        "category": "relation",
+        "notes": "Earlier than the following time or event"
+      },
+      {
+        "english": "after",
+        "word": "apo",
+        "category": "relation",
+        "notes": "Later than the following time or event"
+      },
+      {
+        "english": "inside",
+        "word": "nina",
+        "category": "description",
+        "notes": "In the interior; Example: la ito esa nina"
+      },
+      {
+        "english": "outside",
+        "word": "pola",
+        "category": "description",
+        "notes": "Outside the relevant boundary; Example: la ito esa pola"
+      },
+      {
+        "english": "left",
+        "word": "lewo",
+        "category": "description",
+        "notes": "Left direction in stated frame of reference; Example: la ito esa lewo"
+      },
+      {
+        "english": "right",
+        "word": "yewo",
+        "category": "description",
+        "notes": "Right direction in stated frame of reference; Example: la ito esa yewo"
+      },
+      {
+        "english": "zero",
+        "word": "suno",
+        "category": "number",
+        "notes": "0"
+      },
+      {
+        "english": "one",
+        "word": "una",
+        "category": "number",
+        "notes": "1"
+      },
+      {
+        "english": "two",
+        "word": "tuli",
+        "category": "number",
+        "notes": "2"
+      },
+      {
+        "english": "three",
+        "word": "sani",
+        "category": "number",
+        "notes": "3"
+      },
+      {
+        "english": "four",
+        "word": "peka",
+        "category": "number",
+        "notes": "4"
+      },
+      {
+        "english": "five",
+        "word": "lima",
+        "category": "number",
+        "notes": "5"
+      },
+      {
+        "english": "six",
+        "word": "noku",
+        "category": "number",
+        "notes": "6"
+      },
+      {
+        "english": "seven",
+        "word": "sepi",
+        "category": "number",
+        "notes": "7"
+      },
+      {
+        "english": "eight",
+        "word": "watu",
+        "category": "number",
+        "notes": "8"
+      },
+      {
+        "english": "nine",
+        "word": "yune",
+        "category": "number",
+        "notes": "9"
+      },
+      {
+        "english": "ten",
+        "word": "teka",
+        "category": "number",
+        "notes": "10"
+      },
+      {
+        "english": "hundred",
+        "word": "seta",
+        "category": "number",
+        "notes": "100"
+      },
+      {
+        "english": "thousand",
+        "word": "mila",
+        "category": "number",
+        "notes": "1000"
+      },
+      {
+        "english": "digit sequence",
+        "word": "nume",
+        "category": "particle",
+        "notes": "Begins an explicit digit-by-digit reading"
+      },
+      {
+        "english": "decimal point",
+        "word": "puto",
+        "category": "particle",
+        "notes": "Followed by individual fractional digits"
+      },
+      {
+        "english": "negative number",
+        "word": "neka",
+        "category": "particle",
+        "notes": "Before a number; changes its sign to negative"
+      },
+      {
+        "english": "divided by",
+        "word": "suli",
+        "category": "particle",
+        "notes": "Numerical fraction or division reading between quantities"
+      },
+      {
+        "english": "ordinal marker",
+        "word": "noli",
+        "category": "particle",
+        "notes": "Before cardinal number"
+      },
+      {
+        "english": "hello",
+        "word": "salo",
+        "category": "phrase",
+        "notes": "Greeting"
+      },
+      {
+        "english": "goodbye",
+        "word": "watiwe",
+        "category": "phrase",
+        "notes": "Farewell"
+      },
+      {
+        "english": "please",
+        "word": "pali",
+        "category": "phrase",
+        "notes": "Before command"
+      },
+      {
+        "english": "thank you",
+        "word": "tani",
+        "category": "phrase",
+        "notes": "Gratitude"
+      },
+      {
+        "english": "you are welcome",
+        "word": "sawawe",
+        "category": "phrase",
+        "notes": "Response to gratitude"
+      },
+      {
+        "english": "sorry",
+        "word": "pata",
+        "category": "phrase",
+        "notes": "Apology"
+      },
+      {
+        "english": "a / an",
+        "word": "sa",
+        "category": "article",
+        "notes": "Unspecified referent; defaults to one countable item without a quantity word; sa ma introduces an unspecified plural group"
+      },
+      {
+        "english": "can / be able to",
+        "word": "pote",
+        "category": "modal",
+        "notes": "Ability only"
+      },
+      {
+        "english": "future / will",
+        "word": "pu",
+        "category": "particle",
+        "notes": "Before aspect and predicate"
+      },
+      {
+        "english": "must / have to",
+        "word": "tewa",
+        "category": "modal",
+        "notes": "Obligation"
+      },
+      {
+        "english": "no / not",
+        "word": "no",
+        "category": "particle",
+        "notes": "Predicate negation or rejection of proposition"
+      },
+      {
+        "english": "of / possessive link",
+        "word": "te",
+        "category": "relation",
+        "notes": "Thing followed by related person or thing"
+      },
+      {
+        "english": "ongoing action",
+        "word": "tu",
+        "category": "particle",
+        "notes": "Progressive aspect"
+      },
+      {
+        "english": "question marker",
+        "word": "ka",
+        "category": "particle",
+        "notes": "At end of clause"
+      },
+      {
+        "english": "the",
+        "word": "la",
+        "category": "article",
+        "notes": "Identifies a contextually recoverable referent; omit only when reference stays clear"
+      },
+      {
+        "english": "you",
+        "word": "ti",
+        "category": "pronoun",
+        "notes": "One addressee"
+      },
+      {
+        "english": "you all",
+        "word": "timu",
+        "category": "pronoun",
+        "notes": "Multiple addressees"
+      },
+      {
+        "english": "above / over",
+        "word": "su",
+        "category": "relation",
+        "notes": "Above without asserting contact"
+      },
+      {
+        "english": "below / under",
+        "word": "nu",
+        "category": "relation",
+        "notes": "Vertical inferior position"
+      },
+      {
+        "english": "for / intended for",
+        "word": "po",
+        "category": "relation",
+        "notes": "Intended beneficiary or purpose"
+      },
+      {
+        "english": "how many / how much",
+        "word": "kaniti",
+        "category": "question",
+        "notes": "Before noun or alone"
+      },
+      {
+        "english": "left (direction)",
+        "word": "lewo",
+        "category": "description",
+        "notes": "Left direction in stated frame of reference; Example: la ito esa lewo"
+      },
+      {
+        "english": "on / on top of",
+        "word": "sula",
+        "category": "relation",
+        "notes": "On a supporting surface with contact"
+      },
+      {
+        "english": "right (direction)",
+        "word": "yewo",
+        "category": "description",
+        "notes": "Right direction in stated frame of reference; Example: la ito esa yewo"
+      },
+      {
+        "english": "through",
+        "word": "natu",
+        "category": "relation",
+        "notes": "Through an interior or passage"
+      },
+      {
+        "english": "be / am / is / are",
+        "word": "esa",
+        "category": "verb",
+        "notes": "Subject plus identity description or location complement; Example: mi esa penu"
+      },
+      {
+        "english": "begin / start",
+        "word": "inia",
+        "category": "verb",
+        "notes": "Intransitive; Example: la ito inia"
+      },
+      {
+        "english": "close / shut",
+        "word": "kosawe",
+        "category": "verb",
+        "notes": "Transitive object closed; Example: mi kosawe la ito"
+      },
+      {
+        "english": "do / make",
+        "word": "pami",
+        "category": "verb",
+        "notes": "Transitive product or task; do or make; Example: mi pami la ito"
+      },
+      {
+        "english": "end / finish",
+        "word": "pina",
+        "category": "verb",
+        "notes": "Intransitive; Example: la ito pina"
+      },
+      {
+        "english": "exist / there is",
+        "word": "eki",
+        "category": "verb",
+        "notes": "Existential; Example: eki aku"
+      },
+      {
+        "english": "have / own",
+        "word": "awa",
+        "category": "verb",
+        "notes": "Transitive possessed item; Example: mi awa la ito"
+      },
+      {
+        "english": "say / speak",
+        "word": "tala / teli",
+        "category": "verb",
+        "notes": "Speak a language versus say something; listener with a; Example: mi tala Taluma"
+      },
+      {
+        "english": "stay / remain",
+        "word": "wesa",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi wesa"
+      },
+      {
+        "english": "arm",
+        "word": "manope",
+        "category": "noun",
+        "notes": "Upper limb; distinct from hand mano; Example: manope te mi"
+      },
+      {
+        "english": "back (body)",
+        "word": "kopano",
+        "category": "noun",
+        "notes": "Rear of torso; Example: kopano te mi"
+      },
+      {
+        "english": "city / town",
+        "word": "ula",
+        "category": "noun",
+        "notes": "Urban settlement; Example: ula te mi"
+      },
+      {
+        "english": "country / nation",
+        "word": "natio",
+        "category": "noun",
+        "notes": "Political country; shared starter nation sense; distinguish cultural groups explicitly; Example: natio te mi"
+      },
+      {
+        "english": "face",
+        "word": "kapano",
+        "category": "noun",
+        "notes": "Front of head; Example: kapano te mi"
+      },
+      {
+        "english": "home / house",
+        "word": "tomo",
+        "category": "noun",
+        "notes": "Dwelling; specify whose home using te plus possessor; Example: tomo te mi"
+      },
+      {
+        "english": "light",
+        "word": "lumo",
+        "category": "noun",
+        "notes": "Visible light; Example: lumo te mi"
+      },
+      {
+        "english": "man",
+        "word": "wilo",
+        "category": "noun",
+        "notes": "Adult male human; Example: wilo te mi"
+      },
+      {
+        "english": "person / human",
+        "word": "penu",
+        "category": "noun",
+        "notes": "A human being; referent and gender are supplied by context; Example: penu te mi"
+      },
+      {
+        "english": "thing / object",
+        "word": "ito",
+        "category": "noun",
+        "notes": "Thing or object; Example: ito te mi"
+      },
+      {
+        "english": "way / method",
+        "word": "meto",
+        "category": "noun",
+        "notes": "Method; Example: meto te mi"
+      },
+      {
+        "english": "woman",
+        "word": "wina",
+        "category": "noun",
+        "notes": "Adult female human; Example: wina te mi"
+      },
+      {
+        "english": "big / large",
+        "word": "walo",
+        "category": "description",
+        "notes": "Large size; Example: la ito esa walo"
+      },
+      {
+        "english": "fast / quickly",
+        "word": "yapa / yapa-me",
+        "category": "description/adverb",
+        "notes": "Property of a noun versus manner of an event"
+      },
+      {
+        "english": "few / little (quantity)",
+        "word": "poka",
+        "category": "quantifier",
+        "notes": "Small number or amount"
+      },
+      {
+        "english": "good / well",
+        "word": "pona / pona-me",
+        "category": "description/adverb",
+        "notes": "Good property versus good manner"
+      },
+      {
+        "english": "many / much",
+        "word": "muli",
+        "category": "quantifier",
+        "notes": "Large number or amount before noun"
+      },
+      {
+        "english": "most (comparison)",
+        "word": "masi",
+        "category": "degree",
+        "notes": "Before description"
+      },
+      {
+        "english": "old / former (not new)",
+        "word": "nowopa / iamo",
+        "category": "description",
+        "notes": "No longer new versus earlier status; Example: la ito esa nowopa"
+      },
+      {
+        "english": "only",
+        "word": "solo",
+        "category": "degree",
+        "notes": "Immediately before the restricted noun or relation phrase; not before a bare verb"
+      },
+      {
+        "english": "sick / ill",
+        "word": "melo",
+        "category": "description",
+        "notes": "Unwell; Example: la ito esa melo"
+      },
+      {
+        "english": "slow / slowly",
+        "word": "senu / senu-me",
+        "category": "description/adverb",
+        "notes": "Property of a noun versus manner of an event"
+      },
+      {
+        "english": "true / correct",
+        "word": "welo / yuso",
+        "category": "description",
+        "notes": "Factually true versus correct or appropriate; Example: la ito esa welo"
+      },
+      {
+        "english": "wrong / incorrect",
+        "word": "noyuso",
+        "category": "description",
+        "notes": "Incorrect; distinct from factually false elo; Example: la ito esa noyuso"
+      },
+      {
+        "english": "excuse me / sorry",
+        "word": "pata",
+        "category": "phrase",
+        "notes": "Apology"
+      },
+      {
+        "english": "you're welcome",
+        "word": "sawawe",
+        "category": "phrase",
+        "notes": "Response to gratitude"
+      },
+      {
+        "english": "he",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral singular referent; use names or explicit nouns to disambiguate"
+      },
+      {
+        "english": "she",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral singular referent; use names or explicit nouns to disambiguate"
+      },
+      {
+        "english": "it",
+        "word": "li",
+        "category": "pronoun",
+        "notes": "Gender-neutral singular referent; use names or explicit nouns to disambiguate"
+      },
+      {
+        "english": "one / people",
+        "word": "sa penu",
+        "category": "pronoun/noun",
+        "notes": "An unspecified person; not the numeral one"
+      },
+      {
+        "english": "my",
+        "word": "te mi",
+        "category": "relation",
+        "notes": "Possessor phrase after noun and descriptions"
+      },
+      {
+        "english": "your",
+        "word": "te ti / te timu",
+        "category": "relation",
+        "notes": "Singular versus plural addressees; follows possessed noun"
+      },
+      {
+        "english": "whether / question marker",
+        "word": "ka",
+        "category": "particle",
+        "notes": "At end of clause"
+      },
+      {
+        "english": "that (clause)",
+        "word": "kepi",
+        "category": "particle",
+        "notes": "Opens a declarative content clause; always close with nasuku"
+      },
+      {
+        "english": "in",
+        "word": "na",
+        "category": "relation",
+        "notes": "At or in; na nina te specifies an interior"
+      },
+      {
+        "english": "on",
+        "word": "sula",
+        "category": "relation",
+        "notes": "On a supporting surface with contact"
+      },
+      {
+        "english": "over",
+        "word": "su",
+        "category": "relation",
+        "notes": "Above without asserting contact"
+      },
+      {
+        "english": "to",
+        "word": "a",
+        "category": "relation",
+        "notes": "Direction or recipient"
+      },
+      {
+        "english": "from / of",
+        "word": "tawe / te",
+        "category": "relation",
+        "notes": "Origin versus possession or association"
+      },
+      {
+        "english": "about",
+        "word": "pili",
+        "category": "relation",
+        "notes": "Topic of speech or thought"
+      },
+      {
+        "english": "before (place or time)",
+        "word": "ate / na kapano te",
+        "category": "relation",
+        "notes": "Ate means earlier than; the second phrase means in front of"
+      },
+      {
+        "english": "until",
+        "word": "katiwe",
+        "category": "relation",
+        "notes": "Endpoint in time or space"
+      },
+      {
+        "english": "how much",
+        "word": "kaniti",
+        "category": "question",
+        "notes": "Before noun or alone"
+      },
+      {
+        "english": "this (thing)",
+        "word": "ta",
+        "category": "determiner/pronoun",
+        "notes": "This"
+      },
+      {
+        "english": "that (thing)",
+        "word": "to",
+        "category": "determiner/pronoun",
+        "notes": "That"
+      },
+      {
+        "english": "often",
+        "word": "potewe",
+        "category": "adverb",
+        "notes": "On many occasions; Example: mi lena potewe"
+      },
+      {
+        "english": "also",
+        "word": "aniki",
+        "category": "adverb",
+        "notes": "In addition; follows object and relations; Example: mi lena aniki"
+      },
+      {
+        "english": "already",
+        "word": "yami",
+        "category": "adverb",
+        "notes": "Before or by the reference time; follows object and relations; Example: mi lena yami"
+      },
+      {
+        "english": "still / yet",
+        "word": "nuki",
+        "category": "adverb",
+        "notes": "Continuing at the reference time; follows object and relations; Example: mi lena nuki"
+      },
+      {
+        "english": "together",
+        "word": "kune",
+        "category": "adverb",
+        "notes": "In company; unlike konu this does not require a following companion noun; Example: mi lena kune"
+      },
+      {
+        "english": "well",
+        "word": "pona-me",
+        "category": "adverb",
+        "notes": "Regular manner adverb from description pona; Example: mi lena pona-me"
+      },
+      {
+        "english": "clearly",
+        "word": "kali-me",
+        "category": "adverb",
+        "notes": "Regular manner adverb from description kali; Example: mi lena kali-me"
+      },
+      {
+        "english": "carefully",
+        "word": "kasi-me",
+        "category": "adverb",
+        "notes": "Stem kasi: careful; regular manner adverb; follows object and relations; Example: mi lena kasi-me"
+      },
+      {
+        "english": "have",
+        "word": "awa",
+        "category": "verb",
+        "notes": "Transitive possessed item; Example: mi awa la ito"
+      },
+      {
+        "english": "speak",
+        "word": "tala",
+        "category": "verb",
+        "notes": "Transitive language or content clause; listener with a; Example: mi tala Taluma"
+      },
+      {
+        "english": "say",
+        "word": "teli",
+        "category": "verb",
+        "notes": "Transitive utterance or content clause; quoted speech uses kotu and pusano; listener with a; Example: mi teli kotu mi wola aku pusano"
+      },
+      {
+        "english": "know (a fact)",
+        "word": "sawa",
+        "category": "verb",
+        "notes": "Transitive information or content clause; know a fact; Example: mi sawa kepi ti lena nasuku"
+      },
+      {
+        "english": "know (be acquainted)",
+        "word": "koni",
+        "category": "verb",
+        "notes": "Transitive person or familiar thing; be acquainted with; Example: mi koni la ito"
+      },
+      {
+        "english": "can / be able",
+        "word": "pote",
+        "category": "modal",
+        "notes": "Ability only"
+      },
+      {
+        "english": "live",
+        "word": "wita",
+        "category": "verb",
+        "notes": "Intransitive; Example: mi wita"
+      },
+      {
+        "english": "play",
+        "word": "luti",
+        "category": "verb",
+        "notes": "Play a game or instrument; Example: mi luti"
+      },
+      {
+        "english": "like",
+        "word": "liwa",
+        "category": "verb",
+        "notes": "Transitive person thing or content clause; Example: mi liwa la ito"
+      },
+      {
+        "english": "ask (a question)",
+        "word": "kesa",
+        "category": "verb",
+        "notes": "Transitive question or content clause; addressee introduced with a; Example: mi kesa keso a ti"
+      },
+      {
+        "english": "repeat",
+        "word": "lati",
+        "category": "verb",
+        "notes": "Say or do again; Example: mi lati la ito"
+      },
+      {
+        "english": "big",
+        "word": "walo",
+        "category": "description",
+        "notes": "Large size; Example: la ito esa walo"
+      },
+      {
+        "english": "old (not new)",
+        "word": "nowopa",
+        "category": "description",
+        "notes": "Previously used or no longer new; Example: la ito esa nowopa"
+      },
+      {
+        "english": "young",
+        "word": "yuni",
+        "category": "description",
+        "notes": "Early in life; Example: la ito esa yuni"
+      },
+      {
+        "english": "clear",
+        "word": "kali",
+        "category": "description",
+        "notes": "Clear in perception or meaning; Example: la ito esa kali"
+      },
+      {
+        "english": "other",
+        "word": "aliwe",
+        "category": "description",
+        "notes": "Another or other; Example: la ito esa aliwe"
+      },
+      {
+        "english": "Esperanto",
+        "word": "Esperanto",
+        "category": "noun",
+        "notes": "Borrowed proper language name; preserves its preferred spelling; Example: mi lena Esperanto"
+      },
+      {
+        "english": "sentence",
+        "word": "talumo",
+        "category": "noun",
+        "notes": "Sentence of language; Example: talumo te mi"
+      },
+      {
+        "english": "school",
+        "word": "lena-mo",
+        "category": "noun",
+        "notes": "Regular learning-place derivation; conventional school sense; no institutional accreditation implied; Example: lena-mo te mi"
+      },
+      {
+        "english": "teacher",
+        "word": "nisa-ki",
+        "category": "noun",
+        "notes": "Regular person-who-teaches derivation; Example: nisa-ki te mi"
+      },
+      {
+        "english": "student",
+        "word": "lena-ki",
+        "category": "noun",
+        "notes": "Regular person-who-learns derivation; Example: lena-ki te mi"
+      },
+      {
+        "english": "house",
+        "word": "tomo",
+        "category": "noun",
+        "notes": "Dwelling; Example: tomo te mi"
+      },
+      {
+        "english": "window",
+        "word": "pono",
+        "category": "noun",
+        "notes": "Window in a building; Example: pono te mi"
+      },
+      {
+        "english": "table",
+        "word": "tapula",
+        "category": "noun",
+        "notes": "Table furniture; Example: tapula te mi"
+      },
+      {
+        "english": "chair",
+        "word": "sita-po",
+        "category": "noun",
+        "notes": "Regular sitting-instrument derivation; conventional chair sense; Example: sita-po te mi"
+      },
+      {
+        "english": "garden",
+        "word": "tamalo",
+        "category": "noun",
+        "notes": "Cultivated garden; Example: tamalo te mi"
+      },
+      {
+        "english": "country (land)",
+        "word": "natio",
+        "category": "noun",
+        "notes": "Political country; Example: natio te mi"
+      },
+      {
+        "english": "road",
+        "word": "luta",
+        "category": "noun",
+        "notes": "Route for travel; Example: luta te mi"
+      },
+      {
+        "english": "bread",
+        "word": "panope",
+        "category": "noun",
+        "notes": "Bread; Example: panope te mi"
+      },
+      {
+        "english": "fruit",
+        "word": "pumo",
+        "category": "noun",
+        "notes": "Fruit; Example: pumo te mi"
+      },
+      {
+        "english": "apple",
+        "word": "pomo",
+        "category": "noun",
+        "notes": "Apple fruit; Example: pomo te mi"
+      },
+      {
+        "english": "milk",
+        "word": "miliko",
+        "category": "noun",
+        "notes": "Milk; Example: miliko te mi"
+      },
+      {
+        "english": "tea",
+        "word": "teyo",
+        "category": "noun",
+        "notes": "Tea drink; Example: teyo te mi"
+      },
+      {
+        "english": "coffee",
+        "word": "kape",
+        "category": "noun",
+        "notes": "Coffee drink; Example: kape te mi"
+      },
+      {
+        "english": "salt",
+        "word": "salope",
+        "category": "noun",
+        "notes": "Edible salt; Example: salope te mi"
+      },
+      {
+        "english": "earth (soil)",
+        "word": "telo",
+        "category": "noun",
+        "notes": "Ground material; Example: telo te mi"
+      },
+      {
+        "english": "flower",
+        "word": "pulope",
+        "category": "noun",
+        "notes": "Flower; Example: pulope te mi"
+      },
+      {
+        "english": "dog",
+        "word": "kuno",
+        "category": "noun",
+        "notes": "Dog; Example: kuno te mi"
+      },
+      {
+        "english": "cat",
+        "word": "katoyo",
+        "category": "noun",
+        "notes": "Cat; Example: katoyo te mi"
+      },
+      {
+        "english": "morning",
+        "word": "matino",
+        "category": "noun",
+        "notes": "Morning; Example: matino te mi"
+      },
+      {
+        "english": "evening",
+        "word": "weselo",
+        "category": "noun",
+        "notes": "Evening; Example: weselo te mi"
+      },
+      {
+        "english": "hour",
+        "word": "olope",
+        "category": "noun",
+        "notes": "Hour; Example: olope te mi"
+      },
+      {
+        "english": "health",
+        "word": "sana-se",
+        "category": "noun",
+        "notes": "Regular state-of-being-healthy derivation; Example: sana-se te mi"
+      },
+      {
+        "english": "peace",
+        "word": "paso",
+        "category": "noun",
+        "notes": "Peace; Example: paso te mi"
+      },
+      {
+        "english": "music",
+        "word": "musiko",
+        "category": "noun",
+        "notes": "Music; Example: musiko te mi"
+      },
+      {
+        "english": "answer (noun)",
+        "word": "talo",
+        "category": "noun",
+        "notes": "Answer; Example: talo te mi"
+      },
+      {
+        "english": "goal",
+        "word": "selawo",
+        "category": "noun",
+        "notes": "Aim or target; Example: selawo te mi"
+      },
+      {
+        "english": "choir",
+        "word": "kolalo",
+        "category": "noun",
+        "notes": "Group of singers; Example: kolalo te mi"
+      },
+      {
+        "english": "newspaper",
+        "word": "lipo-nuti",
+        "category": "noun",
+        "notes": "Defined head-first compound: book of today; conventional newspaper sense; Example: lipo-nuti te mi"
+      },
+      {
+        "english": "condition",
+        "word": "siwo",
+        "category": "noun",
+        "notes": "A condition; Example: siwo te mi"
+      },
+      {
+        "english": "related",
+        "word": "tewo",
+        "category": "description",
+        "notes": "Related; Example: la ito esa tewo"
+      },
+      {
+        "english": "reference",
+        "word": "yeno",
+        "category": "noun",
+        "notes": "A reference; Example: yeno te mi"
+      },
+      {
+        "english": "manner",
+        "word": "melawo",
+        "category": "noun",
+        "notes": "Manner; Example: melawo te mi"
+      },
+      {
+        "english": "sequence",
+        "word": "selano",
+        "category": "noun",
+        "notes": "An ordered sequence; Example: selano te mi"
+      },
+      {
+        "english": "digit",
+        "word": "sipo",
+        "category": "noun",
+        "notes": "A numeral digit; distinguish quantity nomu; Example: sipo te mi"
+      },
+      {
+        "english": "decimal",
+        "word": "putowo",
+        "category": "description",
+        "notes": "Decimal; Example: la ito esa putowo"
+      },
+      {
+        "english": "point",
+        "word": "putono",
+        "category": "noun",
+        "notes": "Point or dot; Example: putono te mi"
+      },
+      {
+        "english": "negative",
+        "word": "nekawo",
+        "category": "description",
+        "notes": "Below zero; Example: la ito esa nekawo"
+      },
+      {
+        "english": "minus",
+        "word": "neka",
+        "category": "particle",
+        "notes": "Before a number; changes its sign to negative"
+      },
+      {
+        "english": "divide",
+        "word": "tilita",
+        "category": "verb",
+        "notes": "Transitive quantity; divisor introduced with pi; Example: mi tilita la nomu pi tuli"
+      }
+    ],
+    "documents": {
+      "overview": "# Taluma\n\nVersion 0.1.0 — October 18, 2026\n\nTaluma is a new auxiliary-language prototype inspired by Lumena's explicit grammar, Narela's regular word building, and Esperanto's productive derivation. It aims for broad learnability through a small sound inventory, stable word order, and clearly documented meanings. These are design goals; no learner study establishes universal ease or superiority.\n\n## Start learning\n\n- [Pronunciation](PRONUNCIATION.md): 14 letters, open syllables, and predictable stress.\n- [Grammar](GRAMMAR.md): sentences, scope, word building, and quoted speech.\n- [First lessons](LESSONS.md): short conversations and exercises with answers.\n- [English to Taluma dictionary](English%20to%20Taluma%20Dictionary.md).\n- [Taluma to English dictionary](Taluma%20to%20English%20Dictionary.md).\n- [Design and evaluation](DESIGN.md): inheritance, tradeoffs, and a testing plan.\n- [Changelog](CHANGELOG.md).\n\n`salo. mi lena Taluma.` — Hello. I learn Taluma.\n\n## A small consistent core\n\nVerbs and nouns do not inflect. There is no grammatical gender or adjective agreement. A/an and the have actual article words: sa and la. Plural ma and numbers make quantity explicit. Six written suffixes build predictable related words without changing the root. Complex clauses have distinct opening and closing words; ordinary short clauses need neither.\n\n## Dictionary scope\n\nThe CSV contains exactly the same 397 English lookup entries as Lumena and Narela, including their English wording variants. This is a count of entries, not a claim of 397 independent roots or complete conversational coverage. Related senses may share a form; alternatives are separated with a slash and explained in notes. The English dictionaries and flashcards include every entry.\n\n## Maintenance\n\nEdit [lexicon.csv](lexicon.csv) and the guides. Run node Taluma/tools/check_language.cjs --write, node website/build-data.cjs, and node website/check-site.cjs from the repository root. The checker validates coverage, native spellings, defined stems, restricted derivations, dictionary examples, clause boundaries, links, and generated dictionaries. It includes negative regression cases, but is not a complete natural-language parser or a test of learner outcomes.\n\nNew roots require a sense definition, argument frame where relevant, example, sound-confusion review, and changelog entry. Keep spellings stable during trials. The other three languages remain separate; similar words do not authorize mixing their rules.\n",
+      "pronunciation": "# Taluma pronunciation\n\n## Alphabet and sounds\n\nUse 14 letters: a e i k l m n o p s t u w y. Each has one reference sound. There are no silent letters, consonant clusters, final consonants, lexical tones, or meaningful vowel-length contrasts in native words.\n\n| Letters | Reference IPA | Guidance |\n|---|---|---|\n| a e i o u | /a e i o u/ | Five steady vowels; keep e and o free of a trailing glide |\n| p t k | /p t k/ | Unvoiced stops; no voiced/unvoiced contrast to memorize |\n| m n | /m n/ | Nasals |\n| s | /s/ | As in see |\n| l | /l/ | As in light; there is no separate r phoneme |\n| w | /w/ | As in we |\n| y | /j/ | As in yes; always a consonant |\n\nEnglish hints are approximate. Learners should use the IPA and articulatory descriptions with a teacher where possible. T is made with the tongue at the teeth or ridge behind them; k uses the back of the tongue. Vowel and consonant categories may still be unfamiliar to some learners.\n\n## Syllables, stress, and boundaries\n\nEach syllable is a vowel alone or one consonant plus one vowel: (C)V. Adjacent vowels make separate syllables. Stress the next-to-last syllable of the complete word: ta-LU-ma, LE-na, le-NA-ki. Stress the only syllable of a one-syllable word. A derivational suffix becomes part of the spoken word even though a hyphen makes its boundary visible in writing.\n\nDo not drop vowels or merge words when speaking carefully. Pause at clause boundaries and preserve complete marker words. Kepi opens a content clause and nasuku closes it; yali opens a relative clause and moteka closes it. Their different lengths and consonants avoid relying on a single final-vowel distinction, but this still needs listening tests.\n\nOrdinary lexical compounds keep a boundary and each component's own stress. Thus lipo-nuti (newspaper) is LI-po NU-ti; lena-ki (learner) is le-NA-ki. The closed suffix list in the grammar distinguishes derivation from a lexical compound.\n\n## Names and access\n\nKeep people's preferred names and ask how to pronounce them. Taluma and Esperanto are language names; Ana is a lesson name. Borrowed names may fall outside native spelling rules. Do not require people to rename themselves.\n\nAccent variation is expected; do not promise that every substitution preserves intelligibility. Recordings, listening trials, multilingual teaching, accessible formats, and community review remain necessary. Browser and AI voices are approximations rather than pronunciation authorities.\n",
+      "grammar": "# Taluma grammar 0.1.0\n\n## 1. Statements and noun phrases\n\nUse subject + tense + aspect + negation + modal + verb + object + relations + adverbs. Omit unused slots. Verbs never change for person or number. A statement has an overt subject, except existential eki followed by the thing that exists. Commands omit the subject.\n\n`mi leka lipo.` — I read a book or books.\n\n`eki aku.` — There is water.\n\nUse esa for identity, description, and location. Transitive entries take one direct object; recipient, instrument, topic, or location use the relations in their notes. Intransitive entries have no direct object. Do not silently change a verb's argument pattern.\n\nLasi (allow) takes the permitted person as its object and a plus a content clause for the permitted action: mi lasi ti a kepi ti pala nasuku means I allow you to walk. Wila (become) takes a resulting description or identity noun rather than an affected object. Wati (wait) is intransitive; po introduces what is awaited. Kausa (cause) takes a content clause describing the result.\n\nNoun phrase order is article or demonstrative + quantity + noun + descriptions + possessive phrase. Sa introduces an unspecified referent (a/an) and defaults to one countable item when there is no quantity word; sa ma introduces an unspecified plural group. La identifies a contextually recoverable referent (the) without specifying number. Do not combine an article with ta or to. Bare nouns are number-neutral and do not assert definiteness. Ma explicitly means more than one; a cardinal replaces ma. Use una for exactly one when the distinction matters. Countability comes from the sense of the noun; do not use ma for an undivided substance.\n\n`mi leka sa lipo.` — I read an unspecified book.\n\n`mi leka la tuli lipo pona.` — I read the two good books.\n\n`lipo te mi` — my book or books.\n\nPossession uses te after the noun and its descriptions. End the noun phrase before attaching another relation; avoid nested possession by using a separate sentence. Descriptions follow nouns and apply independently. They do not acquire a plural ending.\n\n## 2. Pronouns, reference, and questions\n\nMi is I/me; ti is one addressee; li is one third person or thing; mu is we/us; timu is multiple addressees; lu is they/them. Li does not specify gender. Mu does not specify whether the listener is included: say mi ni ti for I and you. Se is a reflexive object referring only to the subject of its own clause.\n\nUse a repeated noun or a proper name when multiple people could be li. Introduce a referent with sa and reidentify it with la; articles do not override ambiguity about which referent is intended.\n\nAppend ka to a yes/no question. Question words stay where their answers belong: ki who; ke what; kana where; kama when; kimo how; kaniti how many/much; kela which; kosa why. Kosa follows the clause it questions. Do not add ka to a question already containing a question word.\n\n`ti lena ka?` — Do you learn?\n\n`ki sapu ti?` — Who helps you?\n\n## 3. Time, aspect, and scope\n\nPa marks past and pu future. Unmarked time is present unless an explicit time expression in that same clause establishes another time. A tense marker and time expression must agree. An earlier sentence's tense does not silently carry over: repeat pa or pu in the next clause when needed.\n\nTu marks an ongoing event; pe marks completion before or by the reference time. Choose at most one aspect marker. For completed aspect, state the reference time when it is not clear.\n\n`mi pa tu lena.` — I was learning.\n\n`mi pu pe leka la lipo puti.` — I will have finished reading the book by tomorrow.\n\nNo negates the following predicate, including a modal. Pote is ability and tewa obligation. Bare modal + verb shares its subject; modal + kepi clause allows explicit scope or a different subject. Wola (want) and neta (need) can take a noun or a content clause; wola can also take a bare verb with the same subject. Do not stack modals in a simple predicate.\n\n`mi no pote pala.` — I cannot walk.\n\n`mi no tewa pala.` — I am not obliged to walk.\n\n`mi tewa kepi mi no pala nasuku.` — I am obliged not to walk.\n\n`pali no wata!` — Please do not go!\n\nAnswer negative questions with a complete affirmative or negative clause. Ya and no are safe short answers to affirmative questions; a full clause avoids differing conventions for negative questions.\n\n## 4. Relations, modifiers, and word building\n\nRelations precede a noun phrase: na at/in; sula on a surface; su above; nu under; a toward/to; tawe from; konu with/accompanied by; sena without; po for; pi using/by means of; mita between; pili about; luwa than. Unlike Lumena's broad su, Taluma separates contact on a surface from position above it. Nina and pola are inside and outside; use na nina te or na pola te before a noun to specify an interior or exterior.\n\n`mi pana lipo a ti.` — I give a book to you.\n\n`mi kata pano pi ilo.` — I cut cloth using a tool.\n\nDegree words precede a description: pulu more, masi most, weli very, pale equally. Use luwa for a comparison standard and state the comparison group for a superlative.\n\nAdverbs, including also, already, still, often, and together, follow the object and relations. Time phrases follow those adverbs. Solo (only) immediately precedes the phrase it restricts; it may precede a subject, object, or relation phrase. Do not put solo before a bare verb; use a content clause to restrict an action proposition.\n\n`mi lena aniki.` — I also learn.\n\n`solo mi lena.` — Only I learn.\n\n`mi leka solo la lipo.` — I read only the book.\n\nThe following suffixes are productive and always written with a hyphen. Keep the root unchanged. Use one suffix per root in this core; do not chain them.\n\n| Suffix | Input and meaning | Example |\n|---|---|---|\n| -ki | action verb → person who does it | lena-ki — learner |\n| -mo | action verb → place intended for it | lena-mo — school / learning place |\n| -po | action verb → instrument for it | siki-po — writing tool |\n| -la | noun → description related to it | sola-la — solar |\n| -me | description → manner adverb | pona-me — well |\n| -se | description → state or quality noun | sana-se — health |\n\nUse a direct adjective for a thing's property and -me for an event's manner. Kasi is the stem careful, defined in the carefully entry; kasi-me means carefully. The spelling checker requires every compound and derivation stem to have a definition. Do not freely convert nouns to verbs. Compounds are head first, hyphenated, and explicitly defined in the lexicon; derivation has the listed general meaning, while a specialized sense needs a dictionary note.\n\n`mi sewa nila yapa.` — I see a fast child.\n\n`mi sewa nila yapa-me.` — I see the child quickly.\n\n## 5. Clauses and quotation\n\nNi joins clauses or phrases; o is inclusive or; wa is but; pako is because. Repeat subjects in coordinated clauses. For an exclusive alternative use an explicit choice with una (one), not o alone.\n\nKepi opens a content clause; nasuku closes it. Yali opens a relative clause after its head noun; moteka closes it. Inside a relative clause ye resumes the head noun in the required position. Nested clauses must close in reverse opening order. Every opened clause closes, including at the end of a sentence. These words are spoken; punctuation cannot replace them.\n\n`mi sawa kepi ti pa wena nasuku.` — I know that you came.\n\n`penu yali ye sapu mi moteka esa na tomo.` — The person who helps me is in the house.\n\nSi opens a condition; nopaku closes the condition before the result clause. The condition precedes its result; do not use an unmarked trailing if-clause. For clarity, flatten sentences with several nested clauses into short statements.\n\n`si ti wena nopaku mi pu pami nami.` — If you come, I will make food.\n\nKotu opens a direct quotation and pusano closes it. Pronouns and time words inside refer to the quoted speaker's context. Direct quotations do not nest in this core; report an inner quotation indirectly with kepi. There is no passive construction: name the actor or use sa penu (someone).\n\n`li teli kotu mi wola aku pusano.` — They say, \"I want water.\"\n\n### Additional defined particles\n\nThese speech-management words are additional grammar vocabulary within the say and clause-reference entries, not extra English dictionary headwords.\n\n| Taluma | Function |\n|---|---|\n| kotu | Starts direct quotation |\n| pusano | Ends direct quotation |\n\n## 6. Numbers and precision\n\nDigits and scales have the dictionary forms. Multiply a scale by its preceding digit; adjacent descending groups add. Teka una is 11; tuli teka sani is 23. This grouping is defined through 9999. For larger values or identifiers, nume begins individual digit reading. Omit zero groups in grouped numbers; retain every digit in digit reading.\n\nPuto is the decimal separator followed by individual fractional digits. Neka before a number means minus. Suli between quantities means divided by; noli before a cardinal makes an ordinal. Specify units and calendars when relevant. Tilita is the transitive action divide, with the divisor introduced by pi; suli is specifically the numerical reading divided by.\n\n`tuli puto suno lima` — 2.05.\n\n`una suli tuli` — one half.\n\n`noli sani lipo` — third book.\n\nDistinguish nomu (numeric quantity) from sipo (a written digit). Cardinals identify quantity; an identifier such as a room number uses nume plus digits. Do not assume that an unspecified number is a particular measurement or identifying label.\n",
+      "lessons": "# First lessons in Taluma\n\nUse the [pronunciation guide](PRONUNCIATION.md) first. Say short phrases clearly and check the English meaning before adding more grammar. No fixed study duration guarantees fluency.\n\n## 1. Meet someone\n\n| Taluma | English |\n|---|---|\n| salo. | Hello. |\n| mi esa Ana. | I am Ana. |\n| nomo te ti esa ke? | What is your name? |\n| tani. | Thank you. |\n| sawawe. | You are welcome. |\n| pali sapu mi. | Please help me. |\n| mi no kowa. | I do not understand. |\n| pali tala senu-me. | Please speak slowly. |\n\nAna is a personal name. Names keep their owners' spellings. Start with full affirmative or negative answers when a short yes or no might confuse someone.\n\n## 2. Choose and describe\n\n| Taluma | English |\n|---|---|\n| mi leka sa lipo. | I read an unspecified book. |\n| mi leka la lipo. | I read the identifiable book. |\n| mi awa tuli lipo pona. | I have two good books. |\n| la lipo esa sula tapula. | The book is on the table. |\n| mi sewa nila yapa. | I see a fast child. |\n| mi sewa nila yapa-me. | I see the child quickly. |\n\nSa and la are real article words. Bare lipo can be book or books; use una or ma when exact singular/plural information matters. Descriptions follow nouns; a manner adverb follows the object and uses -me.\n\n## 3. Actions and time\n\n| Taluma | English |\n|---|---|\n| mi lena Taluma. | I learn Taluma. |\n| mi tu lena Taluma. | I am learning Taluma. |\n| mu pa pala a tomo pati. | We walked home yesterday. |\n| lu pu wena puti. | They will come tomorrow. |\n| ti sipa aku ka? | Do you drink water? |\n| mi numa nami. | I eat food. |\n| mi leka lipo kasi-me. | I read a book carefully. |\n\nUnmarked time is present unless a time phrase in that same clause says otherwise. Repeat a tense marker in a new clause when necessary. Tomo identifies a dwelling; add te mi to mean mine.\n\n## 4. Build useful words\n\n| Taluma | English |\n|---|---|\n| lena-ki | learner / student |\n| nisa-ki | teacher |\n| lena-mo | school / learning place |\n| siki-po | writing tool |\n| sola-la | solar |\n| sana-se | health |\n| kasi-me | carefully |\n\nThe six suffixes keep their meanings. A place for learning is not automatically an accredited institution. Further specialized meanings need their own usage notes.\n\n## 5. Explain clearly\n\n| Taluma | English |\n|---|---|\n| mi sawa kepi ti pa wena nasuku. | I know that you came. |\n| penu yali ye sapu mi moteka esa na tomo. | The person who helps me is in the house. |\n| si ti wena nopaku mi pu pami nami. | If you come, I will make food. |\n| mi no tewa pala. | I am not obliged to walk. |\n| mi tewa kepi mi no pala nasuku. | I am obliged not to walk. |\n| li teli kotu mi wola aku pusano. | They say: I want water. |\n\nSpeak each closing word. Repeat names or nouns if two people could both be li. Prefer two short sentences when nesting becomes hard to follow.\n\n## Practice and answers\n\nTranslate before checking:\n\n1. I do not see you.\n2. Will they come?\n3. My two books.\n4. Only I learn.\n5. I also learn.\n6. I cannot walk.\n7. Please do not go.\n8. I know that you are learning.\n\nAnswers:\n\n1. `mi no sewa ti.`\n2. `lu pu wena ka?`\n3. `tuli lipo te mi`\n4. `solo mi lena.`\n5. `mi lena aniki.`\n6. `mi no pote pala.`\n7. `pali no wata!`\n8. `mi sawa kepi ti tu lena nasuku.`\n\nPractice repairing misunderstandings: mi no kowa (I do not understand), ke? (what?), and pali lati (please repeat). Ask which person or thing is intended and repeat it explicitly. Conversation and delayed recall tests are needed to assess whether these rules work well for diverse learners.\n",
+      "design": "# Taluma design, evidence, and evaluation\n\n## Purpose and inheritance\n\nTaluma is a separate prototype, not a compatibility layer. It adopts Lumena's small sound inventory and invariant word classes, Narela's predictable derivation, and Esperanto's principle of reusable form–meaning patterns. It avoids Esperanto's consonant clusters, noun/adjective agreement, and required object-case inflection. This choice favors some learning tasks while sacrificing compactness and flexible word order.\n\nThe 397 English lookup labels match the existing collections exactly. Aliases are preserved for comparison. This does not mean the lexicon has 397 roots, every English meaning is covered, or all native-language concepts reduce to the English list. Roots include inherited forms and provisional adaptations; no systematic global recognition study or name clearance has been performed.\n\n## Responses to the Lumena review\n\n| Issue | Taluma design response | Remaining test |\n|---|---|---|\n| Article rows translated as book | Actual sa and la articles with usage examples | Referential clarity across language backgrounds |\n| Undefined components such as kasi | Explicit stem definition and dependency checks on every dictionary phrase and lesson example | Human semantic review |\n| Unexplained preverbal adverbs | Adverbs follow object and relations; solo has a separately defined scope rule | Comprehension of scope contrasts |\n| Similar clause closers | Kepi/nasuku and yali/moteka differ in several segments and length | Mishearing rates in noise |\n| Long doer and place compounds | Six regular suffixes; lena-ki and lena-mo | Retention and speech effort |\n| Ambiguous surface on versus above | Sula means surface contact; su means above | Spatial instruction tasks |\n| Missing quotation conventions | Kotu/pusano plus explicit pronoun/time context | Short narrative retelling |\n| Same numeral word used for quantity and digit | Nomu for quantity; sipo for digit | Number transcription |\n| Checks limited to spelling and freshness | Coverage, stems, derivation categories, dictionary examples, scope contrasts, and nested markers are checked | Checks still cannot prove linguistic correctness |\n\n## Evidence and limits\n\n[WALS vowel inventories](https://wals.info/chapter/2) reports five-vowel systems as the most frequent individual inventory size in its sample. That is a typological observation, not a measure of how many people will learn these five sounds easily. The five-vowel choice is a compromise requiring testing.\n\n[WALS syllable structure](https://wals.info/chapter/12) documents differences in allowed consonant sequences. Open syllables remove clusters and final-consonant requirements in native words. They also reduce the number of short available forms and can increase syllable count. Taluma retains this constraint provisionally; regular derivation cannot remove every speech-length cost.\n\n[WALS word order](https://wals.info/chapter/81) describes the broad occurrence of SOV and SVO. SVO here is one consistent teaching convention, not a universal preferred order. Fixed order sacrifices some flexibility while keeping argument roles predictable without case endings.\n\nThere is no evidence yet that Taluma is faster to learn, more intelligible, or accessible to more people than Lumena, Narela, Esperanto, or an existing contact language. A short inventory still contains unfamiliar sounds for some learners. Latin spelling, written hyphens, and English instruction are accessibility limitations rather than globally neutral choices.\n\n## Lexical and grammatical discipline\n\nAvoid unrelated homographs. English aliases share forms only with explicit sense notes. Keep inferrable derivations and arbitrary lexical compounds distinct. Each defined stem has a category; suffixes have one input category and one output category. Article and grammatical entries are real forms or clearly marked constructions; they are never placeholder nouns. Verb rows record a frame and a simple example.\n\nThe initial vocabulary was assembled in passes from the project's shared English list, with new lexical and grammar choices reviewed for internal consistency. Automated tests cover spelling, definitions, and selected structural contrasts. They are not an exhaustive parser or a substitute for independent speakers and linguists checking the materials.\n\n## Test before stabilization\n\nRecruit consenting adult learners across unrelated language families, scripts, literacy levels, prior learning experience, and accessibility needs. Pay contributors where possible. Use multilingual instruction and recordings from several speakers. Run a pilot before choosing larger sample sizes and preregister the comparison.\n\nGive equal teaching time, matched concepts, and counterbalanced tasks across Taluma and the baselines. Measure successful information transfer, clarification requests, word confusions, phrase length, task time, immediate recall, and delayed recall. Include noisy speech, mixed-background pairs, numbers, instructions, reference tracking, negation scope, and short narratives. Report subgroup outcomes; an improved average can conceal disadvantages.\n\nKeep vocabulary stable during a trial. Publish anonymized methods and aggregate results with consent. Revise near-confusable roots, marker choices, or instruction based on actual errors. Remove avoidable lexical length only when comprehension is preserved. A stable release needs independent semantic review, audio testing, accessible materials, and a documented community decision process.\n",
+      "changelog": "# Changelog\n\n## 0.1.0 — October 18, 2026\n\n- Created Taluma as a separate prototype inspired by Lumena, Narela, and Esperanto.\n- Added the same 397 English lookup headwords as the existing collections with sense notes and native examples.\n- Added real article words, consistent adverb placement, six regular suffixes, distinct clause markers, and quotation rules.\n- Added the standard reference guides, bidirectional dictionaries, lexical and structural validation, and website integration.\n- Documented tradeoffs and the learner evaluation required before making performance claims.\n"
     }
   }
 };

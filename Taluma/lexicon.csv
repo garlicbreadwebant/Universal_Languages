@@ -1,0 +1,398 @@
+english,taluma,category,notes
+I / me,mi,pronoun,First person singular
+you (singular),ti,pronoun,One addressee
+he / she / it,li,pronoun,Gender-neutral singular referent; use names or explicit nouns to disambiguate
+we / us,mu,pronoun,Inclusion of listener unspecified
+you (plural),timu,pronoun,Multiple addressees
+they / them,lu,pronoun,Third person plural
+self,se,pronoun,Refers to subject of current clause
+someone,sa penu,pronoun/noun,An unspecified person; not the numeral one
+this / these,ta,determiner/pronoun,Number specified separately
+that / those,to,determiner/pronoun,Number specified separately
+plural,ma,particle,Before noun
+some,soma,quantifier,Unspecified subset or amount
+all / every,ala,quantifier,Before noun
+few / little quantity,poka,quantifier,Small number or amount
+of / related to,te,relation,Thing followed by related person or thing
+and,ni,connector,Coordinates phrases or clauses
+or,o,connector,Inclusive alternatives
+but,wa,connector,Contrastive coordination
+because,pako,connector,Following clause gives reason
+if,si,connector,Introduces condition before result
+end condition,nopaku,particle,Closes an initial si condition before its result clause
+past,pa,particle,Before aspect and predicate
+future,pu,particle,Before aspect and predicate
+ongoing,tu,particle,Progressive aspect
+completed,pe,particle,Completed relative to reference time
+not / no,no,particle,Predicate negation or rejection of proposition
+yes,ya,particle,Affirms proposition
+yes/no question,ka,particle,At end of clause
+who,ki,question,Person question in answer position
+what,ke,question,Thing question in answer position
+where,kana,question,Location question in answer position
+when,kama,question,Time question in answer position
+how,kimo,question,Manner question in answer position
+how many / much,kaniti,question,Before noun or alone
+why,kosa,question,Clause-final reason question
+which,kela,question,Before noun
+content clause start,kepi,particle,Opens a declarative content clause; always close with nasuku
+content clause end,nasuku,particle,Closes the most recently opened content clause
+relative clause start,yali,particle,After the head noun; ye resumes that noun within the clause; close with moteka
+relative clause end,moteka,particle,Closes the most recently opened relative clause
+relative reference,ye,pronoun,Resumes head noun inside its relative clause
+at / in,na,relation,Location
+on / above,sula / su,relation,Sula means surface contact; su means position above
+under,nu,relation,Vertical inferior position
+to / toward,a,relation,Direction or recipient
+from,tawe,relation,Origin
+with,konu,relation,Accompaniment
+without,sena,relation,Absence of accompanying item
+for,po,relation,Intended beneficiary or purpose
+using / by means of,pi,relation,Instrument
+between,mita,relation,Follow with coordinated endpoints
+than / compared with,luwa,relation,Comparison standard
+manner marker,-me,grammar,Written suffix on a description stem; pona-me means well; never a standalone word before a description
+more,pulu,degree,Before description
+most,masi,degree,Before description
+very,weli,degree,Before description
+equally,pale,degree,Before description
+can / able,pote,modal,Ability only
+must / obliged,tewa,modal,Obligation
+want,wola,modal/verb,Noun object or content clause or bare action verb; Example: mi wola la ito
+be,esa,verb,Subject plus identity description or location complement; Example: mi esa penu
+exist,eki,verb,Existential; Example: eki aku
+see,sewa,verb,Transitive; Example: mi sewa la ito
+hear,kuli,verb,Transitive audible sound or source; Example: mi kuli musiko
+look at,luka,verb,Transitive; Example: mi luka la ito
+know,sawa,verb,Transitive information or content clause; know a fact; Example: mi sawa kepi ti lena nasuku
+understand,kowa,verb,Transitive; Example: mi kowa la ito
+learn,lena,verb,Transitive; Example: mi lena Taluma
+teach,nisa,verb,Transitive subject matter; learner introduced with a; Example: mi nisa Taluma a ti
+read,leka,verb,Transitive; Example: mi leka lipo
+write,siki,verb,Transitive text; recipient introduced with a; Example: mi siki sa talumo
+speak / say,tala / teli,verb,Speak a language versus say something; listener with a; Example: mi tala Taluma
+ask,kesa,verb,Transitive question or content clause; addressee introduced with a; Example: mi kesa keso a ti
+eat,numa,verb,Transitive; Example: mi numa nami
+drink,sipa,verb,Transitive; Example: mi sipa aku
+go,wata,verb,Intransitive; Example: mi wata
+come,wena,verb,Intransitive; Example: mi wena
+walk,pala,verb,Intransitive; Example: mi pala
+run,yuma,verb,Intransitive; Example: mi yuma
+sleep,somi,verb,Intransitive; Example: mi somi
+sit,sita,verb,Intransitive; Example: mi sita
+stand,tana,verb,Intransitive; Example: mi tana
+stay,wesa,verb,Intransitive; Example: mi wesa
+live / be alive,wita,verb,Intransitive; Example: mi wita
+die,mola,verb,Intransitive; Example: mi mola
+help,sapu,verb,Transitive person; Example: mi sapu ti
+love,ama,verb,Transitive person or thing; Example: mi ama la ito
+like / enjoy,liwa,verb,Transitive person thing or content clause; Example: mi liwa la ito
+need,neta,verb,Transitive noun or content clause; Example: mi neta la ito
+have / possess,awa,verb,Transitive possessed item; Example: mi awa la ito
+give,pana,verb,Transitive gift; recipient introduced with a; Example: mi pana lipo a ti
+take,tekawe,verb,Transitive thing; source introduced with tawe; Example: mi tekawe la lipo tawe ti
+bring,puna,verb,Transitive thing; destination introduced with a; Example: mi puna la lipo a ti
+make / cause,pami / kausa,verb,Pami makes a product; kausa takes a content clause describing a caused event; Example: mi kausa kepi ti lena nasuku
+use,usa,verb,Transitive thing used; Example: mi usa la ito
+work,lawo,verb,Intransitive; Example: mi lawo
+open,opa,verb,Transitive object opened; Example: mi opa la ito
+close,kosawe,verb,Transitive object closed; Example: mi kosawe la ito
+begin,inia,verb,Intransitive; Example: la ito inia
+finish,pina,verb,Intransitive; Example: la ito pina
+allow,lasi,verb,Transitive permitted person; permitted action introduced with a plus a content clause; Example: mi lasi ti a kepi ti pala nasuku
+choose,sela,verb,Transitive chosen item; Example: mi sela la ito
+buy,koma,verb,Transitive item; Example: mi koma la ito
+sell,wema,verb,Transitive item; Example: mi wema la ito
+find,nowa,verb,Transitive thing found; Example: mi nowa la ito
+lose,lusa,verb,Transitive thing lost; Example: mi lusa la ito
+remember,mema,verb,Transitive item or content clause; Example: mi mema la ito
+forget,poma,verb,Transitive item or content clause; Example: mi poma la ito
+think,pesa,verb,Transitive content clause; Example: mi pesa kepi ti lena nasuku
+feel,seti,verb,Transitive sensation noun or content clause; Example: mi seti kepi mi esa yomo nasuku
+wait,wati,verb,Intransitive; awaited person or event introduced with po; Example: mi wati po ti
+touch,toki,verb,Transitive touched entity; Example: mi toki la ito
+cut,kata,verb,Transitive object cut; Example: mi kata la ito
+become,wila,verb,Subject plus resulting description or identity noun; Example: mi wila yomo
+person,penu,noun,A human being; referent and gender are supplied by context; Example: penu te mi
+child,nila,noun,Young human; Example: nila te mi
+parent,paliwe,noun,Parent or caregiver; Example: paliwe te mi
+mother,mama,noun,Mother as social or parental identity; Example: mama te mi
+father,papa,noun,Father as social or parental identity; Example: papa te mi
+sibling,sipi,noun,Sibling of any gender; Example: sipi te mi
+family,pamiwe,noun,Family group; Example: pamiwe te mi
+friend,ami,noun,Person in friendly relationship; Example: ami te mi
+body,kopo,noun,Physical body; Example: kopo te mi
+head,kapo,noun,Body part; Example: kapo te mi
+eye,oko,noun,Organ of sight; Example: oko te mi
+ear,olo,noun,Organ of hearing; Example: olo te mi
+mouth,muko,noun,Body part; Example: muko te mi
+hand,mano,noun,Body part; Example: mano te mi
+foot,peto,noun,Body part; Example: peto te mi
+heart,kolo,noun,Body organ; Example: kolo te mi
+skin,pelo,noun,Body covering; Example: pelo te mi
+water,aku,noun,Water substance; Example: aku te mi
+food,nami,noun,Edible nourishment; Example: nami te mi
+air,awe,noun,Air substance; Example: awe te mi
+fire,pilo,noun,Combustion; Example: pilo te mi
+earth / soil,telo,noun,Ground material; Example: telo te mi
+sun,sola,noun,Star providing local daylight; Example: sola te mi
+moon,luno,noun,Natural satellite; Example: luno te mi
+star,seto,noun,Astronomical star; Example: seto te mi
+sky,selo,noun,Apparent sky; Example: selo te mi
+rain,puwo,noun,Rainfall; Example: puwo te mi
+river,liwo,noun,Flowing natural watercourse; Example: liwo te mi
+sea,malo,noun,Large saltwater body; Example: malo te mi
+mountain,moto,noun,Elevated landform; Example: moto te mi
+tree,alo,noun,Woody plant; Example: alo te mi
+plant,palo,noun,Living plant; Example: palo te mi
+animal,peso,noun,Nonhuman animal in everyday usage; Example: peso te mi
+bird,piki,noun,Bird; Example: piki te mi
+fish,piso,noun,Fish; Example: piso te mi
+stone,petu,noun,Rock material or piece; Example: petu te mi
+house / home,tomo,noun,Dwelling; specify whose home using te plus possessor; Example: tomo te mi
+room,kamo,noun,Interior room; Example: kamo te mi
+door,tolo,noun,Door; Example: tolo te mi
+book,lipo,noun,Book; Example: lipo te mi
+paper,papo,noun,Paper material; Example: papo te mi
+clothing,pano,noun,Garment or clothing material; Example: pano te mi
+tool,ilo,noun,Implement for a task; Example: ilo te mi
+road / path,luta,noun,Route for travel; Example: luta te mi
+city,ula,noun,Urban settlement; Example: ula te mi
+country,natio,noun,Political country; Example: natio te mi
+world,muno,noun,World; Example: muno te mi
+place,loko,noun,Location; Example: loko te mi
+time,temo,noun,Time; Example: temo te mi
+day,tayo,noun,Day; Example: tayo te mi
+night,noko,noun,Nighttime; Example: noko te mi
+week,semo,noun,Seven-day period; Example: semo te mi
+month,meso,noun,Calendar month; Example: meso te mi
+year,yalo,noun,Calendar year; Example: yalo te mi
+name,nomo,noun,Name or label; Example: nomo te mi
+word,woko,noun,Word; Example: woko te mi
+language,lino,noun,Human language; Example: lino te mi
+idea,iteo,noun,Thought or proposal; Example: iteo te mi
+life,wito,noun,Life or living duration; Example: wito te mi
+money,mono,noun,Money; Example: mono te mi
+number,nomu,noun,Numeric quantity; not an identifying digit symbol; Example: nomu te mi
+question,keso,noun,Question; Example: keso te mi
+answer,talo,noun,Answer; Example: talo te mi
+problem,polemo,noun,Problem requiring attention; Example: polemo te mi
+good,pona,description,Positive evaluation; Example: la ito esa pona
+bad,nopa,description,Negative evaluation; Example: la ito esa nopa
+large,walo,description,Large size; Example: la ito esa walo
+small,pika,description,Small size; Example: la ito esa pika
+long,lono,description,Long extent or duration; Example: la ito esa lono
+short,petalo,description,Short extent or duration; Example: la ito esa petalo
+new,nowo,description,Not previously used or recently introduced; Example: la ito esa nowo
+old (age),wepo,description,Advanced age; Example: la ito esa wepo
+former,iamo,description,Earlier status; Example: la ito esa iamo
+hot,woto,description,High temperature; Example: la ito esa woto
+cold,kolope,description,Low temperature; Example: la ito esa kolope
+clean,pulo,description,Free of relevant dirt; Example: la ito esa pulo
+dirty,tuto,description,Containing relevant dirt; Example: la ito esa tuto
+easy,liso,description,Low difficulty; Example: la ito esa liso
+difficult,tulo,description,High difficulty; Example: la ito esa tulo
+fast,yapa,description,High speed; Example: la ito esa yapa
+slow,senu,description,Low speed; Example: la ito esa senu
+happy,yomo,description,Experiencing happiness; Example: la ito esa yomo
+sad,sato,description,Experiencing sadness; Example: la ito esa sato
+ill,melo,description,Unwell; Example: la ito esa melo
+healthy,sana,description,In good health; Example: la ito esa sana
+strong,poto,description,High strength; Example: la ito esa poto
+weak,pemo,description,Low strength; Example: la ito esa pemo
+true,welo,description,Factually true; Example: la ito esa welo
+false,elo,description,Factually false; Example: la ito esa elo
+same,sama,description,Identical with respect to stated criterion; Example: la ito esa sama
+different,tipo,description,Different with respect to stated criterion; Example: la ito esa tipo
+important,kawo,description,High relevance or consequence; Example: la ito esa kawo
+beautiful,penuwe,description,Aesthetic approval; Example: la ito esa penuwe
+full,puno,description,Filled to relevant capacity; Example: la ito esa puno
+empty,wako,description,Containing none of relevant contents; Example: la ito esa wako
+red,luto,description,Color term; Example: la ito esa luto
+yellow,yelo,description,Color term; Example: la ito esa yelo
+green,weto,description,Color term; Example: la ito esa weto
+blue,lupo,description,Color term; Example: la ito esa lupo
+black,nilo,description,Color term; Example: la ito esa nilo
+white,alapo,description,Color term; Example: la ito esa alapo
+near,nelo,description,Small distance; Example: la ito esa nelo
+far,palawe,description,Large distance; Example: la ito esa palawe
+here,ena,adverb,At speaker's contextually indicated location; Example: mi lena ena
+there,tona,adverb,At contextually indicated other location; Example: mi lena tona
+now,nuna,adverb,At current reference moment; Example: mi lena nuna
+yesterday,pati,adverb,Day before local current day; Example: mi lena pati
+today,nuti,adverb,Local current day; Example: mi lena nuti
+tomorrow,puti,adverb,Day after local current day; Example: mi lena puti
+always,alate,adverb,At every relevant occasion; Example: mi lena alate
+sometimes,sote,adverb,At some relevant occasions; Example: mi lena sote
+never,note,adverb,At no relevant occasion; Example: mi lena note
+before,ate,relation,Earlier than the following time or event
+after,apo,relation,Later than the following time or event
+inside,nina,description,In the interior; Example: la ito esa nina
+outside,pola,description,Outside the relevant boundary; Example: la ito esa pola
+left,lewo,description,Left direction in stated frame of reference; Example: la ito esa lewo
+right,yewo,description,Right direction in stated frame of reference; Example: la ito esa yewo
+zero,suno,number,0
+one,una,number,1
+two,tuli,number,2
+three,sani,number,3
+four,peka,number,4
+five,lima,number,5
+six,noku,number,6
+seven,sepi,number,7
+eight,watu,number,8
+nine,yune,number,9
+ten,teka,number,10
+hundred,seta,number,100
+thousand,mila,number,1000
+digit sequence,nume,particle,Begins an explicit digit-by-digit reading
+decimal point,puto,particle,Followed by individual fractional digits
+negative number,neka,particle,Before a number; changes its sign to negative
+divided by,suli,particle,Numerical fraction or division reading between quantities
+ordinal marker,noli,particle,Before cardinal number
+hello,salo,phrase,Greeting
+goodbye,watiwe,phrase,Farewell
+please,pali,phrase,Before command
+thank you,tani,phrase,Gratitude
+you are welcome,sawawe,phrase,Response to gratitude
+sorry,pata,phrase,Apology
+a / an,sa,article,Unspecified referent; defaults to one countable item without a quantity word; sa ma introduces an unspecified plural group
+can / be able to,pote,modal,Ability only
+future / will,pu,particle,Before aspect and predicate
+must / have to,tewa,modal,Obligation
+no / not,no,particle,Predicate negation or rejection of proposition
+of / possessive link,te,relation,Thing followed by related person or thing
+ongoing action,tu,particle,Progressive aspect
+question marker,ka,particle,At end of clause
+the,la,article,Identifies a contextually recoverable referent; omit only when reference stays clear
+you,ti,pronoun,One addressee
+you all,timu,pronoun,Multiple addressees
+above / over,su,relation,Above without asserting contact
+below / under,nu,relation,Vertical inferior position
+for / intended for,po,relation,Intended beneficiary or purpose
+how many / how much,kaniti,question,Before noun or alone
+left (direction),lewo,description,Left direction in stated frame of reference; Example: la ito esa lewo
+on / on top of,sula,relation,On a supporting surface with contact
+right (direction),yewo,description,Right direction in stated frame of reference; Example: la ito esa yewo
+through,natu,relation,Through an interior or passage
+be / am / is / are,esa,verb,Subject plus identity description or location complement; Example: mi esa penu
+begin / start,inia,verb,Intransitive; Example: la ito inia
+close / shut,kosawe,verb,Transitive object closed; Example: mi kosawe la ito
+do / make,pami,verb,Transitive product or task; do or make; Example: mi pami la ito
+end / finish,pina,verb,Intransitive; Example: la ito pina
+exist / there is,eki,verb,Existential; Example: eki aku
+have / own,awa,verb,Transitive possessed item; Example: mi awa la ito
+say / speak,tala / teli,verb,Speak a language versus say something; listener with a; Example: mi tala Taluma
+stay / remain,wesa,verb,Intransitive; Example: mi wesa
+arm,manope,noun,Upper limb; distinct from hand mano; Example: manope te mi
+back (body),kopano,noun,Rear of torso; Example: kopano te mi
+city / town,ula,noun,Urban settlement; Example: ula te mi
+country / nation,natio,noun,Political country; shared starter nation sense; distinguish cultural groups explicitly; Example: natio te mi
+face,kapano,noun,Front of head; Example: kapano te mi
+home / house,tomo,noun,Dwelling; specify whose home using te plus possessor; Example: tomo te mi
+light,lumo,noun,Visible light; Example: lumo te mi
+man,wilo,noun,Adult male human; Example: wilo te mi
+person / human,penu,noun,A human being; referent and gender are supplied by context; Example: penu te mi
+thing / object,ito,noun,Thing or object; Example: ito te mi
+way / method,meto,noun,Method; Example: meto te mi
+woman,wina,noun,Adult female human; Example: wina te mi
+big / large,walo,description,Large size; Example: la ito esa walo
+fast / quickly,yapa / yapa-me,description/adverb,Property of a noun versus manner of an event
+few / little (quantity),poka,quantifier,Small number or amount
+good / well,pona / pona-me,description/adverb,Good property versus good manner
+many / much,muli,quantifier,Large number or amount before noun
+most (comparison),masi,degree,Before description
+old / former (not new),nowopa / iamo,description,No longer new versus earlier status; Example: la ito esa nowopa
+only,solo,degree,Immediately before the restricted noun or relation phrase; not before a bare verb
+sick / ill,melo,description,Unwell; Example: la ito esa melo
+slow / slowly,senu / senu-me,description/adverb,Property of a noun versus manner of an event
+true / correct,welo / yuso,description,Factually true versus correct or appropriate; Example: la ito esa welo
+wrong / incorrect,noyuso,description,Incorrect; distinct from factually false elo; Example: la ito esa noyuso
+excuse me / sorry,pata,phrase,Apology
+you're welcome,sawawe,phrase,Response to gratitude
+he,li,pronoun,Gender-neutral singular referent; use names or explicit nouns to disambiguate
+she,li,pronoun,Gender-neutral singular referent; use names or explicit nouns to disambiguate
+it,li,pronoun,Gender-neutral singular referent; use names or explicit nouns to disambiguate
+one / people,sa penu,pronoun/noun,An unspecified person; not the numeral one
+my,te mi,relation,Possessor phrase after noun and descriptions
+your,te ti / te timu,relation,Singular versus plural addressees; follows possessed noun
+whether / question marker,ka,particle,At end of clause
+that (clause),kepi,particle,Opens a declarative content clause; always close with nasuku
+in,na,relation,At or in; na nina te specifies an interior
+on,sula,relation,On a supporting surface with contact
+over,su,relation,Above without asserting contact
+to,a,relation,Direction or recipient
+from / of,tawe / te,relation,Origin versus possession or association
+about,pili,relation,Topic of speech or thought
+before (place or time),ate / na kapano te,relation,Ate means earlier than; the second phrase means in front of
+until,katiwe,relation,Endpoint in time or space
+how much,kaniti,question,Before noun or alone
+this (thing),ta,determiner/pronoun,This
+that (thing),to,determiner/pronoun,That
+often,potewe,adverb,On many occasions; Example: mi lena potewe
+also,aniki,adverb,In addition; follows object and relations; Example: mi lena aniki
+already,yami,adverb,Before or by the reference time; follows object and relations; Example: mi lena yami
+still / yet,nuki,adverb,Continuing at the reference time; follows object and relations; Example: mi lena nuki
+together,kune,adverb,In company; unlike konu this does not require a following companion noun; Example: mi lena kune
+well,pona-me,adverb,Regular manner adverb from description pona; Example: mi lena pona-me
+clearly,kali-me,adverb,Regular manner adverb from description kali; Example: mi lena kali-me
+carefully,kasi-me,adverb,Stem kasi: careful; regular manner adverb; follows object and relations; Example: mi lena kasi-me
+have,awa,verb,Transitive possessed item; Example: mi awa la ito
+speak,tala,verb,Transitive language or content clause; listener with a; Example: mi tala Taluma
+say,teli,verb,Transitive utterance or content clause; quoted speech uses kotu and pusano; listener with a; Example: mi teli kotu mi wola aku pusano
+know (a fact),sawa,verb,Transitive information or content clause; know a fact; Example: mi sawa kepi ti lena nasuku
+know (be acquainted),koni,verb,Transitive person or familiar thing; be acquainted with; Example: mi koni la ito
+can / be able,pote,modal,Ability only
+live,wita,verb,Intransitive; Example: mi wita
+play,luti,verb,Play a game or instrument; Example: mi luti
+like,liwa,verb,Transitive person thing or content clause; Example: mi liwa la ito
+ask (a question),kesa,verb,Transitive question or content clause; addressee introduced with a; Example: mi kesa keso a ti
+repeat,lati,verb,Say or do again; Example: mi lati la ito
+big,walo,description,Large size; Example: la ito esa walo
+old (not new),nowopa,description,Previously used or no longer new; Example: la ito esa nowopa
+young,yuni,description,Early in life; Example: la ito esa yuni
+clear,kali,description,Clear in perception or meaning; Example: la ito esa kali
+other,aliwe,description,Another or other; Example: la ito esa aliwe
+Esperanto,Esperanto,noun,Borrowed proper language name; preserves its preferred spelling; Example: mi lena Esperanto
+sentence,talumo,noun,Sentence of language; Example: talumo te mi
+school,lena-mo,noun,Regular learning-place derivation; conventional school sense; no institutional accreditation implied; Example: lena-mo te mi
+teacher,nisa-ki,noun,Regular person-who-teaches derivation; Example: nisa-ki te mi
+student,lena-ki,noun,Regular person-who-learns derivation; Example: lena-ki te mi
+house,tomo,noun,Dwelling; Example: tomo te mi
+window,pono,noun,Window in a building; Example: pono te mi
+table,tapula,noun,Table furniture; Example: tapula te mi
+chair,sita-po,noun,Regular sitting-instrument derivation; conventional chair sense; Example: sita-po te mi
+garden,tamalo,noun,Cultivated garden; Example: tamalo te mi
+country (land),natio,noun,Political country; Example: natio te mi
+road,luta,noun,Route for travel; Example: luta te mi
+bread,panope,noun,Bread; Example: panope te mi
+fruit,pumo,noun,Fruit; Example: pumo te mi
+apple,pomo,noun,Apple fruit; Example: pomo te mi
+milk,miliko,noun,Milk; Example: miliko te mi
+tea,teyo,noun,Tea drink; Example: teyo te mi
+coffee,kape,noun,Coffee drink; Example: kape te mi
+salt,salope,noun,Edible salt; Example: salope te mi
+earth (soil),telo,noun,Ground material; Example: telo te mi
+flower,pulope,noun,Flower; Example: pulope te mi
+dog,kuno,noun,Dog; Example: kuno te mi
+cat,katoyo,noun,Cat; Example: katoyo te mi
+morning,matino,noun,Morning; Example: matino te mi
+evening,weselo,noun,Evening; Example: weselo te mi
+hour,olope,noun,Hour; Example: olope te mi
+health,sana-se,noun,Regular state-of-being-healthy derivation; Example: sana-se te mi
+peace,paso,noun,Peace; Example: paso te mi
+music,musiko,noun,Music; Example: musiko te mi
+answer (noun),talo,noun,Answer; Example: talo te mi
+goal,selawo,noun,Aim or target; Example: selawo te mi
+choir,kolalo,noun,Group of singers; Example: kolalo te mi
+newspaper,lipo-nuti,noun,Defined head-first compound: book of today; conventional newspaper sense; Example: lipo-nuti te mi
+condition,siwo,noun,A condition; Example: siwo te mi
+related,tewo,description,Related; Example: la ito esa tewo
+reference,yeno,noun,A reference; Example: yeno te mi
+manner,melawo,noun,Manner; Example: melawo te mi
+sequence,selano,noun,An ordered sequence; Example: selano te mi
+digit,sipo,noun,A numeral digit; distinguish quantity nomu; Example: sipo te mi
+decimal,putowo,description,Decimal; Example: la ito esa putowo
+point,putono,noun,Point or dot; Example: putono te mi
+negative,nekawo,description,Below zero; Example: la ito esa nekawo
+minus,neka,particle,Before a number; changes its sign to negative
+divide,tilita,verb,Transitive quantity; divisor introduced with pi; Example: mi tilita la nomu pi tuli

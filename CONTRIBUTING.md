@@ -1,6 +1,6 @@
 # Help shape a shared language
 
-Learners, speakers, linguists, educators, designers, and maintainers are welcome. Both languages are prototypes; thoughtful observations matter more than prior experience.
+Learners, speakers, linguists, educators, designers, and maintainers are welcome. Lumena, Narela, and Taluma are prototypes; Esperanto follows established usage; thoughtful observations matter more than prior experience.
 
 ## Choose a first contribution
 
@@ -14,13 +14,17 @@ Open an issue before a substantial language redesign. Small corrections can go s
 
 ## Source of truth
 
-Edit the Markdown guides and `lexicon.csv` in `Lumena/` or `Narela/`. Dictionary Markdown files and `website/data.js` are generated. Keep the two languages distinct and explain any intentional compatibility change in the relevant changelog.
+Edit the Markdown guides and `lexicon.csv` in `Lumena/`, `Narela/`, `Esperanto/`, or `Taluma/`. Dictionary Markdown files and `website/data.js` are generated. Keep the four languages distinct and explain any intentional compatibility change in the relevant changelog.
+
+All four lexicons must expose the same English headwords. Add a reviewed translation or an explicitly explained grammatical construction to each language when adding an English sense. Different English lookup variants can share a native form; English headwords must stay unique. Run `node tools/check-vocabulary.cjs` to see missing coverage. The website builder also enforces this rule before producing dictionary, flashcard, and AI reference data. Do not use placeholder translations to satisfy the check.
 
 With Node.js 22 or later, run from the repository root:
 
 ```sh
 node Narela/tools/check_language.cjs --write
 node Lumena/tools/check_language.cjs --write
+node Esperanto/tools/check_language.cjs --write
+node Taluma/tools/check_language.cjs --write
 node website/build-data.cjs
 node website/check-site.cjs
 node website/build-site.cjs

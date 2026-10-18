@@ -17,14 +17,17 @@ const rows = source.map((line, i) => {
 const words = new Set();
 const english = new Set();
 for (const row of rows) {
-  if (words.has(row.lumena)) errors.push(`Duplicate Lumena word: ${row.lumena}`);
   if (english.has(row.english)) errors.push(`Duplicate English headword: ${row.english}`);
   words.add(row.lumena); english.add(row.english);
-  if (!/^(?:[klmnpstwy]?[aeiou])+$/.test(row.lumena)) errors.push(`Invalid native spelling: ${row.lumena}`);
+  // Shared English senses may translate to the same word. Validate every phrase component.
+  for (const token of row.lumena.split(/(?: \/ |[ -])/).filter(Boolean)) {
+    if (token === 'Esperanto') continue; // Borrowed proper name; not a native root.
+    if (!/^(?:[klmnpstwy]?[aeiou])+$/.test(token.toLowerCase())) errors.push(`Invalid native spelling: ${token}`);
+  }
 }
 function render(reverse) {
   const title = reverse ? 'Lumena to English Dictionary' : 'English to Lumena Dictionary';
-  const lines = [`# ${title}`, '', 'Lumena 0.1 — October 17, 2026', '',
+  const lines = [`# ${title}`, '', `Lumena ${require('../../versions.json').languages.lumena} — October 18, 2026`, '',
     'Generated from [lexicon.csv](lexicon.csv). Edit that source and run the checker with `--write`.', '',
     'Meanings are limited by the notes. See [grammar](GRAMMAR.md) and [sentence examples](LESSONS.md).', '',
     reverse ? '| Lumena | English | Category | Notes |' : '| English | Lumena | Category | Notes |',
@@ -77,5 +80,5 @@ if (errors.length) {
   console.error([...new Set(errors)].join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`OK: ${rows.length} unique entries; native spellings, example words, links, and dictionaries checked.`);
+  console.log(`OK: ${rows.length} English headwords; native spellings, example words, links, and dictionaries checked.`);
 }

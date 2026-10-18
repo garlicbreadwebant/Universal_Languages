@@ -4,20 +4,22 @@ Open [index.html](index.html) in a browser. The library, flashcards, and referen
 
 ## Flashcards
 
-Choose **Flashcards** in the navigation for either Lumena or Narela. Cards use that language's dictionary, including usage notes. Filter by category, choose English or the language as the prompt, reveal answers, move backward or forward, and shuffle the deck. Moving to another card hides the answer; the deck wraps at either end. Switching languages starts a fresh deck. Flashcards work offline and progress lasts for the current visit to the section.
+Choose **Flashcards** in the navigation for Lumena, Narela, Esperanto, or Taluma. Cards use that language's dictionary, including usage notes. Filter by category, choose English or the language as the prompt, reveal answers, move backward or forward, and shuffle the deck. Moving to another card hides the answer; the deck wraps at either end. Switching languages starts a fresh deck. Flashcards work offline and progress lasts for the current visit to the section.
 
 ## Refresh content
 
-The language folders are the source of truth; data.js is a generated snapshot that makes direct file opening possible. From the workspace root, after editing either language:
+The language folders are the source of truth; data.js is a generated snapshot that makes direct file opening possible. Each language exposes the same 397 English lookup entries. Distinct senses or lookup variants may share a native form; some grammatical concepts require a phrase or a usage explanation. Flashcards retain every English entry, and AI training references receive the full lexicon. From the workspace root, after editing any language:
 
 ```powershell
 node Narela/tools/check_language.cjs --write
 node Lumena/tools/check_language.cjs --write
+node Esperanto/tools/check_language.cjs --write
+node Taluma/tools/check_language.cjs --write
 node website/build-data.cjs
 node website/check-site.cjs
 ```
 
-Use node website/build-data.cjs --check to detect a stale snapshot without writing it. The builder consumes both lexicons and all six reference documents per language. It never edits their source files. AI translation and pronunciation are approximate, not authoritative language references.
+Use node website/build-data.cjs --check to detect a stale snapshot without writing it. The builder consumes all four lexicons and all six reference documents per language and rejects mismatched English coverage. It never edits their source files. AI translation and pronunciation are approximate, not authoritative language references.
 
 ## AI chat and speech
 
@@ -52,7 +54,7 @@ Provider references: [OpenAI streaming](https://developers.openai.com/api/docs/g
 
 `node website/check-site.cjs` includes dependency-free mocked-provider checks in `check-ai.cjs`. Build with `node website/build-site.cjs`, then optionally run `node website/check-browser.cjs` with Chrome installed (set `CHROME_PATH` if necessary). The browser checks use synthetic keys and local simulated streams, never paid API calls. Desktop/mobile screenshots are written into the ignored `.site-build/` directory. Live provider availability and pronunciation quality require a user's own key and listening review.
 
-On Windows, Git's automatic CRLF conversion can make the existing dictionary/snapshot freshness checks report unchanged generated files as stale. Use an LF checkout for the standard validation workflow.
+The repository's .gitattributes keeps text files in LF format, including on Windows, so generated dictionary and snapshot freshness checks remain consistent across checkouts.
 
 ## Files
 
@@ -75,6 +77,6 @@ Layout uses system fonts and CSS shapes. There are no third-party runtime depend
 
 The layout starts with one-column phone views and expands on larger screens. A keyboard-accessible mobile menu exposes all library pages, closes after navigation, and supports Escape. Primary controls use at least 44px touch targets; forms use 16px text to reduce mobile zoom. Phone dictionaries stack entries as cards. Optional passage generation and English-input translation use expandable sections to keep the main read-aloud task clear.
 
-Use **Translate English to Lumena/Narela** to open a separate English input and request a target-language translation. It replaces the read-aloud passage only after success, displays an English meaning of the actual translation, and includes notes about unsupported vocabulary. The existing OpenAI session key and reference context are reused.
+Use **Translate English to Lumena/Narela/Esperanto/Taluma** to open a separate English input and request a target-language translation. It replaces the read-aloud passage only after success, displays an English meaning of the actual translation, and includes notes about unsupported vocabulary. The existing OpenAI session key and reference context are reused.
 
 Policy source documents are privacy.md, cookies.md, and terms.md; website changes are in changelog.md. build-data.cjs bundles them into site-data.js for offline footer navigation; build-site.cjs publishes them with the site and the root MIT LICENSE. Run the builder after editing a policy, then run the normal checks. The terms preserve the permissions granted by the MIT License.

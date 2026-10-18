@@ -1,4 +1,4 @@
-# Lumena grammar 0.1
+# Lumena grammar 0.2.0
 
 ## 1. Basic clauses
 
@@ -52,7 +52,9 @@ Use `yasi ... yasu` for a relative clause after a noun phrase. Inside it, `ye` r
 
 ## 7. Word formation and valency
 
-Roots have the categories listed in the dictionary. Do not freely change a noun into a verb. A description can be an adverb via `me`. Noun compounds are **head first**, written with hyphens: `tama-lena` learning house (school); `penu-lena` learning person (learner); `tama-mela` illness house (clinic). These compounds conventionally describe association; they do not mechanically encode every possible relationship. Define specialized compounds in the dictionary before depending on them in precise communication. There are no productive affixes in 0.1.
+The shared-vocabulary expansion adds ordinary roots and defines learning-related compounds in the dictionary. Entries may contain a phrase or slash-separated alternatives selected by meaning. These are not additional affixes. Bare nouns cover English a/an/the in context; the dictionary illustrates this with puka rather than inventing articles.
+
+Roots have the categories listed in the dictionary. Do not freely change a noun into a verb. A description can be an adverb via `me`. Noun compounds are **head first**, written with hyphens: `tama-lena` learning house (school); `penu-lena` learning person (learner); `tama-mela` illness house (clinic). These compounds conventionally describe association; they do not mechanically encode every possible relationship. Define specialized compounds in the dictionary before depending on them in precise communication. There are no productive affixes in 0.2.0.
 
 Basic verb argument patterns are in the lexicon notes: transitive verbs take a direct object; intransitive verbs do not. Use `pana` give + thing + `a` recipient. `lasi` allow + person + `a` action content clause. `mi lasi ti a pasi ti pala pasu.` = I allow you to walk. For causation say `mi pami pasi ti pala pasu.` = I cause you to walk. Avoid silently changing a verb's argument pattern to imitate English.
 
